@@ -1,57 +1,38 @@
 let currentData = null;
 let currentFilter = "all";
 
+function kst(value) {
+  return new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' }).format(new Date(value)) + ' KST';
+}
+function renderRoute() {
+  const path = location.pathname.replace(/\/+$/, '') || '/';
+  const detail = path.match(/^\/game\/(NPWR\d+_\d+)$/);
+  document.querySelector('.profile-card').hidden = path !== '/';
+  document.querySelector('.recent-card').hidden = path !== '/';
+  document.querySelector('.games-card').hidden = path !== '/' && path !== '/games';
+  document.getElementById('game-detail').hidden = !detail;
+  if (detail) openGameDetail(detail[1]);
+  else if (!['/', '/games'].includes(path)) {
+    document.getElementById('game-detail').hidden = false;
+    document.getElementById('detail-body').textContent = '페이지를 찾을 수 없습니다.';
+  }
+  if (!detail) document.title = path === '/games' ? '게임 목록 — PSN Trophy Tracker' : 'PSN Trophy Tracker';
+}
 function displayName(item) { return item.localized?.["ko-KR"]?.name || item.name; }
 function displayDescription(trophy) { return trophy.localized?.["ko-KR"]?.description ?? trophy.description; }
 
 async function loadData() {
   try {
-    // 1. First attempt to load static canonical data (/data/current.json)
-    let fullSnapshot = null;
-    let dataRes = await fetch("./data/current.json").catch(() => null);
-    if (!dataRes || !dataRes.ok) {
-      dataRes = await fetch("/data/current.json").catch(() => null);
-    }
-
-    if (dataRes && dataRes.ok) {
-      const contentType = dataRes.headers.get("content-type") || "";
-      if (contentType.includes("json") || contentType.includes("application/octet-stream")) {
-        fullSnapshot = await dataRes.json();
-      }
-    }
-
-    // 2. If static file not found, try API endpoint
-    if (!fullSnapshot) {
-      const profileRes = await fetch("/api/v1/profile").catch(() => null);
-      if (profileRes && profileRes.ok) {
-        const ct = profileRes.headers.get("content-type") || "";
-        if (ct.includes("json")) {
-          const profile = await profileRes.json();
-          const gamesRes = await fetch("/api/v1/games?limit=100");
-          const gamesData = await gamesRes.json();
-          const statusRes = await fetch("/api/v1/status");
-          const statusData = await statusRes.json();
-          fullSnapshot = {
-            metadata: {
-              lastSuccessfulSync: statusData.lastSuccessfulSync,
-              generatedAt: statusData.lastSyncAttempt
-            },
-            profile,
-            games: gamesData.games
-          };
-        }
-      }
-    }
-
-    if (!fullSnapshot) {
-      throw new Error("Could not load snapshot data from static file or API");
-    }
+    const dataRes = await fetch('/data/current.json');
+    if (!dataRes.ok || !(dataRes.headers.get('content-type') || '').includes('json')) throw new Error('Snapshot unavailable');
+    const fullSnapshot = await dataRes.json();
 
     currentData = fullSnapshot;
     renderStatus(currentData.metadata);
     renderProfile(currentData.profile);
     renderRecent(currentData.games);
     renderGames(currentData.games);
+    renderRoute();
   } catch (err) {
     console.error("Error loading dashboard data:", err);
     document.getElementById("sync-status-text").textContent = "데이터 로딩 실패";
@@ -72,7 +53,7 @@ function renderStatus(metadata) {
 
   if (diffHours < 12) {
     badge.classList.add("fresh");
-    text.textContent = `동기화 완료: ${syncDate.toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" })}`;
+    text.textContent = `동기화 완료: ${kst(metadata.lastSuccessfulSync)}`;
   } else {
     badge.classList.remove("fresh");
     text.textContent = `오래된 데이터 (${Math.round(diffHours)}시간 전)`;
@@ -134,7 +115,7 @@ function renderRecent(games) {
         </div>
       </div>
       <div class="recent-item-time">
-        ${new Date(item.trophy.earnedAt).toLocaleDateString("ko-KR")}
+        ${kst(item.trophy.earnedAt)}
       </div>
     </div>
   `).join("");
@@ -159,7 +140,7 @@ function renderGames(games) {
   }
 
   container.innerHTML = filtered.map((game) => `
-    <div class="game-card" onclick="openGameDetail('${escapeHtml(game.id)}')">
+    <a class="game-card" href="/game/${encodeURIComponent(game.id)}">
       <div class="game-card-header">
         <img class="game-thumbnail" src="${game.imageUrl || 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23202b3d%22/></svg>'}" alt="${escapeHtml(displayName(game))}" />
         <div class="game-meta">
@@ -178,16 +159,19 @@ function renderGames(games) {
           <div class="game-progress-fill ${game.progress.percentage === 100 ? 'completed' : ''}" style="width: ${game.progress.percentage}%"></div>
         </div>
       </div>
-    </div>
+    </a>
   `).join("");
 }
 
 window.openGameDetail = async function (gameId) {
   const game = currentData.games.find((g) => g.id === gameId);
-  if (!game) return;
+  if (!game) {
+    document.getElementById('detail-body').textContent = '게임을 찾을 수 없습니다.';
+    return;
+  }
+  document.title = `${displayName(game)} — PSN Trophy Tracker`;
 
-  const modal = document.getElementById("detail-modal");
-  const modalBody = document.getElementById("modal-body");
+  const detailBody = document.getElementById("detail-body");
 
   let trophies = game.trophies || [];
   if (trophies.length === 0) {
@@ -203,7 +187,7 @@ window.openGameDetail = async function (gameId) {
 
   const gradeIcons = { platinum: "🏆", gold: "🥇", silver: "🥈", bronze: "🥉" };
 
-  modalBody.innerHTML = `
+  detailBody.innerHTML = `
     <h2>${escapeHtml(displayName(game))}</h2>
     <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
       진행률: ${game.progress.earned} / ${game.progress.total} (${game.progress.percentage}%)
@@ -211,13 +195,13 @@ window.openGameDetail = async function (gameId) {
     <div class="trophy-list-detail">
       ${
         trophies.length > 0
-          ? trophies.map((t) => `
+          ? trophies.slice().sort((a, b) => Number(a.earned) - Number(b.earned)).map((t) => `
             <div class="trophy-detail-item ${t.earned ? 'earned' : 'unearned'}">
               <span>${gradeIcons[t.grade] || "🏆"}</span>
               <div class="trophy-detail-text">
                 <h4>${escapeHtml(displayName(t))} ${t.hidden ? '<span style="font-size:0.75rem; color:#f59e0b;">(Hidden)</span>' : ''}</h4>
                 <p>${escapeHtml(displayDescription(t) || "설명 없음")}</p>
-                ${t.earned && t.earnedAt ? `<p style="font-size:0.75rem; color:var(--status-green);">획득: ${new Date(t.earnedAt).toLocaleString('ko-KR')}</p>` : ''}
+                ${t.earned && t.earnedAt ? `<p style="font-size:0.75rem; color:var(--status-green);">획득: ${kst(t.earnedAt)}</p>` : ''}
               </div>
             </div>
           `).join("")
@@ -225,8 +209,6 @@ window.openGameDetail = async function (gameId) {
       }
     </div>
   `;
-
-  modal.classList.remove("hidden");
 };
 
 function escapeHtml(str) {
@@ -250,8 +232,4 @@ document.addEventListener("DOMContentLoaded", () => {
       if (currentData) renderGames(currentData.games);
     });
   });
-
-  const modal = document.getElementById("detail-modal");
-  document.getElementById("modal-close-btn").addEventListener("click", () => modal.classList.add("hidden"));
-  document.getElementById("modal-close-overlay").addEventListener("click", () => modal.classList.add("hidden"));
 });

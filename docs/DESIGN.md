@@ -54,7 +54,7 @@ History 자동 pruning은 미구현입니다. 삭제 대신 모든 archive를 �
 
 Pages project `psn-trophy-tracker`, Git repo `eggu/psn-trophy-tracker`, branch `main`.
 
-빌드: `npm run build:dashboard`. 출력: `dashboard/dist`. `wrangler.toml`은 Pages 설정입니다. Data commit에는 `[skip ci]`를 넣지 않아 매 sync가 Pages 배포로 이어집니다. GitHub workflow는 push trigger가 없어 자체 commit으로 sync 루프가 생기지 않습니다. Functions는 `/api/*`에만 적용되며 router는 기존 worker 모듈을 재사용합니다. 추가 `psn-trophy-tracker-api.eggu3213.workers.dev` Worker는 `wrangler.worker.toml`로 배포합니다. 같은 index/router/history를 재사용하고 `DATA_BASE_URL`로 Pages canonical 및 index/선택된 history를 조회합니다. Worker 자체 origin으로 data를 요청하지 않습니다. Worker 코드 배포는 명시적 wrangler deploy이며 데이터는 Pages 배포 후 자동 반영됩니다.
+빌드: `npm run build:dashboard`. 출력: `dashboard/dist`. `wrangler.toml`은 Pages 설정입니다. Data commit에는 `[skip ci]`를 넣지 않아 매 sync가 Pages 배포로 이어집니다. GitHub workflow는 push trigger가 없어 자체 commit으로 sync 루프가 생기지 않습니다. Functions는 `/api/*`, `/agent`, `/agent/*`에 적용되며 router는 기존 worker 모듈을 재사용합니다. 추가 `psn-trophy-tracker-api.eggu3213.workers.dev` Worker는 `wrangler.worker.toml`로 배포합니다. 같은 index/router/history를 재사용하고 `DATA_BASE_URL`로 Pages canonical 및 index/선택된 history를 조회합니다. Worker 자체 origin으로 data를 요청하지 않습니다. Worker 코드 배포는 명시적 wrangler deploy이며 데이터는 Pages 배포 후 자동 반영됩니다.
 
 Cron은 6시간 간격 UTC 00/06/12/18입니다. Actions의 수동 입력 full/diagnose/localization_probe로 전체 수집과 저장 없는 재현을 선택합니다. 인증 만료 시 Secret을 갱신한 뒤 수동 sync로 확인합니다. Token/NPSSO/Authorization header를 로그 또는 공개 데이터에 넣지 않습니다.
 
@@ -65,3 +65,15 @@ Cron은 6시간 간격 UTC 00/06/12/18입니다. Actions의 수동 입력 full/d
 `npx tsc --noEmit`으로 schemas/collector/worker/functions/tests 타입을 검사합니다. 실제 PSN Full Sync와 외부 HTTP acceptance는 별도 근거이며 단위 테스트 성공으로 대체하지 않습니다.
 
 Worker 실제 acceptance와 CORS 검증은 `worker-acceptance.json`, `worker-external-access.json`에 있습니다. 별도 Worker의 DATA_BASE_URL 조회 경로도 tests/pages.test.ts에서 검증합니다.
+
+## Human / Markdown derived views
+
+Human은 기존 vanilla JS를 재사용하며 `/`, `/games`, `/game/{id}`를 pathname으로 분기합니다. 게임 카드는 native anchor이며 asset URL은 절대 경로라 상세 새로고침에도 동작합니다. 기존 modal은 제거했습니다. 날짜는 Asia/Seoul로 고정합니다.
+
+`agent/render.ts`는 canonical을 변경하지 않는 renderer입니다. 빌드가 현재 snapshot과 바로 이전 archive를 비교해 profile/changes/recent(50)/games 및 168개 game 문서를 생성합니다. 처음이면 비교 불가, 변화가 없으면 변화 없음으로 명시합니다. 원문 Markdown 특수 문자와 줄바꿈을 escape합니다. ko-KR 공식 metadata 우선, 원문 fallback입니다.
+
+`functions/agent/[[path]].ts`와 Worker는 `worker/src/agent.ts`를 재사용합니다. Pages ASSETS로 문서 하나 또는 operational metadata 하나만 읽습니다. 요청당 canonical/history 다운로드는 없습니다. Standalone Worker는 public Pages `/agent/*`를 읽어 동일 Markdown을 반환합니다. `.md` static path를 Pages Function 경로로 재요청하지 않습니다. Status/manifest freshness는 현재 시각으로 계산하고 60초 cache를 둡니다. HEAD/OPTIONS 지원, unknown path/game는 Markdown 404, unavailable data는 503입니다.
+
+수집 wrapper는 dry-run을 제외하고 시도 결과를 `data/sync-status.json`에 atomic write합니다. 실패한 수집은 canonical/history를 성공 데이터로 덮어쓰지 않습니다. Marker에는 시각과 outcome만 저장합니다. Workflow는 collector가 실패한 경우에도 marker를 commit하며 failure outcome을 숨기지 않습니다. 진단/probe는 이 경로를 사용하지 않습니다. 이 파일은 운영 상태이며 trophy SSOT는 계속 current.json입니다.
+
+Agent 인덱스는 6,162 o200k_base tokens로 측정해 하나로 유지했습니다. 상세는 게임별 분리했습니다. JSON router의 영어 기본값 및 canonical bilingual metadata는 유지합니다.

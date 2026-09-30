@@ -1,3 +1,4 @@
+import { handleAgent } from './agent.js';
 import { handleApiRequest, errorResponse } from './router.js';
 import { selectHistoryEntry, type HistoryEntry } from './history.js';
 import type { CanonicalSnapshot } from '../../schemas/index.js';
@@ -12,6 +13,7 @@ export interface Env {
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
+    if (url.pathname === '/agent' || url.pathname.startsWith('/agent/')) return handleAgent(request, env);
     if (!url.pathname.startsWith('/api/')) return env.ASSETS?.fetch(request) ?? new Response('Not found', { status: 404 });
     const respond = (res: ReturnType<typeof errorResponse>) => new Response(request.method === 'HEAD' || res.status === 204 ? null : res.body, { status: res.status, headers: res.headers });
     if (!['GET', 'HEAD', 'OPTIONS'].includes(request.method)) return respond(errorResponse('METHOD_NOT_ALLOWED', 'Read-only API', 405));

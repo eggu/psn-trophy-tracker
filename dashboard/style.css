@@ -355,53 +355,7 @@ body {
   background-color: var(--status-green);
 }
 
-/* Modal */
-.modal.hidden {
-  display: none;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.modal-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-}
-
-.modal-content {
-  position: relative;
-  background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 12px;
-  width: 90%;
-  max-width: 650px;
-  max-height: 85vh;
-  overflow-y: auto;
-  padding: 1.5rem;
-  z-index: 1001;
-}
-
-.modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: transparent;
-  border: none;
-  color: var(--text-muted);
-  font-size: 1.5rem;
-  cursor: pointer;
-}
+/* Game detail */
 
 .trophy-list-detail {
   display: flex;
@@ -442,3 +396,9 @@ body {
   color: var(--text-muted);
   padding: 1rem 0;
 }
+
+[hidden] { display: none !important; }
+a { color: var(--text-main); }
+a.game-card { display: block; text-decoration: none; }
+a:focus-visible { outline: 2px solid #60a5fa; outline-offset: 4px; }
+.header nav { margin-top: 1rem; }

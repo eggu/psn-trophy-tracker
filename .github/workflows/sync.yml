@@ -42,6 +42,7 @@ jobs:
         run: npm test
 
       - name: Run Collector
+        id: collect
         env:
           PSN_NPSSO: ${{ secrets.PSN_NPSSO }}
           PSN_TARGET_ONLINE_ID: "eggu_"
@@ -63,7 +64,7 @@ jobs:
           path: diagnostics/
 
       - name: Commit & Push Canonical Snapshot
-        if: ${{ !inputs.diagnose && !inputs.localization_probe }}
+        if: ${{ always() && !inputs.diagnose && !inputs.localization_probe && (steps.collect.outcome == 'success' || steps.collect.outcome == 'failure') }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"

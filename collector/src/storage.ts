@@ -96,3 +96,10 @@ export function validateTrophyDetails(snapshot: CanonicalSnapshot): void {
     if (game.trophies.length !== game.progress.total) console.warn(`[Validation] ${game.id}: details=${game.trophies.length}, summary=${game.progress.total}`);
   }
 }
+
+export async function writeSyncStatus(dataDir: string, status: { lastAttemptedSync: string; outcome: 'success' | 'failed' }): Promise<void> {
+  await fs.mkdir(dataDir, { recursive: true });
+  const target = path.join(dataDir, 'sync-status.json');
+  await fs.writeFile(`${target}.tmp`, JSON.stringify(status) + '\n', 'utf8');
+  await fs.rename(`${target}.tmp`, target);
+}

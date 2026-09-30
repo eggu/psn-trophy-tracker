@@ -10,7 +10,7 @@ import {
 } from "psn-api";
 import type { CanonicalSnapshot, GameTitle, Profile } from "../../schemas/index.js";
 import { parseTrophyTitleItem, mergeTrophyDefinitionsAndEarned, getNpServiceName } from "./parser.js";
-import { loadCurrentSnapshot, validateAndSaveSnapshot, validateTrophyDetails } from "./storage.js";
+import { loadCurrentSnapshot, validateAndSaveSnapshot, validateTrophyDetails, writeSyncStatus } from "./storage.js";
 import { collectLocalizedMetadata } from "./localization.js";
 import { fetchAllTrophies } from "./trophies.js";
 import { computeSnapshotDiff } from "./diff.js";
@@ -41,7 +41,7 @@ async function retryWithBackoff<T>(fn: () => Promise<T>, retries = 3, initialDel
   }
 }
 
-export async function runCollector(options?: {
+async function collect(options?: {
   npsso?: string;
   targetOnlineId?: string;
   dataDir?: string;
@@ -252,6 +252,19 @@ export async function runCollector(options?: {
   console.log(`  - Total Duration: ${((Date.now() - startTime) / 1000).toFixed(2)}s`);
 
   return { snapshot, diff };
+}
+
+export async function runCollector(options?: Parameters<typeof collect>[0]) {
+  const dataDir = options?.dataDir || path.resolve(process.cwd(), 'data');
+  const lastAttemptedSync = new Date().toISOString();
+  try {
+    const result = await collect(options);
+    if (!options?.dryRun) await writeSyncStatus(dataDir, { lastAttemptedSync, outcome: 'success' });
+    return result;
+  } catch (error) {
+    if (!options?.dryRun) await writeSyncStatus(dataDir, { lastAttemptedSync, outcome: 'failed' });
+    throw error;
+  }
 }
 
 if (process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, "/"))) {

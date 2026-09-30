@@ -1,0 +1,29 @@
+{
+  "encoding": "o200k_base",
+  "files": {
+    "dashboard/dist/agent/games.md": {
+      "bytes": 13282,
+      "tokens": 6162
+    },
+    "dashboard/dist/agent/changes.md": {
+      "bytes": 147,
+      "tokens": 52
+    },
+    "dashboard/dist/agent/profile.md": {
+      "bytes": 240,
+      "tokens": 91
+    },
+    "dashboard/dist/agent/recent.md": {
+      "bytes": 4656,
+      "tokens": 1762
+    },
+    "dashboard/dist/agent/game/NPWR12310_00.md": {
+      "bytes": 3199,
+      "tokens": 964
+    },
+    "data/current.json": {
+      "bytes": 6824583,
+      "tokens": 1872280
+    }
+  }
+}

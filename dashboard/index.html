@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PSN Trophy Tracker</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <div class="app-container">
@@ -19,6 +19,7 @@
           <span id="sync-status-text">동기화 확인 중...</span>
         </div>
       </div>
+      <nav aria-label="주 메뉴"><a href="/">Dashboard</a> · <a href="/games">게임 목록</a></nav>
     </header>
 
     <main class="content">
@@ -103,22 +104,14 @@
           <div class="loading">게임을 불러오는 중...</div>
         </div>
       </section>
+      <section id="game-detail" class="card" hidden><a href="/games">← 게임 목록</a><div id="detail-body"></div></section>
     </main>
 
-    <!-- Game Detail Modal -->
-    <div id="detail-modal" class="modal hidden">
-      <div class="modal-overlay" id="modal-close-overlay"></div>
-      <div class="modal-content">
-        <button class="modal-close" id="modal-close-btn">&times;</button>
-        <div id="modal-body"></div>
-      </div>
-    </div>
-
     <footer class="footer">
-      <p>PSN Trophy Tracker &bull; Powered by PlayStation Network &bull; AI Agent Ready (/api/v1)</p>
+      <p>PSN Trophy Tracker &bull; Powered by PlayStation Network &bull; <a href="/agent">Agent Markdown</a> &bull; JSON REST API (/api/v1)</p>
     </footer>
   </div>
 
-  <script src="./app.js"></script>
+  <script src="/app.js"></script>
 </body>
 </html>

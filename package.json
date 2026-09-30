@@ -6,7 +6,7 @@
   "scripts": {
     "collect": "tsx collector/src/index.ts",
     "test": "vitest run",
-    "build:dashboard": "node scripts/build-pages.mjs",
+    "build:dashboard": "tsx scripts/build-pages.mjs",
     "dev:dashboard": "vite dashboard",
     "pages:dev": "wrangler pages dev dashboard/dist",
     "pretest": "npm run build:dashboard"
