@@ -8,5 +8,11 @@
     "skipLibCheck": true,
     "resolveJsonModule": true
   },
-  "include": ["schemas/**/*", "collector/**/*", "tests/**/*", "worker/**/*"]
+  "include": [
+    "schemas/**/*",
+    "collector/**/*",
+    "tests/**/*",
+    "worker/**/*",
+    "functions/**/*"
+  ]
 }

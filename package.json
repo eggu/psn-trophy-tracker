@@ -6,9 +6,10 @@
   "scripts": {
     "collect": "tsx collector/src/index.ts",
     "test": "vitest run",
-    "build:dashboard": "vite build dashboard",
+    "build:dashboard": "node scripts/build-pages.mjs",
     "dev:dashboard": "vite dashboard",
-    "pages:dev": "wrangler pages dev dashboard/dist"
+    "pages:dev": "wrangler pages dev dashboard/dist",
+    "pretest": "npm run build:dashboard"
   },
   "devDependencies": {
     "@types/node": "^22.20.4",

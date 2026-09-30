@@ -1,4 +1,4 @@
-import type { CanonicalSnapshot, GameTitle, Trophy } from "../schemas/index.js";
+import type { CanonicalSnapshot, GameTitle, Trophy } from "../../schemas/index.js";
 
 export interface ApiHandlerOptions {
   snapshot: CanonicalSnapshot | null;
@@ -171,21 +171,11 @@ export async function handleApiRequest(options: ApiHandlerOptions): Promise<ApiR
     const since = url.searchParams.get("since");
     let baseSnapshot: CanonicalSnapshot | null = null;
 
-    if (since && historySnapshots.length > 0) {
-      const targetTime = new Date(since).getTime();
-      // find snapshot closest to or just before since
-      const sortedHistory = [...historySnapshots].sort(
-        (a, b) =>
-          new Date(a.metadata.lastSuccessfulSync).getTime() -
-          new Date(b.metadata.lastSuccessfulSync).getTime()
-      );
-      baseSnapshot = sortedHistory.find(
-        (s) => new Date(s.metadata.lastSuccessfulSync).getTime() <= targetTime
-      ) || sortedHistory[0];
-    } else if (historySnapshots.length > 0) {
-      // Use the immediate previous snapshot if available
-      baseSnapshot = historySnapshots[historySnapshots.length - 1];
-    }
+    if (since && (!/^\d{4}-\d{2}-\d{2}T/.test(since) || !Number.isFinite(Date.parse(since)))) return errorResponse("INVALID_SINCE", "Use an ISO8601 timestamp", 400, corsOrigin);
+    const sortedHistory = historySnapshots.filter(s => Date.parse(s.metadata.lastSuccessfulSync) < Date.parse(snapshot.metadata.lastSuccessfulSync)).sort((a, b) => Date.parse(a.metadata.lastSuccessfulSync) - Date.parse(b.metadata.lastSuccessfulSync));
+    baseSnapshot = since
+      ? sortedHistory.filter(s => Date.parse(s.metadata.lastSuccessfulSync) <= Date.parse(since)).at(-1) ?? sortedHistory[0] ?? null
+      : sortedHistory.at(-1) ?? null;
 
     const { computeSnapshotDiff } = await import("./diffHelper.js");
     const diff = computeSnapshotDiff(baseSnapshot, snapshot);

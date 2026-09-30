@@ -1,0 +1,551 @@
+{
+  "snapshot": "2026-09-30T03:59:20.473Z",
+  "affectedGames": 77,
+  "platformCounts": {
+    "PS4": 65,
+    "PSVITA": 1,
+    "PS3": 12
+  },
+  "games": [
+    {
+      "id": "NPWR12310_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 30
+    },
+    {
+      "id": "NPWR25080_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 48
+    },
+    {
+      "id": "NPWR16040_00",
+      "platform": [
+        "PSVITA",
+        "PS4"
+      ],
+      "total": 50
+    },
+    {
+      "id": "NPWR08983_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 48
+    },
+    {
+      "id": "NPWR20913_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 49
+    },
+    {
+      "id": "NPWR24551_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 24
+    },
+    {
+      "id": "NPWR16713_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 51
+    },
+    {
+      "id": "NPWR05890_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 20
+    },
+    {
+      "id": "NPWR07466_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 88
+    },
+    {
+      "id": "NPWR17897_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 12
+    },
+    {
+      "id": "NPWR18040_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 71
+    },
+    {
+      "id": "NPWR19105_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 68
+    },
+    {
+      "id": "NPWR04841_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 61
+    },
+    {
+      "id": "NPWR20826_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 39
+    },
+    {
+      "id": "NPWR19895_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 47
+    },
+    {
+      "id": "NPWR11469_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 43
+    },
+    {
+      "id": "NPWR20871_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 41
+    },
+    {
+      "id": "NPWR09412_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 52
+    },
+    {
+      "id": "NPWR11036_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 50
+    },
+    {
+      "id": "NPWR14065_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 49
+    },
+    {
+      "id": "NPWR16297_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 35
+    },
+    {
+      "id": "NPWR09388_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 42
+    },
+    {
+      "id": "NPWR14350_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 35
+    },
+    {
+      "id": "NPWR17130_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 61
+    },
+    {
+      "id": "NPWR27621_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 54
+    },
+    {
+      "id": "NPWR07784_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 72
+    },
+    {
+      "id": "NPWR17456_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 48
+    },
+    {
+      "id": "NPWR08899_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 51
+    },
+    {
+      "id": "NPWR12924_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 47
+    },
+    {
+      "id": "NPWR11536_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 79
+    },
+    {
+      "id": "NPWR07942_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 47
+    },
+    {
+      "id": "NPWR10751_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 59
+    },
+    {
+      "id": "NPWR07290_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 19
+    },
+    {
+      "id": "NPWR13387_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 22
+    },
+    {
+      "id": "NPWR06812_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 14
+    },
+    {
+      "id": "NPWR19532_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 30
+    },
+    {
+      "id": "NPWR11234_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 12
+    },
+    {
+      "id": "NPWR21219_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 31
+    },
+    {
+      "id": "NPWR17671_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 46
+    },
+    {
+      "id": "NPWR12614_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 31
+    },
+    {
+      "id": "NPWR14927_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 51
+    },
+    {
+      "id": "NPWR11556_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 79
+    },
+    {
+      "id": "NPWR10066_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 55
+    },
+    {
+      "id": "NPWR16456_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 18
+    },
+    {
+      "id": "NPWR06318_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 14
+    },
+    {
+      "id": "NPWR18853_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 54
+    },
+    {
+      "id": "NPWR19473_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 53
+    },
+    {
+      "id": "NPWR13822_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 94
+    },
+    {
+      "id": "NPWR13872_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 49
+    },
+    {
+      "id": "NPWR16600_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 61
+    },
+    {
+      "id": "NPWR21233_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 118
+    },
+    {
+      "id": "NPWR14706_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 51
+    },
+    {
+      "id": "NPWR12518_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 37
+    },
+    {
+      "id": "NPWR19630_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 49
+    },
+    {
+      "id": "NPWR16679_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 71
+    },
+    {
+      "id": "NPWR11465_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 44
+    },
+    {
+      "id": "NPWR11595_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 91
+    },
+    {
+      "id": "NPWR12775_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 93
+    },
+    {
+      "id": "NPWR14876_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 100
+    },
+    {
+      "id": "NPWR07028_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 68
+    },
+    {
+      "id": "NPWR12342_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 17
+    },
+    {
+      "id": "NPWR16225_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 63
+    },
+    {
+      "id": "NPWR09921_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 41
+    },
+    {
+      "id": "NPWR06418_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 50
+    },
+    {
+      "id": "NPWR04914_00",
+      "platform": [
+        "PS4"
+      ],
+      "total": 24
+    },
+    {
+      "id": "NPWR04712_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 53
+    },
+    {
+      "id": "NPWR03485_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 34
+    },
+    {
+      "id": "NPWR03885_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 59
+    },
+    {
+      "id": "NPWR01992_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 51
+    },
+    {
+      "id": "NPWR00651_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 59
+    },
+    {
+      "id": "NPWR00699_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 51
+    },
+    {
+      "id": "NPWR00867_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 91
+    },
+    {
+      "id": "NPWR01562_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 36
+    },
+    {
+      "id": "NPWR02441_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 61
+    },
+    {
+      "id": "NPWR00894_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 51
+    },
+    {
+      "id": "NPWR00449_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 48
+    },
+    {
+      "id": "NPWR01090_00",
+      "platform": [
+        "PS3"
+      ],
+      "total": 47
+    }
+  ]
+}
