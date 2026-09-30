@@ -33,3 +33,12 @@ it('serves current data and loads only the index + one history snapshot for chan
   expect((await worker.fetch(new Request('https://example.com/api/v1/profile', { method: 'POST' }), env)).status).toBe(405);
   expect((await worker.fetch(new Request('https://example.com/api/v1/profile'), { ASSETS: { fetch: async () => new Response('missing', { status: 404 }) } })).status).toBe(503);
 });
+
+it('does not report restored historical details as newly earned trophies', async () => {
+  const { computeSnapshotDiff } = await import('../collector/src/diff.js');
+  const current = JSON.parse(await fs.readFile('data/current.json', 'utf8'));
+  const previous = structuredClone(current);
+  previous.metadata.lastSuccessfulSync = '2026-09-30T03:59:20.473Z';
+  previous.games.find((g: any) => g.id === 'NPWR12310_00').trophies = [];
+  expect(computeSnapshotDiff(previous, current).newTrophies).toHaveLength(0);
+});

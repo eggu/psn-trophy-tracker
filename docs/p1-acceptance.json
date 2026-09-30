@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-09-30T04:49:07.715232+00:00",
+  "base": "https://psn-trophy-tracker.pages.dev",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/data/current.json",
+      "status": 200,
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/v1/status",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/api/v1/profile",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/api/v1/games?limit=5",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "total": 168
+    },
+    {
+      "path": "/api/v1/trophies/recent?limit=5",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "total": 2455
+    },
+    {
+      "path": "/api/v1/games/NPWR12310_00",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/api/v1/games/NPWR12310_00/trophies",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "total": 30
+    },
+    {
+      "path": "/api/v1/changes",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "from": "2026-09-30T03:59:20.473Z",
+      "to": "2026-09-30T04:38:45.796Z",
+      "newTrophies": 1034
+    },
+    {
+      "path": "/api/v1/changes?since=2026-09-30T04:00:00Z",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "from": "2026-09-30T03:59:20.473Z",
+      "to": "2026-09-30T04:38:45.796Z",
+      "newTrophies": 1034
+    }
+  ]
+}

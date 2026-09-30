@@ -106,7 +106,8 @@ export function computeSnapshotDiff(
       );
 
       for (const t of currGame.trophies) {
-        if (t.earned && !prevTrophyIds.has(String(t.id))) {
+        if (t.earned && !prevTrophyIds.has(String(t.id)) &&
+          (prevGame.trophies.length > 0 || (t.earnedAt && Date.parse(t.earnedAt) > Date.parse(previous!.metadata.lastSuccessfulSync)))) {
           newTrophies.push({
             gameId: currGame.id,
             gameName: currGame.name,
