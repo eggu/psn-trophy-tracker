@@ -3,30 +3,45 @@ let currentFilter = "all";
 
 async function loadData() {
   try {
-    // Attempt to load from relative API endpoint, fallback to data/current.json directly
-    let res = await fetch("/api/v1/profile").catch(() => null);
+    // 1. First attempt to load static canonical data (/data/current.json)
     let fullSnapshot = null;
+    let dataRes = await fetch("./data/current.json").catch(() => null);
+    if (!dataRes || !dataRes.ok) {
+      dataRes = await fetch("/data/current.json").catch(() => null);
+    }
 
-    if (res && res.ok) {
-      const profile = await res.json();
-      const gamesRes = await fetch("/api/v1/games?limit=100");
-      const gamesData = await gamesRes.json();
-      const statusRes = await fetch("/api/v1/status");
-      const statusData = await statusRes.json();
+    if (dataRes && dataRes.ok) {
+      const contentType = dataRes.headers.get("content-type") || "";
+      if (contentType.includes("json") || contentType.includes("application/octet-stream")) {
+        fullSnapshot = await dataRes.json();
+      }
+    }
 
-      fullSnapshot = {
-        metadata: {
-          lastSuccessfulSync: statusData.lastSuccessfulSync,
-          generatedAt: statusData.lastSyncAttempt
-        },
-        profile,
-        games: gamesData.games
-      };
-    } else {
-      // Fallback directly to static data file
-      const dataRes = await fetch("../data/current.json");
-      if (!dataRes.ok) throw new Error("Failed to load current.json");
-      fullSnapshot = await dataRes.json();
+    // 2. If static file not found, try API endpoint
+    if (!fullSnapshot) {
+      const profileRes = await fetch("/api/v1/profile").catch(() => null);
+      if (profileRes && profileRes.ok) {
+        const ct = profileRes.headers.get("content-type") || "";
+        if (ct.includes("json")) {
+          const profile = await profileRes.json();
+          const gamesRes = await fetch("/api/v1/games?limit=100");
+          const gamesData = await gamesRes.json();
+          const statusRes = await fetch("/api/v1/status");
+          const statusData = await statusRes.json();
+          fullSnapshot = {
+            metadata: {
+              lastSuccessfulSync: statusData.lastSuccessfulSync,
+              generatedAt: statusData.lastSyncAttempt
+            },
+            profile,
+            games: gamesData.games
+          };
+        }
+      }
+    }
+
+    if (!fullSnapshot) {
+      throw new Error("Could not load snapshot data from static file or API");
     }
 
     currentData = fullSnapshot;
