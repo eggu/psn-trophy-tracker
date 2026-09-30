@@ -5,6 +5,11 @@ on:
     # Run every 6 hours: 00:00, 06:00, 12:00, 18:00 UTC
     - cron: '0 */6 * * *'
   workflow_dispatch:
+    inputs:
+      diagnose:
+        description: "Reproduce legacy API failure without changing data"
+        type: boolean
+        default: false
 
 jobs:
   sync:
@@ -32,9 +37,22 @@ jobs:
         env:
           PSN_NPSSO: ${{ secrets.PSN_NPSSO }}
           PSN_TARGET_ONLINE_ID: "eggu_"
-        run: npm run collect
+        run: |
+          if [ "${{ inputs.diagnose }}" = "true" ]; then
+            npx tsx collector/scripts/diagnose.ts
+          else
+            npm run collect
+          fi
+
+      - name: Upload diagnostic responses
+        if: inputs.diagnose
+        uses: actions/upload-artifact@v4
+        with:
+          name: psn-diagnostics
+          path: diagnostics/
 
       - name: Commit & Push Canonical Snapshot
+        if: ${{ !inputs.diagnose }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
