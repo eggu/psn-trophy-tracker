@@ -2,7 +2,9 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 const base = process.argv[2] || 'https://psn-trophy-tracker.pages.dev';
 const reportPath = process.argv[3] || 'docs/views-acceptance.json';
-const report = { checkedAt: new Date().toISOString(), base, responses: [] };
+const snapshot = JSON.parse(await fs.readFile('data/current.json', 'utf8')).metadata.lastSuccessfulSync;
+const expectedTime = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' }).format(new Date(snapshot)) + ' KST';
+const report = { snapshot, checkedAt: new Date().toISOString(), base, responses: [] };
 for (const route of ['/agent', '/agent/status', '/agent/profile', '/agent/changes', '/agent/recent', '/agent/games', '/agent/game/NPWR12310_00']) {
   const res = await fetch(`${base}${route}`, { headers: { 'User-Agent': 'AIAgentBot/1.0' } });
   const body = await res.text();
@@ -12,6 +14,7 @@ for (const route of ['/agent', '/agent/status', '/agent/profile', '/agent/change
   assert.match(body, /^# /);
   assert.doesNotMatch(body, /avatarUrl|iconUrl|<!DOCTYPE|<script/);
   assert.match(body, /KST/);
+  assert.ok(body.includes(expectedTime), `${route}: expected current sync ${expectedTime}`);
   if (route === '/agent/games') assert.equal(body.split('\n').filter(line => /^\| .+ \| NPWR\d+_\d+ \|/.test(line)).length, 168);
   if (route === '/agent/recent') assert.equal(body.split('\n').filter(line => line.startsWith('| ')).length, 52);
   if (route === '/agent/game/NPWR12310_00') {
@@ -19,7 +22,7 @@ for (const route of ['/agent', '/agent/status', '/agent/profile', '/agent/change
     assert.equal(body.match(/- \[ \]/g).length, 21);
     assert.equal(body.match(/- \[x\]/g).length, 9);
     assert.ok(body.indexOf('Remaining Trophies') < body.indexOf('Earned Trophies'));
-    assert.match(body, /2026-09-30 00:09:01 KST/);
+    assert.match(body, /Last trophy: 2026-09-30 00:09:01 KST/);
   }
   report.responses.push({ route, status: res.status, contentType: res.headers.get('content-type'), bytes: Buffer.byteLength(body) });
 }

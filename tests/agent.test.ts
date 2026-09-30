@@ -18,6 +18,7 @@ it('renders compact Korean views with remaining first, precise KST dates and mea
   expect(detail.match(/- \[ \]/g)).toHaveLength(21);
   expect(detail.match(/- \[x\]/g)).toHaveLength(9);
   expect(detail).toContain('Progress: 9/30 (18%)');
+  expect(detail).toContain('Last trophy: 2026-09-30 00:09:01 KST');
   const ko = current.games.find(g => g.localized?.['ko-KR'])!;
   expect(docs[`game/${ko.id}`]).toContain(ko.localized!['ko-KR']!.name);
   expect(kst('2026-09-29T15:09:01Z')).toBe('2026-09-30 00:09:01 KST');

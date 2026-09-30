@@ -1,9 +1,10 @@
 {
+  "snapshot": "2026-09-30T06:20:46.846Z",
   "encoding": "o200k_base",
   "files": {
     "dashboard/dist/agent/games.md": {
-      "bytes": 13282,
-      "tokens": 6162
+      "bytes": 13159,
+      "tokens": 5916
     },
     "dashboard/dist/agent/changes.md": {
       "bytes": 147,

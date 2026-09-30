@@ -70,10 +70,10 @@ Worker 실제 acceptance와 CORS 검증은 `worker-acceptance.json`, `worker-ext
 
 Human은 기존 vanilla JS를 재사용하며 `/`, `/games`, `/game/{id}`를 pathname으로 분기합니다. 게임 카드는 native anchor이며 asset URL은 절대 경로라 상세 새로고침에도 동작합니다. 기존 modal은 제거했습니다. 날짜는 Asia/Seoul로 고정합니다.
 
-`agent/render.ts`는 canonical을 변경하지 않는 renderer입니다. 빌드가 현재 snapshot과 바로 이전 archive를 비교해 profile/changes/recent(50)/games 및 168개 game 문서를 생성합니다. 처음이면 비교 불가, 변화가 없으면 변화 없음으로 명시합니다. 원문 Markdown 특수 문자와 줄바꿈을 escape합니다. ko-KR 공식 metadata 우선, 원문 fallback입니다.
+`agent/render.ts`는 canonical을 변경하지 않는 renderer입니다. 빌드가 현재 snapshot과 바로 이전 archive를 비교해 profile/changes/recent(50)/games 및 168개 game 문서를 생성합니다. 처음이면 비교 불가, 변화가 없으면 변화 없음으로 명시합니다. 원문 Markdown 특수 문자와 줄바꿈을 escape합니다. ko-KR 공식 metadata 우선, 원문 fallback입니다. Last Trophy는 실제 earnedAt의 최댓값이며 원본 game.lastTrophyAt(title 갱신 시각)은 변경하지 않습니다.
 
 `functions/agent/[[path]].ts`와 Worker는 `worker/src/agent.ts`를 재사용합니다. Pages ASSETS로 문서 하나 또는 operational metadata 하나만 읽습니다. 요청당 canonical/history 다운로드는 없습니다. Standalone Worker는 public Pages `/agent/*`를 읽어 동일 Markdown을 반환합니다. `.md` static path를 Pages Function 경로로 재요청하지 않습니다. Status/manifest freshness는 현재 시각으로 계산하고 60초 cache를 둡니다. HEAD/OPTIONS 지원, unknown path/game는 Markdown 404, unavailable data는 503입니다.
 
 수집 wrapper는 dry-run을 제외하고 시도 결과를 `data/sync-status.json`에 atomic write합니다. 실패한 수집은 canonical/history를 성공 데이터로 덮어쓰지 않습니다. Marker에는 시각과 outcome만 저장합니다. Workflow는 collector가 실패한 경우에도 marker를 commit하며 failure outcome을 숨기지 않습니다. 진단/probe는 이 경로를 사용하지 않습니다. 이 파일은 운영 상태이며 trophy SSOT는 계속 current.json입니다.
 
-Agent 인덱스는 6,162 o200k_base tokens로 측정해 하나로 유지했습니다. 상세는 게임별 분리했습니다. JSON router의 영어 기본값 및 canonical bilingual metadata는 유지합니다.
+Agent 인덱스는 5,916 o200k_base tokens로 측정해 하나로 유지했습니다. 상세는 게임별 분리했습니다. JSON router의 영어 기본값 및 canonical bilingual metadata는 유지합니다.

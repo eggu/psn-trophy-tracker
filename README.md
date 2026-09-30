@@ -79,13 +79,13 @@ Agent 진입점: **https://psn-trophy-tracker.pages.dev/agent**
 
 예: [Code Veronica Markdown](https://psn-trophy-tracker.pages.dev/agent/game/NPWR12310_00), [Worker Markdown](https://psn-trophy-tracker-api.eggu3213.workers.dev/agent/game/NPWR12310_00).
 
-응답은 `text/markdown; charset=utf-8`입니다. Avatar/image URL 및 반복 UI metadata는 제외합니다. 한국어는 PSN 공식 ko-KR → 원문 순서이며 기계번역하지 않습니다. 기존 영어/한국어 canonical 필드는 유지합니다.
+응답은 `text/markdown; charset=utf-8`입니다. Avatar/image URL 및 반복 UI metadata는 제외합니다. `Last Trophy`는 실제 earnedAt의 최신값이며 PSN title 갱신 시각과 구분합니다. 한국어는 PSN 공식 ko-KR → 원문 순서이며 기계번역하지 않습니다. 기존 영어/한국어 canonical 필드는 유지합니다.
 
 `data/current.json`이 SSOT입니다. `agent/render.ts`가 빌드 시 canonical 및 직전 history에서 작은 문서를 생성합니다. Pages Functions는 해당 Markdown 한 파일만 읽으며 `/agent`와 `/agent/status`는 작은 operational metadata만 읽어 현재 시각 기준 freshness를 계산합니다. Worker는 Pages의 동일 Markdown URL만 읽습니다. Agent 요청은 대용량 canonical/history/PSN을 조회하지 않습니다.
 
 직전 snapshot이 없으면 초기 상태라고 명시하고 과거 획득 전체를 새 변화로 보고하지 않습니다. 변화가 없으면 `No trophy changes since previous sync.`를 표시합니다. 12시간 이상 지난 데이터 또는 마지막 성공 이후 실패한 sync는 Stale입니다. 수집 실패 시 canonical은 보존하고 `data/sync-status.json`에 시도 시각/성공 여부만 원자적으로 기록합니다. Actions는 수집 실패 뒤에도 이 marker를 commit해 배포하며 workflow 자체는 실패 상태를 유지합니다. 인증정보·내부 error stack은 공개하지 않습니다.
 
-168개 인덱스 실측: **6,162 tokens / 13,282 bytes** (`o200k_base`). Changes **52**, Profile **91**, Recent **1,762**, Code Veronica 상세 **964** tokens입니다. Canonical 전체는 **1,872,280 tokens / 6,824,583 bytes**입니다. 현재 단일 인덱스를 유지하며 platform/recent별 분할은 추가하지 않았습니다. 모델별 tokenizer에 따라 수치는 달라집니다. [측정 기록](docs/agent-token-counts.json).
+168개 인덱스 실측: **5,916 tokens / 13,159 bytes** (`o200k_base`). Changes **52**, Profile **91**, Recent **1,762**, Code Veronica 상세 **964** tokens입니다. Canonical 전체는 **1,872,280 tokens / 6,824,583 bytes**입니다. 현재 단일 인덱스를 유지하며 platform/recent별 분할은 추가하지 않았습니다. 모델별 tokenizer에 따라 수치는 달라집니다. [측정 기록](docs/agent-token-counts.json).
 
 ```sh
 node scripts/verify-views.mjs
