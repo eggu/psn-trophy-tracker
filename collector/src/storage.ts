@@ -48,6 +48,7 @@ export async function validateAndSaveSnapshot(
     console.warn("Warning: games list is empty despite profile trophy count > 0");
   }
 
+  validateTrophyDetails(validation.data);
   const validSnapshot = validation.data;
   const isoTime = validSnapshot.metadata.lastSuccessfulSync;
   const dateObj = new Date(isoTime);
@@ -76,4 +77,22 @@ export async function validateAndSaveSnapshot(
     historyPath,
     isNew: true
   };
+}
+
+export function validateTrophyDetails(snapshot: CanonicalSnapshot): void {
+  for (const game of snapshot.games) {
+    if (game.progress.total > 0 && game.trophies.length === 0) {
+      throw new Error(`Missing trophy details: ${game.id} (${game.platform.join(",")}), expected ${game.progress.total}`);
+    }
+    const ids = new Set(game.trophies.map(t => String(t.id)));
+    if (ids.size !== game.trophies.length) throw new Error(`Duplicate trophy IDs: ${game.id}`);
+    // PSN title summaries can lag behind definition/DLC revisions; retain complete API responses and report discrepancies.
+    for (const grade of ["platinum", "gold", "silver", "bronze"] as const) {
+      const trophies = game.trophies.filter(t => t.grade === grade);
+      if (trophies.length !== game.trophySummary[grade].total || trophies.filter(t => t.earned).length !== game.trophySummary[grade].earned) {
+        console.warn(`[Validation] ${game.id} ${grade} summary/detail mismatch`);
+      }
+    }
+    if (game.trophies.length !== game.progress.total) console.warn(`[Validation] ${game.id}: details=${game.trophies.length}, summary=${game.progress.total}`);
+  }
 }

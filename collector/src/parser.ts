@@ -61,11 +61,11 @@ export function mergeTrophyDefinitionsAndEarned(
 ): Trophy[] {
   const earnedMap = new Map<number | string, any>();
   for (const earned of userEarnedTrophies) {
-    earnedMap.set(earned.trophyId, earned);
+    earnedMap.set(String(earned.trophyId), earned);
   }
 
   return titleTrophies.map((def) => {
-    const earnedData = earnedMap.get(def.trophyId);
+    const earnedData = earnedMap.get(String(def.trophyId));
     const isEarned = Boolean(earnedData?.earned);
 
     let rarityPct = def.trophyEarnedRate ? parseFloat(def.trophyEarnedRate) : undefined;
@@ -85,4 +85,9 @@ export function mergeTrophyDefinitionsAndEarned(
       groupId: def.trophyGroupId ?? "default"
     };
   });
+}
+
+export function getNpServiceName(title: { npServiceName?: string; trophyTitlePlatform?: string }): "trophy" | "trophy2" {
+  if (title.npServiceName === "trophy" || title.npServiceName === "trophy2") return title.npServiceName;
+  return title.trophyTitlePlatform?.split(",").some(p => p.trim() === "PS5") ? "trophy2" : "trophy";
 }

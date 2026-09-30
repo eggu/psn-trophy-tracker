@@ -8,8 +8,9 @@ import {
   getProfileFromUserName
 } from "psn-api";
 import type { CanonicalSnapshot, GameTitle, Profile } from "../../schemas/index.js";
-import { parseTrophyTitleItem, mergeTrophyDefinitionsAndEarned } from "./parser.js";
-import { loadCurrentSnapshot, validateAndSaveSnapshot } from "./storage.js";
+import { parseTrophyTitleItem, mergeTrophyDefinitionsAndEarned, getNpServiceName } from "./parser.js";
+import { loadCurrentSnapshot, validateAndSaveSnapshot, validateTrophyDetails } from "./storage.js";
+import { fetchAllTrophies } from "./trophies.js";
 import { computeSnapshotDiff } from "./diff.js";
 
 function sanitize(msg: string): string {
@@ -31,7 +32,7 @@ async function retryWithBackoff<T>(fn: () => Promise<T>, retries = 3, initialDel
     } catch (err: any) {
       attempt++;
       if (attempt >= retries) throw err;
-      console.warn(`[Collector] Request failed (attempt ${attempt}/${retries}): ${err?.message || err}. Retrying in ${currentDelay}ms...`);
+      console.warn(`[Collector] Request failed (attempt ${attempt}/${retries}): ${sanitize(err?.message || String(err))}. Retrying in ${currentDelay}ms...`);
       await delay(currentDelay);
       currentDelay *= 2;
     }
@@ -43,6 +44,7 @@ export async function runCollector(options?: {
   targetOnlineId?: string;
   dataDir?: string;
   dryRun?: boolean;
+  full?: boolean;
 }) {
   const startTime = Date.now();
   console.log("[Collector] Starting PSN Trophy Sync job...");
@@ -125,11 +127,15 @@ export async function runCollector(options?: {
     if (npCommunicationId) {
       // Find if title changed compared to previous snapshot
       const prevGame = prevSnapshot?.games.find((g) => g.id === parsedGame.id);
+      const npServiceName = getNpServiceName(rawTitle);
       const isUnchanged =
-        prevGame &&
+        !options?.full && process.env.PSN_FULL_SYNC !== "true" && prevGame &&
+        prevGame.trophySetVersion === parsedGame.trophySetVersion &&
+        prevGame.progress.total === parsedGame.progress.total &&
         prevGame.lastTrophyAt === parsedGame.lastTrophyAt &&
         prevGame.progress.earned === parsedGame.progress.earned &&
-        prevGame.trophies.length > 0;
+        prevGame.trophies.length === parsedGame.progress.total &&
+        prevGame.trophies.filter(t => t.earned).length === parsedGame.progress.earned;
 
       if (isUnchanged) {
         // Reuse cached trophies from previous snapshot to save API calls
@@ -139,28 +145,28 @@ export async function runCollector(options?: {
           console.log(
             `[Collector] [${i + 1}/${rawTitles.length}] Fetching trophies for: ${parsedGame.name} (${npCommunicationId})...`
           );
+          console.log(JSON.stringify({ stage: "discovery", titleId: npCommunicationId, npServiceName, platform: parsedGame.platform, version: parsedGame.trophySetVersion }));
           // Definition & user earned
           const trophyDefs = await retryWithBackoff(() =>
-            getTitleTrophies(authorization, npCommunicationId, "all", {
-              npServiceName: rawTitle.trophyTitlePlatform?.includes("PS5") ? "trophy2" : undefined
-            })
+            fetchAllTrophies(offset => getTitleTrophies(authorization, npCommunicationId, "all", { npServiceName, offset, limit: 1000 }))
           );
 
+          console.log(JSON.stringify({ stage: "definitions", titleId: npCommunicationId, npServiceName, count: trophyDefs.trophies.length, version: trophyDefs.trophySetVersion, success: true }));
           const earnedTrophies = await retryWithBackoff(() =>
-            getUserTrophiesEarnedForTitle(authorization, accountId, npCommunicationId, "all", {
-              npServiceName: rawTitle.trophyTitlePlatform?.includes("PS5") ? "trophy2" : undefined
-            })
+            fetchAllTrophies(offset => getUserTrophiesEarnedForTitle(authorization, accountId, npCommunicationId, "all", { npServiceName, offset, limit: 1000 }))
           );
 
+          console.log(JSON.stringify({ stage: "earned", titleId: npCommunicationId, npServiceName, count: earnedTrophies.trophies.length, version: earnedTrophies.trophySetVersion, success: true }));
           const mergedTrophies = mergeTrophyDefinitionsAndEarned(
             trophyDefs.trophies ?? [],
             earnedTrophies.trophies ?? []
           );
           parsedGame.trophies = mergedTrophies;
+          console.log(JSON.stringify({ stage: "merge", titleId: npCommunicationId, count: mergedTrophies.length, earned: mergedTrophies.filter(t => t.earned).length }));
           await delay(250); // polite rate limit
         } catch (fetchErr: any) {
           console.warn(
-            `[Collector] Warning: Failed fetching trophy details for ${parsedGame.name}: ${fetchErr?.message || fetchErr}. Falling back to previous cached or empty.`
+            `[Collector] Warning: Failed fetching trophy details for ${parsedGame.name}: ${sanitize(fetchErr?.message || String(fetchErr))}. Falling back to previous cached or empty.`
           );
           if (prevGame?.trophies) {
             parsedGame.trophies = prevGame.trophies;
@@ -169,6 +175,7 @@ export async function runCollector(options?: {
       }
     }
 
+    console.log(JSON.stringify({ stage: "canonical", titleId: parsedGame.id, platform: parsedGame.platform, version: parsedGame.trophySetVersion, count: parsedGame.trophies.length }));
     games.push(parsedGame);
   }
 
@@ -180,13 +187,13 @@ export async function runCollector(options?: {
     avatarUrl: rawProfile?.profile?.avatarUrls?.[0]?.avatarUrl || "",
     trophyLevel: rawProfile?.profile?.trophySummary?.level || 0,
     progress: rawProfile?.profile?.trophySummary?.progress || 0,
-    tier: rawProfile?.profile?.trophySummary?.tier,
+
     trophies: {
       platinum: totalPlat,
       gold: totalGold,
       silver: totalSilver,
       bronze: totalBronze,
-      total: totalPlat + totalGold + silverEarnedSum(totalSilver)
+      total: totalPlat + totalGold + totalSilver + totalBronze
     },
     games: {
       total: games.length,
@@ -195,7 +202,6 @@ export async function runCollector(options?: {
     lastSuccessfulSync: syncTimestamp
   };
 
-  profile.trophies.total = totalPlat + totalGold + totalSilver + totalBronze;
 
   const snapshot: CanonicalSnapshot = {
     metadata: {
@@ -210,6 +216,7 @@ export async function runCollector(options?: {
 
   // 6. Validate & Save
   console.log("[Collector] Validating and writing canonical snapshot...");
+  validateTrophyDetails(snapshot);
   if (options?.dryRun) {
     console.log("[Collector] Dry run enabled, skipping storage write.");
   } else {
@@ -228,10 +235,6 @@ export async function runCollector(options?: {
   return { snapshot, diff };
 }
 
-function silverEarnedSum(v: number) {
-  return v;
-}
-
 if (process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, "/"))) {
   runCollector()
     .then(() => {
@@ -239,7 +242,7 @@ if (process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, "
       process.exit(0);
     })
     .catch((err) => {
-      console.error("[Collector] Fatal Error during collection:", err);
+      console.error("[Collector] Fatal Error during collection:", sanitize(err?.message || String(err)));
       process.exit(1);
     });
 }

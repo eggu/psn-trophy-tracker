@@ -6,6 +6,10 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
+      full:
+        description: "Fetch all definitions and earned states"
+        type: boolean
+        default: false
       diagnose:
         description: "Reproduce legacy API failure without changing data"
         type: boolean
@@ -37,6 +41,7 @@ jobs:
         env:
           PSN_NPSSO: ${{ secrets.PSN_NPSSO }}
           PSN_TARGET_ONLINE_ID: "eggu_"
+          PSN_FULL_SYNC: ${{ inputs.full }}
         run: |
           if [ "${{ inputs.diagnose }}" = "true" ]; then
             npx tsx collector/scripts/diagnose.ts

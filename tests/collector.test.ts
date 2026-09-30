@@ -134,6 +134,7 @@ describe("Snapshot Diff and Storage", () => {
           {
             id: 1,
             name: "Trophy 1",
+            description: "",
             grade: "bronze",
             hidden: false,
             earned: true,
@@ -143,6 +144,7 @@ describe("Snapshot Diff and Storage", () => {
           {
             id: 2,
             name: "Trophy 2",
+            description: "",
             grade: "bronze",
             hidden: false,
             earned: false,
@@ -180,5 +182,57 @@ describe("Snapshot Diff and Storage", () => {
     expect(loaded).not.toBeNull();
     expect(loaded?.profile.onlineId).toBe("eggu_");
     expect(loaded?.games[0].name).toBe("Game A");
+  });
+});
+
+describe('Legacy PS4 regression (live PSN fixture)', () => {
+  it('preserves Code Veronica definitions, earned counts, grades and timestamps', async () => {
+    const { default: fixture } = await import('./fixtures/veronica-ps4.json');
+    const { getNpServiceName } = await import('../collector/src/parser.js');
+    expect(getNpServiceName(fixture.title)).toBe('trophy');
+    expect(getNpServiceName({ trophyTitlePlatform: 'PS3,PSVITA' })).toBe('trophy');
+    expect(getNpServiceName({ trophyTitlePlatform: 'PS5' })).toBe('trophy2');
+    expect(getNpServiceName({ npServiceName: 'trophy', trophyTitlePlatform: 'PS5' })).toBe('trophy');
+    const game = parseTrophyTitleItem(fixture.title);
+    game.trophies = mergeTrophyDefinitionsAndEarned(fixture.definitions.trophies, fixture.earned.trophies);
+    expect(game.progress).toEqual({ earned: 9, total: 30, percentage: 18 });
+    expect(game.trophies).toHaveLength(30);
+    expect(game.trophies.filter(t => t.earned)).toHaveLength(9);
+    for (const grade of ['platinum', 'gold', 'silver', 'bronze'] as const) {
+      const trophies = game.trophies.filter(t => t.grade === grade);
+      expect(trophies.length).toBe(game.trophySummary[grade].total);
+      expect(trophies.filter(t => t.earned).length).toBe(game.trophySummary[grade].earned);
+    }
+    for (const raw of fixture.earned.trophies) {
+      expect(game.trophies.find(t => t.id === raw.trophyId)?.earnedAt).toBe(raw.earnedDateTime ?? null);
+    }
+    expect(game.trophies.filter(t => t.earned).map(t => t.earnedAt).sort().at(-1)).toBe('2026-09-29T15:09:01Z');
+  });
+
+  it('rejects missing details before overwriting a valid snapshot', async () => {
+    const { validateTrophyDetails } = await import('../collector/src/storage.js');
+    const snapshot = JSON.parse(await fs.readFile('data/current.json', 'utf8'));
+    snapshot.games = [snapshot.games.find((g: any) => g.id === 'NPWR12310_00')];
+    snapshot.games[0].trophies = [];
+    expect(() => validateTrophyDetails(snapshot)).toThrow('Missing trophy details');
+    const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'psn-reject-'));
+    try {
+      await fs.writeFile(path.join(dir, 'current.json'), 'previous');
+      await expect(validateAndSaveSnapshot(dir, snapshot)).rejects.toThrow('Missing trophy details');
+      expect(await fs.readFile(path.join(dir, 'current.json'), 'utf8')).toBe('previous');
+    } finally { await fs.rm(dir, { recursive: true }); }
+  });
+
+  it('paginates all groups and rejects API error bodies and incomplete pages', async () => {
+    const { fetchAllTrophies } = await import('../collector/src/trophies.js');
+    const offsets: number[] = [];
+    const result = await fetchAllTrophies(async offset => {
+      offsets.push(offset);
+      return { totalItemCount: 3, trophies: offset === 0 ? [{ trophyId: 0 }, { trophyId: 1 }] : [{ trophyId: 2 }] };
+    });
+    expect(offsets).toEqual([0, 2]);
+    expect(result.trophies).toHaveLength(3);
+    await expect(fetchAllTrophies(async () => ({ error: {}, trophies: [], totalItemCount: 0 }))).rejects.toThrow('Invalid');
+    await expect(fetchAllTrophies(async () => ({ trophies: [], totalItemCount: 3 }))).rejects.toThrow('Incomplete');
   });
 });
