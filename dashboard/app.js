@@ -1,6 +1,9 @@
 let currentData = null;
 let currentFilter = "all";
 
+function displayName(item) { return item.localized?.["ko-KR"]?.name || item.name; }
+function displayDescription(trophy) { return trophy.localized?.["ko-KR"]?.description ?? trophy.description; }
+
 async function loadData() {
   try {
     // 1. First attempt to load static canonical data (/data/current.json)
@@ -103,7 +106,7 @@ function renderRecent(games) {
       for (const t of game.trophies) {
         if (t.earned && t.earnedAt) {
           allEarned.push({
-            gameName: game.name,
+            gameName: displayName(game),
             trophy: t
           });
         }
@@ -126,7 +129,7 @@ function renderRecent(games) {
       <div class="recent-item-info">
         <span>${gradeIcons[item.trophy.grade] || "🏆"}</span>
         <div>
-          <div class="recent-item-title">${escapeHtml(item.trophy.name)}</div>
+          <div class="recent-item-title">${escapeHtml(displayName(item.trophy))}</div>
           <div class="recent-item-game">${escapeHtml(item.gameName)}</div>
         </div>
       </div>
@@ -158,9 +161,9 @@ function renderGames(games) {
   container.innerHTML = filtered.map((game) => `
     <div class="game-card" onclick="openGameDetail('${escapeHtml(game.id)}')">
       <div class="game-card-header">
-        <img class="game-thumbnail" src="${game.imageUrl || 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23202b3d%22/></svg>'}" alt="${escapeHtml(game.name)}" />
+        <img class="game-thumbnail" src="${game.imageUrl || 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23202b3d%22/></svg>'}" alt="${escapeHtml(displayName(game))}" />
         <div class="game-meta">
-          <div class="game-title">${escapeHtml(game.name)}</div>
+          <div class="game-title">${escapeHtml(displayName(game))}</div>
           <div class="game-platforms">
             ${game.platform.map((p) => `<span class="platform-badge">${escapeHtml(p)}</span>`).join("")}
           </div>
@@ -201,7 +204,7 @@ window.openGameDetail = async function (gameId) {
   const gradeIcons = { platinum: "🏆", gold: "🥇", silver: "🥈", bronze: "🥉" };
 
   modalBody.innerHTML = `
-    <h2>${escapeHtml(game.name)}</h2>
+    <h2>${escapeHtml(displayName(game))}</h2>
     <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
       진행률: ${game.progress.earned} / ${game.progress.total} (${game.progress.percentage}%)
     </p>
@@ -212,8 +215,8 @@ window.openGameDetail = async function (gameId) {
             <div class="trophy-detail-item ${t.earned ? 'earned' : 'unearned'}">
               <span>${gradeIcons[t.grade] || "🏆"}</span>
               <div class="trophy-detail-text">
-                <h4>${escapeHtml(t.name)} ${t.hidden ? '<span style="font-size:0.75rem; color:#f59e0b;">(Hidden)</span>' : ''}</h4>
-                <p>${escapeHtml(t.description || "설명 없음")}</p>
+                <h4>${escapeHtml(displayName(t))} ${t.hidden ? '<span style="font-size:0.75rem; color:#f59e0b;">(Hidden)</span>' : ''}</h4>
+                <p>${escapeHtml(displayDescription(t) || "설명 없음")}</p>
                 ${t.earned && t.earnedAt ? `<p style="font-size:0.75rem; color:var(--status-green);">획득: ${new Date(t.earnedAt).toLocaleString('ko-KR')}</p>` : ''}
               </div>
             </div>

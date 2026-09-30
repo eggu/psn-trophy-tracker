@@ -7,7 +7,7 @@ vi.mock('psn-api', () => ({
   exchangeNpssoForCode: vi.fn().mockResolvedValue('test-code'),
   exchangeCodeForAccessToken: vi.fn().mockResolvedValue({ accessToken: 'test-token' }),
   getProfileFromUserName: vi.fn().mockResolvedValue({ profile: { accountId: 'test-account' } }),
-  getUserTitles: vi.fn(), getTitleTrophies: vi.fn(), getUserTrophiesEarnedForTitle: vi.fn()
+  getUserTitles: vi.fn(), getTitleTrophies: vi.fn(), getTitleTrophyGroups: vi.fn().mockRejectedValue(new Error("optional locale unavailable")), getUserTrophiesEarnedForTitle: vi.fn()
 }));
 vi.mock('../collector/src/storage.js', async importOriginal => ({
   ...await importOriginal<typeof import('../collector/src/storage.js')>(),
