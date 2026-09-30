@@ -42,7 +42,7 @@ Code: Veronica earned: **9/30**.
 
 개별 trophy의 마지막 earnedAt `2026-09-29T15:09:01Z`와 title의 lastUpdated `2026-09-29T15:09:05Z`를 각각 그대로 보존했습니다.
 
-Tests: **29 tests passed**, `npx tsc --noEmit` 통과, Pages build 통과. 등급·획득 상태·timestamp·pagination·저장 실패 시 이전 current 보존·DLC count warning·API/history/localization을 검증했습니다. 테스트의 의도적인 불일치 fixture와 optional locale 실패 로그를 실제 수집 장애와 구분합니다.
+Tests: **30 tests passed**, `npx tsc --noEmit` 통과, Pages build 통과. 등급·획득 상태·timestamp·pagination·저장 실패 시 이전 current 보존·DLC count warning·API/history/localization을 검증했습니다. 테스트의 의도적인 불일치 fixture와 optional locale 실패 로그를 실제 수집 장애와 구분합니다.
 
 Full Sync: [Actions 36669641884](https://github.com/eggu/psn-trophy-tracker/actions/runs/36669641884) **success**. 168개 전수 수집, 94.23초, snapshot `2026-09-30T04:38:45.796Z`. 모든 상세 total 및 등급별 earned/total이 summary와 일치합니다. 최종 snapshot에서도 168개 전체 불일치 0, 획득 합계 2455와 profile 합계가 일치합니다.
 
@@ -72,7 +72,7 @@ Pages Functions가 기존 router를 사용합니다. `env.ASSETS`로 current/ind
 
 실제 Pages 빌드 설정을 Orca CLI로 `npm run build:dashboard` / `dashboard/dist`로 변경하고 성공 배포를 확인했습니다. 원래 sync commit의 `[skip ci]`가 Cloudflare 배포도 건너뛰는 문제를 제거했습니다.
 
-P2 한국어 최초 검증 당시 자동 sync [Actions 36671606209](https://github.com/eggu/psn-trophy-tracker/actions/runs/36671606209) → data commit `ed4400b` → [Cloudflare Pages deployment 02097c14](https://dash.cloudflare.com/09350cc1b363d188b748490a00f05e2f/pages/view/psn-trophy-tracker/02097c14-2f73-421e-ac34-bdea8dee2b84) **success**를 확인했습니다. Production canonical timestamp `2026-09-30T05:05:19.239Z`입니다.
+P2 한국어 최초 검증 당시 자동 sync [Actions 36671606209](https://github.com/eggu/psn-trophy-tracker/actions/runs/36671606209) → data commit `ed4400b` → [Cloudflare Pages deployment 02097c14](https://dash.cloudflare.com/09350cc1b363d188b748490a00f05e2f/pages/view/psn-trophy-tracker/02097c14-2f73-421e-ac34-bdea8dee2b84) **success**를 확인했습니다. 당시 Production canonical timestamp `2026-09-30T05:05:19.239Z`입니다.
 
 ## P2
 
@@ -141,3 +141,20 @@ Orca CLI로 확인한 UI: Pages Settings에는 Build/Variables/Bindings/Runtime/
 - [Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/): custom rules로 skip할 수 없습니다.
 
 WAF/BIC 완화: **미완료(현재 pages.dev 계정/프로젝트에 설정 권한 UI 없음)**. 지정된 preflight/AIAgentBot acceptance는 통과했습니다.
+
+
+## 추가: 독립 Worker 배포 완료
+
+Worker URL: **https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/status**
+
+API base: **https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1**
+
+실제 Wrangler deploy 성공, version `9a1da35f-d8de-44e1-807d-2d1f5d1f33cd`. `wrangler.worker.toml`은 기존 `worker/src/index.ts`를 배포하고 `DATA_BASE_URL=https://psn-trophy-tracker.pages.dev`로 같은 canonical/history를 연결합니다. Pages config는 유지합니다. 인증은 Worker scripts/account read 범위 Wrangler OAuth로 수행했으며 credential은 repository/로그에 포함하지 않았습니다.
+
+실제 Worker `/status`, `/profile`, `/games?limit=5`, `/trophies/recent?limit=5`, `/games/NPWR12310_00`, `/games/NPWR12310_00/trophies`, `/changes`, 두 since 요청, SILENT HILL f 양언어 endpoint **모두 HTTP 200**. Code Veronica **30/30, earned 9**, ko-KR/en-US/원문 필드 보존 검증. [Worker HTTP 기록](worker-acceptance.json).
+
+Worker OPTIONS 및 /api/* preflight **204**, AIAgentBot **200 JSON**, unknown API **404 JSON**, POST **405 JSON**. 기본 Python-urllib UA는 **403/1010**으로 여전히 관찰되어 무차별 bot 허용을 주장하지 않습니다. [Worker 외부 접근 기록](worker-external-access.json).
+
+최종 metadata cache 재분류 sync [Actions 36673666921](https://github.com/eggu/psn-trophy-tracker/actions/runs/36673666921) **success**, **2.42초**, ko-KR/en-US 168개씩 cache 사용. Snapshot `2026-09-30T05:30:06.907Z`, data commit `9c48a70`, Pages deployment `02ef7fd8`을 통해 Worker에서도 같은 timestamp 확인. 영어 공식 응답 164개/지역 원문 fallback 4개, 한국어 지원 146개/fallback 22개, 상세 8413개, earned 2455개입니다.
+
+최종 tests **30 passed**, 타입 검사 및 Pages/Worker bundle build 통과. DATA_BASE_URL에 대한 current/index/과거 snapshot 최대 1개 조회와 Worker /data/current.json 404 동작을 검증했습니다.

@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-30T05:36:43.987Z",
-  "base": "https://psn-trophy-tracker.pages.dev",
+  "checkedAt": "2026-09-30T05:34:50.285Z",
+  "base": "https://psn-trophy-tracker-api.eggu3213.workers.dev",
   "snapshot": "2026-09-30T05:30:06.907Z",
   "results": [
     {
@@ -17,46 +17,46 @@
     },
     {
       "path": "/api/v1/status",
-      "url": "https://psn-trophy-tracker.pages.dev/api/v1/status",
+      "url": "https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/status",
       "status": 200,
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "/api/v1/profile",
-      "url": "https://psn-trophy-tracker.pages.dev/api/v1/profile",
+      "url": "https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/profile",
       "status": 200,
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "/api/v1/games?limit=5",
-      "url": "https://psn-trophy-tracker.pages.dev/api/v1/games?limit=5",
+      "url": "https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/games?limit=5",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "total": 168
     },
     {
       "path": "/api/v1/trophies/recent?limit=5",
-      "url": "https://psn-trophy-tracker.pages.dev/api/v1/trophies/recent?limit=5",
+      "url": "https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/trophies/recent?limit=5",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "total": 2455
     },
     {
       "path": "/api/v1/games/NPWR12310_00",
-      "url": "https://psn-trophy-tracker.pages.dev/api/v1/games/NPWR12310_00",
+      "url": "https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/games/NPWR12310_00",
       "status": 200,
       "contentType": "application/json; charset=utf-8"
     },
     {
       "path": "/api/v1/games/NPWR12310_00/trophies",
-      "url": "https://psn-trophy-tracker.pages.dev/api/v1/games/NPWR12310_00/trophies",
+      "url": "https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/games/NPWR12310_00/trophies",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "total": 30
     },
     {
       "path": "/api/v1/changes",
-      "url": "https://psn-trophy-tracker.pages.dev/api/v1/changes",
+      "url": "https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/changes",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "from": "2026-09-30T05:24:49.761Z",
@@ -65,7 +65,7 @@
     },
     {
       "path": "/api/v1/changes?since=2026-09-30T04:00:00Z",
-      "url": "https://psn-trophy-tracker.pages.dev/api/v1/changes?since=2026-09-30T04:00:00Z",
+      "url": "https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/changes?since=2026-09-30T04:00:00Z",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "from": "2026-09-30T03:59:20.473Z",
@@ -74,7 +74,7 @@
     },
     {
       "path": "/api/v1/changes?since=2026-09-30T04:58:00Z",
-      "url": "https://psn-trophy-tracker.pages.dev/api/v1/changes?since=2026-09-30T04:58:00Z",
+      "url": "https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/changes?since=2026-09-30T04:58:00Z",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "from": "2026-09-30T04:57:33.259Z",
@@ -83,7 +83,7 @@
     },
     {
       "path": "/api/v1/games/NPWR42395_00/trophies",
-      "url": "https://psn-trophy-tracker.pages.dev/api/v1/games/NPWR42395_00/trophies",
+      "url": "https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/games/NPWR42395_00/trophies",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "total": 57

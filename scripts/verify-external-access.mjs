@@ -41,6 +41,6 @@ try {
     results.push({ name, endpoint, status, headers: Object.fromEntries(Object.entries(headers).filter(([key]) => key.startsWith('access-control-') || ['content-type', 'cf-ray', 'cf-mitigated'].includes(key))), ...(expected === null ? { body: body.slice(0, 200) } : {}) });
   }
   const report = { checkedAt: new Date().toISOString(), base, results };
-  await fs.writeFile('docs/external-access.json', JSON.stringify(report, null, 2) + '\n');
+  await fs.writeFile(process.argv[3] ?? 'docs/external-access.json', JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify(report, null, 2));
 } finally { await fs.rm(dir, { recursive: true, force: true }); }

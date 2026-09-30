@@ -53,3 +53,21 @@ it('applies JSON/CORS headers across /api/* including preflight and errors', asy
     expect(response.headers.get('Content-Type')).toBe('application/json; charset=utf-8');
   }
 });
+
+it('loads current and only one prior snapshot from DATA_BASE_URL for a standalone Worker', async () => {
+  const { vi } = await import('vitest');
+  const urls: string[] = [];
+  vi.stubGlobal('fetch', async (request: Request) => {
+    urls.push(request.url);
+    return new Response(await fs.readFile(`dashboard/dist${new URL(request.url).pathname}`, 'utf8'), { headers: { 'content-type': 'application/json' } });
+  });
+  try {
+    const response = await worker.fetch(new Request('https://api.example.workers.dev/api/v1/changes'), { DATA_BASE_URL: 'https://psn-trophy-tracker.pages.dev' });
+    expect(response.status).toBe(200);
+    expect((await response.json() as any).from).toBeTruthy();
+    expect(urls).toHaveLength(3);
+    expect(urls[0]).toBe('https://psn-trophy-tracker.pages.dev/data/current.json');
+    expect(urls[1]).toBe('https://psn-trophy-tracker.pages.dev/data/history/index.json');
+    expect((await worker.fetch(new Request('https://api.example.workers.dev/data/current.json'), {})).status).toBe(404);
+  } finally { vi.unstubAllGlobals(); }
+});

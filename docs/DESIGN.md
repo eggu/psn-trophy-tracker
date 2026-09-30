@@ -54,7 +54,7 @@ History 자동 pruning은 미구현입니다. 삭제 대신 모든 archive를 �
 
 Pages project `psn-trophy-tracker`, Git repo `eggu/psn-trophy-tracker`, branch `main`.
 
-빌드: `npm run build:dashboard`. 출력: `dashboard/dist`. `wrangler.toml`은 Pages 설정입니다. Data commit에는 `[skip ci]`를 넣지 않아 매 sync가 Pages 배포로 이어집니다. GitHub workflow는 push trigger가 없어 자체 commit으로 sync 루프가 생기지 않습니다. Functions는 `/api/*`에만 적용되며 router는 기존 worker 모듈을 재사용합니다. 독립 Worker는 주 서비스에 필요하지 않습니다.
+빌드: `npm run build:dashboard`. 출력: `dashboard/dist`. `wrangler.toml`은 Pages 설정입니다. Data commit에는 `[skip ci]`를 넣지 않아 매 sync가 Pages 배포로 이어집니다. GitHub workflow는 push trigger가 없어 자체 commit으로 sync 루프가 생기지 않습니다. Functions는 `/api/*`에만 적용되며 router는 기존 worker 모듈을 재사용합니다. 추가 `psn-trophy-tracker-api.eggu3213.workers.dev` Worker는 `wrangler.worker.toml`로 배포합니다. 같은 index/router/history를 재사용하고 `DATA_BASE_URL`로 Pages canonical 및 index/선택된 history를 조회합니다. Worker 자체 origin으로 data를 요청하지 않습니다. Worker 코드 배포는 명시적 wrangler deploy이며 데이터는 Pages 배포 후 자동 반영됩니다.
 
 Cron은 6시간 간격 UTC 00/06/12/18입니다. Actions의 수동 입력 full/diagnose/localization_probe로 전체 수집과 저장 없는 재현을 선택합니다. 인증 만료 시 Secret을 갱신한 뒤 수동 sync로 확인합니다. Token/NPSSO/Authorization header를 로그 또는 공개 데이터에 넣지 않습니다.
 
@@ -63,3 +63,5 @@ Cron은 6시간 간격 UTC 00/06/12/18입니다. Actions의 수동 입력 full/d
 `npm test`는 먼저 Pages assets를 빌드하고 parser, real PS4 fixture, 양쪽 service 전달, 페이지 병합, 실패 시 이전 데이터 보존, history 기준 선택/최대 조회 수, Korean 원문 보존·version cache·fallback·ID mismatch를 확인합니다.
 
 `npx tsc --noEmit`으로 schemas/collector/worker/functions/tests 타입을 검사합니다. 실제 PSN Full Sync와 외부 HTTP acceptance는 별도 근거이며 단위 테스트 성공으로 대체하지 않습니다.
+
+Worker 실제 acceptance와 CORS 검증은 `worker-acceptance.json`, `worker-external-access.json`에 있습니다. 별도 Worker의 DATA_BASE_URL 조회 경로도 tests/pages.test.ts에서 검증합니다.

@@ -4,13 +4,14 @@ PSN 사용자 `eggu_`의 게임·트로피를 공식 PSN API에서 수집해 대
 
 - Dashboard: https://psn-trophy-tracker.pages.dev/
 - Canonical JSON: https://psn-trophy-tracker.pages.dev/data/current.json
-- API: https://psn-trophy-tracker.pages.dev/api/v1
+- Agent API (Worker): https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1
+- Pages API: https://psn-trophy-tracker.pages.dev/api/v1
 
 ## 구성
 
 GitHub Actions Collector → 검증된 `data/current.json` / `data/history/` → Cloudflare Pages 정적 파일 + Pages Functions.
 
-`functions/api/[[path]].ts`는 기존 `worker/src/router.ts`를 재사용합니다. Functions는 `env.ASSETS.fetch()`로 같은 배포의 JSON을 읽습니다. 별도 Worker 배포, KV, PSN 인증정보는 serving 계층에 필요하지 않습니다.
+`functions/api/[[path]].ts`는 기존 `worker/src/router.ts`를 재사용합니다. Functions는 `env.ASSETS.fetch()`로 같은 배포의 JSON을 읽습니다. Pages API에는 KV/PSN 인증정보가 필요하지 않습니다. 추가 Worker는 같은 router를 사용하고 `DATA_BASE_URL`로 Pages canonical/history를 읽습니다. 새 data 배포는 Worker 재배포 없이 반영됩니다.
 
 ## 실행과 운영
 
@@ -77,7 +78,7 @@ PSN은 지원 locale 목록이나 `Content-Language`를 제공하지 않습니�
 
 실제 외부 API를 다시 검증하려면 `node scripts/verify-api.mjs`를 실행합니다. HTTP status, Code Veronica 수량, history 기준, Korean metadata를 검사하고 `docs/p1-acceptance.json`을 갱신합니다.
 
-검증 근거: [P0](docs/P0-VERIFICATION.md), [플랫폼별 영향](docs/p0-impact.json), [실제 API acceptance](docs/p1-acceptance.json), [운영 설계](docs/DESIGN.md).
+검증 근거: [전체 완료/제한 보고](docs/VERIFICATION.md), [Worker HTTP](docs/worker-acceptance.json), [P0](docs/P0-VERIFICATION.md), [플랫폼별 영향](docs/p0-impact.json), [실제 API acceptance](docs/p1-acceptance.json), [운영 설계](docs/DESIGN.md).
 
 ## 외부 클라이언트 접근
 
@@ -103,3 +104,18 @@ games = json.load(urlopen(request))
 Orca로 확인한 현재 계정에는 등록된 zone/커스텀 도메인이 없습니다. 따라서 `pages.dev`에 사용자 소유 WAF Skip 규칙을 생성할 수 없으며 WAF 완화는 완료되지 않았습니다. 기본 pages.dev를 계속 사용합니다. 기본 Python UA 차단 해제는 Cloudflare 지원 측 확인이 필요합니다. 프로젝트에는 BIC/Security Level 설정이 없고 계정 WAF는 Enterprise 소유 도메인 대상입니다. 일반 Bot Fight Mode는 custom rule로 skip할 수 없습니다. [Cloudflare Skip 옵션](https://developers.cloudflare.com/waf/custom-rules/skip/options/), [Bot Fight Mode 제한](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/), [1010 설명](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/).
 
 `_headers`는 정적 asset 전용이며 Functions 응답에 적용되지 않습니다. `_routes.json`은 Function 호출 범위만 설정합니다. 두 파일은 WAF/BIC 차단을 해제하지 않습니다. [공식 Headers 문서](https://developers.cloudflare.com/pages/configuration/headers/), [BIC zone 범위](https://developers.cloudflare.com/waf/tools/browser-integrity-check/).
+
+## 별도 Worker 배포
+
+Worker: https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/status
+
+`wrangler.toml`은 Pages 설정을 유지합니다. 별도 `wrangler.worker.toml`은 이름 `psn-trophy-tracker-api`, 진입점 `worker/src/index.ts`, `workers_dev = true`, `DATA_BASE_URL = https://psn-trophy-tracker.pages.dev`를 지정합니다. Worker origin으로 canonical JSON을 요청하지 않습니다. `/api/*` 밖은 404이며 별도 저장소/PSN 토큰을 두지 않습니다.
+
+```sh
+npx wrangler login
+npx wrangler deploy --config wrangler.worker.toml
+node scripts/verify-api.mjs https://psn-trophy-tracker-api.eggu3213.workers.dev docs/worker-acceptance.json
+node scripts/verify-external-access.mjs https://psn-trophy-tracker-api.eggu3213.workers.dev docs/worker-external-access.json
+```
+
+2026-09-30 실제 배포/GET acceptance 통과. OPTIONS 204, AIAgentBot 200 JSON. 기본 Python-urllib UA는 Worker에서도 403/1010으로 관찰되어 동일하게 명시적 클라이언트 식별자가 필요합니다. Dashboard/Pages API도 유지합니다. 데이터는 자동 sync→Pages 배포로 최신화되며 Worker 코드 변경은 위 명령으로 재배포합니다.

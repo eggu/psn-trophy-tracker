@@ -1,0 +1,8 @@
+name = "psn-trophy-tracker-api"
+account_id = "09350cc1b363d188b748490a00f05e2f"
+main = "worker/src/index.ts"
+compatibility_date = "2026-09-30"
+workers_dev = true
+
+[vars]
+DATA_BASE_URL = "https://psn-trophy-tracker.pages.dev"

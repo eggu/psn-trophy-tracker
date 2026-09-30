@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-30T05:31:02.466Z",
-  "base": "https://psn-trophy-tracker.pages.dev",
+  "checkedAt": "2026-09-30T05:34:54.859Z",
+  "base": "https://psn-trophy-tracker-api.eggu3213.workers.dev",
   "results": [
     {
       "name": "preflight",
@@ -11,7 +11,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-headers": "Content-Type, Authorization, X-Requested-With",
         "access-control-allow-methods": "GET, HEAD, OPTIONS, POST",
-        "cf-ray": "a430d6c8fd77580d-ICN"
+        "cf-ray": "a430dc61cb1ec1ff-DUB"
       }
     },
     {
@@ -23,7 +23,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-headers": "Content-Type, Authorization, X-Requested-With",
         "access-control-allow-methods": "GET, HEAD, OPTIONS, POST",
-        "cf-ray": "a430d6c94dfb1bce-ICN"
+        "cf-ray": "a430dc657ed8d3d7-SJC"
       }
     },
     {
@@ -35,7 +35,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-headers": "Content-Type, Authorization, X-Requested-With",
         "access-control-allow-methods": "GET, HEAD, OPTIONS, POST",
-        "cf-ray": "a430d6ca188647f8-ICN"
+        "cf-ray": "a430dc6aa951b238-DUS"
       }
     },
     {
@@ -47,7 +47,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-headers": "Content-Type, Authorization, X-Requested-With",
         "access-control-allow-methods": "GET, HEAD, OPTIONS, POST",
-        "cf-ray": "a430d6caff1b7363-ICN"
+        "cf-ray": "a430dc6fef3d9811-PDX"
       }
     },
     {
@@ -59,7 +59,7 @@
         "access-control-allow-origin": "*",
         "access-control-allow-headers": "Content-Type, Authorization, X-Requested-With",
         "access-control-allow-methods": "GET, HEAD, OPTIONS, POST",
-        "cf-ray": "a430d6cc2d37d1f5-ICN"
+        "cf-ray": "a430dc746bd450b2-ATL"
       }
     },
     {
@@ -68,7 +68,7 @@
       "status": 403,
       "headers": {
         "content-type": "text/plain; charset=UTF-8",
-        "cf-ray": "a430d6cc8efb3538-ICN"
+        "cf-ray": "a430dc785d11451b-ATL"
       },
       "body": "error code: 1010\n"
     }
