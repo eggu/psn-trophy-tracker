@@ -1,0 +1,40 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
+const run = promisify(execFile);
+const base = process.argv[2] ?? 'https://psn-trophy-tracker.pages.dev';
+const paths = ['/', '/data/current.json', '/api/v1/status', '/api/v1/profile', '/api/v1/games?limit=5', '/api/v1/trophies/recent?limit=5', '/api/v1/games/NPWR12310_00', '/api/v1/games/NPWR12310_00/trophies', '/api/v1/changes', '/api/v1/changes?since=2026-09-30T04:00:00Z'];
+const responses = await Promise.all(paths.map(async path => {
+  const { stdout } = await run('curl', ['-sS', '--max-time', '30', '-H', 'Cache-Control: no-cache', '-w', '\n%{http_code}\n%{content_type}', `${base}${path}`], { maxBuffer: 64 * 1024 * 1024 });
+  const contentType = stdout.slice(stdout.lastIndexOf('\n') + 1);
+  const raw = stdout.slice(0, stdout.lastIndexOf('\n'));
+  const status = Number(raw.slice(raw.lastIndexOf('\n') + 1));
+  assert.equal(status, 200, path);
+  const body = contentType.includes('json') ? JSON.parse(raw.slice(0, raw.lastIndexOf('\n'))) : null;
+  return { path, status, contentType, body };
+}));
+const snapshot = responses[1].body;
+const title = responses[6].body;
+const trophies = responses[7].body;
+assert.equal(trophies.total, 30);
+assert.equal(trophies.trophies.length, title.progress.total);
+assert.equal(trophies.trophies.filter(t => t.earned).length, title.progress.earned);
+for (const grade of ['platinum', 'gold', 'silver', 'bronze']) {
+  const list = trophies.trophies.filter(t => t.grade === grade);
+  assert.equal(list.length, title.trophySummary[grade].total);
+  assert.equal(list.filter(t => t.earned).length, title.trophySummary[grade].earned);
+}
+assert.equal(responses[4].body.games.length, 5);
+assert.equal(responses[5].body.trophies.length, 5);
+assert.ok(responses[8].body.from);
+assert.ok(Date.parse(responses[8].body.from) < Date.parse(responses[8].body.to));
+assert.ok(Date.parse(responses[9].body.from) <= Date.parse('2026-09-30T04:00:00Z'));
+const localized = snapshot.games.filter(g => g.localization?.status === 'available');
+const fallback = snapshot.games.filter(g => g.localization?.status === 'fallback');
+const silentHill = snapshot.games.find(g => g.id === 'NPWR42395_00');
+assert.ok(silentHill.trophies[0].localized?.['ko-KR']?.name);
+const results = responses.map(({ body, ...r }) => ({ ...r, ...(body?.total !== undefined ? { total: body.total } : {}), ...(body?.from ? { from: body.from, to: body.to, newTrophies: body.newTrophies.length } : {}) }));
+const report = { checkedAt: new Date().toISOString(), base, snapshot: snapshot.metadata.lastSuccessfulSync, results, veronica: { trophies: trophies.total, earned: title.progress.earned }, localization: { available: localized.length, fallback: fallback.length, unchecked: snapshot.games.length - localized.length - fallback.length } };
+await fs.writeFile('docs/p1-acceptance.json', JSON.stringify(report, null, 2) + '\n');
+console.log(JSON.stringify(report, null, 2));
