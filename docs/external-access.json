@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-09-30T05:25:03.317Z",
+  "base": "https://psn-trophy-tracker.pages.dev",
+  "results": [
+    {
+      "name": "preflight",
+      "endpoint": "/api/v1/games",
+      "status": 204,
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "access-control-allow-origin": "*",
+        "access-control-allow-headers": "Content-Type, Authorization, X-Requested-With",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS, POST",
+        "cf-ray": "a430ce029fecde66-ICN"
+      }
+    },
+    {
+      "name": "api wildcard preflight",
+      "endpoint": "/api/unknown",
+      "status": 204,
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "access-control-allow-origin": "*",
+        "access-control-allow-headers": "Content-Type, Authorization, X-Requested-With",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS, POST",
+        "cf-ray": "a430ce02eefbea04-ICN"
+      }
+    },
+    {
+      "name": "AI Agent",
+      "endpoint": "/api/v1/games",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "access-control-allow-origin": "*",
+        "access-control-allow-headers": "Content-Type, Authorization, X-Requested-With",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS, POST",
+        "cf-ray": "a430ce032e813f26-ICN"
+      }
+    },
+    {
+      "name": "JSON 404",
+      "endpoint": "/api/unknown",
+      "status": 404,
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "access-control-allow-origin": "*",
+        "access-control-allow-headers": "Content-Type, Authorization, X-Requested-With",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS, POST",
+        "cf-ray": "a430ce05c9efea15-ICN"
+      }
+    },
+    {
+      "name": "read-only POST",
+      "endpoint": "/api/v1/games",
+      "status": 405,
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "access-control-allow-origin": "*",
+        "access-control-allow-headers": "Content-Type, Authorization, X-Requested-With",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS, POST",
+        "cf-ray": "a430ce078b37d1eb-ICN"
+      }
+    },
+    {
+      "name": "Python default UA",
+      "endpoint": "/api/v1/games",
+      "status": 403,
+      "headers": {
+        "content-type": "text/plain; charset=UTF-8",
+        "cf-ray": "a430ce07da09de66-ICN"
+      },
+      "body": "error code: 1010\n"
+    }
+  ]
+}

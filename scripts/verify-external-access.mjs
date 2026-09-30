@@ -30,9 +30,15 @@ try {
         assert.ok(headers['access-control-allow-methods'].includes('POST'));
         assert.ok(headers['access-control-allow-headers'].includes('X-Requested-With'));
         assert.equal(body, '');
-      } else JSON.parse(body);
+      } else {
+        const json = JSON.parse(body);
+        if (name === 'AI Agent') {
+          assert.ok(json.games.every(g => g.localized?.['en-US'] && g.originalName && g.name === g.localized['en-US'].name));
+          assert.ok(json.games.some(g => g.localized?.['ko-KR']));
+        }
+      }
     }
-    results.push({ name, endpoint, status, headers, ...(expected === null ? { body: body.slice(0, 200) } : {}) });
+    results.push({ name, endpoint, status, headers: Object.fromEntries(Object.entries(headers).filter(([key]) => key.startsWith('access-control-') || ['content-type', 'cf-ray', 'cf-mitigated'].includes(key))), ...(expected === null ? { body: body.slice(0, 200) } : {}) });
   }
   const report = { checkedAt: new Date().toISOString(), base, results };
   await fs.writeFile('docs/external-access.json', JSON.stringify(report, null, 2) + '\n');

@@ -68,3 +68,15 @@ it('stores and independently caches both locales without replacing originals or 
   expect(next.trophies[0].localized).toEqual(game.trophies[0].localized);
   expect(GameTitleSchema.parse({ ...original, localization: { locale: 'ko-KR', trophySetVersion: '01.00', checkedAt: '2026-09-30', status: 'fallback' } }).localization?.['ko-KR']?.status).toBe('fallback');
 });
+
+it('preserves a regional fallback returned for en-US and labels its cached response honestly', async () => {
+  const game = GameTitleSchema.parse(fixture.game);
+  const request = vi.fn().mockResolvedValue({ name: fixture.groups.trophyTitleName, version: fixture.ko.trophySetVersion, trophies: fixture.ko.trophies });
+  expect(await collectLocalizedMetadata(game, undefined, request, 'en-US')).toBe('fallback');
+  expect(game.trophies[0].localized?.['en-US']?.name).toBe('둥지를 떠나는 새끼 새에게 영광 있으라');
+  game.localization!['en-US'].status = 'available'; // migrate earlier cache classification without another PSN request
+  const next = GameTitleSchema.parse(fixture.game);
+  expect(await collectLocalizedMetadata(next, game, request, 'en-US')).toBe('cached');
+  expect(next.localization?.['en-US']?.status).toBe('fallback');
+  expect(request).toHaveBeenCalledTimes(1);
+});

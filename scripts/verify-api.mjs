@@ -4,7 +4,7 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 const run = promisify(execFile);
 const base = process.argv[2] ?? 'https://psn-trophy-tracker.pages.dev';
-const paths = ['/', '/data/current.json', '/api/v1/status', '/api/v1/profile', '/api/v1/games?limit=5', '/api/v1/trophies/recent?limit=5', '/api/v1/games/NPWR12310_00', '/api/v1/games/NPWR12310_00/trophies', '/api/v1/changes', '/api/v1/changes?since=2026-09-30T04:00:00Z', '/api/v1/changes?since=2026-09-30T04:58:00Z'];
+const paths = ['/', '/data/current.json', '/api/v1/status', '/api/v1/profile', '/api/v1/games?limit=5', '/api/v1/trophies/recent?limit=5', '/api/v1/games/NPWR12310_00', '/api/v1/games/NPWR12310_00/trophies', '/api/v1/changes', '/api/v1/changes?since=2026-09-30T04:00:00Z', '/api/v1/changes?since=2026-09-30T04:58:00Z', '/api/v1/games/NPWR42395_00/trophies'];
 const responses = await Promise.all(paths.map(async path => {
   const { stdout } = await run('curl', ['-sS', '--max-time', '30', '-H', 'Cache-Control: no-cache', '-w', '\n%{http_code}\n%{content_type}', `${base}${path}`], { maxBuffer: 64 * 1024 * 1024 });
   const contentType = stdout.slice(stdout.lastIndexOf('\n') + 1);
@@ -35,6 +35,11 @@ const localized = snapshot.games.filter(g => (g.localization?.['ko-KR'] ?? g.loc
 const fallback = snapshot.games.filter(g => (g.localization?.['ko-KR'] ?? g.localization)?.status === 'fallback');
 const silentHill = snapshot.games.find(g => g.id === 'NPWR42395_00');
 assert.ok(silentHill.trophies[0].localized?.['ko-KR']?.name);
+const bilingual = responses[11].body.trophies[0];
+assert.equal(bilingual.name, 'I Still Have Wings');
+assert.equal(bilingual.localized['ko-KR'].name, '둥지를 떠나는 새끼 새에게 영광 있으라');
+assert.equal(bilingual.description, bilingual.localized['en-US'].description);
+assert.equal(bilingual.originalName, silentHill.trophies[0].name);
 const results = responses.map(({ body, ...r }) => ({ ...r, ...(body?.total !== undefined ? { total: body.total } : {}), ...(body?.from ? { from: body.from, to: body.to, newTrophies: body.newTrophies.length } : {}) }));
 const english = snapshot.games.filter(g => g.localized?.['en-US']?.name);
 assert.equal(english.length, snapshot.games.length);
@@ -42,6 +47,6 @@ assert.equal(responses[4].body.games[0].name, responses[4].body.games[0].localiz
 assert.ok(responses[4].body.games[0].originalName);
 const enTrophies = snapshot.games.reduce((n, g) => n + g.trophies.filter(t => t.localized?.['en-US']).length, 0);
 assert.equal(enTrophies, snapshot.games.reduce((n, g) => n + g.trophies.length, 0));
-const report = { checkedAt: new Date().toISOString(), base, snapshot: snapshot.metadata.lastSuccessfulSync, results, veronica: { trophies: trophies.total, earned: title.progress.earned }, localization: { english: english.length, englishTrophies: enTrophies, available: localized.length, fallback: fallback.length, unchecked: snapshot.games.length - localized.length - fallback.length } };
+const report = { checkedAt: new Date().toISOString(), base, snapshot: snapshot.metadata.lastSuccessfulSync, results, veronica: { trophies: trophies.total, earned: title.progress.earned }, localization: { english: english.length, englishFallback: snapshot.games.filter(g => g.localization?.['en-US']?.status === 'fallback').length, englishTrophies: enTrophies, available: localized.length, fallback: fallback.length, unchecked: snapshot.games.length - localized.length - fallback.length } };
 await fs.writeFile('docs/p1-acceptance.json', JSON.stringify(report, null, 2) + '\n');
 console.log(JSON.stringify(report, null, 2));

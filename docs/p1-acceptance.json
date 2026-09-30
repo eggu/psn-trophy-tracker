@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-09-30T05:08:38.598Z",
+  "checkedAt": "2026-09-30T05:27:16.579Z",
   "base": "https://psn-trophy-tracker.pages.dev",
-  "snapshot": "2026-09-30T05:05:19.239Z",
+  "snapshot": "2026-09-30T05:24:49.761Z",
   "results": [
     {
       "path": "/",
@@ -50,8 +50,8 @@
       "path": "/api/v1/changes",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
-      "from": "2026-09-30T04:59:33.022Z",
-      "to": "2026-09-30T05:05:19.239Z",
+      "from": "2026-09-30T05:23:21.887Z",
+      "to": "2026-09-30T05:24:49.761Z",
       "newTrophies": 0
     },
     {
@@ -59,7 +59,7 @@
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "from": "2026-09-30T03:59:20.473Z",
-      "to": "2026-09-30T05:05:19.239Z",
+      "to": "2026-09-30T05:24:49.761Z",
       "newTrophies": 0
     },
     {
@@ -67,7 +67,7 @@
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "from": "2026-09-30T04:57:33.259Z",
-      "to": "2026-09-30T05:05:19.239Z",
+      "to": "2026-09-30T05:24:49.761Z",
       "newTrophies": 0
     }
   ],
@@ -76,6 +76,8 @@
     "earned": 9
   },
   "localization": {
+    "english": 168,
+    "englishTrophies": 8413,
     "available": 146,
     "fallback": 22,
     "unchecked": 0

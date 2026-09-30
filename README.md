@@ -52,7 +52,7 @@ Actions는 테스트 → 수집 → 검증 → data commit/push 순서로 실행
 
 `Accept-Language: ko-KR` 및 `en-US`로 trophy definitions와 trophy groups(게임명)를 요청합니다. 기계번역과 외부 출시 DB는 사용하지 않습니다.
 
-원본 `name` / `description`은 유지하고 공식 응답을 `localized["ko-KR"]`, `localized["en-US"]`에 각각 저장합니다. Dashboard는 한국어 우선, 없으면 원문을 표시합니다. API 기본 `name` / `description`은 영어 우선이며 `originalName` / `originalDescription`과 두 localized 필드를 함께 반환합니다. AI가 영어로 탐색하고 사용자에게 한국어로 안내할 수 있습니다. PSN이 영어 요청에도 지역 원문을 반환하는 trophy set은 해당 공식 응답을 그대로 보존하며 번역하지 않습니다.
+원본 `name` / `description`은 유지하고 공식 응답을 `localized["ko-KR"]`, `localized["en-US"]`에 각각 저장합니다. Dashboard는 한국어 우선, 없으면 원문을 표시합니다. API 기본 `name` / `description`은 영어 우선이며 `originalName` / `originalDescription`과 두 localized 필드를 함께 반환합니다. AI가 영어로 탐색하고 사용자에게 한국어로 안내할 수 있습니다. PSN이 영어 요청에도 지역 원문을 반환하는 trophy set은 `localization["en-US"].status = "fallback"`으로 표시하고 해당 공식 응답을 그대로 보존하며 번역하지 않습니다. 현재 영어 164개/지역 원문 fallback 4개입니다.
 
 `localization[locale]`은 trophy set version, 확인 시각, `available` / `fallback` 상태를 기록합니다. 성공한 지원·fallback 결과 모두 version별로 재사용합니다. 새 title, version 변경, trophy ID 변경 시 재조회하며 일시적인 요청 실패는 캐시하지 않아 다음 sync에 재시도합니다. Full Sync도 변경 없는 한국어 캐시는 재사용합니다.
 
@@ -78,3 +78,28 @@ PSN은 지원 locale 목록이나 `Content-Language`를 제공하지 않습니�
 실제 외부 API를 다시 검증하려면 `node scripts/verify-api.mjs`를 실행합니다. HTTP status, Code Veronica 수량, history 기준, Korean metadata를 검사하고 `docs/p1-acceptance.json`을 갱신합니다.
 
 검증 근거: [P0](docs/P0-VERIFICATION.md), [플랫폼별 영향](docs/p0-impact.json), [실제 API acceptance](docs/p1-acceptance.json), [운영 설계](docs/DESIGN.md).
+
+## 외부 클라이언트 접근
+
+`/api/*`의 성공·오류·OPTIONS 응답은 다음 헤더를 반환합니다. OPTIONS는 데이터 조회 없이 204입니다. POST는 CORS 허용 목록에 포함하지만 API 자체는 읽기 전용이므로 405 JSON을 반환합니다.
+
+```http
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, HEAD, OPTIONS, POST
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+Content-Type: application/json; charset=utf-8
+```
+
+`node scripts/verify-external-access.mjs`로 실제 preflight, AIAgentBot, 오류 응답을 검사합니다. CORS는 Cloudflare가 Functions 실행 전에 차단한 요청에는 적용되지 않습니다. 현재 `AIAgentBot/1.0`은 200 JSON이지만 `Python-urllib/3.9`는 403 / error 1010입니다. Python에서는 명시적인 클라이언트 식별자를 전달하면 접근할 수 있습니다.
+
+```python
+import json
+from urllib.request import Request, urlopen
+request = Request('https://psn-trophy-tracker.pages.dev/api/v1/games',
+                  headers={'User-Agent': 'AIAgentBot/1.0'})
+games = json.load(urlopen(request))
+```
+
+Orca로 확인한 현재 계정에는 등록된 zone/커스텀 도메인이 없습니다. 따라서 `pages.dev`에 사용자 소유 WAF Skip 규칙을 생성할 수 없으며 WAF 완화는 완료되지 않았습니다. 기본 pages.dev를 계속 사용합니다. 기본 Python UA 차단 해제는 Cloudflare 지원 측 확인이 필요합니다. 프로젝트에는 BIC/Security Level 설정이 없고 계정 WAF는 Enterprise 소유 도메인 대상입니다. 일반 Bot Fight Mode는 custom rule로 skip할 수 없습니다. [Cloudflare Skip 옵션](https://developers.cloudflare.com/waf/custom-rules/skip/options/), [Bot Fight Mode 제한](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/), [1010 설명](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/).
+
+`_headers`는 정적 asset 전용이며 Functions 응답에 적용되지 않습니다. `_routes.json`은 Function 호출 범위만 설정합니다. 두 파일은 WAF/BIC 차단을 해제하지 않습니다. [공식 Headers 문서](https://developers.cloudflare.com/pages/configuration/headers/), [BIC zone 범위](https://developers.cloudflare.com/waf/tools/browser-integrity-check/).
