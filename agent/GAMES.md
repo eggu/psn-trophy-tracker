@@ -1,11 +1,11 @@
 # Games
 
-Updated: 2026-09-30 21:01:30 KST
+Updated: 2026-10-01 06:56:04 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
 | --- | --- | --- | --- | --- | --- |
-| RESIDENT EVIL™ CODE: Veronica X | NPWR12310_00 | PS4 | 9/30 (18%) | No | 2026-09-30 |
+| RESIDENT EVIL™ CODE: Veronica X | NPWR12310_00 | PS4 | 11/30 (21%) | No | 2026-09-30 |
 | 스타워즈 제로 컴퍼니™ | NPWR41236_00 | PS5 | 20/53 (29%) | No | 2026-09-24 |
 | Clair Obscur: Expedition 33 | NPWR39144_00 | PS5 | 44/56 (65%) | No | 2026-08-25 |
 | 디아블로 IV | NPWR22810_00 | PS5 | 31/46 (66%) | No | 2026-05-02 |

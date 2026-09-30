@@ -1,9 +1,11 @@
 # Recent Trophies
 
-Updated: 2026-09-30 21:01:30 KST
+Updated: 2026-10-01 06:56:04 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-09-30 22:20:52 KST | RESIDENT EVIL™ CODE: Veronica X | To The Frozen Land | Bronze |
+| 2026-09-30 22:01:05 KST | RESIDENT EVIL™ CODE: Veronica X | Packing a Punch | Bronze |
 | 2026-09-30 00:09:01 KST | RESIDENT EVIL™ CODE: Veronica X | The Prisoner Who Lost Everything | Silver |
 | 2026-09-25 17:07:58 KST | RESIDENT EVIL™ CODE: Veronica X | It's Not All Dark and Gloomy | Silver |
 | 2026-09-25 16:16:43 KST | RESIDENT EVIL™ CODE: Veronica X | The Fallen Tyrant | Silver |
@@ -52,5 +54,3 @@ Updated: 2026-09-30 21:01:30 KST
 | 2026-08-21 19:41:49 KST | Clair Obscur: Expedition 33 | 페인트리스 | Silver |
 | 2026-08-21 13:29:23 KST | Clair Obscur: Expedition 33 | 거석 | Bronze |
 | 2026-08-21 01:12:36 KST | Clair Obscur: Expedition 33 | 두 번째 액손 | Bronze |
-| 2026-08-20 14:51:54 KST | Clair Obscur: Expedition 33 | 첫 번째 액손 | Bronze |
-| 2026-08-20 00:30:24 KST | Clair Obscur: Expedition 33 | 원정대원 | Bronze |
