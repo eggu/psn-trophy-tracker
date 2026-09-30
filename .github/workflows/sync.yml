@@ -6,6 +6,10 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
+      localization_probe:
+        description: "Inspect PSN official Korean responses without changing data"
+        type: boolean
+        default: false
       full:
         description: "Fetch all definitions and earned states"
         type: boolean
@@ -43,21 +47,23 @@ jobs:
           PSN_TARGET_ONLINE_ID: "eggu_"
           PSN_FULL_SYNC: ${{ inputs.full }}
         run: |
-          if [ "${{ inputs.diagnose }}" = "true" ]; then
+          if [ "${{ inputs.localization_probe }}" = "true" ]; then
+            npx tsx collector/scripts/localization-probe.ts
+          elif [ "${{ inputs.diagnose }}" = "true" ]; then
             npx tsx collector/scripts/diagnose.ts
           else
             npm run collect
           fi
 
       - name: Upload diagnostic responses
-        if: inputs.diagnose
+        if: inputs.diagnose || inputs.localization_probe
         uses: actions/upload-artifact@v4
         with:
           name: psn-diagnostics
           path: diagnostics/
 
       - name: Commit & Push Canonical Snapshot
-        if: ${{ !inputs.diagnose }}
+        if: ${{ !inputs.diagnose && !inputs.localization_probe }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
