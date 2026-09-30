@@ -189,3 +189,24 @@ describe("Agent API Router", () => {
     expect(body.error.code).toBe("GAME_NOT_FOUND");
   });
 });
+
+it('uses English for all Agent views while preserving originals and both locales', async () => {
+  const snapshot = structuredClone(mockSnapshot);
+  const game = snapshot.games[0];
+  game.name = '원본 게임';
+  game.localized = { 'en-US': { name: 'English game' }, 'ko-KR': { name: '한국어 게임' } };
+  game.trophies[0].name = '원본 트로피';
+  game.trophies[0].localized = { 'en-US': { name: 'English trophy', description: 'English detail' }, 'ko-KR': { name: '한국어 트로피', description: '한국어 설명' } };
+  for (const path of ['/games', '/games/NPWR001', '/games/NPWR001/trophies', '/trophies/recent', '/changes']) {
+    const res = await handleApiRequest({ snapshot, requestUrl: `http://localhost/api/v1${path}` });
+    expect(res.status).toBe(200);
+    expect(res.body).toContain('English game');
+    if (['/games/NPWR001/trophies', '/trophies/recent', '/changes'].includes(path)) {
+      expect(res.body).toContain('English trophy');
+      expect(res.body).toContain('원본 트로피');
+      expect(res.body).toContain('한국어 트로피');
+    }
+  }
+  expect(game.name).toBe('원본 게임');
+  expect(game.trophies[0].name).toBe('원본 트로피');
+});

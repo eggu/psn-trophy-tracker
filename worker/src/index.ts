@@ -12,8 +12,8 @@ export interface Env {
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
-    if (!url.pathname.startsWith('/api/v1/')) return env.ASSETS?.fetch(request) ?? new Response('Not found', { status: 404 });
-    const respond = (res: ReturnType<typeof errorResponse>) => new Response(request.method === 'HEAD' ? null : res.body, { status: res.status, headers: res.headers });
+    if (!url.pathname.startsWith('/api/')) return env.ASSETS?.fetch(request) ?? new Response('Not found', { status: 404 });
+    const respond = (res: ReturnType<typeof errorResponse>) => new Response(request.method === 'HEAD' || res.status === 204 ? null : res.body, { status: res.status, headers: res.headers });
     if (!['GET', 'HEAD', 'OPTIONS'].includes(request.method)) return respond(errorResponse('METHOD_NOT_ALLOWED', 'Read-only API', 405));
     if (request.method === 'OPTIONS') return respond(await handleApiRequest({ snapshot: null, requestUrl: request.url, method: 'OPTIONS' }));
     const read = async <T>(path: string): Promise<T> => {

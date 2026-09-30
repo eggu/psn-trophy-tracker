@@ -11,7 +11,7 @@ import {
 import type { CanonicalSnapshot, GameTitle, Profile } from "../../schemas/index.js";
 import { parseTrophyTitleItem, mergeTrophyDefinitionsAndEarned, getNpServiceName } from "./parser.js";
 import { loadCurrentSnapshot, validateAndSaveSnapshot, validateTrophyDetails } from "./storage.js";
-import { collectKoreanMetadata } from "./localization.js";
+import { collectLocalizedMetadata } from "./localization.js";
 import { fetchAllTrophies } from "./trophies.js";
 import { computeSnapshotDiff } from "./diff.js";
 
@@ -89,7 +89,8 @@ export async function runCollector(options?: {
       getUserTitles(authorization, accountId, { offset, limit })
     );
 
-    totalTitleCount = titlesPage.totalItemCount ?? 0;
+    if (!Array.isArray(titlesPage.trophyTitles) || !Number.isInteger(titlesPage.totalItemCount) || titlesPage.totalItemCount < 0) throw new Error("Invalid trophy title API response");
+    totalTitleCount = titlesPage.totalItemCount;
     if (titlesPage.trophyTitles && titlesPage.trophyTitles.length > 0) {
       rawTitles.push(...titlesPage.trophyTitles);
     }
@@ -175,19 +176,21 @@ export async function runCollector(options?: {
           }
         }
       }
-      try {
-        const status = await collectKoreanMetadata(parsedGame, prevGame, async () => {
-          const headerOverrides = { "Accept-Language": "ko-KR" };
-          const definitions = await retryWithBackoff(() => fetchAllTrophies(offset => getTitleTrophies(authorization, npCommunicationId, "all", { npServiceName, headerOverrides, offset, limit: 1000 })));
-          const groups = await retryWithBackoff(() => getTitleTrophyGroups(authorization, npCommunicationId, { npServiceName, headerOverrides }));
-          if (!groups.trophyTitleName || groups.trophySetVersion !== definitions.trophySetVersion) throw new Error("Invalid Korean title metadata response");
-          await delay(250);
-          return { name: groups.trophyTitleName, version: definitions.trophySetVersion, trophies: definitions.trophies };
-        });
-        console.log(JSON.stringify({ stage: "localization", titleId: parsedGame.id, locale: "ko-KR", status }));
-      } catch {
-        // Optional metadata must never prevent a valid trophy sync. No negative cache on failed requests.
-        console.warn(`[Collector] Korean metadata unavailable for ${parsedGame.id}; retry on next sync`);
+      for (const locale of ["ko-KR", "en-US"] as const) {
+        try {
+          const status = await collectLocalizedMetadata(parsedGame, prevGame, async () => {
+            const headerOverrides = { "Accept-Language": locale };
+            const definitions = await retryWithBackoff(() => fetchAllTrophies(offset => getTitleTrophies(authorization, npCommunicationId, "all", { npServiceName, headerOverrides, offset, limit: 1000 })));
+            const groups = await retryWithBackoff(() => getTitleTrophyGroups(authorization, npCommunicationId, { npServiceName, headerOverrides }));
+            if (!groups.trophyTitleName || groups.trophySetVersion !== definitions.trophySetVersion) throw new Error("Invalid localized title metadata response");
+            await delay(250);
+            return { name: groups.trophyTitleName, version: definitions.trophySetVersion, trophies: definitions.trophies };
+          }, locale);
+          console.log(JSON.stringify({ stage: "localization", titleId: parsedGame.id, locale, status }));
+        } catch {
+          // Optional metadata must never prevent a valid trophy sync. No negative cache on failed requests.
+          console.warn(`[Collector] ${locale} metadata unavailable for ${parsedGame.id}; retry on next sync`);
+        }
       }
     }
 

@@ -7,7 +7,7 @@ vi.mock('psn-api', () => ({
   exchangeNpssoForCode: vi.fn().mockResolvedValue('test-code'),
   exchangeCodeForAccessToken: vi.fn().mockResolvedValue({ accessToken: 'test-token' }),
   getProfileFromUserName: vi.fn().mockResolvedValue({ profile: { accountId: 'test-account' } }),
-  getUserTitles: vi.fn(), getTitleTrophies: vi.fn(), getTitleTrophyGroups: vi.fn().mockRejectedValue(new Error("optional locale unavailable")), getUserTrophiesEarnedForTitle: vi.fn()
+  getUserTitles: vi.fn(), getTitleTrophies: vi.fn(), getTitleTrophyGroups: vi.fn().mockResolvedValue({ trophyTitleName: fixture.title.trophyTitleName, trophySetVersion: fixture.definitions.trophySetVersion }), getUserTrophiesEarnedForTitle: vi.fn()
 }));
 vi.mock('../collector/src/storage.js', async importOriginal => ({
   ...await importOriginal<typeof import('../collector/src/storage.js')>(),
@@ -27,4 +27,10 @@ describe('Collector API routing', () => {
     expect(snapshot.games[0].trophies).toHaveLength(30);
     expect(snapshot.games[0].trophies.filter(t => t.earned)).toHaveLength(9);
   });
+});
+
+it('rejects error/malformed title pages instead of publishing an empty account', async () => {
+  vi.mocked(psn.getUserTitles).mockResolvedValue({ error: { message: 'Unavailable' } } as any);
+  await expect(runCollector({ npsso: 'test', dryRun: true })).rejects.toThrow('Invalid trophy title API response');
+  expect(psn.getTitleTrophies).not.toHaveBeenCalled();
 });

@@ -10,7 +10,7 @@ PSN 사용자 `eggu_`의 게임·트로피를 공식 PSN API에서 수집해 대
 
 GitHub Actions Collector → 검증된 `data/current.json` / `data/history/` → Cloudflare Pages 정적 파일 + Pages Functions.
 
-`functions/api/v1/[[path]].ts`는 기존 `worker/src/router.ts`를 재사용합니다. Functions는 `env.ASSETS.fetch()`로 같은 배포의 JSON을 읽습니다. 별도 Worker 배포, KV, PSN 인증정보는 serving 계층에 필요하지 않습니다.
+`functions/api/[[path]].ts`는 기존 `worker/src/router.ts`를 재사용합니다. Functions는 `env.ASSETS.fetch()`로 같은 배포의 JSON을 읽습니다. 별도 Worker 배포, KV, PSN 인증정보는 serving 계층에 필요하지 않습니다.
 
 ## 실행과 운영
 
@@ -24,7 +24,7 @@ npm run build:dashboard
 npx wrangler pages dev dashboard/dist
 ```
 
-Pages Git 연동 빌드 명령은 `npm run build:dashboard`, 출력 폴더는 `dashboard/dist`, production branch는 `main`입니다. `wrangler.toml`도 같은 출력 폴더를 지정합니다. Functions는 저장소 루트의 `functions/`에서 자동 빌드됩니다. `_routes.json`은 `/api/v1/*`만 Functions로 보내고 정적 파일은 직접 제공합니다.
+Pages Git 연동 빌드 명령은 `npm run build:dashboard`, 출력 폴더는 `dashboard/dist`, production branch는 `main`입니다. `wrangler.toml`도 같은 출력 폴더를 지정합니다. Functions는 저장소 루트의 `functions/`에서 자동 빌드됩니다. `_routes.json`은 `/api/*`만 Functions로 보내고 정적 파일은 직접 제공합니다.
 
 Collector는 UTC 00/06/12/18시(KST 09/15/21/03시)에 실행됩니다. NPSSO는 GitHub Actions Secret `PSN_NPSSO`로만 전달합니다. 로컬 실행은 안전하게 설정한 `PSN_NPSSO` 환경변수가 필요합니다. 인증정보를 코드·로그·JSON에 넣지 않습니다.
 
@@ -48,13 +48,13 @@ Actions는 테스트 → 수집 → 검증 → data commit/push 순서로 실행
 - `progress.total > 0`인데 상세가 비었거나 ID가 중복되면 새 snapshot 저장을 거부합니다. Summary와 상세의 전체·등급별 수량 차이는 명시적으로 경고합니다. PSN의 summary/definition 버전 차이 때문에 정상 DLC title 전체 sync를 막지 않기 위한 정책입니다.
 - 실패하면 이전 `current.json`을 보존합니다. 수집에 성공한 snapshot만 history에 기록하고 current를 원자적으로 교체합니다.
 
-## 공식 한국어 metadata
+## 공식 영어·한국어 metadata
 
-`Accept-Language: ko-KR`로 trophy definitions와 trophy groups(게임명)를 요청합니다. 기계번역과 외부 출시 DB는 사용하지 않습니다.
+`Accept-Language: ko-KR` 및 `en-US`로 trophy definitions와 trophy groups(게임명)를 요청합니다. 기계번역과 외부 출시 DB는 사용하지 않습니다.
 
-원본 `name` / `description`은 유지하고, 한국어가 확인된 PSN 응답은 `localized["ko-KR"]`에 저장합니다. Dashboard는 한국어 필드를 우선 사용하고 없으면 원문을 표시합니다. API는 원문과 localized 필드를 모두 반환합니다.
+원본 `name` / `description`은 유지하고 공식 응답을 `localized["ko-KR"]`, `localized["en-US"]`에 각각 저장합니다. Dashboard는 한국어 우선, 없으면 원문을 표시합니다. API 기본 `name` / `description`은 영어 우선이며 `originalName` / `originalDescription`과 두 localized 필드를 함께 반환합니다. AI가 영어로 탐색하고 사용자에게 한국어로 안내할 수 있습니다. PSN이 영어 요청에도 지역 원문을 반환하는 trophy set은 해당 공식 응답을 그대로 보존하며 번역하지 않습니다.
 
-`localization`은 locale, trophy set version, 확인 시각, `available` / `fallback` 상태를 기록합니다. 성공한 지원·fallback 결과 모두 version별로 재사용합니다. 새 title, version 변경, trophy ID 변경 시 재조회하며 일시적인 요청 실패는 캐시하지 않아 다음 sync에 재시도합니다. Full Sync도 변경 없는 한국어 캐시는 재사용합니다.
+`localization[locale]`은 trophy set version, 확인 시각, `available` / `fallback` 상태를 기록합니다. 성공한 지원·fallback 결과 모두 version별로 재사용합니다. 새 title, version 변경, trophy ID 변경 시 재조회하며 일시적인 요청 실패는 캐시하지 않아 다음 sync에 재시도합니다. Full Sync도 변경 없는 한국어 캐시는 재사용합니다.
 
 PSN은 지원 locale 목록이나 `Content-Language`를 제공하지 않습니다. `ko-KR` 요청에 반환된 실제 한글을 확인한 경우만 한국어 지원으로 기록합니다. 한글이 관찰되지 않은 응답은 원문 fallback으로 분류합니다. 게임 브랜드명이 영어로 유지되더라도 한국어 트로피가 있으면 해당 공식 응답을 저장합니다.
 

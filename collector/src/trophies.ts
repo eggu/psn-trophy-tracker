@@ -4,7 +4,7 @@ export async function fetchAllTrophies<T extends { trophies: any[]; totalItemCou
   let offset = 0;
   while (true) {
     const page = await request(offset);
-    if ((page as any).error || !Array.isArray(page.trophies)) throw new Error("Invalid trophy API response");
+    if ((page as any).error || !Array.isArray(page.trophies) || !Number.isInteger(page.totalItemCount) || page.totalItemCount < 0) throw new Error("Invalid trophy API response");
     if (!result) result = { ...page, trophies: [...page.trophies] };
     else result.trophies.push(...page.trophies);
     offset += page.trophies.length;

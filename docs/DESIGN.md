@@ -20,13 +20,13 @@ Collector만 PSN에 접근합니다. Dashboard/API 요청이 PSN 호출을 유�
 
 ## Collector
 
-Title 발견 → 명시적인 npServiceName 선택 → 모든 Definition 페이지 → 모든 Earned 페이지 → trophy ID 병합 → 한국어 metadata 또는 cache 결합 → canonical game → snapshot 검증 순서입니다.
+Title 발견 → 명시적인 npServiceName 선택 → 모든 Definition 페이지 → 모든 Earned 페이지 → trophy ID 병합 → 한국어·영어 metadata 또는 cache 결합 → canonical game → snapshot 검증 순서입니다.
 
 PSN API URL은 두 플랫폼 모두 `/api/trophy/v1/`입니다. PS5/legacy 차이는 `npServiceName=trophy2/trophy`입니다. Title 응답 값을 우선 사용합니다. PS4/PS3/Vita에서는 생략하지 않습니다.
 
 원본 trophy ID, grade, earned, earnedAt, groupId는 유지합니다. Trophy title의 `lastUpdatedDateTime`과 개별 `earnedDateTime`은 서로 다른 값이며 임의로 같게 만들지 않습니다.
 
-캐시 재사용에는 version, total, earned, lastUpdated, 상세 수량을 확인합니다. `PSN_FULL_SYNC=true`는 원본 Definition/Earned 재조회만 강제합니다. 한국어 metadata는 version 캐시를 계속 사용합니다.
+캐시 재사용에는 version, total, earned, lastUpdated, 상세 수량을 확인합니다. `PSN_FULL_SYNC=true`는 원본 Definition/Earned 재조회만 강제합니다. 두 locale metadata는 version 캐시를 계속 사용합니다.
 
 Snapshot schema는 선택적 localized/cache 필드를 추가한 v1입니다. 기존 snapshot도 읽을 수 있습니다. 상세 0개/중복 ID는 저장 실패, summary/detail 차이는 warning입니다. PSN 응답 error body와 pagination 중간 빈 페이지는 성공으로 취급하지 않습니다. 기존 snapshot을 삭제하지 않습니다.
 
@@ -34,11 +34,11 @@ Snapshot schema는 선택적 localized/cache 필드를 추가한 v1입니다. �
 
 게임: `localized["ko-KR"].name`.
 
-트로피: `localized["ko-KR"].name`, `.description`.
+트로피: `localized[locale].name`, `.description`. 두 locale은 ko-KR/en-US입니다. API는 영어 우선 name/description, 원문 originalName/originalDescription, 두 localized 필드를 함께 반환합니다. Dashboard는 한국어 우선입니다.
 
-게임 cache: `localization = { locale, trophySetVersion, checkedAt, status }`.
+게임 cache: `localization[locale] = { trophySetVersion, checkedAt, status }`.
 
-PSN Definition과 Trophy Groups에 `Accept-Language: ko-KR`를 전달합니다. 반환 version과 trophy ID 집합이 원본과 일치하는지 확인합니다. 한국어가 실제 관찰되는 응답만 available로 저장합니다. PSN은 locale 지원 여부를 명시하지 않으므로 영어만 반환한 경우 fallback이며 한국 발매 여부를 추정하지 않습니다.
+PSN Definition과 Trophy Groups에 `Accept-Language: ko-KR` 및 `en-US`를 전달합니다. 반환 version과 trophy ID 집합이 원본과 일치하는지 확인합니다. 한국어가 실제 관찰되는 응답만 available로 저장합니다. PSN은 locale 지원 여부를 명시하지 않으므로 영어만 반환한 경우 fallback이며 한국 발매 여부를 추정하지 않습니다.
 
 새 title/version/ID 변경에서만 재조회합니다. Available/fallback 모두 캐시하지만 network/API 실패는 캐시하지 않습니다. Localization 실패는 이미 정상 수집한 trophy snapshot을 막지 않습니다. 원문은 유지하고 표시 함수만 한국어를 우선합니다.
 
@@ -54,7 +54,7 @@ History 자동 pruning은 미구현입니다. 삭제 대신 모든 archive를 �
 
 Pages project `psn-trophy-tracker`, Git repo `eggu/psn-trophy-tracker`, branch `main`.
 
-빌드: `npm run build:dashboard`. 출력: `dashboard/dist`. `wrangler.toml`은 Pages 설정입니다. Data commit에는 `[skip ci]`를 넣지 않아 매 sync가 Pages 배포로 이어집니다. GitHub workflow는 push trigger가 없어 자체 commit으로 sync 루프가 생기지 않습니다. Functions는 `/api/v1/*`에만 적용되며 router는 기존 worker 모듈을 재사용합니다. 독립 Worker는 주 서비스에 필요하지 않습니다.
+빌드: `npm run build:dashboard`. 출력: `dashboard/dist`. `wrangler.toml`은 Pages 설정입니다. Data commit에는 `[skip ci]`를 넣지 않아 매 sync가 Pages 배포로 이어집니다. GitHub workflow는 push trigger가 없어 자체 commit으로 sync 루프가 생기지 않습니다. Functions는 `/api/*`에만 적용되며 router는 기존 worker 모듈을 재사용합니다. 독립 Worker는 주 서비스에 필요하지 않습니다.
 
 Cron은 6시간 간격 UTC 00/06/12/18입니다. Actions의 수동 입력 full/diagnose/localization_probe로 전체 수집과 저장 없는 재현을 선택합니다. 인증 만료 시 Secret을 갱신한 뒤 수동 sync로 확인합니다. Token/NPSSO/Authorization header를 로그 또는 공개 데이터에 넣지 않습니다.
 

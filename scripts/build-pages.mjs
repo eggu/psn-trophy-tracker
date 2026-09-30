@@ -12,5 +12,5 @@ for (const file of await fs.readdir('data/history', { recursive: true })) {
 }
 entries.sort((a, b) => a.timestamp.localeCompare(b.timestamp));
 await fs.writeFile(`${output}/data/history/index.json`, JSON.stringify(entries));
-await fs.writeFile(`${output}/_routes.json`, JSON.stringify({ version: 1, include: ['/api/v1/*'], exclude: [] }));
+await fs.writeFile(`${output}/_routes.json`, JSON.stringify({ version: 1, include: ['/api/*'], exclude: [] }));
 console.log(`Pages assets built with ${entries.length} history entries`);

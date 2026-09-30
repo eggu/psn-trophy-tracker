@@ -234,5 +234,6 @@ describe('Legacy PS4 regression (live PSN fixture)', () => {
     expect(result.trophies).toHaveLength(3);
     await expect(fetchAllTrophies(async () => ({ error: {}, trophies: [], totalItemCount: 0 }))).rejects.toThrow('Invalid');
     await expect(fetchAllTrophies(async () => ({ trophies: [], totalItemCount: 3 }))).rejects.toThrow('Incomplete');
+    await expect(fetchAllTrophies(async () => ({ trophies: [{ trophyId: 1 }], totalItemCount: undefined } as any))).rejects.toThrow('Invalid');
   });
 });

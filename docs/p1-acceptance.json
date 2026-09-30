@@ -1,6 +1,7 @@
 {
-  "checkedAt": "2026-09-30T04:49:07.715232+00:00",
+  "checkedAt": "2026-09-30T05:08:38.598Z",
   "base": "https://psn-trophy-tracker.pages.dev",
+  "snapshot": "2026-09-30T05:05:19.239Z",
   "results": [
     {
       "path": "/",
@@ -49,17 +50,34 @@
       "path": "/api/v1/changes",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
-      "from": "2026-09-30T03:59:20.473Z",
-      "to": "2026-09-30T04:38:45.796Z",
-      "newTrophies": 1034
+      "from": "2026-09-30T04:59:33.022Z",
+      "to": "2026-09-30T05:05:19.239Z",
+      "newTrophies": 0
     },
     {
       "path": "/api/v1/changes?since=2026-09-30T04:00:00Z",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "from": "2026-09-30T03:59:20.473Z",
-      "to": "2026-09-30T04:38:45.796Z",
-      "newTrophies": 1034
+      "to": "2026-09-30T05:05:19.239Z",
+      "newTrophies": 0
+    },
+    {
+      "path": "/api/v1/changes?since=2026-09-30T04:58:00Z",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "from": "2026-09-30T04:57:33.259Z",
+      "to": "2026-09-30T05:05:19.239Z",
+      "newTrophies": 0
     }
-  ]
+  ],
+  "veronica": {
+    "trophies": 30,
+    "earned": 9
+  },
+  "localization": {
+    "available": 146,
+    "fallback": 22,
+    "unchecked": 0
+  }
 }

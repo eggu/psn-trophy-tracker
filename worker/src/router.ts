@@ -14,14 +14,19 @@ export interface ApiResponse {
   body: string;
 }
 
+export const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS, POST",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+  "Content-Type": "application/json; charset=utf-8"
+};
+
 export function jsonResponse(data: any, status = 200, corsOrigin = "*"): ApiResponse {
   return {
     status,
     headers: {
-      "Content-Type": "application/json; charset=utf-8",
+      ...corsHeaders,
       "Access-Control-Allow-Origin": corsOrigin,
-      "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type, Authorization",
       "Cache-Control": "public, max-age=60, s-maxage=300"
     },
     body: JSON.stringify(data, null, 2)
@@ -33,15 +38,14 @@ export function errorResponse(code: string, message: string, status = 400, corsO
 }
 
 export async function handleApiRequest(options: ApiHandlerOptions): Promise<ApiResponse> {
-  const { snapshot, historySnapshots = [], requestUrl, method = "GET", corsOrigin = "*" } = options;
+  let { snapshot, historySnapshots = [], requestUrl, method = "GET", corsOrigin = "*" } = options;
 
   if (method === "OPTIONS") {
     return {
       status: 204,
       headers: {
-        "Access-Control-Allow-Origin": corsOrigin,
-        "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization"
+        ...corsHeaders,
+        "Access-Control-Allow-Origin": corsOrigin
       },
       body: ""
     };
@@ -72,6 +76,13 @@ export async function handleApiRequest(options: ApiHandlerOptions): Promise<ApiR
   if (!snapshot) {
     return errorResponse("NO_DATA", "No trophy data has been collected yet.", 503, corsOrigin);
   }
+
+  // Agent view uses official English; canonical originals and both locales remain available.
+  snapshot = { ...snapshot, games: snapshot.games.map(game => ({
+    ...game, originalName: game.name, name: game.localized?.["en-US"]?.name ?? game.name,
+    trophies: game.trophies.map(t => ({ ...t, originalName: t.name, originalDescription: t.description,
+      name: t.localized?.["en-US"]?.name ?? t.name, description: t.localized?.["en-US"]?.description ?? t.description }))
+  })) };
 
   // 2. GET /api/v1/profile
   if (pathname === "/api/v1/profile") {

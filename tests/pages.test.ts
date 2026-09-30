@@ -42,3 +42,14 @@ it('does not report restored historical details as newly earned trophies', async
   previous.games.find((g: any) => g.id === 'NPWR12310_00').trophies = [];
   expect(computeSnapshotDiff(previous, current).newTrophies).toHaveLength(0);
 });
+
+it('applies JSON/CORS headers across /api/* including preflight and errors', async () => {
+  for (const [path, method, status] of [['/api/v1/games', 'OPTIONS', 204], ['/api/other', 'OPTIONS', 204], ['/api/other', 'POST', 405], ['/api/v1/games', 'GET', 503]] as const) {
+    const response = await worker.fetch(new Request(`https://example.com${path}`, { method }), { ASSETS: { fetch: async () => new Response('missing', { status: 404 }) } });
+    expect(response.status).toBe(status);
+    expect(response.headers.get('Access-Control-Allow-Origin')).toBe('*');
+    expect(response.headers.get('Access-Control-Allow-Methods')).toContain('POST');
+    expect(response.headers.get('Access-Control-Allow-Headers')).toContain('X-Requested-With');
+    expect(response.headers.get('Content-Type')).toBe('application/json; charset=utf-8');
+  }
+});

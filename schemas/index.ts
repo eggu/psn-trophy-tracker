@@ -8,7 +8,7 @@ export const TrophyRaritySchema = z.enum(["ultra_rare", "very_rare", "rare", "co
 export const TrophySchema = z.object({
   id: z.number().or(z.string()),
   name: z.string(),
-  localized: z.object({ "ko-KR": z.object({ name: z.string(), description: z.string() }).optional() }).optional(),
+  localized: z.object({ "ko-KR": z.object({ name: z.string(), description: z.string() }).optional(), "en-US": z.object({ name: z.string(), description: z.string() }).optional() }).optional(),
   description: z.string().optional().default(""),
   grade: TrophyGradeSchema,
   hidden: z.boolean().default(false),
@@ -40,8 +40,11 @@ export type GameProgress = z.infer<typeof GameProgressSchema>;
 export const GameTitleSchema = z.object({
   id: z.string(), // npCommunicationId or titleId
   name: z.string(),
-  localized: z.object({ "ko-KR": z.object({ name: z.string() }).optional() }).optional(),
-  localization: z.object({ locale: z.literal("ko-KR"), trophySetVersion: z.string(), checkedAt: z.string(), status: z.enum(["available", "fallback"]) }).optional(),
+  localized: z.object({ "ko-KR": z.object({ name: z.string() }).optional(), "en-US": z.object({ name: z.string() }).optional() }).optional(),
+  localization: z.preprocess(value => {
+    const old = value as any;
+    return old?.locale ? { [old.locale]: { trophySetVersion: old.trophySetVersion, checkedAt: old.checkedAt, status: old.status } } : value;
+  }, z.record(z.string(), z.object({ trophySetVersion: z.string(), checkedAt: z.string(), status: z.enum(["available", "fallback"]) })).optional()),
   platform: z.array(z.string()).default([]),
   imageUrl: z.string().url().optional().or(z.literal("")),
   trophySetVersion: z.string().optional(),
