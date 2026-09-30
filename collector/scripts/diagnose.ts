@@ -12,6 +12,7 @@ globalThis.fetch = async (...args) => {
   }
   return response;
 };
+async function main() {
 const authorization = await exchangeCodeForAccessToken(await exchangeNpssoForCode(process.env.PSN_NPSSO!));
 const profile = await getProfileFromUserName(authorization, 'eggu_');
 const accountId = profile.profile.accountId;
@@ -45,3 +46,6 @@ for (const npServiceName of [undefined, 'trophy'] as const) {
   console.log(JSON.stringify({ stage: 'canonical', service: results.service, id: game.id, platform: game.platform, version: game.trophySetVersion, progress: game.progress, count: game.trophies.length }));
   await fs.writeFile(`diagnostics/veronica-${results.service}.json`, JSON.stringify(results, null, 2));
 }
+
+}
+main().catch(() => { console.error("Diagnosis failed; authentication or API unavailable"); process.exitCode = 1; });
