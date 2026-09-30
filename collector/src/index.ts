@@ -1,0 +1,245 @@
+import path from "node:path";
+import {
+  exchangeNpssoForCode,
+  exchangeCodeForAccessToken,
+  getUserTitles,
+  getUserTrophiesEarnedForTitle,
+  getTitleTrophies,
+  getProfileFromUserName
+} from "psn-api";
+import type { CanonicalSnapshot, GameTitle, Profile } from "../../schemas/index.js";
+import { parseTrophyTitleItem, mergeTrophyDefinitionsAndEarned } from "./parser.js";
+import { loadCurrentSnapshot, validateAndSaveSnapshot } from "./storage.js";
+import { computeSnapshotDiff } from "./diff.js";
+
+function sanitize(msg: string): string {
+  // Redact secrets if any accidentally logged
+  return msg.replace(/(npsso=)[^& \n]+/gi, "$1[REDACTED]")
+            .replace(/(Bearer\s+)[a-zA-Z0-9._-]+/gi, "$1[REDACTED]");
+}
+
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function retryWithBackoff<T>(fn: () => Promise<T>, retries = 3, initialDelay = 1000): Promise<T> {
+  let attempt = 0;
+  let currentDelay = initialDelay;
+  while (true) {
+    try {
+      return await fn();
+    } catch (err: any) {
+      attempt++;
+      if (attempt >= retries) throw err;
+      console.warn(`[Collector] Request failed (attempt ${attempt}/${retries}): ${err?.message || err}. Retrying in ${currentDelay}ms...`);
+      await delay(currentDelay);
+      currentDelay *= 2;
+    }
+  }
+}
+
+export async function runCollector(options?: {
+  npsso?: string;
+  targetOnlineId?: string;
+  dataDir?: string;
+  dryRun?: boolean;
+}) {
+  const startTime = Date.now();
+  console.log("[Collector] Starting PSN Trophy Sync job...");
+
+  const targetOnlineId = options?.targetOnlineId || process.env.PSN_TARGET_ONLINE_ID || "eggu_";
+  const npsso = options?.npsso || process.env.PSN_NPSSO;
+  const dataDir = options?.dataDir || path.resolve(process.cwd(), "data");
+
+  if (!npsso) {
+    throw new Error(
+      "Missing PSN_NPSSO environment variable. Please set it in GitHub Secrets or local .env."
+    );
+  }
+
+  // 1. Authenticate with PSN
+  console.log(`[Collector] Authenticating using NPSSO for target user: ${targetOnlineId}`);
+  const accessCode = await retryWithBackoff(() => exchangeNpssoForCode(npsso));
+  const authorization = await retryWithBackoff(() => exchangeCodeForAccessToken(accessCode));
+  console.log("[Collector] Successfully acquired PSN Access Token.");
+
+  // 2. Fetch User Profile
+  console.log(`[Collector] Fetching user profile for ${targetOnlineId}...`);
+  const rawProfile = await retryWithBackoff(() =>
+    getProfileFromUserName(authorization, targetOnlineId)
+  );
+  const accountId = rawProfile?.profile?.accountId || "me";
+
+  // 3. Load previous snapshot if exists for comparison / incremental check
+  const prevSnapshot = await loadCurrentSnapshot(dataDir);
+
+  // 4. Fetch User Trophy Titles (with pagination)
+  console.log("[Collector] Fetching trophy title list...");
+  const rawTitles: any[] = [];
+  let offset = 0;
+  const limit = 100;
+  let totalTitleCount = 0;
+
+  while (true) {
+    const titlesPage = await retryWithBackoff(() =>
+      getUserTitles(authorization, accountId, { offset, limit })
+    );
+
+    totalTitleCount = titlesPage.totalItemCount ?? 0;
+    if (titlesPage.trophyTitles && titlesPage.trophyTitles.length > 0) {
+      rawTitles.push(...titlesPage.trophyTitles);
+    }
+
+    offset += limit;
+    if (offset >= totalTitleCount || !titlesPage.trophyTitles || titlesPage.trophyTitles.length === 0) {
+      break;
+    }
+    await delay(300); // polite rate limit
+  }
+
+  console.log(`[Collector] Found ${rawTitles.length} total titles.`);
+
+  // 5. Build parsed game titles & fetch individual trophies
+  const games: GameTitle[] = [];
+  let totalPlat = 0;
+  let totalGold = 0;
+  let totalSilver = 0;
+  let totalBronze = 0;
+  let totalCompletedGames = 0;
+
+  for (let i = 0; i < rawTitles.length; i++) {
+    const rawTitle = rawTitles[i];
+    const parsedGame = parseTrophyTitleItem(rawTitle);
+
+    totalPlat += parsedGame.trophySummary.platinum.earned;
+    totalGold += parsedGame.trophySummary.gold.earned;
+    totalSilver += parsedGame.trophySummary.silver.earned;
+    totalBronze += parsedGame.trophySummary.bronze.earned;
+
+    if (parsedGame.progress.earned > 0 && parsedGame.progress.earned === parsedGame.progress.total) {
+      totalCompletedGames++;
+    }
+
+    // Check if we need to fetch trophy details (only for games with trophies)
+    const npCommunicationId = rawTitle.npCommunicationId;
+    if (npCommunicationId) {
+      // Find if title changed compared to previous snapshot
+      const prevGame = prevSnapshot?.games.find((g) => g.id === parsedGame.id);
+      const isUnchanged =
+        prevGame &&
+        prevGame.lastTrophyAt === parsedGame.lastTrophyAt &&
+        prevGame.progress.earned === parsedGame.progress.earned &&
+        prevGame.trophies.length > 0;
+
+      if (isUnchanged) {
+        // Reuse cached trophies from previous snapshot to save API calls
+        parsedGame.trophies = prevGame.trophies;
+      } else {
+        try {
+          console.log(
+            `[Collector] [${i + 1}/${rawTitles.length}] Fetching trophies for: ${parsedGame.name} (${npCommunicationId})...`
+          );
+          // Definition & user earned
+          const trophyDefs = await retryWithBackoff(() =>
+            getTitleTrophies(authorization, npCommunicationId, "all", {
+              npServiceName: rawTitle.trophyTitlePlatform?.includes("PS5") ? "trophy2" : undefined
+            })
+          );
+
+          const earnedTrophies = await retryWithBackoff(() =>
+            getUserTrophiesEarnedForTitle(authorization, accountId, npCommunicationId, "all", {
+              npServiceName: rawTitle.trophyTitlePlatform?.includes("PS5") ? "trophy2" : undefined
+            })
+          );
+
+          const mergedTrophies = mergeTrophyDefinitionsAndEarned(
+            trophyDefs.trophies ?? [],
+            earnedTrophies.trophies ?? []
+          );
+          parsedGame.trophies = mergedTrophies;
+          await delay(250); // polite rate limit
+        } catch (fetchErr: any) {
+          console.warn(
+            `[Collector] Warning: Failed fetching trophy details for ${parsedGame.name}: ${fetchErr?.message || fetchErr}. Falling back to previous cached or empty.`
+          );
+          if (prevGame?.trophies) {
+            parsedGame.trophies = prevGame.trophies;
+          }
+        }
+      }
+    }
+
+    games.push(parsedGame);
+  }
+
+  const syncTimestamp = new Date().toISOString();
+
+  const profile: Profile = {
+    onlineId: targetOnlineId,
+    accountId: accountId !== "me" ? accountId : undefined,
+    avatarUrl: rawProfile?.profile?.avatarUrls?.[0]?.avatarUrl || "",
+    trophyLevel: rawProfile?.profile?.trophySummary?.level || 0,
+    progress: rawProfile?.profile?.trophySummary?.progress || 0,
+    tier: rawProfile?.profile?.trophySummary?.tier,
+    trophies: {
+      platinum: totalPlat,
+      gold: totalGold,
+      silver: totalSilver,
+      bronze: totalBronze,
+      total: totalPlat + totalGold + silverEarnedSum(totalSilver)
+    },
+    games: {
+      total: games.length,
+      completed: totalCompletedGames
+    },
+    lastSuccessfulSync: syncTimestamp
+  };
+
+  profile.trophies.total = totalPlat + totalGold + totalSilver + totalBronze;
+
+  const snapshot: CanonicalSnapshot = {
+    metadata: {
+      schemaVersion: 1,
+      generatedAt: syncTimestamp,
+      lastSuccessfulSync: syncTimestamp,
+      source: "playstation-network"
+    },
+    profile,
+    games
+  };
+
+  // 6. Validate & Save
+  console.log("[Collector] Validating and writing canonical snapshot...");
+  if (options?.dryRun) {
+    console.log("[Collector] Dry run enabled, skipping storage write.");
+  } else {
+    const saveResult = await validateAndSaveSnapshot(dataDir, snapshot);
+    console.log(`[Collector] Current snapshot updated at: ${saveResult.snapshotPath}`);
+    console.log(`[Collector] Snapshot archived to history at: ${saveResult.historyPath}`);
+  }
+
+  // 7. Calculate diff
+  const diff = computeSnapshotDiff(prevSnapshot, snapshot);
+  console.log(`[Collector] Sync Summary:`);
+  console.log(`  - Total Games: ${games.length}`);
+  console.log(`  - New Trophies Earned Since Last Sync: ${diff.newTrophies.length}`);
+  console.log(`  - Total Duration: ${((Date.now() - startTime) / 1000).toFixed(2)}s`);
+
+  return { snapshot, diff };
+}
+
+function silverEarnedSum(v: number) {
+  return v;
+}
+
+if (process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, "/"))) {
+  runCollector()
+    .then(() => {
+      console.log("[Collector] Process finished successfully.");
+      process.exit(0);
+    })
+    .catch((err) => {
+      console.error("[Collector] Fatal Error during collection:", err);
+      process.exit(1);
+    });
+}

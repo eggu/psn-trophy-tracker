@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PSN Trophy Tracker</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div class="header-main">
+        <div class="brand">
+          <span class="ps-logo">▲●■✖</span>
+          <h1>PSN Trophy Tracker</h1>
+        </div>
+        <div id="sync-badge" class="sync-badge">
+          <span class="indicator"></span>
+          <span id="sync-status-text">동기화 확인 중...</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <!-- Profile Overview Card -->
+      <section class="card profile-card" id="profile-card">
+        <div class="profile-header">
+          <div class="avatar-wrapper">
+            <img id="avatar-img" src="" alt="Avatar" class="avatar" />
+            <div class="level-bubble">
+              <span class="level-label">LV</span>
+              <span id="trophy-level">0</span>
+            </div>
+          </div>
+          <div class="profile-details">
+            <h2 id="online-id" class="online-id">Loading...</h2>
+            <div class="level-bar-container">
+              <div class="level-bar" id="level-bar" style="width: 0%"></div>
+            </div>
+            <p class="progress-text">다음 레벨까지 <span id="level-progress">0%</span></p>
+          </div>
+        </div>
+
+        <div class="trophy-counts">
+          <div class="trophy-item plat">
+            <span class="trophy-icon">🏆</span>
+            <div class="trophy-info">
+              <span class="count" id="count-plat">0</span>
+              <span class="label">Platinum</span>
+            </div>
+          </div>
+          <div class="trophy-item gold">
+            <span class="trophy-icon">🥇</span>
+            <div class="trophy-info">
+              <span class="count" id="count-gold">0</span>
+              <span class="label">Gold</span>
+            </div>
+          </div>
+          <div class="trophy-item silver">
+            <span class="trophy-icon">🥈</span>
+            <div class="trophy-info">
+              <span class="count" id="count-silver">0</span>
+              <span class="label">Silver</span>
+            </div>
+          </div>
+          <div class="trophy-item bronze">
+            <span class="trophy-icon">🥉</span>
+            <div class="trophy-info">
+              <span class="count" id="count-bronze">0</span>
+              <span class="label">Bronze</span>
+            </div>
+          </div>
+          <div class="trophy-item total">
+            <span class="trophy-icon">🎮</span>
+            <div class="trophy-info">
+              <span class="count" id="count-total">0</span>
+              <span class="label">Total</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Activities -->
+      <section class="card recent-card">
+        <h3>최근 획득 트로피</h3>
+        <div id="recent-trophies" class="recent-list">
+          <div class="loading">불러오는 중...</div>
+        </div>
+      </section>
+
+      <!-- Games List -->
+      <section class="card games-card">
+        <div class="games-header">
+          <h3>게임 목록 (<span id="games-count">0</span>)</h3>
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">전체</button>
+            <button class="filter-btn" data-filter="completed">완료됨</button>
+            <button class="filter-btn" data-filter="in_progress">진행 중</button>
+          </div>
+        </div>
+
+        <div id="games-grid" class="games-grid">
+          <div class="loading">게임을 불러오는 중...</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Game Detail Modal -->
+    <div id="detail-modal" class="modal hidden">
+      <div class="modal-overlay" id="modal-close-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modal-close-btn">&times;</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>PSN Trophy Tracker &bull; Powered by PlayStation Network &bull; AI Agent Ready (/api/v1)</p>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

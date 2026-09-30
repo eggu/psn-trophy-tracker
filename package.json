@@ -1,0 +1,21 @@
+{
+  "name": "psn-trophy-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PlayStation Network Trophy Tracker and AI Agent REST API",
+  "scripts": {
+    "collect": "tsx collector/src/index.ts",
+    "test": "vitest run",
+    "build:dashboard": "vite build dashboard",
+    "dev:dashboard": "vite dashboard",
+    "pages:dev": "wrangler pages dev dashboard/dist"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "psn-api": "^2.18.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9",
+    "zod": "^4.6.5"
+  }
+}

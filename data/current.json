@@ -1,0 +1,158 @@
+{
+  "metadata": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-09-30T03:00:00Z",
+    "lastSuccessfulSync": "2026-09-30T03:00:00Z",
+    "source": "playstation-network"
+  },
+  "profile": {
+    "onlineId": "eggu_",
+    "accountId": "eggu-account-id",
+    "avatarUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0114/aKz8wV1a48FwL.png",
+    "trophyLevel": 342,
+    "progress": 64,
+    "tier": 2,
+    "trophies": {
+      "platinum": 15,
+      "gold": 62,
+      "silver": 184,
+      "bronze": 640,
+      "total": 901
+    },
+    "games": {
+      "total": 3,
+      "completed": 1
+    },
+    "lastSuccessfulSync": "2026-09-30T03:00:00Z"
+  },
+  "games": [
+    {
+      "id": "NPWR28001_00",
+      "name": "SILENT HILL f",
+      "platform": ["PS5"],
+      "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202409/01/shf-cover.png",
+      "trophySetVersion": "01.00",
+      "progress": {
+        "earned": 38,
+        "total": 43,
+        "percentage": 88
+      },
+      "platinumEarned": false,
+      "lastTrophyAt": "2026-09-29T23:15:00Z",
+      "trophySummary": {
+        "platinum": { "earned": 0, "total": 1 },
+        "gold": { "earned": 5, "total": 6 },
+        "silver": { "earned": 10, "total": 12 },
+        "bronze": { "earned": 23, "total": 24 }
+      },
+      "trophies": [
+        {
+          "id": 0,
+          "name": "Red Spider Lily",
+          "description": "Obtain all trophies in SILENT HILL f",
+          "grade": "platinum",
+          "hidden": true,
+          "earned": false,
+          "rarity": "ultra_rare",
+          "rarityPercentage": 1.2,
+          "iconUrl": "https://image.api.playstation.com/trophy/plat.png",
+          "groupId": "default"
+        },
+        {
+          "id": 1,
+          "name": "Memory of Fog",
+          "description": "Reach the sacred shrine",
+          "grade": "gold",
+          "hidden": true,
+          "earned": true,
+          "earnedAt": "2026-09-29T23:15:00Z",
+          "rarity": "rare",
+          "rarityPercentage": 14.5,
+          "iconUrl": "https://image.api.playstation.com/trophy/gold.png",
+          "groupId": "default"
+        },
+        {
+          "id": 2,
+          "name": "Whispers in the Dark",
+          "description": "Find all sound logs in the village",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "rarity": "rare",
+          "rarityPercentage": 18.2,
+          "iconUrl": "https://image.api.playstation.com/trophy/silver.png",
+          "groupId": "default"
+        },
+        {
+          "id": 3,
+          "name": "First Awakening",
+          "description": "Survive the introductory nightmare",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-09-27T14:20:00Z",
+          "rarity": "common",
+          "rarityPercentage": 92.1,
+          "iconUrl": "https://image.api.playstation.com/trophy/bronze.png",
+          "groupId": "default"
+        }
+      ]
+    },
+    {
+      "id": "NPWR24012_00",
+      "name": "Astro Bot",
+      "platform": ["PS5"],
+      "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202408/astro.png",
+      "trophySetVersion": "01.00",
+      "progress": {
+        "earned": 44,
+        "total": 44,
+        "percentage": 100
+      },
+      "platinumEarned": true,
+      "lastTrophyAt": "2026-09-20T18:00:00Z",
+      "trophySummary": {
+        "platinum": { "earned": 1, "total": 1 },
+        "gold": { "earned": 5, "total": 5 },
+        "silver": { "earned": 10, "total": 10 },
+        "bronze": { "earned": 28, "total": 28 }
+      },
+      "trophies": [
+        {
+          "id": 0,
+          "name": "Astro-nomical!",
+          "description": "Earned all Astro Bot trophies",
+          "grade": "platinum",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-09-20T18:00:00Z",
+          "rarity": "rare",
+          "rarityPercentage": 22.4,
+          "iconUrl": "https://image.api.playstation.com/trophy/plat.png",
+          "groupId": "default"
+        }
+      ]
+    },
+    {
+      "id": "NPWR10220_00",
+      "name": "Elden Ring",
+      "platform": ["PS5", "PS4"],
+      "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/eldenring.png",
+      "trophySetVersion": "01.00",
+      "progress": {
+        "earned": 42,
+        "total": 42,
+        "percentage": 100
+      },
+      "platinumEarned": true,
+      "lastTrophyAt": "2026-08-15T16:00:00Z",
+      "trophySummary": {
+        "platinum": { "earned": 1, "total": 1 },
+        "gold": { "earned": 3, "total": 3 },
+        "silver": { "earned": 14, "total": 14 },
+        "bronze": { "earned": 24, "total": 24 }
+      },
+      "trophies": []
+    }
+  ]
+}

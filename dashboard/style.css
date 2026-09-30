@@ -1,0 +1,444 @@
+:root {
+  --bg-color: #0b0f19;
+  --card-bg: #151c2c;
+  --card-border: #232d42;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --accent-ps: #0070d1;
+  --accent-plat: #67e8f9;
+  --accent-gold: #facc15;
+  --accent-silver: #cbd5e1;
+  --accent-bronze: #f97316;
+  --status-green: #22c55e;
+  --status-amber: #f59e0b;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ps-logo {
+  font-size: 1.25rem;
+  color: var(--accent-ps);
+  letter-spacing: 2px;
+}
+
+.brand h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.sync-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--card-bg);
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  border: 1px solid var(--card-border);
+}
+
+.sync-badge .indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--status-amber);
+}
+
+.sync-badge.fresh .indicator {
+  background-color: var(--status-green);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+/* Profile Card */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 72px;
+  height: 72px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--accent-ps);
+  background-color: #202b3d;
+  object-fit: cover;
+}
+
+.level-bubble {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  background: #2563eb;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.online-id {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.level-bar-container {
+  width: 100%;
+  height: 8px;
+  background-color: #0b0f19;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.4rem 0;
+}
+
+.level-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.trophy-counts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.75rem;
+}
+
+.trophy-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 0.75rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--card-border);
+}
+
+.trophy-item.plat { border-left-color: var(--accent-plat); }
+.trophy-item.gold { border-left-color: var(--accent-gold); }
+.trophy-item.silver { border-left-color: var(--accent-silver); }
+.trophy-item.bronze { border-left-color: var(--accent-bronze); }
+.trophy-item.total { border-left-color: var(--accent-ps); }
+
+.trophy-item .count {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: block;
+}
+
+.trophy-item .label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* Recent Trophies */
+.recent-card h3, .games-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+}
+
+.recent-item-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.recent-item-title {
+  font-weight: 600;
+}
+
+.recent-item-game {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.recent-item-time {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Games Grid */
+.games-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--card-border);
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background-color: var(--accent-ps);
+  color: #fff;
+  border-color: var(--accent-ps);
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.game-card {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-ps);
+}
+
+.game-card-header {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.game-thumbnail {
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+  object-fit: cover;
+  background-color: #202b3d;
+}
+
+.game-meta {
+  flex: 1;
+}
+
+.game-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
+}
+
+.game-platforms {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.platform-badge {
+  font-size: 0.7rem;
+  background-color: #1e293b;
+  padding: 1px 4px;
+  border-radius: 3px;
+  color: var(--text-muted);
+}
+
+.game-card-body {
+  padding: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: auto;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.game-progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #0b0f19;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.game-progress-fill {
+  height: 100%;
+  background-color: var(--accent-ps);
+}
+
+.game-progress-fill.completed {
+  background-color: var(--status-green);
+}
+
+/* Modal */
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal-content {
+  position: relative;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 650px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 1.5rem;
+  z-index: 1001;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.trophy-list-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.trophy-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 6px;
+}
+
+.trophy-detail-item.earned {
+  border-left: 3px solid var(--status-green);
+}
+
+.trophy-detail-item.unearned {
+  opacity: 0.6;
+}
+
+.trophy-detail-text h4 {
+  font-size: 0.9rem;
+}
+
+.trophy-detail-text p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 1rem 0;
+}
