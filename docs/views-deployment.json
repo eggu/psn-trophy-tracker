@@ -1,0 +1,15 @@
+{
+  "text": "Deployments\nMetrics\nCustom domains\nSettings\neggu/psn-trophy-tracker\nProduction\nAutomatic deployments enabled\nDomains:\npsn-trophy-tracker.pages.dev\nEnvironment\nSource\nDeployment\nStatus\nProduction\nmain\n59edde6\nfix: show actual latest earned trophy time in Markdown views\nhttps://f2920f2f.psn-trophy-tracker.pages.dev\na few seconds ago\nDetails\nAll deployments\nEnvironment\nSource\nDeployment\nStatus\nProduction\nmain\n59edde6\nfix: show actual latest earned trophy time in Markdown views\nhttps://f2920f2f.psn-trophy-tracker.pages.dev\na few seconds ago\nDetails\nProduction\nmain\nf783b54\nchore(data): auto sync tr",
+  "deploymentLinks": [
+    {
+      "label": "https://f2920f2f.psn-trophy-tracker.pages.dev",
+      "url": "https://f2920f2f.psn-trophy-tracker.pages.dev/"
+    },
+    {
+      "label": "Details",
+      "url": "https://dash.cloudflare.com/09350cc1b363d188b748490a00f05e2f/pages/view/psn-trophy-tracker/f2920f2f-ba78-44e9-9c6b-be8916c6d942"
+    }
+  ],
+  "workerVersion": "853cf185-8963-46be-a7b6-68a2b8722c43",
+  "snapshot": "2026-09-30T06:20:46.846Z"
+}

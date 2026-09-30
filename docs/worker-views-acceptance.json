@@ -1,0 +1,74 @@
+{
+  "snapshot": "2026-09-30T06:20:46.846Z",
+  "checkedAt": "2026-09-30T06:31:26.940Z",
+  "base": "https://psn-trophy-tracker-api.eggu3213.workers.dev",
+  "responses": [
+    {
+      "route": "/agent",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 894
+    },
+    {
+      "route": "/agent/status",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 193
+    },
+    {
+      "route": "/agent/profile",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 240
+    },
+    {
+      "route": "/agent/changes",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 147
+    },
+    {
+      "route": "/agent/recent",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 4656
+    },
+    {
+      "route": "/agent/games",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 13159
+    },
+    {
+      "route": "/agent/game/NPWR12310_00",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 3199
+    },
+    {
+      "route": "/agent",
+      "method": "OPTIONS",
+      "status": 204
+    },
+    {
+      "route": "/agent/games",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "route": "/agent",
+      "method": "POST",
+      "status": 405
+    },
+    {
+      "route": "/agent/no-such-document",
+      "method": "GET",
+      "status": 404
+    },
+    {
+      "route": "/agent/game/NPWR999999_00",
+      "method": "GET",
+      "status": 404
+    }
+  ]
+}

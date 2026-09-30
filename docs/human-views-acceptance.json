@@ -1,0 +1,37 @@
+{
+  "detail": {
+    "url": "/game/NPWR12310_00",
+    "title": "RESIDENT EVIL™ CODE: Veronica X — PSN Trophy Tracker",
+    "remaining": 21,
+    "earned": 9
+  },
+  "games": {
+    "url": "/games",
+    "title": "게임 목록 — PSN Trophy Tracker",
+    "gameLinks": 168,
+    "firstLink": "/game/NPWR12310_00",
+    "visibleCards": [
+      "card games-card"
+    ]
+  },
+  "korean": {
+    "url": "/game/NPWR41236_00",
+    "title": "스타워즈 제로 컴퍼니™ — PSN Trophy Tracker",
+    "firstTrophy": "제로 컴퍼니의 전설 ",
+    "firstDescription": "다른 모든 트로피를 완료했습니다.",
+    "count": 53
+  },
+  "dashboard": {
+    "url": "/",
+    "title": "PSN Trophy Tracker",
+    "account": "eggu_",
+    "total": "2455",
+    "recent": 5,
+    "visibleCards": [
+      "profile-card",
+      "card recent-card",
+      "card games-card"
+    ],
+    "time": "2026-09-30 00:09:01 KST"
+  }
+}

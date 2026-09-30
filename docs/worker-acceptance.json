@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-09-30T05:34:50.285Z",
+  "checkedAt": "2026-09-30T06:31:32.866Z",
   "base": "https://psn-trophy-tracker-api.eggu3213.workers.dev",
-  "snapshot": "2026-09-30T05:30:06.907Z",
+  "snapshot": "2026-09-30T06:20:46.846Z",
   "results": [
     {
       "path": "/",
@@ -59,8 +59,8 @@
       "url": "https://psn-trophy-tracker-api.eggu3213.workers.dev/api/v1/changes",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
-      "from": "2026-09-30T05:24:49.761Z",
-      "to": "2026-09-30T05:30:06.907Z",
+      "from": "2026-09-30T05:30:06.907Z",
+      "to": "2026-09-30T06:20:46.846Z",
       "newTrophies": 0
     },
     {
@@ -69,7 +69,7 @@
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "from": "2026-09-30T03:59:20.473Z",
-      "to": "2026-09-30T05:30:06.907Z",
+      "to": "2026-09-30T06:20:46.846Z",
       "newTrophies": 0
     },
     {
@@ -78,7 +78,7 @@
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "from": "2026-09-30T04:57:33.259Z",
-      "to": "2026-09-30T05:30:06.907Z",
+      "to": "2026-09-30T06:20:46.846Z",
       "newTrophies": 0
     },
     {

@@ -158,3 +158,41 @@ Worker OPTIONS 및 /api/* preflight **204**, AIAgentBot **200 JSON**, unknown AP
 최종 metadata cache 재분류 sync [Actions 36673666921](https://github.com/eggu/psn-trophy-tracker/actions/runs/36673666921) **success**, **2.42초**, ko-KR/en-US 168개씩 cache 사용. Snapshot `2026-09-30T05:30:06.907Z`, data commit `9c48a70`, Pages deployment `02ef7fd8`을 통해 Worker에서도 같은 timestamp 확인. 영어 공식 응답 164개/지역 원문 fallback 4개, 한국어 지원 146개/fallback 22개, 상세 8413개, earned 2455개입니다.
 
 최종 tests **30 passed**, 타입 검사 및 Pages/Worker bundle build 통과. DATA_BASE_URL에 대한 current/index/과거 snapshot 최대 1개 조회와 Worker /data/current.json 404 동작을 검증했습니다.
+
+## Human UI / Markdown Agent View 완료 (2026-09-30)
+
+구현 commit `bb3c328`, 실제 sync data commit `f783b54`. [Actions 36677721660](https://github.com/eggu/psn-trophy-tracker/actions/runs/36677721660) success, 수집 **2.06초**, tests **34 passed**. 최신 성공 sync는 **2026-09-30 15:20:46 KST** (`2026-09-30T06:20:46.846Z`)입니다. Pages deployment `137cdaa8-fdf7-4266-925e-44bc1fc3c218`, Worker version `853cf185-8963-46be-a7b6-68a2b8722c43` 실제 배포와 요청을 확인했습니다.
+
+Human:
+
+- `/`: 계정 eggu_, 총 2455, 최근 획득 5개, 전체 168개 게임.
+- `/games`: 게임 목록만 표시, 실제 `/game/{id}` anchor 168개.
+- `/game/NPWR12310_00`: 직접 방문과 새로고침 후 상세 유지, 미획득 21/획득 9, 마지막 개별 획득 시각 **2026-09-30 00:09:01 KST**.
+- `/game/NPWR41236_00`: **스타워즈 제로 컴퍼니™**, **제로 컴퍼니의 전설**, 공식 설명 **다른 모든 트로피를 완료했습니다.**, 상세 53개.
+- 위 UI 검증은 **Orca CLI**로 수행했습니다. [DOM 확인 기록](human-views-acceptance.json). 실제 화면도 확인했습니다.
+
+Agent:
+
+- `/agent`, `/agent/status`, `/agent/profile`, `/agent/changes`, `/agent/recent`, `/agent/games`, `/agent/game/NPWR12310_00`: **Pages/Worker 모두 HTTP 200, text/markdown; charset=utf-8**.
+- 모든 문서가 최신 성공 sync **15:20:46 KST**를 포함하는지 확인했습니다. `/agent/status`는 last attempted **15:20:44 KST**, Fresh를 표시합니다.
+- `/agent/changes`: 직전 sync **14:30:06 KST**, **No trophy changes since previous sync.**
+- `/agent/recent`: 획득 시각을 포함한 50개. 실제 canonical의 earned 2455개에 획득 시각 누락 **0개**.
+- `/agent/games`: 168개 인덱스이며 trophy 상세/이미지/아바타는 없음.
+- Code Veronica 문서: progress **9/30 (18%)**, 미획득 21개를 먼저, 획득 9개와 각 획득 시각·설명은 뒤에 배치.
+- 공식 ko-KR → 원문 fallback. English canonical 및 기존 영어 기본 JSON API는 유지.
+- OPTIONS **204**, HEAD **200/빈 body**, POST **405**, 잘못된 문서/게임 **404 Markdown**.
+- [Pages HTTP 확인 15개](views-acceptance.json), [Worker HTTP 확인 12개](worker-views-acceptance.json). 기존 JSON REST API도 두 origin에서 재검증했습니다.
+
+SSOT/실패 처리:
+
+`current.json`의 게임·트로피 배열과 등급별 profile 총량은 이번 실제 sync 전후에 완전히 동일했습니다. 시간 metadata만 정상 갱신했습니다. 총 **168게임 / 8413상세 / 2455획득**입니다.
+
+단위 검증은 Agent 요청이 derived Markdown/작은 operational metadata만 읽고 canonical/history를 읽지 않음을 확인합니다. Worker는 Pages의 public Markdown URL만 전달합니다. 최초 snapshot, 변화 없음, 신규 획득, KST 자정 경계, 원문 Markdown escaping, stale 12시간 기준 및 실패 marker를 검증합니다. 실제 인증 실패를 운영에서 고의 유발하지 않았습니다. 격리 실패 테스트에서 canonical을 그대로 보존하고 공개 marker에 시각/outcome 외 필드가 없음을 확인했습니다.
+
+측정/제한:
+
+`o200k_base` 실측: 인덱스 **5916 tokens / 13159 bytes**, profile **91**, recent **1762**, Code Veronica **964** tokens. Changes는 변화 없음 기준 **52** tokens입니다. [측정 기록](agent-token-counts.json). 인덱스 분할은 추가하지 않았습니다. Token 수는 tokenizer와 snapshot 내용에 따라 달라집니다.
+
+Markdown 제공은 외부 AI 도구의 URL 접근 허용을 변경하지 않습니다. 이전 `DisabledError`가 해소되었다는 증거는 없으며 HTTP/Orca 접근 검증과 AI 도구의 실제 접근 결과는 별개입니다. 기존 Cloudflare 기본 UA 차단 제한도 유지됩니다. README와 DESIGN에는 실제 URL, 생성/serving 경로, cache/실패 처리 및 재검증 명령을 반영했습니다.
+
+최종 표시 수정 `59edde6`: Last trophy는 title 갱신 시각이 아닌 실제 earnedAt의 최신값입니다. Code Veronica **00:09:01 KST**를 두 Markdown origin에서 재확인했습니다. 원본 lastTrophyAt/earnedAt은 그대로 유지합니다. 최종 Pages 배포 URL/commit은 [배포 기록](views-deployment.json)에, 최신 동일 snapshot을 확인한 HTTP 기록은 위 views acceptance 파일에 있습니다.
