@@ -96,3 +96,23 @@ it('forwards small Markdown from Pages for the standalone Worker without fetchin
     expect((await worker.fetch(new Request('https://worker.example/agent'), { DATA_BASE_URL: 'https://worker.example' })).status).toBe(503);
   } finally { vi.unstubAllGlobals(); }
 });
+
+it('writes the requested repository Markdown layout with working relative links', async () => {
+  const { execFileSync } = await import('node:child_process');
+  const os = await import('node:os');
+  const path = await import('node:path');
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'psn-agent-files-'));
+  try {
+    execFileSync(process.execPath, ['--import', 'tsx', 'scripts/build-agent.mjs', dir]);
+    const expected = ['README.md', 'STATUS.md', 'PROFILE.md', 'CHANGES.md', 'RECENT.md', 'GAMES.md', 'games/NPWR12310_00.md'];
+    for (const file of expected) expect(await fs.readFile(path.join(dir, file), 'utf8')).toMatch(/^# /);
+    const readme = await fs.readFile(path.join(dir, 'README.md'), 'utf8');
+    expect(readme).toContain('[Changes](CHANGES.md)');
+    expect(readme).toContain('games/{id}.md');
+    expect(readme).not.toContain('](/agent/');
+    expect(await fs.readdir(path.join(dir, 'games'))).toHaveLength(168);
+    const code = await fs.readFile(path.join(dir, 'games/NPWR12310_00.md'), 'utf8');
+    expect(code.match(/- \[ \]/g)).toHaveLength(21);
+    expect(code.match(/- \[x\]/g)).toHaveLength(9);
+  } finally { await fs.rm(dir, { recursive: true, force: true }); }
+});

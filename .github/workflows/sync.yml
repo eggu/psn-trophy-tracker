@@ -66,7 +66,8 @@ jobs:
       - name: Commit & Push Canonical Snapshot
         if: ${{ always() && !inputs.diagnose && !inputs.localization_probe && (steps.collect.outcome == 'success' || steps.collect.outcome == 'failure') }}
         run: |
+          npm run build:agent
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/
+          git add data/ agent/*.md agent/games/
           git diff --staged --quiet || (git commit -m "chore(data): auto sync trophy snapshot" && git push)

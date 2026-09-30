@@ -65,6 +65,8 @@ PSN은 지원 locale 목록이나 `Content-Language`를 제공하지 않습니�
 
 Human URL은 `/`(전체 Dashboard), `/games`(168개 목록), `/game/{id}`(게임 상세)입니다. 게임 카드는 실제 링크이며 상세 URL 직접 방문·새로고침도 동작합니다. 시각은 브라우저 시간대와 무관하게 KST로 표시합니다.
 
+저장소에서도 [agent/README.md](agent/README.md)를 직접 읽을 수 있습니다. `agent/STATUS.md`, `PROFILE.md`, `CHANGES.md`, `RECENT.md`, `GAMES.md`와 `agent/games/{id}.md`를 실제 파일로 보존합니다. `npm run build:agent`로 재생성하며 매 sync 성공/실패 결과 commit 전에 자동 갱신합니다. 저장소 파일의 Fresh/Stale은 생성 시점 기준이고, 실시간 freshness는 HTTP `/agent/status`에서 확인합니다.
+
 Agent 진입점: **https://psn-trophy-tracker.pages.dev/agent**
 
 | Markdown URL | 내용 |

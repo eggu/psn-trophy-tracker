@@ -9,7 +9,8 @@
     "build:dashboard": "tsx scripts/build-pages.mjs",
     "dev:dashboard": "vite dashboard",
     "pages:dev": "wrangler pages dev dashboard/dist",
-    "pretest": "npm run build:dashboard"
+    "pretest": "npm run build:dashboard",
+    "build:agent": "npm run build:dashboard && tsx scripts/build-agent.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.20.4",
