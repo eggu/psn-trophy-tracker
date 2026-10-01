@@ -38,7 +38,7 @@ it('does not report restored historical details as newly earned trophies', async
   const { computeSnapshotDiff } = await import('../collector/src/diff.js');
   const current = JSON.parse(await fs.readFile('data/current.json', 'utf8'));
   const previous = structuredClone(current);
-  previous.metadata.lastSuccessfulSync = '2026-09-30T03:59:20.473Z';
+  previous.metadata.lastSuccessfulSync = current.metadata.lastSuccessfulSync;
   previous.games.find((g: any) => g.id === 'NPWR12310_00').trophies = [];
   expect(computeSnapshotDiff(previous, current).newTrophies).toHaveLength(0);
 });

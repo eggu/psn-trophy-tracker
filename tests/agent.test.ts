@@ -14,11 +14,14 @@ it('renders compact Korean views with remaining first, precise KST dates and mea
   expect(docs.games).not.toContain('iconUrl');
   expect(docs.recent.split('\n').filter(line => line.startsWith('| '))).toHaveLength(52);
   const detail = docs[`game/${code.id}`];
+  const earned = code.trophies.filter(trophy => trophy.earned);
+  const remaining = code.trophies.filter(trophy => !trophy.earned);
+  const lastEarned = earned.reduce<string | null>((latest, trophy) => trophy.earnedAt && (!latest || Date.parse(trophy.earnedAt) > Date.parse(latest)) ? trophy.earnedAt : latest, null);
   expect(detail.indexOf('Remaining Trophies')).toBeLessThan(detail.indexOf('Earned Trophies'));
-  expect(detail.match(/- \[ \]/g)).toHaveLength(21);
-  expect(detail.match(/- \[x\]/g)).toHaveLength(9);
-  expect(detail).toContain('Progress: 9/30 (18%)');
-  expect(detail).toContain('Last trophy: 2026-09-30 00:09:01 KST');
+  expect(detail.match(/- \[ \]/g)).toHaveLength(remaining.length);
+  expect(detail.match(/- \[x\]/g)).toHaveLength(earned.length);
+  expect(detail).toContain(`Progress: ${code.progress.earned}/${code.progress.total} (${code.progress.percentage}%)`);
+  expect(detail).toContain(`Last trophy: ${kst(lastEarned)}`);
   const ko = current.games.find(g => g.localized?.['ko-KR'])!;
   expect(docs[`game/${ko.id}`]).toContain(ko.localized!['ko-KR']!.name);
   expect(kst('2026-09-29T15:09:01Z')).toBe('2026-09-30 00:09:01 KST');
@@ -101,6 +104,8 @@ it('writes the requested repository Markdown layout with working relative links'
   const { execFileSync } = await import('node:child_process');
   const os = await import('node:os');
   const path = await import('node:path');
+  const current: CanonicalSnapshot = JSON.parse(await fs.readFile('data/current.json', 'utf8'));
+  const game = current.games.find(g => g.id === 'NPWR12310_00')!;
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'psn-agent-files-'));
   try {
     execFileSync(process.execPath, ['--import', 'tsx', 'scripts/build-agent.mjs', dir]);
@@ -112,7 +117,7 @@ it('writes the requested repository Markdown layout with working relative links'
     expect(readme).not.toContain('](/agent/');
     expect(await fs.readdir(path.join(dir, 'games'))).toHaveLength(168);
     const code = await fs.readFile(path.join(dir, 'games/NPWR12310_00.md'), 'utf8');
-    expect(code.match(/- \[ \]/g)).toHaveLength(21);
-    expect(code.match(/- \[x\]/g)).toHaveLength(9);
+    expect(code.match(/- \[ \]/g)).toHaveLength(game.trophies.filter(trophy => !trophy.earned).length);
+    expect(code.match(/- \[x\]/g)).toHaveLength(game.trophies.filter(trophy => trophy.earned).length);
   } finally { await fs.rm(dir, { recursive: true, force: true }); }
 });
