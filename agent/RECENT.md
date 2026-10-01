@@ -1,9 +1,13 @@
 # Recent Trophies
 
-Updated: 2026-10-01 13:59:14 KST
+Updated: 2026-10-01 21:34:23 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-10-01 19:08:35 KST | RESIDENT EVIL™ CODE: Veronica X | The Arrogant Queen | Gold |
+| 2026-10-01 18:37:02 KST | RESIDENT EVIL™ CODE: Veronica X | Reading Red | Silver |
+| 2026-10-01 17:30:42 KST | RESIDENT EVIL™ CODE: Veronica X | The Green Giant | Bronze |
+| 2026-10-01 17:22:16 KST | RESIDENT EVIL™ CODE: Veronica X | Feeling Blue | Silver |
 | 2026-09-30 22:20:52 KST | RESIDENT EVIL™ CODE: Veronica X | To The Frozen Land | Bronze |
 | 2026-09-30 22:01:05 KST | RESIDENT EVIL™ CODE: Veronica X | Packing a Punch | Bronze |
 | 2026-09-30 00:09:01 KST | RESIDENT EVIL™ CODE: Veronica X | The Prisoner Who Lost Everything | Silver |
@@ -50,7 +54,3 @@ Updated: 2026-10-01 13:59:14 KST
 | 2026-08-24 00:27:33 KST | Clair Obscur: Expedition 33 | 시엘 | Bronze |
 | 2026-08-22 10:54:35 KST | Clair Obscur: Expedition 33 | 비행기, 열차, 잠수함 | Bronze |
 | 2026-08-22 01:16:51 KST | Clair Obscur: Expedition 33 | 돌림판 제어 | Bronze |
-| 2026-08-21 20:46:11 KST | Clair Obscur: Expedition 33 | 뤼미에르로 돌아가기 | Bronze |
-| 2026-08-21 19:41:49 KST | Clair Obscur: Expedition 33 | 페인트리스 | Silver |
-| 2026-08-21 13:29:23 KST | Clair Obscur: Expedition 33 | 거석 | Bronze |
-| 2026-08-21 01:12:36 KST | Clair Obscur: Expedition 33 | 두 번째 액손 | Bronze |
