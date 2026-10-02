@@ -1,10 +1,11 @@
 # Games
 
-Updated: 2026-10-02 20:59:18 KST
+Updated: 2026-10-03 02:48:47 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
 | --- | --- | --- | --- | --- | --- |
+| SILENT HILL f | NPWR42395_00 | PS5 | 30/57 (44%) | No | 2026-10-02 |
 | RESIDENT EVIL™ CODE: Veronica X | NPWR12310_00 | PS4 | 15/30 (39%) | No | 2026-10-01 |
 | 스타워즈 제로 컴퍼니™ | NPWR41236_00 | PS5 | 20/53 (29%) | No | 2026-09-24 |
 | Clair Obscur: Expedition 33 | NPWR39144_00 | PS5 | 44/56 (65%) | No | 2026-08-25 |
@@ -17,7 +18,6 @@ Dates: KST. Detail: games/{id}.md
 | 그란 투리스모 7 | NPWR20919_00 | PS5 | 42/54 (73%) | No | 2025-12-14 |
 | 유니콘 오버로드 | NPWR26504_00 | PS5 | 12/51 (17%) | No | 2025-12-10 |
 | SILENT HILL 2 | NPWR30769_00 | PS5 | 5/44 (7%) | No | 2025-12-06 |
-| SILENT HILL f | NPWR42395_00 | PS5 | 29/57 (42%) | No | 2025-10-16 |
 | The Last of Us™ Part I | NPWR26546_00 | PS5 | 0/29 (0%) | No | Unknown |
 | Lies of P | NPWR36570_00 | PS5 | 54/54 (100%) | Yes | 2025-09-18 |
 | 사이버펑크 2077 | NPWR24695_00 | PS5 | 1/58 (1%) | No | 2025-09-06 |

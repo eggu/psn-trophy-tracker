@@ -1,9 +1,10 @@
 # Recent Trophies
 
-Updated: 2026-10-02 20:59:18 KST
+Updated: 2026-10-03 02:48:47 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-10-02 23:02:05 KST | SILENT HILL f | 부적 사냥꾼 | Bronze |
 | 2026-10-01 19:08:35 KST | RESIDENT EVIL™ CODE: Veronica X | The Arrogant Queen | Gold |
 | 2026-10-01 18:37:02 KST | RESIDENT EVIL™ CODE: Veronica X | Reading Red | Silver |
 | 2026-10-01 17:30:42 KST | RESIDENT EVIL™ CODE: Veronica X | The Green Giant | Bronze |
@@ -53,4 +54,3 @@ Updated: 2026-10-02 20:59:18 KST
 | 2026-08-24 00:28:40 KST | Clair Obscur: Expedition 33 | 에스키에 | Bronze |
 | 2026-08-24 00:27:33 KST | Clair Obscur: Expedition 33 | 시엘 | Bronze |
 | 2026-08-22 10:54:35 KST | Clair Obscur: Expedition 33 | 비행기, 열차, 잠수함 | Bronze |
-| 2026-08-22 01:16:51 KST | Clair Obscur: Expedition 33 | 돌림판 제어 | Bronze |
