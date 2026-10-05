@@ -1,30 +1,30 @@
 # Trophy Changes
 
-Current sync: 2026-10-05 22:47:39 KST
-Previous sync: 2026-10-05 13:24:47 KST
+Current sync: 2026-10-06 08:48:39 KST
+Previous sync: 2026-10-05 22:47:39 KST
 
 ## Summary
 
 Total +7
 Platinum +0
 Gold +0
-Silver +1
-Bronze +6
+Silver +2
+Bronze +5
 
 ## New Trophies
 
 | Time | Game | Trophy | Grade |
 | --- | --- | --- | --- |
-| 2026-10-05 22:27:23 KST | [SILENT HILL f](games/NPWR42395_00.md) | 수집 명인 | Bronze |
-| 2026-10-05 22:03:24 KST | [SILENT HILL f](games/NPWR42395_00.md) | 불신자의 말로 | Bronze |
-| 2026-10-05 21:50:49 KST | [SILENT HILL f](games/NPWR42395_00.md) | 분노를 가라앉혀라 | Bronze |
-| 2026-10-05 21:38:16 KST | [SILENT HILL f](games/NPWR42395_00.md) | 임기응변은 화려하게 | Bronze |
-| 2026-10-05 21:02:16 KST | [SILENT HILL f](games/NPWR42395_00.md) | 파사의 물은 마르지 않으리 | Bronze |
-| 2026-10-05 20:42:05 KST | [SILENT HILL f](games/NPWR42395_00.md) | 승자는 캡슐에 의지하지 않는다 | Silver |
-| 2026-10-05 16:46:16 KST | [SILENT HILL f](games/NPWR42395_00.md) | 술래야, 이쪽이야♪ | Bronze |
+| 2026-10-05 23:43:20 KST | [SILENT HILL f](games/NPWR42395_00.md) | 수수께끼 해결사에게 감사와 경의를 | Silver |
+| 2026-10-05 23:43:19 KST | [SILENT HILL f](games/NPWR42395_00.md) | 여우가 시집가는 날 | Silver |
+| 2026-10-05 23:19:31 KST | [SILENT HILL f](games/NPWR42395_00.md) | 숙원 성취 | Bronze |
+| 2026-10-05 23:06:54 KST | [SILENT HILL f](games/NPWR42395_00.md) | 여우의 눈은 속일 수 없다 | Bronze |
+| 2026-10-05 23:03:27 KST | [SILENT HILL f](games/NPWR42395_00.md) | 여우신님의 비밀 | Bronze |
+| 2026-10-05 22:52:33 KST | [SILENT HILL f](games/NPWR42395_00.md) | 부적 선인 | Bronze |
+| 2026-10-05 22:48:56 KST | [SILENT HILL f](games/NPWR42395_00.md) | 아빠는 가만히 있어\! | Bronze |
 
 ## Changed Games
 
 | Game | ID | Previous | Current |
 | --- | --- | --- | --- |
-| SILENT HILL f | [NPWR42395_00](games/NPWR42395_00.md) | 30/57 | 37/57 |
+| SILENT HILL f | [NPWR42395_00](games/NPWR42395_00.md) | 37/57 | 44/57 |

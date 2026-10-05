@@ -1,9 +1,16 @@
 # Recent Trophies
 
-Updated: 2026-10-05 22:47:39 KST
+Updated: 2026-10-06 08:48:39 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-10-05 23:43:20 KST | SILENT HILL f | 수수께끼 해결사에게 감사와 경의를 | Silver |
+| 2026-10-05 23:43:19 KST | SILENT HILL f | 여우가 시집가는 날 | Silver |
+| 2026-10-05 23:19:31 KST | SILENT HILL f | 숙원 성취 | Bronze |
+| 2026-10-05 23:06:54 KST | SILENT HILL f | 여우의 눈은 속일 수 없다 | Bronze |
+| 2026-10-05 23:03:27 KST | SILENT HILL f | 여우신님의 비밀 | Bronze |
+| 2026-10-05 22:52:33 KST | SILENT HILL f | 부적 선인 | Bronze |
+| 2026-10-05 22:48:56 KST | SILENT HILL f | 아빠는 가만히 있어\! | Bronze |
 | 2026-10-05 22:27:23 KST | SILENT HILL f | 수집 명인 | Bronze |
 | 2026-10-05 22:03:24 KST | SILENT HILL f | 불신자의 말로 | Bronze |
 | 2026-10-05 21:50:49 KST | SILENT HILL f | 분노를 가라앉혀라 | Bronze |
@@ -47,10 +54,3 @@ Updated: 2026-10-05 22:47:39 KST
 | 2026-08-31 22:26:27 KST | 스타워즈 제로 컴퍼니™ | 무엇에 집중하는지가 현실을 좌우한다 | Bronze |
 | 2026-08-31 21:41:42 KST | 스타워즈 제로 컴퍼니™ | 복장 규정 | Bronze |
 | 2026-08-31 21:34:23 KST | 스타워즈 제로 컴퍼니™ | 멀고 먼 은하계에... | Bronze |
-| 2026-08-25 18:53:16 KST | Clair Obscur: Expedition 33 | 흑과 백 | Silver |
-| 2026-08-25 00:30:51 KST | Clair Obscur: Expedition 33 | 무기 숙련 | Bronze |
-| 2026-08-24 22:17:56 KST | Clair Obscur: Expedition 33 | 완벽한 무늬 | Bronze |
-| 2026-08-24 19:25:46 KST | Clair Obscur: Expedition 33 | 파라오 | Bronze |
-| 2026-08-24 17:50:20 KST | Clair Obscur: Expedition 33 | 모노코 | Bronze |
-| 2026-08-24 17:36:12 KST | Clair Obscur: Expedition 33 | 마엘 | Bronze |
-| 2026-08-24 17:03:33 KST | Clair Obscur: Expedition 33 | 개척자 | Bronze |
