@@ -1,9 +1,16 @@
 # Recent Trophies
 
-Updated: 2026-10-05 13:24:47 KST
+Updated: 2026-10-05 22:47:39 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-10-05 22:27:23 KST | SILENT HILL f | 수집 명인 | Bronze |
+| 2026-10-05 22:03:24 KST | SILENT HILL f | 불신자의 말로 | Bronze |
+| 2026-10-05 21:50:49 KST | SILENT HILL f | 분노를 가라앉혀라 | Bronze |
+| 2026-10-05 21:38:16 KST | SILENT HILL f | 임기응변은 화려하게 | Bronze |
+| 2026-10-05 21:02:16 KST | SILENT HILL f | 파사의 물은 마르지 않으리 | Bronze |
+| 2026-10-05 20:42:05 KST | SILENT HILL f | 승자는 캡슐에 의지하지 않는다 | Silver |
+| 2026-10-05 16:46:16 KST | SILENT HILL f | 술래야, 이쪽이야♪ | Bronze |
 | 2026-10-02 23:02:05 KST | SILENT HILL f | 부적 사냥꾼 | Bronze |
 | 2026-10-01 19:08:35 KST | RESIDENT EVIL™ CODE: Veronica X | The Arrogant Queen | Gold |
 | 2026-10-01 18:37:02 KST | RESIDENT EVIL™ CODE: Veronica X | Reading Red | Silver |
@@ -47,10 +54,3 @@ Updated: 2026-10-05 13:24:47 KST
 | 2026-08-24 17:50:20 KST | Clair Obscur: Expedition 33 | 모노코 | Bronze |
 | 2026-08-24 17:36:12 KST | Clair Obscur: Expedition 33 | 마엘 | Bronze |
 | 2026-08-24 17:03:33 KST | Clair Obscur: Expedition 33 | 개척자 | Bronze |
-| 2026-08-24 14:20:08 KST | Clair Obscur: Expedition 33 | 스프롱 | Bronze |
-| 2026-08-24 14:18:47 KST | Clair Obscur: Expedition 33 | 크로마 숙달 | Bronze |
-| 2026-08-24 14:11:51 KST | Clair Obscur: Expedition 33 | 극대화 | Bronze |
-| 2026-08-24 01:12:20 KST | Clair Obscur: Expedition 33 | 루네 | Bronze |
-| 2026-08-24 00:28:40 KST | Clair Obscur: Expedition 33 | 에스키에 | Bronze |
-| 2026-08-24 00:27:33 KST | Clair Obscur: Expedition 33 | 시엘 | Bronze |
-| 2026-08-22 10:54:35 KST | Clair Obscur: Expedition 33 | 비행기, 열차, 잠수함 | Bronze |
