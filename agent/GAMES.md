@@ -1,11 +1,11 @@
 # Games
 
-Updated: 2026-10-06 21:52:36 KST
+Updated: 2026-10-07 07:24:36 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
 | --- | --- | --- | --- | --- | --- |
-| SILENT HILL f | NPWR42395_00 | PS5 | 52/57 (90%) | No | 2026-10-06 |
+| SILENT HILL f | NPWR42395_00 | PS5 | 54/57 (95%) | No | 2026-10-07 |
 | RESIDENT EVIL™ CODE: Veronica X | NPWR12310_00 | PS4 | 15/30 (39%) | No | 2026-10-01 |
 | 스타워즈 제로 컴퍼니™ | NPWR41236_00 | PS5 | 20/53 (29%) | No | 2026-09-24 |
 | Clair Obscur: Expedition 33 | NPWR39144_00 | PS5 | 44/56 (65%) | No | 2026-08-25 |

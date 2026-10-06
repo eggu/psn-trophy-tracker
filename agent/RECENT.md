@@ -1,9 +1,11 @@
 # Recent Trophies
 
-Updated: 2026-10-06 21:52:36 KST
+Updated: 2026-10-07 07:24:36 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-10-07 03:20:40 KST | SILENT HILL f | 호유기미 | Silver |
+| 2026-10-07 03:16:24 KST | SILENT HILL f | 여우 조련사 | Silver |
 | 2026-10-06 21:27:52 KST | SILENT HILL f | 고요한 언덕 | Gold |
 | 2026-10-06 21:20:48 KST | SILENT HILL f | 신을 죽이다 | Silver |
 | 2026-10-06 20:51:26 KST | SILENT HILL f | 세 번째 정직함 | Bronze |
@@ -52,5 +54,3 @@ Updated: 2026-10-06 21:52:36 KST
 | 2026-09-01 13:50:07 KST | 스타워즈 제로 컴퍼니™ | 강력한 포스 | Bronze |
 | 2026-09-01 13:31:36 KST | 스타워즈 제로 컴퍼니™ | 첫발을 조심하라고 | Bronze |
 | 2026-09-01 02:53:48 KST | 스타워즈 제로 컴퍼니™ | 드러난 패덤의 정체 | Bronze |
-| 2026-09-01 02:38:37 KST | 스타워즈 제로 컴퍼니™ | 하거나, 하지 않거나 | Bronze |
-| 2026-09-01 02:12:20 KST | 스타워즈 제로 컴퍼니™ | 고지를 점했다 | Bronze |
