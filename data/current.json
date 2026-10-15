@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-15T03:29:55.927Z",
-    "lastSuccessfulSync": "2026-10-15T03:29:55.927Z",
+    "generatedAt": "2026-10-15T10:57:43.080Z",
+    "lastSuccessfulSync": "2026-10-15T10:57:43.080Z",
     "source": "playstation-network"
   },
   "profile": {
@@ -22,7 +22,7 @@
       "total": 168,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-10-15T03:29:55.927Z"
+    "lastSuccessfulSync": "2026-10-15T10:57:43.080Z"
   },
   "games": [
     {
@@ -116891,13 +116891,13 @@
       },
       "localization": {
         "ko-KR": {
-          "trophySetVersion": "01.07",
-          "checkedAt": "2026-09-30T04:57:05.913Z",
+          "trophySetVersion": "01.08",
+          "checkedAt": "2026-10-15T10:57:42.625Z",
           "status": "available"
         },
         "en-US": {
-          "trophySetVersion": "01.07",
-          "checkedAt": "2026-09-30T05:22:54.136Z",
+          "trophySetVersion": "01.08",
+          "checkedAt": "2026-10-15T10:57:43.074Z",
           "status": "available"
         }
       },
@@ -116905,7 +116905,7 @@
         "PS4"
       ],
       "imageUrl": "https://image.api.playstation.com/trophy/np/NPWR27621_00_0070FAFC69B9008C2E8A1E0A096952067677CF0E9A/EA92179AA77234FB5CC841B2F2724ACFA62C8695.PNG",
-      "trophySetVersion": "01.07",
+      "trophySetVersion": "01.08",
       "progress": {
         "earned": 37,
         "total": 54,
@@ -117089,10 +117089,10 @@
             },
             "en-US": {
               "name": "No Assistance Required!",
-              "description": "Completed a race without any assist settings."
+              "description": "Completed a race without any driving assistance settings."
             }
           },
-          "description": "Completed a race without any assist settings.",
+          "description": "Completed a race without any driving assistance settings.",
           "grade": "bronze",
           "hidden": false,
           "earned": true,
@@ -117568,14 +117568,14 @@
           "localized": {
             "ko-KR": {
               "name": "천재 포토그래퍼",
-              "description": "스케이프 또는 포토 모드(레이스 포토)에서 사진을 100장 촬영했다"
+              "description": "스케이프, 개러지또는 포토 모드(레이스 포토)에서 사진을 100장 촬영했다"
             },
             "en-US": {
               "name": "Snap-Happy",
-              "description": "Took 100 photos in Scapes or Race Photos."
+              "description": "Took a total of 100 Scapes, Garage, or Race Photos."
             }
           },
-          "description": "Took 100 photos in Scapes or Race Photos.",
+          "description": "Took a total of 100 Scapes, Garage, or Race Photos.",
           "grade": "bronze",
           "hidden": false,
           "earned": false,
