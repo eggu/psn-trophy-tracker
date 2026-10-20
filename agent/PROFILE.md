@@ -1,6 +1,6 @@
 # PSN Profile — eggu\_
 
-Updated: 2026-10-20 20:00:39 KST
+Updated: 2026-10-21 01:26:52 KST
 
 Level: 284
 Level progress: 36%
@@ -13,5 +13,5 @@ Level progress: 36%
 | Silver | 373 |
 | Bronze | 2013 |
 
-Games: 168
+Games: 169
 Completed games: 7

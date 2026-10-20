@@ -1,10 +1,11 @@
 # Games
 
-Updated: 2026-10-20 20:00:39 KST
+Updated: 2026-10-21 01:26:52 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
 | --- | --- | --- | --- | --- | --- |
+| 콜 오브 듀티®: 모던 워페어 II 2022 | NPWR24223_00 | PS5 | 0/176 (0%) | No | Unknown |
 | SILENT HILL f | NPWR42395_00 | PS5 | 54/57 (95%) | No | 2026-10-07 |
 | RESIDENT EVIL™ CODE: Veronica X | NPWR12310_00 | PS4 | 15/30 (39%) | No | 2026-10-01 |
 | 스타워즈 제로 컴퍼니™ | NPWR41236_00 | PS5 | 20/53 (29%) | No | 2026-09-24 |
