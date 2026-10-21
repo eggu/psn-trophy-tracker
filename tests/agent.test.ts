@@ -10,7 +10,7 @@ it('renders compact Korean views with remaining first, precise KST dates and mea
   const code = current.games.find(g => g.id === 'NPWR12310_00')!;
   const docs = renderDocuments(current, previous);
   expect(docs.changes).toContain('No trophy changes since previous sync.');
-  expect(docs.games.split('\n').filter(line => line.startsWith('| '))).toHaveLength(170);
+  expect(docs.games.split('\n').filter(line => line.startsWith('| '))).toHaveLength(current.games.length + 2);
   expect(docs.games).not.toContain('iconUrl');
   expect(docs.recent.split('\n').filter(line => line.startsWith('| '))).toHaveLength(52);
   const detail = docs[`game/${code.id}`];
@@ -115,7 +115,7 @@ it('writes the requested repository Markdown layout with working relative links'
     expect(readme).toContain('[Changes](CHANGES.md)');
     expect(readme).toContain('games/{id}.md');
     expect(readme).not.toContain('](/agent/');
-    expect(await fs.readdir(path.join(dir, 'games'))).toHaveLength(168);
+    expect((await fs.readdir(path.join(dir, 'games'))).sort()).toEqual(current.games.map(game => `${game.id}.md`).sort());
     const code = await fs.readFile(path.join(dir, 'games/NPWR12310_00.md'), 'utf8');
     expect(code.match(/- \[ \]/g)).toHaveLength(game.trophies.filter(trophy => !trophy.earned).length);
     expect(code.match(/- \[x\]/g)).toHaveLength(game.trophies.filter(trophy => trophy.earned).length);
