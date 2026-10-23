@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-23T03:39:00.092Z",
-    "lastSuccessfulSync": "2026-10-23T03:39:00.092Z",
+    "generatedAt": "2026-10-23T11:07:41.873Z",
+    "lastSuccessfulSync": "2026-10-23T11:07:41.873Z",
     "source": "playstation-network"
   },
   "profile": {
@@ -13,16 +13,16 @@
     "progress": 36,
     "trophies": {
       "platinum": 12,
-      "gold": 88,
+      "gold": 90,
       "silver": 373,
       "bronze": 2013,
-      "total": 2486
+      "total": 2488
     },
     "games": {
       "total": 169,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-10-23T03:39:00.092Z"
+    "lastSuccessfulSync": "2026-10-23T11:07:41.873Z"
   },
   "games": [
     {
@@ -54,19 +54,19 @@
       "imageUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR24223_00/4bf6ce0f-4c4c-42a2-b3d0-66c295cbd7aa.png",
       "trophySetVersion": "01.00",
       "progress": {
-        "earned": 0,
+        "earned": 2,
         "total": 176,
-        "percentage": 0
+        "percentage": 3
       },
       "platinumEarned": false,
-      "lastTrophyAt": "2026-10-20T13:05:29Z",
+      "lastTrophyAt": "2026-10-23T06:34:43Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
           "total": 1
         },
         "gold": {
-          "earned": 0,
+          "earned": 2,
           "total": 24
         },
         "silver": {
@@ -3665,8 +3665,8 @@
           "description": "Repair everything in Base Camp.",
           "grade": "gold",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
+          "earned": true,
+          "earnedAt": "2026-10-23T06:11:29Z",
           "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR24223_00/0c6a8228-a95c-4832-aa88-eb013628dd31.png",
           "groupId": "004"
         },
@@ -3770,8 +3770,8 @@
           "description": "Read 50 different Notes.",
           "grade": "gold",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
+          "earned": true,
+          "earnedAt": "2026-10-23T06:34:42Z",
           "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR24223_00/e27c3062-6330-48f3-a4b3-ad6ca65a36ea.png",
           "groupId": "004"
         }
