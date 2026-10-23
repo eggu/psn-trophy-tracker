@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-23T11:07:41.873Z",
-    "lastSuccessfulSync": "2026-10-23T11:07:41.873Z",
+    "generatedAt": "2026-10-23T16:35:19.675Z",
+    "lastSuccessfulSync": "2026-10-23T16:35:19.675Z",
     "source": "playstation-network"
   },
   "profile": {
@@ -13,16 +13,16 @@
     "progress": 36,
     "trophies": {
       "platinum": 12,
-      "gold": 90,
+      "gold": 91,
       "silver": 373,
       "bronze": 2013,
-      "total": 2488
+      "total": 2489
     },
     "games": {
       "total": 169,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-10-23T11:07:41.873Z"
+    "lastSuccessfulSync": "2026-10-23T16:35:19.675Z"
   },
   "games": [
     {
@@ -54,19 +54,19 @@
       "imageUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR24223_00/4bf6ce0f-4c4c-42a2-b3d0-66c295cbd7aa.png",
       "trophySetVersion": "01.00",
       "progress": {
-        "earned": 2,
+        "earned": 3,
         "total": 176,
-        "percentage": 3
+        "percentage": 5
       },
       "platinumEarned": false,
-      "lastTrophyAt": "2026-10-23T06:34:43Z",
+      "lastTrophyAt": "2026-10-23T15:53:55Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
           "total": 1
         },
         "gold": {
-          "earned": 2,
+          "earned": 3,
           "total": 24
         },
         "silver": {
@@ -3413,8 +3413,8 @@
           "description": "Complete the game on any Difficulty.",
           "grade": "gold",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
+          "earned": true,
+          "earnedAt": "2026-10-23T15:53:55Z",
           "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR24223_00/9ab658e5-c8fd-4f37-9cb8-5efa8866f2d4.png",
           "groupId": "004"
         },
