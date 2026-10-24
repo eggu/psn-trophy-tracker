@@ -1,6 +1,6 @@
 # PSN Profile — eggu\_
 
-Updated: 2026-10-24 12:33:02 KST
+Updated: 2026-10-24 19:24:11 KST
 
 Level: 284
 Level progress: 96%
