@@ -1,9 +1,11 @@
 # Recent Trophies
 
-Updated: 2026-10-28 21:14:54 KST
+Updated: 2026-10-29 07:16:46 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-10-29 00:19:01 KST | Crow Country Trophies | Shotgun | Silver |
+| 2026-10-28 22:44:07 KST | Crow Country Trophies | Checking in on a friend | Bronze |
 | 2026-10-24 00:53:55 KST | 콜 오브 듀티®: 모던 워페어 II 2022 | 전선 사수 | Gold |
 | 2026-10-23 15:34:42 KST | 콜 오브 듀티®: 모던 워페어 II 2022 | 와, 이걸 다 읽네 | Gold |
 | 2026-10-23 15:11:29 KST | 콜 오브 듀티®: 모던 워페어 II 2022 | 장인의 손길 | Gold |
@@ -52,5 +54,3 @@ Updated: 2026-10-28 21:14:54 KST
 | 2026-09-02 13:38:20 KST | 스타워즈 제로 컴퍼니™ | 시간 때우기 | Bronze |
 | 2026-09-02 13:38:20 KST | 스타워즈 제로 컴퍼니™ | 오랜 친구 | Bronze |
 | 2026-09-02 13:33:17 KST | 스타워즈 제로 컴퍼니™ | 너 자신의 종말을 보게 될 것 | Bronze |
-| 2026-09-02 00:34:51 KST | 스타워즈 제로 컴퍼니™ | 하늘 높이 | Bronze |
-| 2026-09-01 14:08:32 KST | 스타워즈 제로 컴퍼니™ | 깡통 하나 줄었군 | Bronze |

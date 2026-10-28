@@ -1,10 +1,11 @@
 # Games
 
-Updated: 2026-10-28 21:14:54 KST
+Updated: 2026-10-29 07:16:46 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
 | --- | --- | --- | --- | --- | --- |
+| Crow Country Trophies | NPWR43973_00 | PS5 | 2/16 (4%) | No | 2026-10-29 |
 | 콜 오브 듀티®: 모던 워페어 II 2022 | NPWR24223_00 | PS5 | 3/176 (5%) | No | 2026-10-24 |
 | SILENT HILL f | NPWR42395_00 | PS5 | 54/57 (95%) | No | 2026-10-07 |
 | RESIDENT EVIL™ CODE: Veronica X | NPWR12310_00 | PS4 | 15/30 (39%) | No | 2026-10-01 |

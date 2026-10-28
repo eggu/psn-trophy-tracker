@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-28T12:14:54.935Z",
-    "lastSuccessfulSync": "2026-10-28T12:14:54.935Z",
+    "generatedAt": "2026-10-28T22:16:46.201Z",
+    "lastSuccessfulSync": "2026-10-28T22:16:46.201Z",
     "source": "playstation-network"
   },
   "profile": {
@@ -14,17 +14,342 @@
     "trophies": {
       "platinum": 12,
       "gold": 91,
-      "silver": 373,
-      "bronze": 2013,
-      "total": 2489
+      "silver": 374,
+      "bronze": 2014,
+      "total": 2491
     },
     "games": {
-      "total": 169,
+      "total": 170,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-10-28T12:14:54.935Z"
+    "lastSuccessfulSync": "2026-10-28T22:16:46.201Z"
   },
   "games": [
+    {
+      "id": "NPWR43973_00",
+      "name": "Crow Country Trophies",
+      "localized": {
+        "en-US": {
+          "name": "Crow Country Trophies"
+        }
+      },
+      "localization": {
+        "ko-KR": {
+          "trophySetVersion": "01.00",
+          "checkedAt": "2026-10-28T22:16:45.404Z",
+          "status": "fallback"
+        },
+        "en-US": {
+          "trophySetVersion": "01.00",
+          "checkedAt": "2026-10-28T22:16:46.175Z",
+          "status": "available"
+        }
+      },
+      "platform": [
+        "PS5"
+      ],
+      "imageUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/36d2c1d1-420a-4f84-933c-0ee18129e43a.png",
+      "trophySetVersion": "01.00",
+      "progress": {
+        "earned": 2,
+        "total": 16,
+        "percentage": 4
+      },
+      "platinumEarned": false,
+      "lastTrophyAt": "2026-10-28T15:19:01Z",
+      "trophySummary": {
+        "platinum": {
+          "earned": 0,
+          "total": 1
+        },
+        "gold": {
+          "earned": 0,
+          "total": 10
+        },
+        "silver": {
+          "earned": 1,
+          "total": 2
+        },
+        "bronze": {
+          "earned": 1,
+          "total": 3
+        }
+      },
+      "trophies": [
+        {
+          "id": 0,
+          "name": "Platinum",
+          "localized": {
+            "en-US": {
+              "name": "Platinum",
+              "description": "Platinum trophy"
+            }
+          },
+          "description": "Platinum trophy",
+          "grade": "platinum",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/3820110a-6a9c-4b64-ad20-8c2f1790a9c3.png",
+          "groupId": "default"
+        },
+        {
+          "id": 1,
+          "name": "Secret Map",
+          "localized": {
+            "en-US": {
+              "name": "Secret Map",
+              "description": "Find the secrets map"
+            }
+          },
+          "description": "Find the secrets map",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/145d4c22-cdba-4b67-b315-d77671f928bc.png",
+          "groupId": "default"
+        },
+        {
+          "id": 2,
+          "name": "Checking in on a friend",
+          "localized": {
+            "en-US": {
+              "name": "Checking in on a friend",
+              "description": "Talk to Arthur when he's waiting in the car"
+            }
+          },
+          "description": "Talk to Arthur when he's waiting in the car",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-10-28T13:44:07Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/dd151ceb-f9c1-4df5-a8c6-eba23a35fc94.png",
+          "groupId": "default"
+        },
+        {
+          "id": 3,
+          "name": "Shotgun",
+          "localized": {
+            "en-US": {
+              "name": "Shotgun",
+              "description": "Find the shotgun"
+            }
+          },
+          "description": "Find the shotgun",
+          "grade": "silver",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-10-28T15:19:01Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/b1d821f7-5b0b-4f7a-9bd5-63cc8f950a5b.png",
+          "groupId": "default"
+        },
+        {
+          "id": 4,
+          "name": "Flamethrower",
+          "localized": {
+            "en-US": {
+              "name": "Flamethrower",
+              "description": "Find the flamethrower"
+            }
+          },
+          "description": "Find the flamethrower",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/0248a2be-d476-405e-814c-3840ad2e89bf.png",
+          "groupId": "default"
+        },
+        {
+          "id": 5,
+          "name": "Magnum Revolver",
+          "localized": {
+            "en-US": {
+              "name": "Magnum Revolver",
+              "description": "Find the magnum revolver"
+            }
+          },
+          "description": "Find the magnum revolver",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/2cde93f0-a021-4ee6-ba43-4b25750507a4.png",
+          "groupId": "default"
+        },
+        {
+          "id": 6,
+          "name": "Running Shoes",
+          "localized": {
+            "en-US": {
+              "name": "Running Shoes",
+              "description": "Find the secret running shoes"
+            }
+          },
+          "description": "Find the secret running shoes",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/a4bb5121-abf0-470c-b4fe-ded69ebaae9c.png",
+          "groupId": "default"
+        },
+        {
+          "id": 7,
+          "name": "Med Kit Pro",
+          "localized": {
+            "en-US": {
+              "name": "Med Kit Pro",
+              "description": "Upgrade the potency of the med kits"
+            }
+          },
+          "description": "Upgrade the potency of the med kits",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/c2448fa1-c80f-4780-88d6-64735b7be691.png",
+          "groupId": "default"
+        },
+        {
+          "id": 8,
+          "name": "Quizmaster",
+          "localized": {
+            "en-US": {
+              "name": "Quizmaster",
+              "description": "Get a score of 5 or more on the Mermaid Quiz arcade game"
+            }
+          },
+          "description": "Get a score of 5 or more on the Mermaid Quiz arcade game",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/2929bcf3-37da-40d1-b5c7-8cb4a9215361.png",
+          "groupId": "default"
+        },
+        {
+          "id": 9,
+          "name": "Wishes Granted",
+          "localized": {
+            "en-US": {
+              "name": "Wishes Granted",
+              "description": "Upgrade all four weapons"
+            }
+          },
+          "description": "Upgrade all four weapons",
+          "grade": "gold",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/ad984621-94ba-4d55-8e56-fe025f379c9a.png",
+          "groupId": "default"
+        },
+        {
+          "id": 10,
+          "name": "Secret Hunter",
+          "localized": {
+            "en-US": {
+              "name": "Secret Hunter",
+              "description": "Find all 15 hidden secrets"
+            }
+          },
+          "description": "Find all 15 hidden secrets",
+          "grade": "gold",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/4a02bf34-3142-4a85-b9f9-6ae82f32284c.png",
+          "groupId": "default"
+        },
+        {
+          "id": 11,
+          "name": "Thorough",
+          "localized": {
+            "en-US": {
+              "name": "Thorough",
+              "description": "Defeat all four optional mini-bosses"
+            }
+          },
+          "description": "Defeat all four optional mini-bosses",
+          "grade": "gold",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/4b7b381f-0943-464e-96d8-314fe762a478.png",
+          "groupId": "default"
+        },
+        {
+          "id": 12,
+          "name": "Complete",
+          "localized": {
+            "en-US": {
+              "name": "Complete",
+              "description": "Complete the Game"
+            }
+          },
+          "description": "Complete the Game",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/b3158c64-721a-4b32-b96b-0a4cdac42a23.png",
+          "groupId": "default"
+        },
+        {
+          "id": 13,
+          "name": "B Rank",
+          "localized": {
+            "en-US": {
+              "name": "B Rank",
+              "description": "Achieve at least a B Rank and unlock the Crow Bar"
+            }
+          },
+          "description": "Achieve at least a B Rank and unlock the Crow Bar",
+          "grade": "bronze",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/ac334410-b411-4c92-9dc3-7eabf5edcfd1.png",
+          "groupId": "default"
+        },
+        {
+          "id": 14,
+          "name": "A Rank",
+          "localized": {
+            "en-US": {
+              "name": "A Rank",
+              "description": "Achieve at least an A Rank and unlock the Crow Launcher"
+            }
+          },
+          "description": "Achieve at least an A Rank and unlock the Crow Launcher",
+          "grade": "silver",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/8af42256-72f7-4ef5-a2fb-3aec7bc4a3e2.png",
+          "groupId": "default"
+        },
+        {
+          "id": 15,
+          "name": "S Rank",
+          "localized": {
+            "en-US": {
+              "name": "S Rank",
+              "description": "Achieve an S Rank and unlock the Crow Wings"
+            }
+          },
+          "description": "Achieve an S Rank and unlock the Crow Wings",
+          "grade": "gold",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/58a72ea2-5eee-47ef-a9d7-aa545438febd.png",
+          "groupId": "default"
+        }
+      ]
+    },
     {
       "id": "NPWR24223_00",
       "name": "Call of Duty® Modern Warfare® II",
