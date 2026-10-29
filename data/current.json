@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-29T12:24:24.139Z",
-    "lastSuccessfulSync": "2026-10-29T12:24:24.139Z",
+    "generatedAt": "2026-10-29T22:29:53.132Z",
+    "lastSuccessfulSync": "2026-10-29T22:29:53.132Z",
     "source": "playstation-network"
   },
   "profile": {
@@ -13,16 +13,16 @@
     "progress": 6,
     "trophies": {
       "platinum": 12,
-      "gold": 91,
+      "gold": 96,
       "silver": 374,
-      "bronze": 2014,
-      "total": 2491
+      "bronze": 2016,
+      "total": 2498
     },
     "games": {
       "total": 170,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-10-29T12:24:24.139Z"
+    "lastSuccessfulSync": "2026-10-29T22:29:53.132Z"
   },
   "games": [
     {
@@ -51,19 +51,19 @@
       "imageUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/36d2c1d1-420a-4f84-933c-0ee18129e43a.png",
       "trophySetVersion": "01.00",
       "progress": {
-        "earned": 2,
+        "earned": 9,
         "total": 16,
-        "percentage": 4
+        "percentage": 52
       },
       "platinumEarned": false,
-      "lastTrophyAt": "2026-10-28T15:19:01Z",
+      "lastTrophyAt": "2026-10-29T15:45:29Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
           "total": 1
         },
         "gold": {
-          "earned": 0,
+          "earned": 5,
           "total": 10
         },
         "silver": {
@@ -71,7 +71,7 @@
           "total": 2
         },
         "bronze": {
-          "earned": 1,
+          "earned": 3,
           "total": 3
         }
       },
@@ -156,8 +156,8 @@
           "description": "Find the flamethrower",
           "grade": "gold",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
+          "earned": true,
+          "earnedAt": "2026-10-29T13:57:17Z",
           "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/0248a2be-d476-405e-814c-3840ad2e89bf.png",
           "groupId": "default"
         },
@@ -173,8 +173,8 @@
           "description": "Find the magnum revolver",
           "grade": "gold",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
+          "earned": true,
+          "earnedAt": "2026-10-29T15:17:58Z",
           "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/2cde93f0-a021-4ee6-ba43-4b25750507a4.png",
           "groupId": "default"
         },
@@ -190,8 +190,8 @@
           "description": "Find the secret running shoes",
           "grade": "gold",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
+          "earned": true,
+          "earnedAt": "2026-10-29T13:17:50Z",
           "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/a4bb5121-abf0-470c-b4fe-ded69ebaae9c.png",
           "groupId": "default"
         },
@@ -207,8 +207,8 @@
           "description": "Upgrade the potency of the med kits",
           "grade": "gold",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
+          "earned": true,
+          "earnedAt": "2026-10-29T14:30:30Z",
           "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/c2448fa1-c80f-4780-88d6-64735b7be691.png",
           "groupId": "default"
         },
@@ -224,8 +224,8 @@
           "description": "Get a score of 5 or more on the Mermaid Quiz arcade game",
           "grade": "bronze",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
+          "earned": true,
+          "earnedAt": "2026-10-29T13:40:28Z",
           "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/2929bcf3-37da-40d1-b5c7-8cb4a9215361.png",
           "groupId": "default"
         },
@@ -292,8 +292,8 @@
           "description": "Complete the Game",
           "grade": "gold",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
+          "earned": true,
+          "earnedAt": "2026-10-29T15:44:59Z",
           "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/b3158c64-721a-4b32-b96b-0a4cdac42a23.png",
           "groupId": "default"
         },
@@ -309,8 +309,8 @@
           "description": "Achieve at least a B Rank and unlock the Crow Bar",
           "grade": "bronze",
           "hidden": true,
-          "earned": false,
-          "earnedAt": null,
+          "earned": true,
+          "earnedAt": "2026-10-29T15:45:29Z",
           "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR43973_00/ac334410-b411-4c92-9dc3-7eabf5edcfd1.png",
           "groupId": "default"
         },

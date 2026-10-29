@@ -1,9 +1,16 @@
 # Recent Trophies
 
-Updated: 2026-10-29 21:24:24 KST
+Updated: 2026-10-30 07:29:53 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-10-30 00:45:29 KST | Crow Country Trophies | B Rank | Bronze |
+| 2026-10-30 00:44:59 KST | Crow Country Trophies | Complete | Gold |
+| 2026-10-30 00:17:58 KST | Crow Country Trophies | Magnum Revolver | Gold |
+| 2026-10-29 23:30:30 KST | Crow Country Trophies | Med Kit Pro | Gold |
+| 2026-10-29 22:57:17 KST | Crow Country Trophies | Flamethrower | Gold |
+| 2026-10-29 22:40:28 KST | Crow Country Trophies | Quizmaster | Bronze |
+| 2026-10-29 22:17:50 KST | Crow Country Trophies | Running Shoes | Gold |
 | 2026-10-29 00:19:01 KST | Crow Country Trophies | Shotgun | Silver |
 | 2026-10-28 22:44:07 KST | Crow Country Trophies | Checking in on a friend | Bronze |
 | 2026-10-24 00:53:55 KST | 콜 오브 듀티®: 모던 워페어 II 2022 | 전선 사수 | Gold |
@@ -47,10 +54,3 @@ Updated: 2026-10-29 21:24:24 KST
 | 2026-09-25 03:24:56 KST | RESIDENT EVIL™ CODE: Veronica X | Tactical Upgrades | Bronze |
 | 2026-09-25 03:14:18 KST | RESIDENT EVIL™ CODE: Veronica X | Duty and Humanity | Bronze |
 | 2026-09-25 01:39:20 KST | RESIDENT EVIL™ CODE: Veronica X | A Changed Father | Bronze |
-| 2026-09-24 16:02:24 KST | RESIDENT EVIL™ CODE: Veronica X | Decorative But Deadly | Bronze |
-| 2026-09-24 13:59:52 KST | RESIDENT EVIL™ CODE: Veronica X | The Terror Begins | Bronze |
-| 2026-09-24 00:15:04 KST | 스타워즈 제로 컴퍼니™ | 루나타 탈환 | Bronze |
-| 2026-09-04 02:28:42 KST | 스타워즈 제로 컴퍼니™ | 직위와 품격 | Bronze |
-| 2026-09-02 13:38:20 KST | 스타워즈 제로 컴퍼니™ | 시간 때우기 | Bronze |
-| 2026-09-02 13:38:20 KST | 스타워즈 제로 컴퍼니™ | 오랜 친구 | Bronze |
-| 2026-09-02 13:33:17 KST | 스타워즈 제로 컴퍼니™ | 너 자신의 종말을 보게 될 것 | Bronze |
