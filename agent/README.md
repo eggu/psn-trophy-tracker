@@ -1,7 +1,7 @@
 # PSN Trophy Tracker — Agent View
 
 Account: eggu\_
-Updated: 2026-10-30 13:40:46 KST
+Updated: 2026-10-30 21:15:27 KST
 Data status: Fresh
 
 ## Available documents
