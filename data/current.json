@@ -1,16 +1,16 @@
 {
   "metadata": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-29T22:29:53.132Z",
-    "lastSuccessfulSync": "2026-10-29T22:29:53.132Z",
+    "generatedAt": "2026-10-30T04:40:46.181Z",
+    "lastSuccessfulSync": "2026-10-30T04:40:46.181Z",
     "source": "playstation-network"
   },
   "profile": {
     "onlineId": "eggu_",
     "accountId": "481968252978132280",
     "avatarUrl": "http://psn-rsc.prod.dl.playstation.net/psn-rsc/avatar/HP9000/CUSA24771_00-GT7AVATAR0000015_46F0B8B5D41875A0184E_l.png",
-    "trophyLevel": 285,
-    "progress": 6,
+    "trophyLevel": 286,
+    "progress": 13,
     "trophies": {
       "platinum": 12,
       "gold": 96,
@@ -22,7 +22,7 @@
       "total": 170,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-10-29T22:29:53.132Z"
+    "lastSuccessfulSync": "2026-10-30T04:40:46.181Z"
   },
   "games": [
     {
