@@ -1,10 +1,11 @@
 # Games
 
-Updated: 2026-11-02 13:45:11 KST
+Updated: 2026-11-02 23:55:50 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
 | --- | --- | --- | --- | --- | --- |
+| Maestro\_Trophies\_Main | NPWR51230_00 | PS5 | 8/47 (17%) | No | 2026-11-02 |
 | Crow Country Trophies | NPWR43973_00 | PS5 | 9/16 (52%) | No | 2026-10-30 |
 | 콜 오브 듀티®: 모던 워페어 II 2022 | NPWR24223_00 | PS5 | 3/176 (5%) | No | 2026-10-24 |
 | SILENT HILL f | NPWR42395_00 | PS5 | 54/57 (95%) | No | 2026-10-07 |

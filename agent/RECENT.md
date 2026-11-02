@@ -1,9 +1,17 @@
 # Recent Trophies
 
-Updated: 2026-11-02 13:45:11 KST
+Updated: 2026-11-02 23:55:50 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-11-02 21:18:18 KST | Maestro\_Trophies\_Main | 5성급 공연: 빙상전투 | Silver |
+| 2026-11-02 21:12:51 KST | Maestro\_Trophies\_Main | 5성급 공연: 헤드윅의 테마 | Silver |
+| 2026-11-02 21:03:21 KST | Maestro\_Trophies\_Main | 5성급 공연: 겨울 | Silver |
+| 2026-11-02 20:58:56 KST | Maestro\_Trophies\_Main | 5성급 공연: 카르미나 부라나 \(1부\) | Silver |
+| 2026-11-02 20:55:20 KST | Maestro\_Trophies\_Main | 5성급 공연: 신세계로부터는 | Silver |
+| 2026-11-02 20:48:52 KST | Maestro\_Trophies\_Main | 5성급 공연: 백조의 호수 | Silver |
+| 2026-11-02 20:43:25 KST | Maestro\_Trophies\_Main | 5성급 공연: 레퀴엠 D단조 | Silver |
+| 2026-11-02 20:43:13 KST | Maestro\_Trophies\_Main | 기립 박수 | Gold |
 | 2026-10-30 00:45:29 KST | Crow Country Trophies | B Rank | Bronze |
 | 2026-10-30 00:44:59 KST | Crow Country Trophies | Complete | Gold |
 | 2026-10-30 00:17:58 KST | Crow Country Trophies | Magnum Revolver | Gold |
@@ -46,11 +54,3 @@ Updated: 2026-11-02 13:45:11 KST
 | 2026-10-01 17:30:42 KST | RESIDENT EVIL™ CODE: Veronica X | The Green Giant | Bronze |
 | 2026-10-01 17:22:16 KST | RESIDENT EVIL™ CODE: Veronica X | Feeling Blue | Silver |
 | 2026-09-30 22:20:52 KST | RESIDENT EVIL™ CODE: Veronica X | To The Frozen Land | Bronze |
-| 2026-09-30 22:01:05 KST | RESIDENT EVIL™ CODE: Veronica X | Packing a Punch | Bronze |
-| 2026-09-30 00:09:01 KST | RESIDENT EVIL™ CODE: Veronica X | The Prisoner Who Lost Everything | Silver |
-| 2026-09-25 17:07:58 KST | RESIDENT EVIL™ CODE: Veronica X | It's Not All Dark and Gloomy | Silver |
-| 2026-09-25 16:16:43 KST | RESIDENT EVIL™ CODE: Veronica X | The Fallen Tyrant | Silver |
-| 2026-09-25 11:15:33 KST | RESIDENT EVIL™ CODE: Veronica X | Beyond the Shades | Bronze |
-| 2026-09-25 03:24:56 KST | RESIDENT EVIL™ CODE: Veronica X | Tactical Upgrades | Bronze |
-| 2026-09-25 03:14:18 KST | RESIDENT EVIL™ CODE: Veronica X | Duty and Humanity | Bronze |
-| 2026-09-25 01:39:20 KST | RESIDENT EVIL™ CODE: Veronica X | A Changed Father | Bronze |

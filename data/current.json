@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-02T04:45:11.902Z",
-    "lastSuccessfulSync": "2026-11-02T04:45:11.902Z",
+    "generatedAt": "2026-11-02T14:55:50.621Z",
+    "lastSuccessfulSync": "2026-11-02T14:55:50.621Z",
     "source": "playstation-network"
   },
   "profile": {
@@ -13,18 +13,1061 @@
     "progress": 13,
     "trophies": {
       "platinum": 12,
-      "gold": 96,
-      "silver": 374,
+      "gold": 97,
+      "silver": 381,
       "bronze": 2016,
-      "total": 2498
+      "total": 2506
     },
     "games": {
-      "total": 170,
+      "total": 171,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-02T04:45:11.902Z"
+    "lastSuccessfulSync": "2026-11-02T14:55:50.621Z"
   },
   "games": [
+    {
+      "id": "NPWR51230_00",
+      "name": "Maestro_Trophies_Main",
+      "localized": {
+        "ko-KR": {
+          "name": "Maestro_Trophies_Main"
+        },
+        "en-US": {
+          "name": "Maestro_Trophies_Main"
+        }
+      },
+      "localization": {
+        "ko-KR": {
+          "trophySetVersion": "01.00",
+          "checkedAt": "2026-11-02T14:55:50.065Z",
+          "status": "available"
+        },
+        "en-US": {
+          "trophySetVersion": "01.00",
+          "checkedAt": "2026-11-02T14:55:50.589Z",
+          "status": "available"
+        }
+      },
+      "platform": [
+        "PS5"
+      ],
+      "imageUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+      "trophySetVersion": "01.00",
+      "progress": {
+        "earned": 8,
+        "total": 47,
+        "percentage": 17
+      },
+      "platinumEarned": false,
+      "lastTrophyAt": "2026-11-02T12:18:18Z",
+      "trophySummary": {
+        "platinum": {
+          "earned": 0,
+          "total": 1
+        },
+        "gold": {
+          "earned": 1,
+          "total": 5
+        },
+        "silver": {
+          "earned": 7,
+          "total": 41
+        },
+        "bronze": {
+          "earned": 0,
+          "total": 0
+        }
+      },
+      "trophies": [
+        {
+          "id": 0,
+          "name": "Maestro",
+          "localized": {
+            "ko-KR": {
+              "name": "Maestro",
+              "description": "Get all the other trophies"
+            },
+            "en-US": {
+              "name": "Maestro",
+              "description": "Get all the other trophies"
+            }
+          },
+          "description": "Get all the other trophies",
+          "grade": "platinum",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 1,
+          "name": "Tenure",
+          "localized": {
+            "ko-KR": {
+              "name": "테너",
+              "description": "마스터 클래스를 완료하세요."
+            },
+            "en-US": {
+              "name": "Tenure",
+              "description": "Complete the Masterclass."
+            }
+          },
+          "description": "Complete the Masterclass.",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 2,
+          "name": "Virtuoso",
+          "localized": {
+            "ko-KR": {
+              "name": "비르투오소",
+              "description": "무대 공포증을 이기고 콘서트를 완료하여 이 업적을 해제하세요!"
+            },
+            "en-US": {
+              "name": "Virtuoso",
+              "description": "Beat your stage fright and complete the Concert to unlock this achievement!"
+            }
+          },
+          "description": "Beat your stage fright and complete the Concert to unlock this achievement!",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 3,
+          "name": "Standing Ovation",
+          "localized": {
+            "ko-KR": {
+              "name": "기립 박수",
+              "description": "콘서트 모드에서 별 5개 등급을 받으세요."
+            },
+            "en-US": {
+              "name": "Standing Ovation",
+              "description": "Earn a five stars rating in concert mode."
+            }
+          },
+          "description": "Earn a five stars rating in concert mode.",
+          "grade": "gold",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-11-02T11:43:13Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 4,
+          "name": "Failed concert",
+          "localized": {
+            "ko-KR": {
+              "name": "실패한 콘서트",
+              "description": "콘서트에 실패하였습니다."
+            },
+            "en-US": {
+              "name": "Failed concert",
+              "description": "You have failed a concert."
+            }
+          },
+          "description": "You have failed a concert.",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 5,
+          "name": "5-Star Performance: Whiplash",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 위플래쉬",
+              "description": "위플래쉬'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Whiplash",
+              "description": "Achieve a perfect 5-star rating on 'Whiplash'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Whiplash'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 6,
+          "name": "5-Star Performance: Caravan",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 캐러밴",
+              "description": "캐러밴'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Caravan",
+              "description": "Achieve a perfect 5-star rating on 'Caravan'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Caravan'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 7,
+          "name": "5-Star Performance: Night on a Bald Mountain",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 민둥산의 하룻밤",
+              "description": "민둥산의 하룻밤'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Night on a Bald Mountain",
+              "description": "Achieve a perfect 5-star rating on 'Night on a Bald Mountain'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Night on a Bald Mountain'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 8,
+          "name": "5-Star Performance: The 5th Symphony (Part 2)",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 교향곡 5번 (2부)",
+              "description": "교향곡 5번 (2부)'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: The 5th Symphony (Part 2)",
+              "description": "Achieve a perfect 5-star rating on 'The 5th Symphony (Part 2)'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'The 5th Symphony (Part 2)'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 9,
+          "name": "5-Star Performance: The 5th Symphony (Part 1)",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 교향곡 5번 (1부)",
+              "description": "교향곡 5번 (1부)'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: The 5th Symphony (Part 1)",
+              "description": "Achieve a perfect 5-star rating on 'The 5th Symphony (Part 1)'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'The 5th Symphony (Part 1)'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 10,
+          "name": "5-Star Performance: Dance of the Knights",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 기사의 춤",
+              "description": "기사의 춤'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Dance of the Knights",
+              "description": "Achieve a perfect 5-star rating on 'Dance of the Knights'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Dance of the Knights'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 11,
+          "name": "5-Star Performance: The Hebrides",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 핑갈의 동굴",
+              "description": "핑갈의 동굴'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: The Hebrides",
+              "description": "Achieve a perfect 5-star rating on 'The Hebrides'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'The Hebrides'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 12,
+          "name": "5-Star Performance: Swan Lake",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 백조의 호수",
+              "description": "백조의 호수'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Swan Lake",
+              "description": "Achieve a perfect 5-star rating on 'Swan Lake'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Swan Lake'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-11-02T11:48:52Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 13,
+          "name": "5-Star Performance: Danse Macabre",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 죽음의 무도",
+              "description": "죽음의 무도'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Danse Macabre",
+              "description": "Achieve a perfect 5-star rating on 'Danse Macabre'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Danse Macabre'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 14,
+          "name": "5-Star Performance: Ride of the Valkyries",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 발퀴레의 기승",
+              "description": "발퀴레의 기승'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Ride of the Valkyries",
+              "description": "Achieve a perfect 5-star rating on 'Ride of the Valkyries'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Ride of the Valkyries'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 15,
+          "name": "5-Star Performance: The Rite of Spring",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 봄의 제전",
+              "description": "봄의 제전'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: The Rite of Spring",
+              "description": "Achieve a perfect 5-star rating on 'The Rite of Spring'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'The Rite of Spring'.",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 16,
+          "name": "5-Star Performance: Sing Sing Sing",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 싱 싱 싱",
+              "description": "싱 싱 싱'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Sing Sing Sing",
+              "description": "Achieve a perfect 5-star rating on 'Sing Sing Sing'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Sing Sing Sing'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 17,
+          "name": "5-Star Performance: Messa Da Requiem",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 레퀴엠 D단조",
+              "description": "레퀴엠 D단조'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Messa Da Requiem",
+              "description": "Achieve a perfect 5-star rating on 'Messa Da Requiem'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Messa Da Requiem'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-11-02T11:43:25Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 18,
+          "name": "5-Star Performance: Carmina Burana (Part 2)",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 카르미나 부라나 (2부)",
+              "description": "카르미나 부라나 (2부)'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Carmina Burana (Part 2)",
+              "description": "Achieve a perfect 5-star rating on 'Carmina Burana (Part 2)'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Carmina Burana (Part 2)'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 19,
+          "name": "5-Star Performance: Carmina Burana (Part 1)",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 카르미나 부라나 (1부)",
+              "description": "카르미나 부라나 (1부)'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Carmina Burana (Part 1)",
+              "description": "Achieve a perfect 5-star rating on 'Carmina Burana (Part 1)'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Carmina Burana (Part 1)'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-11-02T11:58:56Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 20,
+          "name": "5-Star Performance: The Marriage of Figaro",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 피가로의 결혼",
+              "description": "피가로의 결혼'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: The Marriage of Figaro",
+              "description": "Achieve a perfect 5-star rating on 'The Marriage of Figaro'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'The Marriage of Figaro'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 21,
+          "name": "5-Star Performance: From the New World",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 신세계로부터는",
+              "description": "신세계로부터는'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: From the New World",
+              "description": "Achieve a perfect 5-star rating on 'From the New World'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'From the New World'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-11-02T11:55:20Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 22,
+          "name": "5-Star Performance: Winter",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 겨울",
+              "description": "겨울'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Winter",
+              "description": "Achieve a perfect 5-star rating on 'Winter'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Winter'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-11-02T12:03:21Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "default"
+        },
+        {
+          "id": 23,
+          "name": "5-Star Performance: Symphonie Fantastique",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 환상교향곡",
+              "description": "환상교향곡'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Symphonie Fantastique",
+              "description": "Achieve a perfect 5-star rating on 'Symphonie Fantastique'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Symphonie Fantastique'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "001"
+        },
+        {
+          "id": 24,
+          "name": "5-Star Performance: The Sorcerer's Apprentice",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 마법사의 제자",
+              "description": "마법사의 제자'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: The Sorcerer's Apprentice",
+              "description": "Achieve a perfect 5-star rating on 'The Sorcerer's Apprentice'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'The Sorcerer's Apprentice'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "001"
+        },
+        {
+          "id": 25,
+          "name": "5-Star Performance: El amor brujo",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 사랑은 마법사",
+              "description": "사랑은 마법사'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: El amor brujo",
+              "description": "Achieve a perfect 5-star rating on 'El amor brujo'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'El amor brujo'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "001"
+        },
+        {
+          "id": 26,
+          "name": "5-Star Performance: In the Hall of the Mountain King",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 산왕의 홀에서",
+              "description": "산왕의 홀에서'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: In the Hall of the Mountain King",
+              "description": "Achieve a perfect 5-star rating on 'In the Hall of the Mountain King'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'In the Hall of the Mountain King'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "001"
+        },
+        {
+          "id": 27,
+          "name": "5-Star Performance: Hedwig's Theme",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 헤드윅의 테마",
+              "description": "헤드윅의 테마'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Hedwig's Theme",
+              "description": "Achieve a perfect 5-star rating on 'Hedwig's Theme'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Hedwig's Theme'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-11-02T12:12:51Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "001"
+        },
+        {
+          "id": 28,
+          "name": "5-Star Performance: Game of Thrones Theme",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 왕좌의 게임 테마",
+              "description": "왕좌의 게임 테마'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Game of Thrones Theme",
+              "description": "Achieve a perfect 5-star rating on 'Game of Thrones Theme'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Game of Thrones Theme'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "002"
+        },
+        {
+          "id": 29,
+          "name": "5-Star Performance: The Bridge of Khazad-dûm",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 카자드둠의 다리",
+              "description": "카자드둠의 다리'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: The Bridge of Khazad-dûm",
+              "description": "Achieve a perfect 5-star rating on 'The Bridge of Khazad-dûm'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'The Bridge of Khazad-dûm'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "002"
+        },
+        {
+          "id": 30,
+          "name": "5-Star Performance: Orpheus in the Underworld",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 지하 세계의 오르페우스",
+              "description": "지하 세계의 오르페우스'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Orpheus in the Underworld",
+              "description": "Achieve a perfect 5-star rating on 'Orpheus in the Underworld'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Orpheus in the Underworld'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "002"
+        },
+        {
+          "id": 31,
+          "name": "5-Star Performance: Totentanz",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 죽음의 무도 (리스트)",
+              "description": "죽음의 무도 (리스트)'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Totentanz",
+              "description": "Achieve a perfect 5-star rating on 'Totentanz'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Totentanz'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "002"
+        },
+        {
+          "id": 32,
+          "name": "5-Star Performance: Symphony No. 10",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 교향곡 10번",
+              "description": "교향곡 10번'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Symphony No. 10",
+              "description": "Achieve a perfect 5-star rating on 'Symphony No. 10'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Symphony No. 10'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "002"
+        },
+        {
+          "id": 33,
+          "name": "5-Star Performance: Duel of the Fates",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 운명의 결투",
+              "description": "운명의 결투'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Duel of the Fates",
+              "description": "Achieve a perfect 5-star rating on 'Duel of the Fates'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Duel of the Fates'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "003"
+        },
+        {
+          "id": 34,
+          "name": "5-Star Performance: The Battle on the Ice",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 빙상전투",
+              "description": "빙상전투'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: The Battle on the Ice",
+              "description": "Achieve a perfect 5-star rating on 'The Battle on the Ice'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'The Battle on the Ice'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-11-02T12:18:18Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/7b473161-856e-4f09-b26e-2db291b1e992.png",
+          "groupId": "003"
+        },
+        {
+          "id": 35,
+          "name": "5-Star Performance: Ode to Joy",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 환희의 송가",
+              "description": "환희의 송가'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Ode to Joy",
+              "description": "Achieve a perfect 5-star rating on 'Ode to Joy'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Ode to Joy'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/4cf592c5-a4a8-451c-837e-9661a8f7a45f.png",
+          "groupId": "004"
+        },
+        {
+          "id": 36,
+          "name": "5-Star Performance: Toreador Song",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 투우사의 노래",
+              "description": "투우사의 노래'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Toreador Song",
+              "description": "Achieve a perfect 5-star rating on 'Toreador Song'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Toreador Song'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/4cf592c5-a4a8-451c-837e-9661a8f7a45f.png",
+          "groupId": "004"
+        },
+        {
+          "id": 37,
+          "name": "5-Star Performance: Hungarian Dance No. 5",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 헝가리 무곡5번",
+              "description": "헝가리 무곡5번'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Hungarian Dance No. 5",
+              "description": "Achieve a perfect 5-star rating on 'Hungarian Dance No. 5'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Hungarian Dance No. 5'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/4cf592c5-a4a8-451c-837e-9661a8f7a45f.png",
+          "groupId": "004"
+        },
+        {
+          "id": 38,
+          "name": "5-Star Performance: Mars",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 화성",
+              "description": "화성'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Mars",
+              "description": "Achieve a perfect 5-star rating on 'Mars'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Mars'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/4cf592c5-a4a8-451c-837e-9661a8f7a45f.png",
+          "groupId": "004"
+        },
+        {
+          "id": 39,
+          "name": "5-Star Performance: Requiem (Dies Irae)",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 레퀴엠 (디에스 이레)",
+              "description": "레퀴엠 (디에스 이레)'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Requiem (Dies Irae)",
+              "description": "Achieve a perfect 5-star rating on 'Requiem (Dies Irae)'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Requiem (Dies Irae)'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/4cf592c5-a4a8-451c-837e-9661a8f7a45f.png",
+          "groupId": "004"
+        },
+        {
+          "id": 40,
+          "name": "5-Star Performance: He's a Pirate",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 그는 해적",
+              "description": "그는 해적'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: He's a Pirate",
+              "description": "Achieve a perfect 5-star rating on 'He's a Pirate'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'He's a Pirate'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/c03888e1-0422-4326-b929-382ff13fe83d.png",
+          "groupId": "005"
+        },
+        {
+          "id": 41,
+          "name": "5-Star Performance: Jack Sparrow",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 잭 스패로",
+              "description": "잭 스패로'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Jack Sparrow",
+              "description": "Achieve a perfect 5-star rating on 'Jack Sparrow'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Jack Sparrow'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/c03888e1-0422-4326-b929-382ff13fe83d.png",
+          "groupId": "005"
+        },
+        {
+          "id": 42,
+          "name": "5-Star Performance: Scheherazade IV",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 세헤라자데 IV",
+              "description": "세헤라자데 IV'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Scheherazade IV",
+              "description": "Achieve a perfect 5-star rating on 'Scheherazade IV'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Scheherazade IV'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/c03888e1-0422-4326-b929-382ff13fe83d.png",
+          "groupId": "005"
+        },
+        {
+          "id": 43,
+          "name": "5-Star Performance: Wellerman",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 웰러맨",
+              "description": "웰러맨'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Wellerman",
+              "description": "Achieve a perfect 5-star rating on 'Wellerman'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Wellerman'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/c03888e1-0422-4326-b929-382ff13fe83d.png",
+          "groupId": "005"
+        },
+        {
+          "id": 44,
+          "name": "5-Star Performance: A Sea Symphony",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: 바다교향곡",
+              "description": "바다교향곡'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: A Sea Symphony",
+              "description": "Achieve a perfect 5-star rating on 'A Sea Symphony'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'A Sea Symphony'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/c03888e1-0422-4326-b929-382ff13fe83d.png",
+          "groupId": "005"
+        },
+        {
+          "id": 45,
+          "name": "5-Star Performance: Ashes on the Fire",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: Ashes on the Fire",
+              "description": "Ashes on the Fire'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Ashes on the Fire",
+              "description": "Achieve a perfect 5-star rating on 'Ashes on the Fire'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Ashes on the Fire'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/edf2de33-01af-49c4-91b7-5e590d2344da.png",
+          "groupId": "006"
+        },
+        {
+          "id": 46,
+          "name": "5-Star Performance: Attack on Titan",
+          "localized": {
+            "ko-KR": {
+              "name": "5성급 공연: Attack on Titan",
+              "description": "Attack on Titan'에서 5성급 완벽한 평가를 달성하세요."
+            },
+            "en-US": {
+              "name": "5-Star Performance: Attack on Titan",
+              "description": "Achieve a perfect 5-star rating on 'Attack on Titan'."
+            }
+          },
+          "description": "Achieve a perfect 5-star rating on 'Attack on Titan'.",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR51230_00/edf2de33-01af-49c4-91b7-5e590d2344da.png",
+          "groupId": "006"
+        }
+      ]
+    },
     {
       "id": "NPWR43973_00",
       "name": "Crow Country Trophies",
