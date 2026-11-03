@@ -23,7 +23,7 @@ it('renders compact Korean views with remaining first, precise KST dates and mea
   expect(detail).toContain(`Progress: ${code.progress.earned}/${code.progress.total} (${code.progress.percentage}%)`);
   expect(detail).toContain(`Last trophy: ${kst(lastEarned)}`);
   const ko = current.games.find(g => g.localized?.['ko-KR'])!;
-  expect(docs[`game/${ko.id}`]).toContain(ko.localized!['ko-KR']!.name);
+  expect(docs[`game/${ko.id}`]).toContain(text(ko.localized!['ko-KR']!.name));
   expect(kst('2026-09-29T15:09:01Z')).toBe('2026-09-30 00:09:01 KST');
   expect(text('[click](https://bad) |\n# heading')).toBe('\\[click\\]\\(https://bad\\) \\| \\# heading');
   expect(renderDocuments(current, null).changes).toContain('Initial snapshot');
