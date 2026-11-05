@@ -1,10 +1,11 @@
 # Games
 
-Updated: 2026-11-05 23:06:34 KST
+Updated: 2026-11-06 08:20:42 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
 | --- | --- | --- | --- | --- | --- |
+| RESIDENT EVIL 2 | NPWR26027_00 | PS5 | 4/45 (5%) | No | 2026-11-06 |
 | Maestro\_Trophies\_Main | NPWR51230_00 | PS5 | 8/47 (17%) | No | 2026-11-02 |
 | Crow Country Trophies | NPWR43973_00 | PS5 | 9/16 (52%) | No | 2026-10-30 |
 | 콜 오브 듀티®: 모던 워페어 II 2022 | NPWR24223_00 | PS5 | 3/176 (5%) | No | 2026-10-24 |

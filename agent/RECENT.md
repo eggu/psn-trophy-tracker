@@ -1,9 +1,13 @@
 # Recent Trophies
 
-Updated: 2026-11-05 23:06:34 KST
+Updated: 2026-11-06 08:20:42 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-11-06 04:46:20 KST | RESIDENT EVIL 2 | 죽음의 도시 입장 | Bronze |
+| 2026-11-06 04:23:17 KST | RESIDENT EVIL 2 | 이거나 먹어라\! | Bronze |
+| 2026-11-06 04:22:07 KST | RESIDENT EVIL 2 | 총 따위 개나 줘버려 | Bronze |
+| 2026-11-06 03:52:13 KST | RESIDENT EVIL 2 | 생존의 기본 | Bronze |
 | 2026-11-02 21:18:18 KST | Maestro\_Trophies\_Main | 5성급 공연: 빙상전투 | Silver |
 | 2026-11-02 21:12:51 KST | Maestro\_Trophies\_Main | 5성급 공연: 헤드윅의 테마 | Silver |
 | 2026-11-02 21:03:21 KST | Maestro\_Trophies\_Main | 5성급 공연: 겨울 | Silver |
@@ -50,7 +54,3 @@ Updated: 2026-11-05 23:06:34 KST
 | 2026-10-05 16:46:16 KST | SILENT HILL f | 술래야, 이쪽이야♪ | Bronze |
 | 2026-10-02 23:02:05 KST | SILENT HILL f | 부적 사냥꾼 | Bronze |
 | 2026-10-01 19:08:35 KST | RESIDENT EVIL™ CODE: Veronica X | The Arrogant Queen | Gold |
-| 2026-10-01 18:37:02 KST | RESIDENT EVIL™ CODE: Veronica X | Reading Red | Silver |
-| 2026-10-01 17:30:42 KST | RESIDENT EVIL™ CODE: Veronica X | The Green Giant | Bronze |
-| 2026-10-01 17:22:16 KST | RESIDENT EVIL™ CODE: Veronica X | Feeling Blue | Silver |
-| 2026-09-30 22:20:52 KST | RESIDENT EVIL™ CODE: Veronica X | To The Frozen Land | Bronze |
