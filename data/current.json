@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-06T05:26:12.684Z",
-    "lastSuccessfulSync": "2026-11-06T05:26:12.684Z",
+    "generatedAt": "2026-11-06T13:50:38.675Z",
+    "lastSuccessfulSync": "2026-11-06T13:50:38.675Z",
     "source": "playstation-network"
   },
   "profile": {
@@ -22,7 +22,7 @@
       "total": 172,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-06T05:26:12.684Z"
+    "lastSuccessfulSync": "2026-11-06T13:50:38.675Z"
   },
   "games": [
     {
@@ -160602,71 +160602,41 @@
     },
     {
       "id": "NPWR19630_00",
-      "name": "Atelier Ryza: Ever Darkness & the Secret Hideout",
-      "localized": {
-        "ko-KR": {
-          "name": "라이자의 아틀리에 ~어둠의 여왕과 비밀의 은신처~"
-        },
-        "en-US": {
-          "name": "Atelier Ryza: Ever Darkness & the Secret Hideout"
-        }
-      },
-      "localization": {
-        "ko-KR": {
-          "trophySetVersion": "01.01",
-          "checkedAt": "2026-09-30T04:57:21.874Z",
-          "status": "available"
-        },
-        "en-US": {
-          "trophySetVersion": "01.01",
-          "checkedAt": "2026-09-30T05:23:10.759Z",
-          "status": "available"
-        }
-      },
+      "name": "",
       "platform": [
-        "PS4"
+        "PS3"
       ],
-      "imageUrl": "https://image.api.playstation.com/trophy/np/NPWR19630_00_00C77202841E234BFFFD3A3F1E64A9E127F5411ED4/177C9F90F4EE535A4C2F181D144E9719F40B5389.PNG",
-      "trophySetVersion": "01.01",
+      "imageUrl": "",
+      "trophySetVersion": "",
       "progress": {
         "earned": 44,
-        "total": 49,
-        "percentage": 85
+        "total": 0,
+        "percentage": 0
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-10-18T03:32:17Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
-          "total": 1
+          "total": 0
         },
         "gold": {
           "earned": 2,
-          "total": 3
+          "total": 0
         },
         "silver": {
           "earned": 6,
-          "total": 7
+          "total": 0
         },
         "bronze": {
           "earned": 36,
-          "total": 38
+          "total": 0
         }
       },
       "trophies": [
         {
           "id": 0,
           "name": "Atelier Ryza",
-          "localized": {
-            "ko-KR": {
-              "name": "라이자의 아틀리에",
-              "description": "모든 트로피를 획득했다."
-            },
-            "en-US": {
-              "name": "Atelier Ryza",
-              "description": "Earn all trophies."
-            }
-          },
           "description": "Earn all trophies.",
           "grade": "platinum",
           "hidden": false,
@@ -160678,16 +160648,6 @@
         {
           "id": 1,
           "name": "The Adventure Begins",
-          "localized": {
-            "ko-KR": {
-              "name": "모험의 시작",
-              "description": "처음으로 기슭에 갔다."
-            },
-            "en-US": {
-              "name": "The Adventure Begins",
-              "description": "Visit the mainland for the first time."
-            }
-          },
           "description": "Visit the mainland for the first time.",
           "grade": "bronze",
           "hidden": true,
@@ -160699,16 +160659,6 @@
         {
           "id": 2,
           "name": "Alchemic Talent",
-          "localized": {
-            "ko-KR": {
-              "name": "연금술사의 소질",
-              "description": "처음으로 조합했다."
-            },
-            "en-US": {
-              "name": "Alchemic Talent",
-              "description": "Synthesize for the first time."
-            }
-          },
           "description": "Synthesize for the first time.",
           "grade": "bronze",
           "hidden": true,
@@ -160720,16 +160670,6 @@
         {
           "id": 3,
           "name": "Klaudia's Curiosity",
-          "localized": {
-            "ko-KR": {
-              "name": "클라우디아의 호기심",
-              "description": "라이자와 클라우디아가 다과회를 즐겼다."
-            },
-            "en-US": {
-              "name": "Klaudia's Curiosity",
-              "description": "Attend a tea party with Ryza and Klaudia."
-            }
-          },
           "description": "Attend a tea party with Ryza and Klaudia.",
           "grade": "bronze",
           "hidden": true,
@@ -160741,16 +160681,6 @@
         {
           "id": 4,
           "name": "Creeping Shadows",
-          "localized": {
-            "ko-KR": {
-              "name": "다가오는 그림자",
-              "description": "수수께끼의 몬스터가 행동하기 시작했다."
-            },
-            "en-US": {
-              "name": "Creeping Shadows",
-              "description": "Witness the rise of a strange beast."
-            }
-          },
           "description": "Witness the rise of a strange beast.",
           "grade": "bronze",
           "hidden": true,
@@ -160762,16 +160692,6 @@
         {
           "id": 5,
           "name": "Build a Hideaway",
-          "localized": {
-            "ko-KR": {
-              "name": "은신처 만들기",
-              "description": "다 함께 비밀의 은신처를 만들었다."
-            },
-            "en-US": {
-              "name": "Build a Hideaway",
-              "description": "Build a secret hideout for everyone."
-            }
-          },
           "description": "Build a secret hideout for everyone.",
           "grade": "bronze",
           "hidden": true,
@@ -160783,16 +160703,6 @@
         {
           "id": 6,
           "name": "Castle Dragon",
-          "localized": {
-            "ko-KR": {
-              "name": "고성의 익룡",
-              "description": "고성의 익룡을 물리쳤다."
-            },
-            "en-US": {
-              "name": "Castle Dragon",
-              "description": "Defeat the dragon at the old castle."
-            }
-          },
           "description": "Defeat the dragon at the old castle.",
           "grade": "bronze",
           "hidden": true,
@@ -160804,16 +160714,6 @@
         {
           "id": 7,
           "name": "A Stupid Argument",
-          "localized": {
-            "ko-KR": {
-              "name": "재미없는 이야기",
-              "description": "라이자 일행의 옛날이야기를 들었다."
-            },
-            "en-US": {
-              "name": "A Stupid Argument",
-              "description": "Learn about the history of Ryza and the others."
-            }
-          },
           "description": "Learn about the history of Ryza and the others.",
           "grade": "bronze",
           "hidden": true,
@@ -160825,16 +160725,6 @@
         {
           "id": 8,
           "name": "A Lost World",
-          "localized": {
-            "ko-KR": {
-              "name": "잃어버린 세계",
-              "description": "옛 이계의 모습을 보았다."
-            },
-            "en-US": {
-              "name": "A Lost World",
-              "description": "Lay eyes on the Underworld."
-            }
-          },
           "description": "Lay eyes on the Underworld.",
           "grade": "bronze",
           "hidden": true,
@@ -160846,16 +160736,6 @@
         {
           "id": 9,
           "name": "Overnight Campout",
-          "localized": {
-            "ko-KR": {
-              "name": "캠프에서의 하룻밤",
-              "description": "이계의 캠프에서 모두와 함께 밤을 보냈다."
-            },
-            "en-US": {
-              "name": "Overnight Campout",
-              "description": "Spend the night camping in the Underworld."
-            }
-          },
           "description": "Spend the night camping in the Underworld.",
           "grade": "bronze",
           "hidden": true,
@@ -160867,16 +160747,6 @@
         {
           "id": 10,
           "name": "A New Hand",
-          "localized": {
-            "ko-KR": {
-              "name": "새로운 손",
-              "description": "엠펠이 본래의 힘을 되찾았다."
-            },
-            "en-US": {
-              "name": "A New Hand",
-              "description": "Help Empel regain his former strength."
-            }
-          },
           "description": "Help Empel regain his former strength.",
           "grade": "bronze",
           "hidden": true,
@@ -160888,16 +160758,6 @@
         {
           "id": 11,
           "name": "The Abandoned Tower",
-          "localized": {
-            "ko-KR": {
-              "name": "버려진 탑",
-              "description": "피오닐 성탑에서 쿠켄 섬의 진실을 알았다."
-            },
-            "en-US": {
-              "name": "The Abandoned Tower",
-              "description": "Visit the Holy Tower of Pynnor and learn the truth."
-            }
-          },
           "description": "Visit the Holy Tower of Pynnor and learn the truth.",
           "grade": "bronze",
           "hidden": true,
@@ -160909,16 +160769,6 @@
         {
           "id": 12,
           "name": "A Manmade Island",
-          "localized": {
-            "ko-KR": {
-              "name": "인공섬 쿠켄",
-              "description": "쿠켄 지하 구조체에 들어갔다."
-            },
-            "en-US": {
-              "name": "A Manmade Island",
-              "description": "Enter the Kurken Bunker."
-            }
-          },
           "description": "Enter the Kurken Bunker.",
           "grade": "bronze",
           "hidden": true,
@@ -160930,16 +160780,6 @@
         {
           "id": 13,
           "name": "An Island Reborn",
-          "localized": {
-            "ko-KR": {
-              "name": "부활하는 쿠켄 섬",
-              "description": "진홍의 휘석을 완성시켜 쿠켄 섬을 구했다."
-            },
-            "en-US": {
-              "name": "An Island Reborn",
-              "description": "Create the Crimson Stone and save Kurken Island."
-            }
-          },
           "description": "Create the Crimson Stone and save Kurken Island.",
           "grade": "bronze",
           "hidden": true,
@@ -160951,16 +160791,6 @@
         {
           "id": 14,
           "name": "Beyond the Present",
-          "localized": {
-            "ko-KR": {
-              "name": "지금 그 너머로",
-              "description": "각자의 꿈을 향해 새로운 길을 걷기 시작했다."
-            },
-            "en-US": {
-              "name": "Beyond the Present",
-              "description": "See everyone move on to chase their dreams."
-            }
-          },
           "description": "See everyone move on to chase their dreams.",
           "grade": "silver",
           "hidden": true,
@@ -160972,16 +160802,6 @@
         {
           "id": 15,
           "name": "Find the Kurken Fruit!",
-          "localized": {
-            "ko-KR": {
-              "name": "쿠켄 프루트를 찾아라!",
-              "description": "풀베기 낫을 만들었다."
-            },
-            "en-US": {
-              "name": "Find the Kurken Fruit!",
-              "description": "Create the Reaper's Scythe."
-            }
-          },
           "description": "Create the Reaper's Scythe.",
           "grade": "bronze",
           "hidden": true,
@@ -160993,16 +160813,6 @@
         {
           "id": 16,
           "name": "I'm a Lumberjack!",
-          "localized": {
-            "ko-KR": {
-              "name": "나무꾼이 되겠습니다",
-              "description": "장작용 도끼를 만들었다."
-            },
-            "en-US": {
-              "name": "I'm a Lumberjack!",
-              "description": "Create the Woodcutter's Axe."
-            }
-          },
           "description": "Create the Woodcutter's Axe.",
           "grade": "bronze",
           "hidden": true,
@@ -161014,16 +160824,6 @@
         {
           "id": 17,
           "name": "I'm Crushing It!",
-          "localized": {
-            "ko-KR": {
-              "name": "모든 것을 부수는 연금망치",
-              "description": "해머를 만들었다."
-            },
-            "en-US": {
-              "name": "I'm Crushing It!",
-              "description": "Create the Hammer."
-            }
-          },
           "description": "Create the Hammer.",
           "grade": "bronze",
           "hidden": true,
@@ -161035,16 +160835,6 @@
         {
           "id": 18,
           "name": "Detonate and Decimate!",
-          "localized": {
-            "ko-KR": {
-              "name": "분쇄! 폭쇄! 산산조각!",
-              "description": "프람 로드를 만들었다."
-            },
-            "en-US": {
-              "name": "Detonate and Decimate!",
-              "description": "Create the Bomb Rod."
-            }
-          },
           "description": "Create the Bomb Rod.",
           "grade": "bronze",
           "hidden": true,
@@ -161056,16 +160846,6 @@
         {
           "id": 19,
           "name": "Fishing Master",
-          "localized": {
-            "ko-KR": {
-              "name": "목표는 강태공!",
-              "description": "낚싯대를 만들었다."
-            },
-            "en-US": {
-              "name": "Fishing Master",
-              "description": "Create the Fishing Rod."
-            }
-          },
           "description": "Create the Fishing Rod.",
           "grade": "bronze",
           "hidden": true,
@@ -161077,16 +160857,6 @@
         {
           "id": 20,
           "name": "Bug Catcher",
-          "localized": {
-            "ko-KR": {
-              "name": "곤충채집",
-              "description": "곤충채집망을 만들었다."
-            },
-            "en-US": {
-              "name": "Bug Catcher",
-              "description": "Create the Bug Net."
-            }
-          },
           "description": "Create the Bug Net.",
           "grade": "bronze",
           "hidden": true,
@@ -161098,16 +160868,6 @@
         {
           "id": 21,
           "name": "Weapon Forger",
-          "localized": {
-            "ko-KR": {
-              "name": "무기의 단련법",
-              "description": "비밀의 은신처에 동력로를 설치했다."
-            },
-            "en-US": {
-              "name": "Weapon Forger",
-              "description": "Install a Power Reactor at the secret hideout."
-            }
-          },
           "description": "Install a Power Reactor at the secret hideout.",
           "grade": "bronze",
           "hidden": true,
@@ -161119,16 +160879,6 @@
         {
           "id": 22,
           "name": "True Firepower!",
-          "localized": {
-            "ko-KR": {
-              "name": "단련의 비결은 최대화력!",
-              "description": "모든 동력로를 발견해 설치했다."
-            },
-            "en-US": {
-              "name": "True Firepower!",
-              "description": "Find and install all Power Reactors."
-            }
-          },
           "description": "Find and install all Power Reactors.",
           "grade": "bronze",
           "hidden": true,
@@ -161140,16 +160890,6 @@
         {
           "id": 23,
           "name": "It's a Small World",
-          "localized": {
-            "ko-KR": {
-              "name": "조그마한 세계",
-              "description": "비밀의 은신처에 채집지 조합기를 설치했다."
-            },
-            "en-US": {
-              "name": "It's a Small World",
-              "description": "Install the Gathering Synthesizer at the secret hideout."
-            }
-          },
           "description": "Install the Gathering Synthesizer at the secret hideout.",
           "grade": "bronze",
           "hidden": true,
@@ -161161,16 +160901,6 @@
         {
           "id": 24,
           "name": "Item Cloner",
-          "localized": {
-            "ko-KR": {
-              "name": "아이템 클론",
-              "description": "비밀의 은신처에 복제가마를 설치했다."
-            },
-            "en-US": {
-              "name": "Item Cloner",
-              "description": "Install the Multiplicauldron at the secret hideout."
-            }
-          },
           "description": "Install the Multiplicauldron at the secret hideout.",
           "grade": "bronze",
           "hidden": true,
@@ -161182,16 +160912,6 @@
         {
           "id": 25,
           "name": "Furry White Wanderer",
-          "localized": {
-            "ko-KR": {
-              "name": "하얀 모험가",
-              "description": "여행지에 있던 염소를 구했다."
-            },
-            "en-US": {
-              "name": "Furry White Wanderer",
-              "description": "Save the goat you meet on your travels."
-            }
-          },
           "description": "Save the goat you meet on your travels.",
           "grade": "bronze",
           "hidden": true,
@@ -161203,16 +160923,6 @@
         {
           "id": 26,
           "name": "Island Specialty",
-          "localized": {
-            "ko-KR": {
-              "name": "섬의 명물",
-              "description": "라젠 푸딩을 탄생시켰다."
-            },
-            "en-US": {
-              "name": "Island Specialty",
-              "description": "Help create Rasen Pudding."
-            }
-          },
           "description": "Help create Rasen Pudding.",
           "grade": "bronze",
           "hidden": true,
@@ -161224,16 +160934,6 @@
         {
           "id": 27,
           "name": "Popular Islander",
-          "localized": {
-            "ko-KR": {
-              "name": "섬의 인기인",
-              "description": "섬사람들의 의뢰를 수행해 피터에게서 취재를 받았다."
-            },
-            "en-US": {
-              "name": "Popular Islander",
-              "description": "Complete requests to get Peter to interview you."
-            }
-          },
           "description": "Complete requests to get Peter to interview you.",
           "grade": "bronze",
           "hidden": true,
@@ -161245,16 +160945,6 @@
         {
           "id": 28,
           "name": "Musclebound Alchemist",
-          "localized": {
-            "ko-KR": {
-              "name": "힘이 센 연금술사",
-              "description": "라이자의 전투 레벨을 50으로 만들었다."
-            },
-            "en-US": {
-              "name": "Musclebound Alchemist",
-              "description": "Get Ryza's battle level to 50."
-            }
-          },
           "description": "Get Ryza's battle level to 50.",
           "grade": "silver",
           "hidden": true,
@@ -161266,16 +160956,6 @@
         {
           "id": 29,
           "name": "The Courageous One",
-          "localized": {
-            "ko-KR": {
-              "name": "용기 있는 자",
-              "description": "브레이버가 되었다."
-            },
-            "en-US": {
-              "name": "The Courageous One",
-              "description": "Become a Braver."
-            }
-          },
           "description": "Become a Braver.",
           "grade": "bronze",
           "hidden": true,
@@ -161287,16 +160967,6 @@
         {
           "id": 30,
           "name": "Fully Fatal Drive",
-          "localized": {
-            "ko-KR": {
-              "name": "페이탈 풀드라이브",
-              "description": "전원의 페이탈 드라이브를 발동했다."
-            },
-            "en-US": {
-              "name": "Fully Fatal Drive",
-              "description": "Activate everyone's Fatal Drive."
-            }
-          },
           "description": "Activate everyone's Fatal Drive.",
           "grade": "bronze",
           "hidden": true,
@@ -161308,16 +160978,6 @@
         {
           "id": 31,
           "name": "Total Mastery",
-          "localized": {
-            "ko-KR": {
-              "name": "면허개전",
-              "description": "연금 레벨을 99로 만들었다."
-            },
-            "en-US": {
-              "name": "Total Mastery",
-              "description": "Get Ryza's alchemy level to 99."
-            }
-          },
           "description": "Get Ryza's alchemy level to 99.",
           "grade": "silver",
           "hidden": true,
@@ -161329,16 +160989,6 @@
         {
           "id": 32,
           "name": "Alchemy Master",
-          "localized": {
-            "ko-KR": {
-              "name": "알케미 마이스터",
-              "description": "모든 레시피를 습득했다."
-            },
-            "en-US": {
-              "name": "Alchemy Master",
-              "description": "Obtain all recipes."
-            }
-          },
           "description": "Obtain all recipes.",
           "grade": "silver",
           "hidden": true,
@@ -161350,16 +161000,6 @@
         {
           "id": 33,
           "name": "Ultra Alchemy",
-          "localized": {
-            "ko-KR": {
-              "name": "궁극의 연금술",
-              "description": "아이템 레벨이 99인 도구를 만들었다."
-            },
-            "en-US": {
-              "name": "Ultra Alchemy",
-              "description": "Create an item with Item Level 99."
-            }
-          },
           "description": "Create an item with Item Level 99.",
           "grade": "bronze",
           "hidden": true,
@@ -161371,16 +161011,6 @@
         {
           "id": 34,
           "name": "Lost Alchemy Tome",
-          "localized": {
-            "ko-KR": {
-              "name": "잃어버린 연금서",
-              "description": "천계의 서를 입수했다."
-            },
-            "en-US": {
-              "name": "Lost Alchemy Tome",
-              "description": "Obtain the Revelation Book."
-            }
-          },
           "description": "Obtain the Revelation Book.",
           "grade": "gold",
           "hidden": true,
@@ -161392,16 +161022,6 @@
         {
           "id": 35,
           "name": "The First Step",
-          "localized": {
-            "ko-KR": {
-              "name": "시작의 발돋움",
-              "description": "임의의 탐색 기록을 기재했다."
-            },
-            "en-US": {
-              "name": "The First Step",
-              "description": "Write a record of one exploration."
-            }
-          },
           "description": "Write a record of one exploration.",
           "grade": "bronze",
           "hidden": true,
@@ -161413,16 +161033,6 @@
         {
           "id": 36,
           "name": "Our Adventure Memory",
-          "localized": {
-            "ko-KR": {
-              "name": "우리들만의 모험기",
-              "description": "모든 탐색 기록을 기재했다."
-            },
-            "en-US": {
-              "name": "Our Adventure Memory",
-              "description": "Write a record of every exploration."
-            }
-          },
           "description": "Write a record of every exploration.",
           "grade": "silver",
           "hidden": true,
@@ -161434,16 +161044,6 @@
         {
           "id": 37,
           "name": "Secret Treasure",
-          "localized": {
-            "ko-KR": {
-              "name": "비밀의 보물상자",
-              "description": "임의의 보물상자를 발견했다."
-            },
-            "en-US": {
-              "name": "Secret Treasure",
-              "description": "Find one treasure chest."
-            }
-          },
           "description": "Find one treasure chest.",
           "grade": "bronze",
           "hidden": true,
@@ -161455,16 +161055,6 @@
         {
           "id": 38,
           "name": "Treasure Hunter",
-          "localized": {
-            "ko-KR": {
-              "name": "트레저 헌터",
-              "description": "모든 보물상자를 발견했다."
-            },
-            "en-US": {
-              "name": "Treasure Hunter",
-              "description": "Find all treasure chests."
-            }
-          },
           "description": "Find all treasure chests.",
           "grade": "silver",
           "hidden": true,
@@ -161476,16 +161066,6 @@
         {
           "id": 39,
           "name": "World Creator",
-          "localized": {
-            "ko-KR": {
-              "name": "세계의 창조",
-              "description": "채집지 조합으로 레벨 51 이상의 보틀을 만들었다."
-            },
-            "en-US": {
-              "name": "World Creator",
-              "description": "Create a bottle with Gathering Synthesizer Level 51."
-            }
-          },
           "description": "Create a bottle with Gathering Synthesizer Level 51.",
           "grade": "bronze",
           "hidden": true,
@@ -161497,16 +161077,6 @@
         {
           "id": 40,
           "name": "Godly Puni",
-          "localized": {
-            "ko-KR": {
-              "name": "신의 영역에 다가선 푸니",
-              "description": "샤이닝 푸니를 물리쳤다."
-            },
-            "en-US": {
-              "name": "Godly Puni",
-              "description": "Defeat the Shining Puni."
-            }
-          },
           "description": "Defeat the Shining Puni.",
           "grade": "bronze",
           "hidden": true,
@@ -161518,16 +161088,6 @@
         {
           "id": 41,
           "name": "Fierce Valley King",
-          "localized": {
-            "ko-KR": {
-              "name": "험준한 계곡의 지배자",
-              "description": "새비지 어쌔신을 물리쳤다."
-            },
-            "en-US": {
-              "name": "Fierce Valley King",
-              "description": "Defeat the Savage Assassin."
-            }
-          },
           "description": "Defeat the Savage Assassin.",
           "grade": "bronze",
           "hidden": true,
@@ -161539,16 +161099,6 @@
         {
           "id": 42,
           "name": "Holy Tower Sentinel",
-          "localized": {
-            "ko-KR": {
-              "name": "성스러운 탑의 수호자",
-              "description": "환영의 지배자를 물리쳤다."
-            },
-            "en-US": {
-              "name": "Holy Tower Sentinel",
-              "description": "Defeat the Mirage Master."
-            }
-          },
           "description": "Defeat the Mirage Master.",
           "grade": "bronze",
           "hidden": true,
@@ -161560,16 +161110,6 @@
         {
           "id": 43,
           "name": "Legendary Giant",
-          "localized": {
-            "ko-KR": {
-              "name": "전설의 거인",
-              "description": "불후의 조각상을 물리쳤다."
-            },
-            "en-US": {
-              "name": "Legendary Giant",
-              "description": "Defeat the Eternal Sculpture."
-            }
-          },
           "description": "Defeat the Eternal Sculpture.",
           "grade": "bronze",
           "hidden": true,
@@ -161581,16 +161121,6 @@
         {
           "id": 44,
           "name": "Fallen Champion",
-          "localized": {
-            "ko-KR": {
-              "name": "타락한 성기사",
-              "description": "노블 팔라딘을 물리쳤다."
-            },
-            "en-US": {
-              "name": "Fallen Champion",
-              "description": "Defeat the Noble Paladin."
-            }
-          },
           "description": "Defeat the Noble Paladin.",
           "grade": "bronze",
           "hidden": true,
@@ -161602,16 +161132,6 @@
         {
           "id": 45,
           "name": "Rainmaker",
-          "localized": {
-            "ko-KR": {
-              "name": "폭풍의 왕",
-              "description": "킹 오브 스톰을 물리쳤다."
-            },
-            "en-US": {
-              "name": "Rainmaker",
-              "description": "Defeat the King of Storms."
-            }
-          },
           "description": "Defeat the King of Storms.",
           "grade": "bronze",
           "hidden": true,
@@ -161623,16 +161143,6 @@
         {
           "id": 46,
           "name": "Elemental Slayer",
-          "localized": {
-            "ko-KR": {
-              "name": "엘리먼트 슬레이어",
-              "description": "5마리의 대정령을 모두 물리쳤다."
-            },
-            "en-US": {
-              "name": "Elemental Slayer",
-              "description": "Defeat all 5 Great Elements."
-            }
-          },
           "description": "Defeat all 5 Great Elements.",
           "grade": "gold",
           "hidden": true,
@@ -161644,16 +161154,6 @@
         {
           "id": 47,
           "name": "Queen of Darkness",
-          "localized": {
-            "ko-KR": {
-              "name": "어둠의 여왕",
-              "description": "어둠의 여왕을 물리쳤다."
-            },
-            "en-US": {
-              "name": "Queen of Darkness",
-              "description": "Defeat the Queen of Darkness."
-            }
-          },
           "description": "Defeat the Queen of Darkness.",
           "grade": "silver",
           "hidden": true,
@@ -161665,16 +161165,6 @@
         {
           "id": 48,
           "name": "True Queen of Shadows",
-          "localized": {
-            "ko-KR": {
-              "name": "그림자 속에 숨은 진정한 왕",
-              "description": "그림자 여왕을 물리쳤다."
-            },
-            "en-US": {
-              "name": "True Queen of Shadows",
-              "description": "Defeat the Queen of Shadows."
-            }
-          },
           "description": "Defeat the Queen of Shadows.",
           "grade": "gold",
           "hidden": true,
