@@ -1,6 +1,6 @@
 # Games
 
-Updated: 2026-11-06 22:50:38 KST
+Updated: 2026-11-07 07:47:05 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
@@ -153,7 +153,7 @@ Dates: KST. Detail: games/{id}.md
 | 원신 | NPWR21233_00 | PS4 | 0/118 (0%) | No | Unknown |
 | 콜 오브 듀티®: 모던 워페어 2 캠페인 리마스터 | NPWR14706_00 | PS4 | 18/51 (27%) | No | 2020-11-21 |
 | God of War | NPWR12518_00 | PS4 | 26/37 (60%) | No | 2020-11-01 |
-|  | NPWR19630_00 | PS3 | 44/0 (0%) | No | 2020-10-18 |
+| 라이자의 아틀리에 \~어둠의 여왕과 비밀의 은신처\~ | NPWR19630_00 | PS4 | 44/49 (85%) | No | 2020-10-18 |
 | 용과 같이7 빛과 어둠의 행방 | NPWR16679_00 | PS4 | 62/71 (84%) | Yes | 2020-07-24 |
 | STAR WARS™ Battlefront™ II Trophies | NPWR11465_00 | PS4 | 2/44 (2%) | No | 2020-06-23 |
 | Call of Duty®: WWII | NPWR11595_00 | PS4 | 2/91 (1%) | No | 2020-06-17 |
