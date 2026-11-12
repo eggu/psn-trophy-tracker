@@ -1,9 +1,11 @@
 # Recent Trophies
 
-Updated: 2026-11-11 22:40:35 KST
+Updated: 2026-11-12 09:08:27 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-11-12 01:06:36 KST | 기원: 변이 | 나 듣고 있어... | Bronze |
+| 2026-11-12 01:05:10 KST | 기원: 변이 | 나 밟았어\! | Silver |
 | 2026-11-06 04:46:20 KST | RESIDENT EVIL 2 | 죽음의 도시 입장 | Bronze |
 | 2026-11-06 04:23:17 KST | RESIDENT EVIL 2 | 이거나 먹어라\! | Bronze |
 | 2026-11-06 04:22:07 KST | RESIDENT EVIL 2 | 총 따위 개나 줘버려 | Bronze |
@@ -52,5 +54,3 @@ Updated: 2026-11-11 22:40:35 KST
 | 2026-10-05 21:02:16 KST | SILENT HILL f | 파사의 물은 마르지 않으리 | Bronze |
 | 2026-10-05 20:42:05 KST | SILENT HILL f | 승자는 캡슐에 의지하지 않는다 | Silver |
 | 2026-10-05 16:46:16 KST | SILENT HILL f | 술래야, 이쪽이야♪ | Bronze |
-| 2026-10-02 23:02:05 KST | SILENT HILL f | 부적 사냥꾼 | Bronze |
-| 2026-10-01 19:08:35 KST | RESIDENT EVIL™ CODE: Veronica X | The Arrogant Queen | Gold |

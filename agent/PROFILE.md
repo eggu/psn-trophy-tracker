@@ -1,17 +1,17 @@
 # PSN Profile — eggu\_
 
-Updated: 2026-11-11 22:40:35 KST
+Updated: 2026-11-12 09:08:27 KST
 
 Level: 286
 Level progress: 93%
 
 | Trophy | Count |
 | --- | --- |
-| Total | 2510 |
+| Total | 2512 |
 | Platinum | 12 |
 | Gold | 97 |
-| Silver | 381 |
-| Bronze | 2020 |
+| Silver | 382 |
+| Bronze | 2021 |
 
-Games: 172
+Games: 173
 Completed games: 7

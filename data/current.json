@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-11T13:40:35.900Z",
-    "lastSuccessfulSync": "2026-11-11T13:40:35.900Z",
+    "generatedAt": "2026-11-12T00:08:27.219Z",
+    "lastSuccessfulSync": "2026-11-12T00:08:27.219Z",
     "source": "playstation-network"
   },
   "profile": {
@@ -14,17 +14,829 @@
     "trophies": {
       "platinum": 12,
       "gold": 97,
-      "silver": 381,
-      "bronze": 2020,
-      "total": 2510
+      "silver": 382,
+      "bronze": 2021,
+      "total": 2512
     },
     "games": {
-      "total": 172,
+      "total": 173,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-11T13:40:35.900Z"
+    "lastSuccessfulSync": "2026-11-12T00:08:27.219Z"
   },
   "games": [
+    {
+      "id": "NPWR27452_00",
+      "name": "Anno: Mutationem",
+      "localized": {
+        "ko-KR": {
+          "name": "기원: 변이"
+        },
+        "en-US": {
+          "name": "Anno: Mutationem"
+        }
+      },
+      "localization": {
+        "ko-KR": {
+          "trophySetVersion": "01.00",
+          "checkedAt": "2026-11-12T00:08:24.897Z",
+          "status": "available"
+        },
+        "en-US": {
+          "trophySetVersion": "01.00",
+          "checkedAt": "2026-11-12T00:08:27.205Z",
+          "status": "available"
+        }
+      },
+      "platform": [
+        "PS5"
+      ],
+      "imageUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/7b756321-80cf-435e-a0fa-fdfdd88ad1bf.png",
+      "trophySetVersion": "01.00",
+      "progress": {
+        "earned": 2,
+        "total": 36,
+        "percentage": 4
+      },
+      "platinumEarned": false,
+      "lastTrophyAt": "2026-11-11T16:06:36Z",
+      "trophySummary": {
+        "platinum": {
+          "earned": 0,
+          "total": 1
+        },
+        "gold": {
+          "earned": 0,
+          "total": 3
+        },
+        "silver": {
+          "earned": 1,
+          "total": 14
+        },
+        "bronze": {
+          "earned": 1,
+          "total": 18
+        }
+      },
+      "trophies": [
+        {
+          "id": 0,
+          "name": "The Age of Mutationem",
+          "localized": {
+            "ko-KR": {
+              "name": "기원 변이",
+              "description": "다른 모든 트로피를 획득"
+            },
+            "en-US": {
+              "name": "The Age of Mutationem",
+              "description": "Unlock all other Trophies"
+            }
+          },
+          "description": "Unlock all other Trophies",
+          "grade": "platinum",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/ab5a25f7-26ba-4224-8757-6c61c4b707c5.png",
+          "groupId": "default"
+        },
+        {
+          "id": 1,
+          "name": "Omnipotence",
+          "localized": {
+            "ko-KR": {
+              "name": "만능 전사",
+              "description": "50%의 적성 잠금 해제"
+            },
+            "en-US": {
+              "name": "Omnipotence",
+              "description": "Unlock 50% of all Talents"
+            }
+          },
+          "description": "Unlock 50% of all Talents",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/221d9fb1-63e3-4e0a-b4a2-99dad99514d7.png",
+          "groupId": "default"
+        },
+        {
+          "id": 2,
+          "name": "Clarity of Mind",
+          "localized": {
+            "ko-KR": {
+              "name": "의식 회복",
+              "description": "C 박사의 다크 드래곤 모드 처치"
+            },
+            "en-US": {
+              "name": "Clarity of Mind",
+              "description": "Defeat C's Dragon Incarnation"
+            }
+          },
+          "description": "Defeat C's Dragon Incarnation",
+          "grade": "gold",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/b0af5c03-3144-4c0d-9ecf-821509735f7b.png",
+          "groupId": "default"
+        },
+        {
+          "id": 3,
+          "name": "The Warlord",
+          "localized": {
+            "ko-KR": {
+              "name": "전쟁의 왕",
+              "description": "총 10개의 무기 획득 "
+            },
+            "en-US": {
+              "name": "The Warlord",
+              "description": "Obtain 10 weapons in total"
+            }
+          },
+          "description": "Obtain 10 weapons in total",
+          "grade": "gold",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/a34b9871-d60c-488a-95fb-d48da0a8f7d2.png",
+          "groupId": "default"
+        },
+        {
+          "id": 4,
+          "name": "Welcome home, 06",
+          "localized": {
+            "ko-KR": {
+              "name": "진실에 닿다",
+              "description": "환상 위원회 도달"
+            },
+            "en-US": {
+              "name": "Welcome home, 06",
+              "description": "Arrive at the Consortium's Inner Hall"
+            }
+          },
+          "description": "Arrive at the Consortium's Inner Hall",
+          "grade": "silver",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/87b1a33c-a3d5-45eb-978a-67a191ce4558.png",
+          "groupId": "default"
+        },
+        {
+          "id": 5,
+          "name": "This can't be right…",
+          "localized": {
+            "ko-KR": {
+              "name": "이래서는 안됐는데",
+              "description": "페이크 엔딩 잠금 해제"
+            },
+            "en-US": {
+              "name": "This can't be right…",
+              "description": "Unlocked the false ending"
+            }
+          },
+          "description": "Unlocked the false ending",
+          "grade": "silver",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/bd007f4e-c51b-4cc4-92ec-c4dadb7bff0b.png",
+          "groupId": "default"
+        },
+        {
+          "id": 6,
+          "name": "That's gotta hurt",
+          "localized": {
+            "ko-KR": {
+              "name": "전력의 일격",
+              "description": "한 번에 150 대미지 입히기"
+            },
+            "en-US": {
+              "name": "That's gotta hurt",
+              "description": "Cause 150 damage in a single attack"
+            }
+          },
+          "description": "Cause 150 damage in a single attack",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/e32190ec-dd8b-4368-ba89-ebd0437310e3.png",
+          "groupId": "default"
+        },
+        {
+          "id": 7,
+          "name": "The Ann Flores Combo Experience",
+          "localized": {
+            "ko-KR": {
+              "name": "승기를 잡아",
+              "description": "20콤보 달성"
+            },
+            "en-US": {
+              "name": "The Ann Flores Combo Experience",
+              "description": "Pull off a 20-hit combo"
+            }
+          },
+          "description": "Pull off a 20-hit combo",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/e0632b73-8c86-4823-9091-ba7b4e918d89.png",
+          "groupId": "default"
+        },
+        {
+          "id": 8,
+          "name": "You are the One",
+          "localized": {
+            "ko-KR": {
+              "name": "매트릭스",
+              "description": "해킹 게임 10개 완료"
+            },
+            "en-US": {
+              "name": "You are the One",
+              "description": "Complete 10 Hacking mini-games"
+            }
+          },
+          "description": "Complete 10 Hacking mini-games",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/f1a5ad50-5080-4774-98ed-cef807bbacb5.png",
+          "groupId": "default"
+        },
+        {
+          "id": 9,
+          "name": "Ann ULTRA",
+          "localized": {
+            "ko-KR": {
+              "name": "인간 사이의 악마",
+              "description": "변신 기간 동안 적 20명 처치"
+            },
+            "en-US": {
+              "name": "Ann ULTRA",
+              "description": "Defeat 20 enemies while Ann is transformed"
+            }
+          },
+          "description": "Defeat 20 enemies while Ann is transformed",
+          "grade": "bronze",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/6769fd7a-5596-4082-a5f6-3aa8ac5bb6cf.png",
+          "groupId": "default"
+        },
+        {
+          "id": 10,
+          "name": "Supreme Bartender Ann",
+          "localized": {
+            "ko-KR": {
+              "name": "세계 바텐더 챔피언",
+              "description": "바텐더 게임 최고 난이도 클리어"
+            },
+            "en-US": {
+              "name": "Supreme Bartender Ann",
+              "description": "Complete the highest difficulty of bartending "
+            }
+          },
+          "description": "Complete the highest difficulty of bartending ",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/fed8bb2c-3c9f-4dcc-abf6-23748c2516b3.png",
+          "groupId": "default"
+        },
+        {
+          "id": 11,
+          "name": "The truth is out there",
+          "localized": {
+            "ko-KR": {
+              "name": "지하의 음모",
+              "description": "물 터널 구역 통과"
+            },
+            "en-US": {
+              "name": "The truth is out there",
+              "description": "Complete the Underground Water Channel area"
+            }
+          },
+          "description": "Complete the Underground Water Channel area",
+          "grade": "silver",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/baf18343-1f28-484c-af3c-e6de040b74ea.png",
+          "groupId": "default"
+        },
+        {
+          "id": 12,
+          "name": "Arm Wrestlin'",
+          "localized": {
+            "ko-KR": {
+              "name": "팔씨름",
+              "description": "T.R.에게 승리"
+            },
+            "en-US": {
+              "name": "Arm Wrestlin'",
+              "description": "Defeat the Factio Pugni Boss TR"
+            }
+          },
+          "description": "Defeat the Factio Pugni Boss TR",
+          "grade": "silver",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/268a5f6f-5c0c-4361-ae8a-9616a75f9012.png",
+          "groupId": "default"
+        },
+        {
+          "id": 13,
+          "name": "Dress to impress",
+          "localized": {
+            "ko-KR": {
+              "name": "클럽 스타",
+              "description": "의상 “야경” 잠금 해제"
+            },
+            "en-US": {
+              "name": "Dress to impress",
+              "description": "Change into the night dress"
+            }
+          },
+          "description": "Change into the night dress",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/c8e7028e-b046-45d4-aa76-2f1d563badc4.png",
+          "groupId": "default"
+        },
+        {
+          "id": 14,
+          "name": "Big Spender",
+          "localized": {
+            "ko-KR": {
+              "name": "천금 사용하기",
+              "description": "1000화폐 사용하기"
+            },
+            "en-US": {
+              "name": "Big Spender",
+              "description": "Spend 1000 credits in total"
+            }
+          },
+          "description": "Spend 1000 credits in total",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/d9b1c3fe-1006-431a-86f4-34fb272df692.png",
+          "groupId": "default"
+        },
+        {
+          "id": 15,
+          "name": "I think it's broke",
+          "localized": {
+            "ko-KR": {
+              "name": "해부의 마스터",
+              "description": "아이템 30개 분해 "
+            },
+            "en-US": {
+              "name": "I think it's broke",
+              "description": "Disassemble 30 items"
+            }
+          },
+          "description": "Disassemble 30 items",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/8fbc8274-f4d3-4d8e-bf8a-7d5623a4be36.png",
+          "groupId": "default"
+        },
+        {
+          "id": 16,
+          "name": "I just love stuff!",
+          "localized": {
+            "ko-KR": {
+              "name": "환경보호의 퀸",
+              "description": "아이템 100개 줍기"
+            },
+            "en-US": {
+              "name": "I just love stuff!",
+              "description": "Pick up 100 items"
+            }
+          },
+          "description": "Pick up 100 items",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/6eb62435-14c3-49ba-8478-20b45de629c1.png",
+          "groupId": "default"
+        },
+        {
+          "id": 17,
+          "name": "The things they print nowadays",
+          "localized": {
+            "ko-KR": {
+              "name": "진실의 추격자",
+              "description": "문서 30건 읽기"
+            },
+            "en-US": {
+              "name": "The things they print nowadays",
+              "description": "Read 30 documents"
+            }
+          },
+          "description": "Read 30 documents",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/77295ab0-2b2f-4023-a93e-70d34da0225e.png",
+          "groupId": "default"
+        },
+        {
+          "id": 18,
+          "name": "1+1>2",
+          "localized": {
+            "ko-KR": {
+              "name": "연금술사",
+              "description": "합성 15번 진행"
+            },
+            "en-US": {
+              "name": "1+1>2",
+              "description": "Combine 15 items"
+            }
+          },
+          "description": "Combine 15 items",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/31e2219f-8b5f-489a-81b9-7026e47426d7.png",
+          "groupId": "default"
+        },
+        {
+          "id": 19,
+          "name": "Keep 'em coming!",
+          "localized": {
+            "ko-KR": {
+              "name": "빠른 문제 해결",
+              "description": "적 누적 100명 처치"
+            },
+            "en-US": {
+              "name": "Keep 'em coming!",
+              "description": "Defeat 100 enemies in total"
+            }
+          },
+          "description": "Defeat 100 enemies in total",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/6e145401-37df-46e5-9bec-9084a364a340.png",
+          "groupId": "default"
+        },
+        {
+          "id": 20,
+          "name": "Science, it works!",
+          "localized": {
+            "ko-KR": {
+              "name": "솜씨 시험",
+              "description": "처음으로 칩 초전도 처리하기"
+            },
+            "en-US": {
+              "name": "Science, it works!",
+              "description": "Super-Enchance a Weapon Chip"
+            }
+          },
+          "description": "Super-Enchance a Weapon Chip",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/ed1f1477-0ff2-42ed-abbd-83f7efdcd1e4.png",
+          "groupId": "default"
+        },
+        {
+          "id": 21,
+          "name": "The Traveler",
+          "localized": {
+            "ko-KR": {
+              "name": "여행자",
+              "description": "모든 샘물 발견하기"
+            },
+            "en-US": {
+              "name": "The Traveler",
+              "description": "Discover all Teleport-Springs"
+            }
+          },
+          "description": "Discover all Teleport-Springs",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/63882448-d66d-4b22-8a69-698647d63aab.png",
+          "groupId": "default"
+        },
+        {
+          "id": 22,
+          "name": "So Fresh and So clean clean",
+          "localized": {
+            "ko-KR": {
+              "name": "이렇게 개운하고 깨끗할 수가",
+              "description": "목욕 3번 하기"
+            },
+            "en-US": {
+              "name": "So Fresh and So clean clean",
+              "description": "Shower 3 times"
+            }
+          },
+          "description": "Shower 3 times",
+          "grade": "bronze",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/84963579-04e5-455e-8d94-1bf7ea4b0ebd.png",
+          "groupId": "default"
+        },
+        {
+          "id": 23,
+          "name": "SERENITY NOW",
+          "localized": {
+            "ko-KR": {
+              "name": "물처럼 고요한 마음",
+              "description": "서점 10번 방문"
+            },
+            "en-US": {
+              "name": "SERENITY NOW",
+              "description": "Pray to the statue in the bookstore 10 times"
+            }
+          },
+          "description": "Pray to the statue in the bookstore 10 times",
+          "grade": "bronze",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/58cc0b5a-e195-42db-ab86-a61c5df14003.png",
+          "groupId": "default"
+        },
+        {
+          "id": 24,
+          "name": "Fire in the hole!",
+          "localized": {
+            "ko-KR": {
+              "name": "그저 수류탄일 뿐",
+              "description": "수류탄으로 동시의 2명 혹은 그 이상의 적 처치"
+            },
+            "en-US": {
+              "name": "Fire in the hole!",
+              "description": "Defeat 2 or more enemies with 1 grenade"
+            }
+          },
+          "description": "Defeat 2 or more enemies with 1 grenade",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/9da505c4-821c-47f2-8964-990761210e93.png",
+          "groupId": "default"
+        },
+        {
+          "id": 25,
+          "name": "Love me like I love my posters",
+          "localized": {
+            "ko-KR": {
+              "name": "종이 애호가",
+              "description": "모든 포스터 수집하기"
+            },
+            "en-US": {
+              "name": "Love me like I love my posters",
+              "description": "Collect all posters"
+            }
+          },
+          "description": "Collect all posters",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/6c3b37e3-d72a-46bb-a7c0-2604e4d604b6.png",
+          "groupId": "default"
+        },
+        {
+          "id": 26,
+          "name": "I just got real good",
+          "localized": {
+            "ko-KR": {
+              "name": "핑퐁",
+              "description": "탁구 게임 한 번 승리하기"
+            },
+            "en-US": {
+              "name": "I just got real good",
+              "description": "Win the arcade mini-game "
+            }
+          },
+          "description": "Win the arcade mini-game ",
+          "grade": "bronze",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/f49b8f40-14e2-4c44-8b80-4939bd80bace.png",
+          "groupId": "default"
+        },
+        {
+          "id": 27,
+          "name": "Lady Luck is a cool cat",
+          "localized": {
+            "ko-KR": {
+              "name": "복고양이",
+              "description": "모든 복고양이 수집하기"
+            },
+            "en-US": {
+              "name": "Lady Luck is a cool cat",
+              "description": "Collect all the Cyber Neko+ statues"
+            }
+          },
+          "description": "Collect all the Cyber Neko+ statues",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/38a4aaa2-4de0-45de-8a9d-11943c8d66c2.png",
+          "groupId": "default"
+        },
+        {
+          "id": 28,
+          "name": "Don't judge a manhole by its cover",
+          "localized": {
+            "ko-KR": {
+              "name": "나 밟았어!",
+              "description": "배고픈 맨홀 뚜껑 발견하기"
+            },
+            "en-US": {
+              "name": "Don't judge a manhole by its cover",
+              "description": "Discover Hapi's lair"
+            }
+          },
+          "description": "Discover Hapi's lair",
+          "grade": "silver",
+          "hidden": true,
+          "earned": true,
+          "earnedAt": "2026-11-11T16:05:10Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/f7f88824-16d0-4d9c-8e67-faf398849da4.png",
+          "groupId": "default"
+        },
+        {
+          "id": 29,
+          "name": "Deadly Kombationem",
+          "localized": {
+            "ko-KR": {
+              "name": "격투 애호가",
+              "description": "경기장에서 경기 30초 관람"
+            },
+            "en-US": {
+              "name": "Deadly Kombationem",
+              "description": "Watch the Arena Fighters for 30 second as spectactor"
+            }
+          },
+          "description": "Watch the Arena Fighters for 30 second as spectactor",
+          "grade": "bronze",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/7cb1ea43-dbfb-4922-a05f-65023abc7aa2.png",
+          "groupId": "default"
+        },
+        {
+          "id": 30,
+          "name": "Tell me your story",
+          "localized": {
+            "ko-KR": {
+              "name": "나 듣고 있어...",
+              "description": "거리에서 대화 50번 듣기"
+            },
+            "en-US": {
+              "name": "Tell me your story",
+              "description": "Listen to 50 conversations"
+            }
+          },
+          "description": "Listen to 50 conversations",
+          "grade": "bronze",
+          "hidden": false,
+          "earned": true,
+          "earnedAt": "2026-11-11T16:06:36Z",
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/c3f1c56c-060f-4cc4-9c43-03bdf093b388.png",
+          "groupId": "default"
+        },
+        {
+          "id": 31,
+          "name": "I'm walking here!",
+          "localized": {
+            "ko-KR": {
+              "name": "교통관리",
+              "description": "차량 15대 막기"
+            },
+            "en-US": {
+              "name": "I'm walking here!",
+              "description": "Make 15 cars stop"
+            }
+          },
+          "description": "Make 15 cars stop",
+          "grade": "bronze",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/833a9652-6c08-40e8-9be9-67a0811751ac.png",
+          "groupId": "default"
+        },
+        {
+          "id": 32,
+          "name": "In the smacker...I think",
+          "localized": {
+            "ko-KR": {
+              "name": "왜 왔어!",
+              "description": "빨간 공 1개 처치하기"
+            },
+            "en-US": {
+              "name": "In the smacker...I think",
+              "description": "Kill a Red Ball Monstrosity"
+            }
+          },
+          "description": "Kill a Red Ball Monstrosity",
+          "grade": "silver",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/96a159f2-ece2-40a8-bdce-0475b841542d.png",
+          "groupId": "default"
+        },
+        {
+          "id": 33,
+          "name": "Annakin Skyscroller",
+          "localized": {
+            "ko-KR": {
+              "name": "홈런",
+              "description": "탄알 10개 격파하기"
+            },
+            "en-US": {
+              "name": "Annakin Skyscroller",
+              "description": "Deflect 10 projectiles with your energy sword"
+            }
+          },
+          "description": "Deflect 10 projectiles with your energy sword",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/38e70726-89b8-4906-a744-2c2cdd2b2ce5.png",
+          "groupId": "default"
+        },
+        {
+          "id": 34,
+          "name": "I feel secure, contained & protected",
+          "localized": {
+            "ko-KR": {
+              "name": "집?",
+              "description": "스테이지 통과 후 수용소에 도착하기"
+            },
+            "en-US": {
+              "name": "I feel secure, contained & protected",
+              "description": "Come back to Consortium after having completed the game"
+            }
+          },
+          "description": "Come back to Consortium after having completed the game",
+          "grade": "silver",
+          "hidden": true,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/e8878552-8aa2-4ab7-ba79-508b25fe62ea.png",
+          "groupId": "default"
+        },
+        {
+          "id": 35,
+          "name": "Woman on a (side) mission",
+          "localized": {
+            "ko-KR": {
+              "name": "나에게 임무를 줘",
+              "description": "모든 서브 임무 완료하기"
+            },
+            "en-US": {
+              "name": "Woman on a (side) mission",
+              "description": "Complete all side quests"
+            }
+          },
+          "description": "Complete all side quests",
+          "grade": "silver",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR27452_00/e3aea29e-d3fd-4d3a-aef6-11affca8aee9.png",
+          "groupId": "default"
+        }
+      ]
+    },
     {
       "id": "NPWR26027_00",
       "name": "RESIDENT EVIL 2",
