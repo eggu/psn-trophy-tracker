@@ -1,19 +1,19 @@
 # PSN Profile — eggu\_
 
-Updated: 2026-11-03 11:35:10 KST
+Updated: 2026-11-19 15:50:46 KST
 
-Level: 286
-Level progress: 13%
+Level: 287
+Level progress: 3%
 
 | Trophy | Count |
 | --- | --- |
-| Total | 2506 |
+| Total | 2512 |
 | Platinum | 12 |
 | Gold | 97 |
-| Silver | 381 |
-| Bronze | 2016 |
+| Silver | 382 |
+| Bronze | 2021 |
 
-Games: 171
+Games: 173
 Completed games: 7
 
 ## Steam — Eggu
@@ -23,4 +23,4 @@ Achievements: 3776/38476
 Games with achievements: 664
 Completed games: 19
 
-Combined earned: 6282
+Combined earned: 6288

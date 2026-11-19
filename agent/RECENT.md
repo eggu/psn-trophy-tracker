@@ -1,6 +1,6 @@
 # Recent Trophies
 
-Updated: 2026-11-17 20:14:23 KST
+Updated: 2026-11-20 01:09:02 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
@@ -40,6 +40,8 @@ Updated: 2026-11-17 20:14:23 KST
 | 2026-11-13 18:05:28 KST | Resident Evil 5 | Completed Chapter 1 - 2 | Achievement |
 | 2026-11-13 17:07:59 KST | Resident Evil 5 | Get Physical | Achievement |
 | 2026-11-13 04:16:07 KST | Resident Evil 5 | A Cut Above | Achievement |
+| 2026-11-12 01:06:36 KST | 기원: 변이 | 나 듣고 있어... | Bronze |
+| 2026-11-12 01:05:10 KST | 기원: 변이 | 나 밟았어\! | Silver |
 | 2026-11-11 23:39:52 KST | Resident Evil | Ink is for Squids | Achievement |
 | 2026-11-11 22:57:00 KST | Resident Evil 0 | Welcome to Team Wesker | Achievement |
 | 2026-11-11 22:53:03 KST | Resident Evil 0 | Misdirected Hostility | Achievement |
@@ -52,5 +54,3 @@ Updated: 2026-11-17 20:14:23 KST
 | 2026-11-11 20:58:48 KST | Resident Evil 0 | I Could Shoot, You Know | Achievement |
 | 2026-11-11 20:53:49 KST | Resident Evil 0 | Find Time to Combine | Achievement |
 | 2026-11-11 20:53:00 KST | Resident Evil 0 | I Have the Touch | Achievement |
-| 2026-11-11 20:49:48 KST | Resident Evil 0 | 20/20 Vision | Achievement |
-| 2026-11-11 20:48:55 KST | Resident Evil 0 | That's Officer Chambers to You | Achievement |
