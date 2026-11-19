@@ -1,6 +1,6 @@
 # Games
 
-Updated: 2026-11-20 01:09:02 KST
+Updated: 2026-11-20 01:24:32 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
@@ -209,7 +209,7 @@ Dates: KST. Detail: games/{id}.md
 | Warhammer 40,000: Dawn of War II - Chaos Rising | steam-20570 | Steam | 0/73 (0%) | N/A | Unknown |
 | Shatter | steam-20820 | Steam | 0/30 (0%) | N/A | Unknown |
 | The Witcher 2: Assassins of Kings Enhanced Edition | steam-20920 | Steam | 0/52 (0%) | N/A | Unknown |
-| Resident Evil 5 | steam-21690 | Steam | 36/70 (51%) | N/A | 2026-11-17 |
+| Resident Evil 5 | steam-21690 | Steam | 44/70 (63%) | N/A | 2026-11-18 |
 | BRINK | steam-22350 | Steam | 9/43 (21%) | N/A | 2013-10-13 |
 | Fallout: New Vegas | steam-22380 | Steam | 22/75 (29%) | N/A | 2012-11-03 |
 | King's Bounty: The Legend | steam-25900 | Steam | 0/64 (0%) | N/A | Unknown |
@@ -471,7 +471,7 @@ Dates: KST. Detail: games/{id}.md
 | Eterium | steam-280200 | Steam | 0/12 (0%) | N/A | Unknown |
 | Adventurer Manager | steam-280320 | Steam | 17/74 (23%) | N/A | 2015-06-21 |
 | The Banner Saga 2 | steam-281640 | Steam | 0/55 (0%) | N/A | Unknown |
-| Stellaris | steam-281990 | Steam | 0/219 (0%) | N/A | Unknown |
+| Stellaris | steam-281990 | Steam | 0/226 (0%) | N/A | Unknown |
 | This War of Mine | steam-282070 | Steam | 17/59 (29%) | N/A | 2019-06-06 |
 | SOMA | steam-282140 | Steam | 0/10 (0%) | N/A | Unknown |
 | SuperPower 2 Steam Edition | steam-282400 | Steam | 0/14 (0%) | N/A | Unknown |
@@ -599,7 +599,7 @@ Dates: KST. Detail: games/{id}.md
 | Acceleration of SUGURI 2 | steam-390710 | Steam | 0/24 (0%) | N/A | Unknown |
 | Rise of the Tomb Raider | steam-391220 | Steam | 65/143 (45%) | N/A | 2018-05-26 |
 | Layers of Fear \(2016\) | steam-391720 | Steam | 6/27 (22%) | N/A | 2018-02-10 |
-| Hearts of Iron IV | steam-394360 | Steam | 0/293 (0%) | N/A | Unknown |
+| Hearts of Iron IV | steam-394360 | Steam | 0/298 (0%) | N/A | Unknown |
 | Tower Unite | steam-394690 | Steam | 0/651 (0%) | N/A | Unknown |
 | Missing Translation | steam-395520 | Steam | 0/6 (0%) | N/A | Unknown |
 | Bleed 2 | steam-396350 | Steam | 0/33 (0%) | N/A | Unknown |

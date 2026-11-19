@@ -2,7 +2,7 @@
 
 ID: steam-220
 Platform: Steam
-Updated: 2026-11-17 20:00:56 KST
+Updated: 2026-11-20 01:24:32 KST
 
 Progress: 6/69 (9%)
 Platinum: N/A

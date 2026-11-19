@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 2,
-    "generatedAt": "2026-11-19T16:09:02.347Z",
-    "lastSuccessfulSync": "2026-11-19T16:09:02.347Z",
+    "generatedAt": "2026-11-19T16:24:32.548Z",
+    "lastSuccessfulSync": "2026-11-19T16:24:32.548Z",
     "source": "playstation-network+steam"
   },
   "profile": {
@@ -22,21 +22,21 @@
       "total": 173,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-19T06:50:46.900Z"
+    "lastSuccessfulSync": "2026-11-19T16:18:22.657Z"
   },
   "steam": {
     "steamId": "76561197989470864",
     "displayName": "Eggu",
     "profileUrl": "https://steamcommunity.com/profiles/76561197989470864/",
     "achievements": {
-      "earned": 3776,
-      "total": 38476
+      "earned": 3784,
+      "total": 38488
     },
     "games": {
       "total": 664,
       "completed": 19
     },
-    "lastSuccessfulSync": "2026-11-17T11:00:56.368Z"
+    "lastSuccessfulSync": "2026-11-19T16:24:32.548Z"
   },
   "games": [
     {
@@ -74,6 +74,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-11T16:06:36Z",
+      "lastPlayedAt": "2026-11-11T16:23:42.030000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -886,6 +887,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-05T19:46:20Z",
+      "lastPlayedAt": "2026-11-05T19:57:09.220000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -1887,6 +1889,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-02T12:18:18Z",
+      "lastPlayedAt": "2026-11-02T12:27:51.330000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -2927,6 +2930,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-10-29T15:45:29Z",
+      "lastPlayedAt": "2026-10-29T15:56:20.660000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -3255,6 +3259,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-10-23T15:53:55Z",
+      "lastPlayedAt": "2026-11-04T19:40:30.680000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -7007,6 +7012,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-10-06T18:20:40Z",
+      "lastPlayedAt": "2026-10-06T18:21:28.800000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -8823,6 +8829,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-09-23T15:15:01Z",
+      "lastPlayedAt": "2026-10-02T12:28:56.230000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -9992,6 +9999,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-08-25T09:53:15Z",
+      "lastPlayedAt": "2026-08-31T11:52:21.000000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -11224,6 +11232,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-05-02T10:35:38Z",
+      "lastPlayedAt": "2026-09-30T06:26:04.190000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -12246,6 +12255,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-04-18T18:28:18Z",
+      "lastPlayedAt": "2026-04-23T16:58:55.240000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -13541,6 +13551,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-03-06T16:51:50Z",
+      "lastPlayedAt": "2026-08-19T13:57:33.050000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -14647,6 +14658,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-02-12T16:46:23Z",
+      "lastPlayedAt": "2026-02-26T13:22:58.580000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -15459,6 +15471,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-02-12T10:20:20Z",
+      "lastPlayedAt": "2026-02-12T10:21:10.100000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -16250,6 +16263,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-01-22T17:53:36Z",
+      "lastPlayedAt": "2026-01-22T17:55:01.900000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -17566,6 +17580,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-12-13T17:40:48Z",
+      "lastPlayedAt": "2026-03-03T14:39:14.080000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -18756,6 +18771,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-12-10T09:26:16Z",
+      "lastPlayedAt": "2025-12-13T16:20:57.470000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -19883,6 +19899,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-12-05T17:34:23Z",
+      "lastPlayedAt": "2025-12-05T17:58:41.190000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -20863,6 +20880,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-09-18T11:50:25Z",
+      "lastPlayedAt": "2025-09-18T12:06:58.410000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -21528,6 +21546,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2025-09-18T10:58:23Z",
+      "lastPlayedAt": "2025-09-18T11:06:27.990000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -22718,6 +22737,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-09-06T11:38:05Z",
+      "lastPlayedAt": "2025-09-06T12:12:49.400000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -23992,6 +24012,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-09-03T12:17:58Z",
+      "lastPlayedAt": "2025-09-05T14:15:47.480000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -25014,6 +25035,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-05-30T03:14:22Z",
+      "lastPlayedAt": "2025-06-10T12:43:24.130000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -26393,6 +26415,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-05-16T16:37:37Z",
+      "lastPlayedAt": "2025-05-17T14:09:38.960000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -27079,6 +27102,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2025-05-15T14:31:09Z",
+      "lastPlayedAt": "2025-08-23T13:23:29.080000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -28119,6 +28143,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-05-07T08:47:02Z",
+      "lastPlayedAt": "2025-05-13T06:12:01.610000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -28719,6 +28744,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2025-03-20T16:47:21Z",
+      "lastPlayedAt": "2025-03-20T16:50:55.510000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -29783,6 +29809,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-03-10T12:57:16Z",
+      "lastPlayedAt": "2025-03-10T12:58:29.260000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -30448,6 +30475,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-03-05T11:40:54Z",
+      "lastPlayedAt": "2025-03-05T11:41:19.600000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -34914,6 +34942,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-03-02T02:29:55Z",
+      "lastPlayedAt": "2025-03-02T02:31:44.850000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -35454,6 +35483,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-03-01T11:55:27Z",
+      "lastPlayedAt": "2025-03-01T12:15:00.440000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -36560,6 +36590,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2025-02-20T10:29:43Z",
+      "lastPlayedAt": "2025-02-20T10:30:45.240000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -37876,6 +37907,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2025-01-07T11:06:48Z",
+      "lastPlayedAt": "2025-01-07T11:19:27.150000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -38898,6 +38930,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-12-21T08:45:02Z",
+      "lastPlayedAt": "2024-12-21T14:28:54.420000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -40361,6 +40394,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2024-12-14T06:49:10Z",
+      "lastPlayedAt": "2024-12-20T02:55:30.870000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -41425,6 +41459,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-12-13T15:57:29Z",
+      "lastPlayedAt": "2025-09-18T11:11:51.840000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -42489,6 +42524,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2024-11-23T11:03:08Z",
+      "lastPlayedAt": "2024-11-23T11:18:43.230000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -43574,6 +43610,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-10-25T17:27:40Z",
+      "lastPlayedAt": "2024-11-06T13:22:40.050000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -44638,6 +44675,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-10-15T16:18:18Z",
+      "lastPlayedAt": "2024-10-16T09:32:37.420000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -45681,6 +45719,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-09-20T02:17:38Z",
+      "lastPlayedAt": "2024-09-20T02:24:28.830000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -47186,6 +47225,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2024-09-18T03:03:48Z",
+      "lastPlayedAt": "2024-09-20T14:38:17.410000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -48796,6 +48836,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2024-09-18T02:44:36Z",
+      "lastPlayedAt": "2025-02-20T14:38:58.560000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -50721,6 +50762,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-09-04T13:57:17Z",
+      "lastPlayedAt": "2024-09-04T14:29:00.920000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -51428,6 +51470,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-08-13T09:52:34Z",
+      "lastPlayedAt": "2024-08-13T09:53:26.830000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -52093,6 +52136,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-08-01T14:34:45Z",
+      "lastPlayedAt": "2024-08-01T14:34:46.190000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -52863,6 +52907,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-05-24T13:02:55Z",
+      "lastPlayedAt": "2024-05-24T13:26:22.530000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -53696,6 +53741,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-05-22T13:45:05Z",
+      "lastPlayedAt": "2024-05-22T13:48:52.870000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -54446,6 +54492,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2024-05-10T04:25:10Z",
+      "lastPlayedAt": "2024-12-20T03:06:14.820000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -55447,6 +55494,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-04-25T13:13:51Z",
+      "lastPlayedAt": "2024-05-10T13:11:55.590000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -56196,6 +56244,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-04-14T15:30:41Z",
+      "lastPlayedAt": "2024-04-14T15:54:18.680000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -57533,6 +57582,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-04-13T14:05:03Z",
+      "lastPlayedAt": "2024-04-13T14:05:38.070000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -58093,6 +58143,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-03-31T04:24:59Z",
+      "lastPlayedAt": "2024-03-31T14:13:32.100000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -59217,6 +59268,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-03-17T03:31:48Z",
+      "lastPlayedAt": "2024-03-17T03:49:12.530000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -60123,6 +60175,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-03-10T15:44:00Z",
+      "lastPlayedAt": "2024-03-10T15:45:46.450000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -61502,6 +61555,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-02-27T14:14:05Z",
+      "lastPlayedAt": "2024-02-27T14:14:34.840000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -62104,6 +62158,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-02-14T09:51:26Z",
+      "lastPlayedAt": "2024-02-14T09:52:07.650000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -62619,6 +62674,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-02-14T09:39:19Z",
+      "lastPlayedAt": "2024-02-14T09:40:42.330000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -62893,6 +62949,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-02-14T09:38:11Z",
+      "lastPlayedAt": "2024-02-14T09:39:14.710000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -63289,6 +63346,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-02-02T15:21:23Z",
+      "lastPlayedAt": "2024-02-02T15:24:51.290000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -63849,6 +63907,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-01-15T16:16:13Z",
+      "lastPlayedAt": "2024-01-16T11:46:37.970000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -64871,6 +64930,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2024-01-03T12:41:07Z",
+      "lastPlayedAt": "2024-01-03T12:41:17.470000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -65788,6 +65848,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-12-26T15:51:52Z",
+      "lastPlayedAt": "2023-12-26T16:10:47.040000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -66516,6 +66577,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-12-26T15:46:28Z",
+      "lastPlayedAt": "2023-12-26T15:51:46.570000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -66929,6 +66991,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-12-25T15:53:29Z",
+      "lastPlayedAt": "2024-01-07T14:55:06.790000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -67972,6 +68035,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-12-19T15:37:54Z",
+      "lastPlayedAt": "2023-12-19T15:38:25.730000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -69876,6 +69940,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-12-19T15:37:09Z",
+      "lastPlayedAt": "2023-12-19T15:37:41.410000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -70184,6 +70249,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-12-18T15:52:19Z",
+      "lastPlayedAt": "2023-12-18T15:53:24.930000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -71731,6 +71797,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-12-06T16:24:03Z",
+      "lastPlayedAt": "2023-12-13T14:12:11.070000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -72606,6 +72673,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-12-06T16:03:16Z",
+      "lastPlayedAt": "2023-12-06T16:08:41.320000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -73124,6 +73192,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-12-01T13:04:13Z",
+      "lastPlayedAt": "2023-12-01T13:06:57.120000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -73936,6 +74005,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-11-30T12:39:59Z",
+      "lastPlayedAt": "2023-11-30T12:49:53.580000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -74874,6 +74944,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-11-28T12:17:36Z",
+      "lastPlayedAt": "2023-11-28T12:21:31.770000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -76064,6 +76135,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-11-15T14:46:25Z",
+      "lastPlayedAt": "2023-11-15T14:47:52.720000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -77548,6 +77620,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-11-05T16:02:27Z",
+      "lastPlayedAt": "2024-03-04T14:19:47.120000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -78759,6 +78832,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-11-04T04:56:04Z",
+      "lastPlayedAt": "2023-11-04T05:17:30.060000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -80096,6 +80170,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-10-30T10:44:55Z",
+      "lastPlayedAt": "2023-10-30T10:45:39.680000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -80971,6 +81046,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-10-19T11:33:31Z",
+      "lastPlayedAt": "2023-10-19T11:34:36.710000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -83001,6 +83077,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-10-18T13:32:58Z",
+      "lastPlayedAt": "2024-03-08T11:21:59.700000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -84023,6 +84100,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-10-17T11:53:44Z",
+      "lastPlayedAt": "2023-10-17T12:00:28.830000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -84814,6 +84892,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-10-17T11:13:51Z",
+      "lastPlayedAt": "2024-08-01T14:35:51.150000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -85875,6 +85954,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-09-25T11:37:50Z",
+      "lastPlayedAt": "2025-03-05T11:12:14.250000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -86390,6 +86470,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-09-23T13:37:18Z",
+      "lastPlayedAt": "2023-09-23T13:55:21.020000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -87430,6 +87511,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-09-20T01:44:53Z",
+      "lastPlayedAt": "2023-11-25T21:09:05.950000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -87928,6 +88010,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-09-13T15:04:33Z",
+      "lastPlayedAt": "2023-09-13T15:07:34.470000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -89349,6 +89432,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-09-13T15:02:39Z",
+      "lastPlayedAt": "2023-09-13T15:04:27.790000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -90308,6 +90392,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-08-24T14:51:58Z",
+      "lastPlayedAt": "2024-01-12T15:54:46.560000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -92041,6 +92126,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-07-15T05:35:56Z",
+      "lastPlayedAt": "2023-07-18T16:40:14.970000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -92879,6 +92965,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-07-04T11:51:31Z",
+      "lastPlayedAt": "2023-07-04T11:59:44.120000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -94363,6 +94450,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-06-29T17:04:39Z",
+      "lastPlayedAt": "2023-10-30T10:44:47.580000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -95280,6 +95368,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-06-23T15:36:14Z",
+      "lastPlayedAt": "2024-10-17T16:53:18.760000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -96533,6 +96622,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-06-17T16:04:25Z",
+      "lastPlayedAt": "2023-06-17T16:09:48.570000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -97450,6 +97540,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-06-13T01:09:48Z",
+      "lastPlayedAt": "2023-06-13T01:28:38.540000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -98367,6 +98458,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-03-17T12:23:25Z",
+      "lastPlayedAt": "2023-07-24T13:21:09.190000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -98991,6 +99083,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-03-05T16:12:50Z",
+      "lastPlayedAt": "2024-01-05T16:22:41.070000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -100055,6 +100148,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-02-18T09:59:02Z",
+      "lastPlayedAt": "2023-06-20T15:22:28.220000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -102232,6 +102326,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-02-18T08:25:49Z",
+      "lastPlayedAt": "2023-02-18T09:08:00.300000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -103359,6 +103454,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2023-02-11T15:15:42Z",
+      "lastPlayedAt": "2023-02-11T15:34:21.940000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -105347,6 +105443,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-12-03T13:00:16Z",
+      "lastPlayedAt": "2023-10-19T22:04:37.720000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -106390,6 +106487,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-11-05T14:49:32Z",
+      "lastPlayedAt": "2022-11-05T14:55:26.260000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -107685,6 +107783,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-10-01T09:30:58Z",
+      "lastPlayedAt": "2022-10-01T14:08:35.470000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -108792,6 +108891,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2022-10-01T09:03:09Z",
+      "lastPlayedAt": "2022-10-01T18:44:36.000000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -110465,6 +110565,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-08-31T14:40:38Z",
+      "lastPlayedAt": "2022-10-03T14:21:45.850000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -111613,6 +111714,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-07-29T13:11:37Z",
+      "lastPlayedAt": "2022-10-01T09:08:22.880000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -112194,6 +112296,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-07-09T16:25:06Z",
+      "lastPlayedAt": "2023-11-28T11:36:11.820000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -113300,6 +113403,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-07-02T17:36:07Z",
+      "lastPlayedAt": "2022-07-02T17:49:30.550000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -114130,6 +114234,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-06-23T11:59:13Z",
+      "lastPlayedAt": "2022-06-23T12:35:58.410000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -115852,6 +115957,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-06-20T13:30:30Z",
+      "lastPlayedAt": "2022-06-20T13:31:17.410000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -117147,6 +117253,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-06-14T14:00:37Z",
+      "lastPlayedAt": "2025-03-04T09:03:05.150000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -118064,6 +118171,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-06-12T17:07:35Z",
+      "lastPlayedAt": "2023-09-13T11:10:32.190000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -119149,6 +119257,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-06-11T15:24:58Z",
+      "lastPlayedAt": "2022-06-11T15:48:28.780000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -119940,6 +120049,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-06-11T13:28:33Z",
+      "lastPlayedAt": "2022-06-11T13:44:23.650000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -120878,6 +120988,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-06-09T12:50:41Z",
+      "lastPlayedAt": "2023-11-04T04:18:23.930000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -121732,6 +121843,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-06-01T13:05:39Z",
+      "lastPlayedAt": "2022-07-25T14:01:28.200000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -122523,6 +122635,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2022-06-01T12:02:55Z",
+      "lastPlayedAt": "2022-06-01T12:52:52.500000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -123860,6 +123973,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-05-29T03:18:41Z",
+      "lastPlayedAt": "2022-05-29T03:19:43.460000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -125050,6 +125164,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-05-29T03:06:53Z",
+      "lastPlayedAt": "2022-05-29T03:18:10.130000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -126618,6 +126733,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-05-18T14:25:14Z",
+      "lastPlayedAt": "2022-05-26T11:16:54.390000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -127679,6 +127795,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-05-18T14:24:06Z",
+      "lastPlayedAt": "2022-05-18T14:25:07.310000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -128602,6 +128719,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-05-16T18:12:19Z",
+      "lastPlayedAt": "2024-08-30T06:42:32.990000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -129645,6 +129763,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-05-13T02:45:28Z",
+      "lastPlayedAt": "2022-05-26T14:25:23.040000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -131360,6 +131479,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-05-10T17:15:42Z",
+      "lastPlayedAt": "2022-05-12T14:15:48.610000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -133054,6 +133174,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-05-09T13:05:42Z",
+      "lastPlayedAt": "2022-05-10T12:58:48.460000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -134097,6 +134218,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-05-09T12:18:18Z",
+      "lastPlayedAt": "2022-05-09T12:27:23.250000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -135140,6 +135262,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-04-28T10:41:21Z",
+      "lastPlayedAt": "2022-06-05T16:54:20.150000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -136057,6 +136180,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-04-20T16:30:41Z",
+      "lastPlayedAt": "2022-04-21T13:11:33.970000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -137352,6 +137476,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-04-02T14:57:33Z",
+      "lastPlayedAt": "2022-04-03T14:40:57.010000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -137804,6 +137929,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-03-31T15:26:14Z",
+      "lastPlayedAt": "2022-03-31T15:51:13.460000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -138625,6 +138751,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-03-31T15:25:46Z",
+      "lastPlayedAt": "2022-04-09T14:18:17.330000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -139752,6 +139879,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-03-30T09:33:12Z",
+      "lastPlayedAt": "2022-03-30T09:53:24.480000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -141131,6 +141259,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-03-30T03:31:34Z",
+      "lastPlayedAt": "2022-03-30T13:37:10.240000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -141649,6 +141778,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2022-02-20T15:49:24Z",
+      "lastPlayedAt": "2022-02-14T14:21:03.770000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -141999,6 +142129,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-10-21T16:34:39Z",
+      "lastPlayedAt": "2021-10-21T15:57:04.250000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -142682,6 +142813,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-10-21T16:33:22Z",
+      "lastPlayedAt": "2023-09-04T13:32:20.860000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -142942,6 +143074,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-09-19T18:18:00Z",
+      "lastPlayedAt": "2021-09-16T16:22:48.310000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -143649,6 +143782,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-09-16T17:21:51Z",
+      "lastPlayedAt": "2021-09-16T17:11:28.460000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -144671,6 +144805,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-09-16T17:09:06Z",
+      "lastPlayedAt": "2021-09-16T16:32:54.600000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -145378,6 +145513,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-09-14T13:13:01Z",
+      "lastPlayedAt": "2021-09-14T12:22:22.210000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -146505,6 +146641,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-08-13T03:39:43Z",
+      "lastPlayedAt": "2022-04-01T15:21:48.090000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -148220,6 +148357,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-05-04T04:01:19Z",
+      "lastPlayedAt": "2021-04-29T03:25:44.000000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -149431,6 +149569,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-04-29T10:34:05Z",
+      "lastPlayedAt": "2021-04-29T10:29:20.750000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -149862,6 +150001,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-04-29T02:56:12Z",
+      "lastPlayedAt": "2021-06-11T04:35:29.720000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -150156,6 +150296,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-04-07T04:08:04Z",
+      "lastPlayedAt": "2022-03-30T15:30:10.190000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -151346,6 +151487,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-02-18T02:51:22Z",
+      "lastPlayedAt": "2024-10-17T16:54:40.740000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -152515,6 +152657,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2021-01-22T16:41:27Z",
+      "lastPlayedAt": "2021-07-11T02:02:02.710000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -154545,6 +154688,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-12-05T17:20:38Z",
+      "lastPlayedAt": "2022-05-12T16:54:29.020000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -155630,6 +155774,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-12-02T17:04:11Z",
+      "lastPlayedAt": "2020-12-02T16:31:05.940000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -156967,6 +157112,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-12-02T16:15:06Z",
+      "lastPlayedAt": "2020-12-02T16:13:53.440000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -159501,6 +159647,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-11-20T19:45:12Z",
+      "lastPlayedAt": "2020-11-20T18:10:25.650000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -160628,6 +160775,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-11-01T03:40:46Z",
+      "lastPlayedAt": "2023-11-04T04:19:14.180000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -161461,6 +161609,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-10-18T03:32:17Z",
+      "lastPlayedAt": "2020-10-23T01:32:26.890000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -162546,6 +162695,7 @@
       },
       "platinumEarned": true,
       "lastTrophyAt": "2020-07-23T18:33:46Z",
+      "lastPlayedAt": "2020-07-23T13:16:58.940000Z",
       "trophySummary": {
         "platinum": {
           "earned": 1,
@@ -164090,6 +164240,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-06-22T17:02:56Z",
+      "lastPlayedAt": "2020-06-22T15:41:49.890000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -164894,6 +165045,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-06-17T11:42:54Z",
+      "lastPlayedAt": "2020-06-17T10:21:41.400000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -166858,6 +167010,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-04-07T12:17:57Z",
+      "lastPlayedAt": "2020-04-07T11:44:36.340000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -168495,6 +168648,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-03-27T16:05:42Z",
+      "lastPlayedAt": "2020-03-27T13:21:01.860000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -170651,6 +170805,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-02-07T17:46:21Z",
+      "lastPlayedAt": "2020-02-07T17:57:14.040000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -172132,6 +172287,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-01-20T13:18:48Z",
+      "lastPlayedAt": "2020-01-20T13:12:17.810000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -172477,6 +172633,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2020-01-06T14:38:14Z",
+      "lastPlayedAt": "2022-03-30T09:06:41.250000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -173856,6 +174013,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2019-12-26T06:50:06Z",
+      "lastPlayedAt": "2020-03-17T02:26:26.530000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -174773,6 +174931,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2019-11-17T05:20:43Z",
+      "lastPlayedAt": "2020-01-28T23:00:02.510000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -175879,6 +176038,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2019-11-14T16:46:27Z",
+      "lastPlayedAt": "2019-11-14T02:27:28.740000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -233660,13 +233820,13 @@
       ],
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/21690/header.jpg",
       "progress": {
-        "earned": 36,
+        "earned": 44,
         "total": 70,
-        "percentage": 51
+        "percentage": 63
       },
       "platinumEarned": false,
-      "lastTrophyAt": "2026-11-17T10:34:08.000Z",
-      "lastPlayedAt": "2026-11-17T10:34:35.000Z",
+      "lastTrophyAt": "2026-11-18T12:51:16.000Z",
+      "lastPlayedAt": "2026-11-19T15:46:01.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -234004,9 +234164,9 @@
           "description": "Complete all chapters on Veteran.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/a4192bd8571cb914eb0ac696f327d82613ceee9b.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-17T19:57:25.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/d786fd1164df4e3268f3ae1b2658e27add03a9ea.jpg",
           "groupId": "default"
         },
         {
@@ -234072,9 +234232,9 @@
           "description": "Obtain all available weapons.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/af4ef58200ef516f9c7b046e924f2771c880eb22.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-17T14:58:57.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/02dbe004df99393bccb8d2b22bd24b8e71fc3276.jpg",
           "groupId": "default"
         },
         {
@@ -234225,9 +234385,9 @@
           "description": "Defeat 30 enemies with the Stun rod.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/ebdc2812ff2e0f1ce263ab4551e7396f54d296df.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-18T12:51:16.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/32cacb1b117e08da7446ae5a4603c95f070c23d2.jpg",
           "groupId": "default"
         },
         {
@@ -234310,9 +234470,9 @@
           "description": "Defeat a Majini with a headshot while it's jumping.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/80df4c7c23a80192f60279944f1b48175aa2246d.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-17T16:31:43.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/c74a3655cee04f24e0d14469a8e77e7dcc094127.jpg",
           "groupId": "default"
         },
         {
@@ -234378,9 +234538,9 @@
           "description": "Defeat 2 enemies with one flash grenade.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/2cecd43f02d663fd749532265c8219703775cbfb.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-18T11:11:05.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/10bcf05a56f1f808dce26ab4fc182d75c5433379.jpg",
           "groupId": "default"
         },
         {
@@ -234395,9 +234555,9 @@
           "description": "Defeat a Majini using the electric current from a transformer.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/f34f0440a715824bab92d50ddf678888ce65a9d6.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-17T20:30:43.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/4997c02faea5017deb69cf5d6ecd1a73abef666e.jpg",
           "groupId": "default"
         },
         {
@@ -234497,9 +234657,9 @@
           "description": "Defeat a Majini with a rotten egg.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/1871d853b0df2a18cf9d1d7ebf4f703b35a6dee4.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-18T09:50:34.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/4da4b21fe4c7404aa87d5ed3c812201e772a00ac.jpg",
           "groupId": "default"
         },
         {
@@ -234514,9 +234674,9 @@
           "description": "Defeat a certain enemy by stabbing it in the heart.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/ced66c0cca57ade3278fe1f69960bee72548546e.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-17T18:10:09.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/9e4240801c6ce06d5bd0eee8832467139212a5e2.jpg",
           "groupId": "default"
         },
         {
@@ -553446,7 +553606,7 @@
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/281990/header.jpg",
       "progress": {
         "earned": 0,
-        "total": 219,
+        "total": 226,
         "percentage": 0
       },
       "platinumEarned": false,
@@ -555476,10 +555636,10 @@
             },
             "en-US": {
               "name": "Artificer",
-              "description": "Have 100 Minor Artifacts"
+              "description": "Have 1000 Minor Artifacts"
             }
           },
-          "description": "Have 100 Minor Artifacts",
+          "description": "Have 1000 Minor Artifacts",
           "grade": "achievement",
           "hidden": false,
           "earned": false,
@@ -558068,6 +558228,153 @@
           "earned": false,
           "earnedAt": null,
           "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/281990/a9b9a2ca461cb012ef3c1adb9ba143b915a39eab.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "achievement_now_this_is_ethics",
+          "name": "Now This is Ethics",
+          "localized": {
+            "ko-KR": {
+              "name": "이게 바로 윤리관이지",
+              "description": "절대적 윤리관 중 하나를 채택하십시오"
+            },
+            "en-US": {
+              "name": "Now This is Ethics",
+              "description": "Adopt any Absolute Ethic"
+            }
+          },
+          "description": "Adopt any Absolute Ethic",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/281990/878001378727101547a7128826fdc6a6ea6f60ba.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "achievement_i_get_it_now",
+          "name": "I Get It Now",
+          "localized": {
+            "ko-KR": {
+              "name": "이제 알겠어",
+              "description": "보유한 윤리관과 정면으로 대립하는 윤리관을 가진 이념을 채택하십시오"
+            },
+            "en-US": {
+              "name": "I Get It Now",
+              "description": "Adopt an ideology with an ethic that directly opposes one of your own"
+            }
+          },
+          "description": "Adopt an ideology with an ethic that directly opposes one of your own",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/281990/3693c27b564cb4ad7b6bc632bac5f4bb739393d2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "achievement_the_pen_is_the_sword",
+          "name": "The Pen is the Sword",
+          "localized": {
+            "ko-KR": {
+              "name": "펜이 곧 칼이다",
+              "description": "의지의 힘 야망을 채택한 뒤 전쟁을 선포하지 않고 게임에서 승리하십시오"
+            },
+            "en-US": {
+              "name": "The Pen is the Sword",
+              "description": "After Adopting the Force of Will Ambition, win the game without declaring a war"
+            }
+          },
+          "description": "After Adopting the Force of Will Ambition, win the game without declaring a war",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/281990/80593e00846ce94dd2002ec1004a4d206c273799.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "achievement_do_as_we_do",
+          "name": "Do As We Do",
+          "localized": {
+            "ko-KR": {
+              "name": "우리를 따르라",
+              "description": "다른 제국이 우리의 이념을 채택하도록 권유하는 데 성공하십시오"
+            },
+            "en-US": {
+              "name": "Do As We Do",
+              "description": "Successfully invite another Empire to adopt your Ideology"
+            }
+          },
+          "description": "Successfully invite another Empire to adopt your Ideology",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/281990/231ed6767cd32abd2647287aab26750149636434.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "achievement_hearts_minds_and_hyperlanes",
+          "name": "Hearts, Minds, and Hyperlanes",
+          "localized": {
+            "ko-KR": {
+              "name": "마음과 정신, 그리고 초공간 항로",
+              "description": "은하 내 성계의 50%를 넘는 범위에 이념 전파력을 확보하십시오."
+            },
+            "en-US": {
+              "name": "Hearts, Minds, and Hyperlanes",
+              "description": "Have an Ideological Reach over 50% of the systems in the Galaxy"
+            }
+          },
+          "description": "Have an Ideological Reach over 50% of the systems in the Galaxy",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/281990/d17a524a9a4fa2306d2b09a8c6865f0ca9e4a7cb.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "achievement_the_giant_killer",
+          "name": "The Giant Killer",
+          "localized": {
+            "ko-KR": {
+              "name": "거인 사냥꾼",
+              "description": "황금 세대 사령관을 사용하여 더 큰 함대를 격파하십시오"
+            },
+            "en-US": {
+              "name": "The Giant Killer",
+              "description": "Defeat a larger fleet using a Golden Generation Commander"
+            }
+          },
+          "description": "Defeat a larger fleet using a Golden Generation Commander",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/281990/5a02c293bc1555a43ff5493bf3591913478e4a64.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "achievement_well_actually",
+          "name": "Well, Actually...",
+          "localized": {
+            "ko-KR": {
+              "name": "그건 좀 아니죠",
+              "description": "이념 강요 전쟁 명분을 사용해 우리의 윤리관과 정면으로 대립하는 광적인 윤리관을 가진 제국을 물리치십시오"
+            },
+            "en-US": {
+              "name": "Well, Actually...",
+              "description": "Use the Impose Ideology Casus Belli to defeat an empire whose Fanatic Ethic directly opposes your own"
+            }
+          },
+          "description": "Use the Impose Ideology Casus Belli to defeat an empire whose Fanatic Ethic directly opposes your own",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/281990/e34095e4ca63297f72dbd10c916c04a90d9abeca.jpg",
           "groupId": "default"
         }
       ]
@@ -673725,7 +674032,7 @@
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/394360/header.jpg",
       "progress": {
         "earned": 0,
-        "total": 293,
+        "total": 298,
         "percentage": 0
       },
       "platinumEarned": false,
@@ -678729,6 +679036,91 @@
           "earned": false,
           "earnedAt": null,
           "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/394360/a1463778b351874ddd5a06816a79480095855f65.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "dacii",
+          "name": "Dacii",
+          "localized": {
+            "en-US": {
+              "name": "Dacii",
+              "description": "As Romania, form the Kingdom of Dacia."
+            }
+          },
+          "description": "As Romania, form the Kingdom of Dacia.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/394360/88bc30d8edbeefd0d0295763b3057df467af2138.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "what_would_maniu_think",
+          "name": "What would Maniu think",
+          "localized": {
+            "en-US": {
+              "name": "What would Maniu think",
+              "description": "As democratic Romania, receive the maximum intervention bonus on 4 countries."
+            }
+          },
+          "description": "As democratic Romania, receive the maximum intervention bonus on 4 countries.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/394360/34027b7f58571988786bee090f64eb058ff4610d.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "before_1947",
+          "name": "Before 1947",
+          "localized": {
+            "en-US": {
+              "name": "Before 1947",
+              "description": "Win the Romanian People's Revolution without Prison Faction aid and puppet the USSR."
+            }
+          },
+          "description": "Win the Romanian People's Revolution without Prison Faction aid and puppet the USSR.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/394360/17d32d9d043ee1a53a67a2cd3bfe2206b49e67be.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "rome_mania",
+          "name": "Rome-mania",
+          "localized": {
+            "en-US": {
+              "name": "Rome-mania",
+              "description": "As Romania, own and control Rome, Istanbul and Moscow."
+            }
+          },
+          "description": "As Romania, own and control Rome, Istanbul and Moscow.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/394360/980a68c49ebcdfe885297d5dce0634ffc423106e.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "balkan_domination",
+          "name": "Total Balkan Domination",
+          "localized": {
+            "en-US": {
+              "name": "Total Balkan Domination",
+              "description": "As Romania, fully own and control the Balkans."
+            }
+          },
+          "description": "As Romania, fully own and control the Balkans.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/394360/49a1b17d76f94aac9903d96974453680e0ef9d3f.jpg",
           "groupId": "default"
         }
       ]

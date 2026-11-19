@@ -1,9 +1,17 @@
 # Recent Trophies
 
-Updated: 2026-11-20 01:09:02 KST
+Updated: 2026-11-20 01:24:32 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-11-18 21:51:16 KST | Resident Evil 5 | Cattle Prod | Achievement |
+| 2026-11-18 20:11:05 KST | Resident Evil 5 | Go into the Light | Achievement |
+| 2026-11-18 18:50:34 KST | Resident Evil 5 | Egg on Your Face | Achievement |
+| 2026-11-18 05:30:43 KST | Resident Evil 5 | Ride the Lightning | Achievement |
+| 2026-11-18 04:57:25 KST | Resident Evil 5 | Veteran | Achievement |
+| 2026-11-18 03:10:09 KST | Resident Evil 5 | Heart Stopper | Achievement |
+| 2026-11-18 01:31:43 KST | Resident Evil 5 | Lead Aspirin | Achievement |
+| 2026-11-17 23:58:57 KST | Resident Evil 5 | Stockpile | Achievement |
 | 2026-11-17 19:34:08 KST | Resident Evil 5 | Getaway | Achievement |
 | 2026-11-17 19:34:08 KST | Resident Evil 5 | The Great Escape | Achievement |
 | 2026-11-17 18:28:39 KST | Resident Evil 5 | Stop, Drop, & Roll | Achievement |
@@ -46,11 +54,3 @@ Updated: 2026-11-20 01:09:02 KST
 | 2026-11-11 22:57:00 KST | Resident Evil 0 | Welcome to Team Wesker | Achievement |
 | 2026-11-11 22:53:03 KST | Resident Evil 0 | Misdirected Hostility | Achievement |
 | 2026-11-11 22:51:59 KST | Resident Evil 0 | Calm the Zombie Nerves | Achievement |
-| 2026-11-11 22:38:20 KST | Resident Evil 0 | A Weird Interest in Leeches | Achievement |
-| 2026-11-11 21:48:34 KST | Resident Evil 0 | Green is the Color | Achievement |
-| 2026-11-11 21:39:10 KST | Resident Evil 0 | Trying Out New Things | Achievement |
-| 2026-11-11 21:39:10 KST | Resident Evil 0 | Leech-Shaped Hole in my Heart | Achievement |
-| 2026-11-11 21:39:10 KST | Resident Evil 0 | Who Needs Partners? | Achievement |
-| 2026-11-11 20:58:48 KST | Resident Evil 0 | I Could Shoot, You Know | Achievement |
-| 2026-11-11 20:53:49 KST | Resident Evil 0 | Find Time to Combine | Achievement |
-| 2026-11-11 20:53:00 KST | Resident Evil 0 | I Have the Touch | Achievement |
