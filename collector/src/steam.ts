@@ -13,12 +13,28 @@ export async function collectSteam(options: { apiKey: string; profile: string; f
   async function request(endpoint: string, params: Record<string, string> = {}) {
     const url = new URL(`https://api.steampowered.com/${endpoint}/`);
     url.search = new URLSearchParams({ key: options.apiKey, ...params }).toString();
-    let response: Response;
-    try { response = await fetcher(url, { signal: AbortSignal.timeout(30_000) }); }
-    catch { throw new Error(`Steam ${endpoint}: network request failed`); }
-    if (!response.ok) throw new Error(`Steam ${endpoint}: HTTP ${response.status}`);
-    try { return await response.json(); }
-    catch { throw new Error(`Steam ${endpoint}: invalid JSON`); }
+    const label = params.appid ? `${endpoint} (app ${params.appid})` : endpoint;
+    for (let attempt = 0; ; attempt++) {
+      let response: Response;
+      try { response = await fetcher(url, { signal: AbortSignal.timeout(30_000) }); }
+      catch {
+        if (attempt === 2) throw new Error(`Steam ${label}: network request failed`);
+        await new Promise(resolve => setTimeout(resolve, 1000 * 2 ** attempt));
+        continue;
+      }
+      if (!response.ok) {
+        // Steam can temporarily return 400 for valid achievement requests; persistent errors still abort the snapshot.
+        if (attempt < 2 && ([400, 429].includes(response.status) || response.status >= 500)) {
+          console.warn(`[Steam] ${label}: HTTP ${response.status}; retry ${attempt + 2}/3`);
+          await response.body?.cancel();
+          await new Promise(resolve => setTimeout(resolve, 1000 * 2 ** attempt));
+          continue;
+        }
+        throw new Error(`Steam ${label}: HTTP ${response.status}`);
+      }
+      try { return await response.json(); }
+      catch { throw new Error(`Steam ${label}: invalid JSON`); }
+    }
   }
   let steamId = options.profile;
   if (!/^\d{17}$/.test(steamId)) {

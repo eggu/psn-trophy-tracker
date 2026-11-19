@@ -117,3 +117,32 @@ it('does not substitute achievement unlock time for an unavailable play time', a
   expect(result.games[0].lastPlayedAt).toBeNull();
   expect(result.games[0].trophies[0].earnedAt).toBeTruthy();
 });
+
+
+it.each([400, 429, 503])('retries transient HTTP %s without dropping achievements', async status => {
+  vi.useFakeTimers();
+  try {
+    const base = fixtureFetch();
+    let attempts = 0;
+    const fetcher = (async (input, init) => {
+      if (String(input).includes('GetPlayerAchievements') && attempts++ === 0) return Response.json({}, { status });
+      return base(input, init);
+    }) as typeof fetch;
+    const pending = collectSteam({ apiKey: 'secret', profile: steamId, fetcher });
+    await vi.runAllTimersAsync();
+    const result = await pending;
+    expect(result.profile.achievements.earned).toBe(1);
+    expect(attempts).toBe(2);
+  } finally { vi.useRealTimers(); }
+});
+
+it('stops after three HTTP failures and retains safe error context', async () => {
+  vi.useFakeTimers();
+  try {
+    const fetcher = vi.fn(async () => Response.json({}, { status: 400 })) as typeof fetch;
+    const pending = expect(collectSteam({ apiKey: 'secret', profile: steamId, fetcher })).rejects.toThrow('Steam ISteamUser/GetPlayerSummaries/v2: HTTP 400');
+    await vi.runAllTimersAsync();
+    await pending;
+    expect(fetcher).toHaveBeenCalledTimes(3);
+  } finally { vi.useRealTimers(); }
+});
