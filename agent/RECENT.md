@@ -1,56 +1,56 @@
 # Recent Trophies
 
-Updated: 2026-11-03 11:35:10 KST
+Updated: 2026-11-17 20:14:23 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
-| 2026-11-02 21:18:18 KST | Maestro\_Trophies\_Main | 5성급 공연: 빙상전투 | Silver |
-| 2026-11-02 21:12:51 KST | Maestro\_Trophies\_Main | 5성급 공연: 헤드윅의 테마 | Silver |
-| 2026-11-02 21:03:21 KST | Maestro\_Trophies\_Main | 5성급 공연: 겨울 | Silver |
-| 2026-11-02 20:58:56 KST | Maestro\_Trophies\_Main | 5성급 공연: 카르미나 부라나 \(1부\) | Silver |
-| 2026-11-02 20:55:20 KST | Maestro\_Trophies\_Main | 5성급 공연: 신세계로부터는 | Silver |
-| 2026-11-02 20:48:52 KST | Maestro\_Trophies\_Main | 5성급 공연: 백조의 호수 | Silver |
-| 2026-11-02 20:43:25 KST | Maestro\_Trophies\_Main | 5성급 공연: 레퀴엠 D단조 | Silver |
-| 2026-11-02 20:43:13 KST | Maestro\_Trophies\_Main | 기립 박수 | Gold |
-| 2026-10-30 00:45:29 KST | Crow Country Trophies | B Rank | Bronze |
-| 2026-10-30 00:44:59 KST | Crow Country Trophies | Complete | Gold |
-| 2026-10-30 00:17:58 KST | Crow Country Trophies | Magnum Revolver | Gold |
-| 2026-10-29 23:30:30 KST | Crow Country Trophies | Med Kit Pro | Gold |
-| 2026-10-29 22:57:17 KST | Crow Country Trophies | Flamethrower | Gold |
-| 2026-10-29 22:40:28 KST | Crow Country Trophies | Quizmaster | Bronze |
-| 2026-10-29 22:17:50 KST | Crow Country Trophies | Running Shoes | Gold |
-| 2026-10-29 00:19:01 KST | Crow Country Trophies | Shotgun | Silver |
-| 2026-10-28 22:44:07 KST | Crow Country Trophies | Checking in on a friend | Bronze |
-| 2026-10-24 00:53:55 KST | 콜 오브 듀티®: 모던 워페어 II 2022 | 전선 사수 | Gold |
-| 2026-10-23 15:34:42 KST | 콜 오브 듀티®: 모던 워페어 II 2022 | 와, 이걸 다 읽네 | Gold |
-| 2026-10-23 15:11:29 KST | 콜 오브 듀티®: 모던 워페어 II 2022 | 장인의 손길 | Gold |
-| 2026-10-07 03:20:40 KST | SILENT HILL f | 호유기미 | Silver |
-| 2026-10-07 03:16:24 KST | SILENT HILL f | 여우 조련사 | Silver |
-| 2026-10-06 21:27:52 KST | SILENT HILL f | 고요한 언덕 | Gold |
-| 2026-10-06 21:20:48 KST | SILENT HILL f | 신을 죽이다 | Silver |
-| 2026-10-06 20:51:26 KST | SILENT HILL f | 세 번째 정직함 | Bronze |
-| 2026-10-06 19:43:04 KST | SILENT HILL f | 내게는 과분한 물건 | Bronze |
-| 2026-10-06 19:31:40 KST | SILENT HILL f | 뒤틀림의 원흉 | Bronze |
-| 2026-10-06 19:01:32 KST | SILENT HILL f | 신에 씐 무녀 | Bronze |
-| 2026-10-06 18:50:19 KST | SILENT HILL f | 사랑에 불타는 여자 | Bronze |
-| 2026-10-06 17:01:36 KST | SILENT HILL f | 인형사 | Silver |
-| 2026-10-05 23:43:20 KST | SILENT HILL f | 수수께끼 해결사에게 감사와 경의를 | Silver |
-| 2026-10-05 23:43:19 KST | SILENT HILL f | 여우가 시집가는 날 | Silver |
-| 2026-10-05 23:19:31 KST | SILENT HILL f | 숙원 성취 | Bronze |
-| 2026-10-05 23:06:54 KST | SILENT HILL f | 여우의 눈은 속일 수 없다 | Bronze |
-| 2026-10-05 23:03:27 KST | SILENT HILL f | 여우신님의 비밀 | Bronze |
-| 2026-10-05 22:52:33 KST | SILENT HILL f | 부적 선인 | Bronze |
-| 2026-10-05 22:48:56 KST | SILENT HILL f | 아빠는 가만히 있어\! | Bronze |
-| 2026-10-05 22:27:23 KST | SILENT HILL f | 수집 명인 | Bronze |
-| 2026-10-05 22:03:24 KST | SILENT HILL f | 불신자의 말로 | Bronze |
-| 2026-10-05 21:50:49 KST | SILENT HILL f | 분노를 가라앉혀라 | Bronze |
-| 2026-10-05 21:38:16 KST | SILENT HILL f | 임기응변은 화려하게 | Bronze |
-| 2026-10-05 21:02:16 KST | SILENT HILL f | 파사의 물은 마르지 않으리 | Bronze |
-| 2026-10-05 20:42:05 KST | SILENT HILL f | 승자는 캡슐에 의지하지 않는다 | Silver |
-| 2026-10-05 16:46:16 KST | SILENT HILL f | 술래야, 이쪽이야♪ | Bronze |
-| 2026-10-02 23:02:05 KST | SILENT HILL f | 부적 사냥꾼 | Bronze |
-| 2026-10-01 19:08:35 KST | RESIDENT EVIL™ CODE: Veronica X | The Arrogant Queen | Gold |
-| 2026-10-01 18:37:02 KST | RESIDENT EVIL™ CODE: Veronica X | Reading Red | Silver |
-| 2026-10-01 17:30:42 KST | RESIDENT EVIL™ CODE: Veronica X | The Green Giant | Bronze |
-| 2026-10-01 17:22:16 KST | RESIDENT EVIL™ CODE: Veronica X | Feeling Blue | Silver |
-| 2026-09-30 22:20:52 KST | RESIDENT EVIL™ CODE: Veronica X | To The Frozen Land | Bronze |
+| 2026-11-17 19:34:08 KST | Resident Evil 5 | Getaway | Achievement |
+| 2026-11-17 19:34:08 KST | Resident Evil 5 | The Great Escape | Achievement |
+| 2026-11-17 18:28:39 KST | Resident Evil 5 | Stop, Drop, & Roll | Achievement |
+| 2026-11-17 17:51:17 KST | Resident Evil 5 | Take It to the Max | Achievement |
+| 2026-11-17 17:42:29 KST | Resident Evil 5 | Let's Get This Party Started\! | Achievement |
+| 2026-11-17 17:37:49 KST | Resident Evil 5 | All Dressed Up | Achievement |
+| 2026-11-17 17:23:01 KST | Resident Evil 5 | Badge of Honor | Achievement |
+| 2026-11-17 17:11:40 KST | Resident Evil 5 | It's Just a Bad Dream\! | Achievement |
+| 2026-11-17 16:14:50 KST | Resident Evil 5 | Must've Got Lost | Achievement |
+| 2026-11-16 21:18:54 KST | Resident Evil 5 | Masters of Removing | Achievement |
+| 2026-11-16 20:18:59 KST | Resident Evil 5 | Completed Chapter 6 - 3 | Achievement |
+| 2026-11-16 20:18:59 KST | Resident Evil 5 | Recruit | Achievement |
+| 2026-11-16 20:18:59 KST | Resident Evil 5 | Soldier | Achievement |
+| 2026-11-16 19:13:35 KST | Resident Evil 5 | Completed Chapter 6 - 2 | Achievement |
+| 2026-11-16 18:35:40 KST | Resident Evil 5 | Completed Chapter 6 - 1 | Achievement |
+| 2026-11-16 03:27:13 KST | Resident Evil 5 | Completed Chapter 5 - 3 | Achievement |
+| 2026-11-16 02:10:20 KST | Resident Evil 5 | Completed Chapter 5 - 2 | Achievement |
+| 2026-11-16 01:10:55 KST | Resident Evil 5 | Completed Chapter 5 - 1 | Achievement |
+| 2026-11-15 16:24:14 KST | Resident Evil 5 | Completed Chapter 4 - 2 | Achievement |
+| 2026-11-15 15:23:07 KST | Resident Evil 5 | Completed Chapter 4 - 1 | Achievement |
+| 2026-11-15 06:03:03 KST | Resident Evil 5 | Lifeguard | Achievement |
+| 2026-11-15 02:43:53 KST | Resident Evil 5 | Completed Chapter 3 - 3 | Achievement |
+| 2026-11-14 18:03:10 KST | Resident Evil 5 | Completed Chapter 3 - 2 | Achievement |
+| 2026-11-14 12:51:19 KST | Resident Evil 5 | A Friend in Need | Achievement |
+| 2026-11-14 04:58:35 KST | Resident Evil 6 | Money Talks | Achievement |
+| 2026-11-14 01:50:08 KST | Resident Evil 5 | Completed Chapter 3 - 1 | Achievement |
+| 2026-11-13 21:54:50 KST | Resident Evil 5 | Completed Chapter 2 - 3 | Achievement |
+| 2026-11-13 21:28:48 KST | Resident Evil 5 | Completed Chapter 2 - 2 | Achievement |
+| 2026-11-13 21:19:32 KST | Resident Evil 5 | Exploding Heads | Achievement |
+| 2026-11-13 20:57:59 KST | Resident Evil 5 | Fireworks | Achievement |
+| 2026-11-13 20:22:46 KST | Resident Evil 5 | Completed Chapter 2 - 1 | Achievement |
+| 2026-11-13 19:20:36 KST | Resident Evil 5 | Baptism by Fire | Achievement |
+| 2026-11-13 18:56:04 KST | Resident Evil 5 | Meat Shower | Achievement |
+| 2026-11-13 18:05:28 KST | Resident Evil 5 | Completed Chapter 1 - 2 | Achievement |
+| 2026-11-13 17:07:59 KST | Resident Evil 5 | Get Physical | Achievement |
+| 2026-11-13 04:16:07 KST | Resident Evil 5 | A Cut Above | Achievement |
+| 2026-11-11 23:39:52 KST | Resident Evil | Ink is for Squids | Achievement |
+| 2026-11-11 22:57:00 KST | Resident Evil 0 | Welcome to Team Wesker | Achievement |
+| 2026-11-11 22:53:03 KST | Resident Evil 0 | Misdirected Hostility | Achievement |
+| 2026-11-11 22:51:59 KST | Resident Evil 0 | Calm the Zombie Nerves | Achievement |
+| 2026-11-11 22:38:20 KST | Resident Evil 0 | A Weird Interest in Leeches | Achievement |
+| 2026-11-11 21:48:34 KST | Resident Evil 0 | Green is the Color | Achievement |
+| 2026-11-11 21:39:10 KST | Resident Evil 0 | Trying Out New Things | Achievement |
+| 2026-11-11 21:39:10 KST | Resident Evil 0 | Leech-Shaped Hole in my Heart | Achievement |
+| 2026-11-11 21:39:10 KST | Resident Evil 0 | Who Needs Partners? | Achievement |
+| 2026-11-11 20:58:48 KST | Resident Evil 0 | I Could Shoot, You Know | Achievement |
+| 2026-11-11 20:53:49 KST | Resident Evil 0 | Find Time to Combine | Achievement |
+| 2026-11-11 20:53:00 KST | Resident Evil 0 | I Have the Touch | Achievement |
+| 2026-11-11 20:49:48 KST | Resident Evil 0 | 20/20 Vision | Achievement |
+| 2026-11-11 20:48:55 KST | Resident Evil 0 | That's Officer Chambers to You | Achievement |

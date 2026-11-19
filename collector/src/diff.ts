@@ -9,6 +9,7 @@ export interface DiffResult {
     gold: number;
     silver: number;
     bronze: number;
+    achievements?: number;
   };
   newTrophies: Array<{
     gameId: string;
@@ -56,6 +57,11 @@ export function computeSnapshotDiff(
     total: currSummary.total - prevSummary.total
   };
 
+  if (current.steam || previous?.steam) {
+    summaryDelta.total += (current.steam?.achievements.earned ?? 0) - (previous?.steam?.achievements.earned ?? 0);
+    Object.assign(summaryDelta, { achievements: (current.steam?.achievements.earned ?? 0) - (previous?.steam?.achievements.earned ?? 0) });
+  }
+
   const prevGameMap = new Map<string, GameTitle>();
   if (previous) {
     for (const game of previous.games) {
@@ -78,7 +84,8 @@ export function computeSnapshotDiff(
       });
 
       for (const t of currGame.trophies) {
-        if (t.earned) {
+        if (t.earned && (!previous || !currGame.platform.includes('Steam') ||
+            (t.earnedAt && Date.parse(t.earnedAt) > Date.parse(previous.metadata.lastSuccessfulSync)))) {
           newTrophies.push({
             gameId: currGame.id,
             gameName: currGame.name,

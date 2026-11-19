@@ -3,115 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PSN Trophy Tracker</title>
+  <title>Trophy &amp; Achievement Tracker</title>
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <div class="app-container">
     <header class="header">
       <div class="header-main">
-        <div class="brand">
-          <span class="ps-logo">▲●■✖</span>
-          <h1>PSN Trophy Tracker</h1>
-        </div>
-        <div id="sync-badge" class="sync-badge">
-          <span class="indicator"></span>
-          <span id="sync-status-text">동기화 확인 중...</span>
-        </div>
+        <div class="brand"><span class="brand-icon" aria-hidden="true">🎮</span><h1>Trophy &amp; Achievement Tracker</h1></div>
+        <div id="sync-badge" class="sync-badge"><span class="indicator"></span><span id="sync-status-text">동기화 확인 중...</span></div>
       </div>
-      <nav aria-label="주 메뉴"><a href="/">Dashboard</a> · <a href="/games">게임 목록</a></nav>
+      <nav aria-label="주 메뉴"><a href="/">대시보드</a> · <a href="/games">게임 목록</a></nav>
     </header>
-
     <main class="content">
-      <!-- Profile Overview Card -->
-      <section class="card profile-card" id="profile-card">
-        <div class="profile-header">
-          <div class="avatar-wrapper">
-            <img id="avatar-img" src="" alt="Avatar" class="avatar" />
-            <div class="level-bubble">
-              <span class="level-label">LV</span>
-              <span id="trophy-level">0</span>
-            </div>
-          </div>
-          <div class="profile-details">
-            <h2 id="online-id" class="online-id">Loading...</h2>
-            <div class="level-bar-container">
-              <div class="level-bar" id="level-bar" style="width: 0%"></div>
-            </div>
-            <p class="progress-text">다음 레벨까지 <span id="level-progress">0%</span></p>
-          </div>
+      <section class="card profile-card" aria-labelledby="overview-heading">
+        <div class="section-heading"><div><p class="eyebrow">PLAYSTATION + STEAM</p><h2 id="overview-heading">나의 게임 기록</h2></div><p class="muted">트로피와 도전과제를 한곳에서</p></div>
+        <div class="overview-stats">
+          <div><strong id="combined-earned">—</strong><span>획득한 트로피 / 도전과제</span></div>
+          <div><strong id="combined-games">—</strong><span>추적 중인 게임</span></div>
+          <div><strong id="combined-completed">—</strong><span>100% 완료한 게임</span></div>
+          <div><strong id="combined-active">—</strong><span>수집을 시작한 미완료 게임</span></div>
         </div>
-
-        <div class="trophy-counts">
-          <div class="trophy-item plat">
-            <span class="trophy-icon">🏆</span>
-            <div class="trophy-info">
-              <span class="count" id="count-plat">0</span>
-              <span class="label">Platinum</span>
-            </div>
-          </div>
-          <div class="trophy-item gold">
-            <span class="trophy-icon">🥇</span>
-            <div class="trophy-info">
-              <span class="count" id="count-gold">0</span>
-              <span class="label">Gold</span>
-            </div>
-          </div>
-          <div class="trophy-item silver">
-            <span class="trophy-icon">🥈</span>
-            <div class="trophy-info">
-              <span class="count" id="count-silver">0</span>
-              <span class="label">Silver</span>
-            </div>
-          </div>
-          <div class="trophy-item bronze">
-            <span class="trophy-icon">🥉</span>
-            <div class="trophy-info">
-              <span class="count" id="count-bronze">0</span>
-              <span class="label">Bronze</span>
-            </div>
-          </div>
-          <div class="trophy-item total">
-            <span class="trophy-icon">🎮</span>
-            <div class="trophy-info">
-              <span class="count" id="count-total">0</span>
-              <span class="label">Total</span>
-            </div>
-          </div>
+        <div class="platform-profiles">
+          <section class="platform-profile psn-profile" aria-labelledby="psn-heading">
+            <div class="platform-profile-header"><img id="avatar-img" alt="" class="avatar" hidden /><div><p class="eyebrow" id="psn-heading">PLAYSTATION</p><h3 id="online-id">불러오는 중...</h3></div><span class="platform-badge" id="psn-level"></span></div>
+            <p class="platform-total"><strong id="psn-earned">—</strong> 트로피 획득</p>
+            <p class="muted" id="psn-games"></p>
+            <div id="psn-grades" class="grade-counts"></div>
+            <p id="psn-sync" class="sync-time"></p>
+          </section>
+          <section class="platform-profile steam-profile" aria-labelledby="steam-heading">
+            <div class="platform-profile-header"><span class="platform-avatar" aria-hidden="true">🎖️</span><div><p class="eyebrow" id="steam-heading">STEAM</p><h3 id="steam-name">불러오는 중...</h3></div></div>
+            <p class="platform-total"><strong id="steam-earned">—</strong> 도전과제 획득</p>
+            <p class="muted" id="steam-games"></p>
+            <p class="muted" id="steam-available"></p>
+            <p id="steam-sync" class="sync-time"></p>
+          </section>
         </div>
+        <p class="help-text">같은 게임을 두 플랫폼에서 플레이한 경우 각각 집계합니다. 100% 완료는 모든 트로피·도전과제를 획득한 상태입니다.</p>
       </section>
-
-      <!-- Recent Activities -->
-      <section class="card recent-card">
-        <h3>최근 획득 트로피</h3>
-        <div id="recent-trophies" class="recent-list">
-          <div class="loading">불러오는 중...</div>
-        </div>
+      <section class="card recent-card" aria-labelledby="recent-heading">
+        <h2 id="recent-heading">최근 획득</h2><p class="muted section-description">PlayStation 트로피 · Steam 도전과제</p>
+        <div id="recent-trophies" class="recent-list"><div class="loading">불러오는 중...</div></div>
       </section>
-
-      <!-- Games List -->
-      <section class="card games-card">
+      <section class="card games-card" aria-labelledby="games-heading">
         <div class="games-header">
-          <h3>게임 목록 (<span id="games-count">0</span>)</h3>
+          <h2 id="games-heading">게임 목록 <span class="muted" id="games-count">0</span></h2>
           <div class="filters">
-            <button class="filter-btn active" data-filter="all">전체</button>
-            <button class="filter-btn" data-filter="completed">완료됨</button>
-            <button class="filter-btn" data-filter="in_progress">진행 중</button>
+            <label>플랫폼<select id="platform-filter"><option value="all">모든 플랫폼</option><option value="PSN">PlayStation</option><option value="Steam">Steam</option></select></label>
+            <label>정렬<select id="game-sort"><option value="recent">최근 획득순</option><option value="played">마지막 플레이순</option><option value="name">이름순 (가나다 / A–Z)</option><option value="name_desc">이름 역순</option><option value="progress">진행률 높은순</option><option value="remaining">완료에 가까운순</option><option value="earned">획득 수 많은순</option></select></label>
           </div>
         </div>
-
-        <div id="games-grid" class="games-grid">
-          <div class="loading">게임을 불러오는 중...</div>
+        <div class="status-filters" role="group" aria-label="완료 상태">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">전체</button>
+          <button class="filter-btn" data-filter="completed" aria-pressed="false">100% 완료</button>
+          <button class="filter-btn" data-filter="in_progress" aria-pressed="false">미완료</button>
         </div>
+        <p id="sort-description" class="help-text"></p>
+        <div id="games-grid" class="games-grid"><div class="loading">게임을 불러오는 중...</div></div>
       </section>
-      <section id="game-detail" class="card" hidden><a href="/games">← 게임 목록</a><div id="detail-body"></div></section>
+      <section id="game-detail" class="card" hidden><a id="back-to-games" href="/games">← 게임 목록</a><div id="detail-body"></div></section>
     </main>
-
-    <footer class="footer">
-      <p>PSN Trophy Tracker &bull; Powered by PlayStation Network &bull; <a href="/agent">Agent Markdown</a> &bull; JSON REST API (/api/v1)</p>
-    </footer>
+    <footer class="footer"><p>PlayStation Network &amp; Steam · <a href="/agent">Agent Markdown</a> · <a href="/api/v1/games">JSON API</a></p></footer>
   </div>
-
-  <script src="/app.js"></script>
+  <script type="module" src="/app.js"></script>
 </body>
 </html>

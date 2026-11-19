@@ -3,6 +3,8 @@ import {
   exchangeNpssoForCode,
   exchangeCodeForAccessToken,
   getUserTitles,
+  getUserPlayedGames,
+  getUserTrophiesForSpecificTitle,
   getUserTrophiesEarnedForTitle,
   getTitleTrophies,
   getTitleTrophyGroups,
@@ -13,6 +15,8 @@ import { parseTrophyTitleItem, mergeTrophyDefinitionsAndEarned, getNpServiceName
 import { loadCurrentSnapshot, validateAndSaveSnapshot, validateTrophyDetails, writeSyncStatus } from "./storage.js";
 import { collectLocalizedMetadata } from "./localization.js";
 import { fetchAllTrophies } from "./trophies.js";
+import { collectPsnLastPlayed } from "./last-played.js";
+import { collectSteam } from "./steam.js";
 import { computeSnapshotDiff } from "./diff.js";
 
 function sanitize(msg: string): string {
@@ -47,6 +51,8 @@ async function collect(options?: {
   dataDir?: string;
   dryRun?: boolean;
   full?: boolean;
+  steamApiKey?: string;
+  steamProfile?: string;
 }) {
   const startTime = Date.now();
   console.log("[Collector] Starting PSN Trophy Sync job...");
@@ -130,6 +136,7 @@ async function collect(options?: {
     if (npCommunicationId) {
       // Find if title changed compared to previous snapshot
       const prevGame = prevSnapshot?.games.find((g) => g.id === parsedGame.id);
+      parsedGame.lastPlayedAt = prevGame?.lastPlayedAt;
       const npServiceName = getNpServiceName(rawTitle);
       const isUnchanged =
         !options?.full && process.env.PSN_FULL_SYNC !== "true" && prevGame &&
@@ -198,6 +205,14 @@ async function collect(options?: {
     games.push(parsedGame);
   }
 
+  try {
+    await collectPsnLastPlayed(games,
+      offset => retryWithBackoff(() => getUserPlayedGames(authorization, accountId, { offset, limit: 100 })),
+      ids => retryWithBackoff(() => getUserTrophiesForSpecificTitle(authorization, accountId, { npTitleIds: ids.join(',') })));
+  } catch {
+    console.warn('[Collector] PSN last-played metadata unavailable; retaining known times.');
+  }
+
   const syncTimestamp = new Date().toISOString();
 
   const profile: Profile = {
@@ -232,6 +247,18 @@ async function collect(options?: {
     profile,
     games
   };
+
+  const steamApiKey = options?.steamApiKey ?? process.env.STEAM_API_KEY;
+  if (steamApiKey) {
+    const steam = await collectSteam({ apiKey: steamApiKey, profile: options?.steamProfile ?? process.env.STEAM_PROFILE ?? "https://steamcommunity.com/id/eggu/" });
+    snapshot.steam = steam.profile;
+    snapshot.games.push(...steam.games);
+  } else if (prevSnapshot?.steam) {
+    snapshot.steam = prevSnapshot.steam;
+    snapshot.games.push(...prevSnapshot.games.filter(game => game.platform.includes("Steam")));
+  }
+  if (snapshot.steam) { snapshot.metadata.schemaVersion = 2; snapshot.metadata.source = "playstation-network+steam"; }
+  snapshot.metadata.generatedAt = snapshot.metadata.lastSuccessfulSync = new Date().toISOString();
 
   // 6. Validate & Save
   console.log("[Collector] Validating and writing canonical snapshot...");

@@ -1,4 +1,4 @@
-name: PSN Trophy Sync & Deploy
+name: Trophy & Achievement Sync & Deploy
 
 on:
   schedule:
@@ -46,6 +46,8 @@ jobs:
         env:
           PSN_NPSSO: ${{ secrets.PSN_NPSSO }}
           PSN_TARGET_ONLINE_ID: "eggu_"
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+          STEAM_PROFILE: "https://steamcommunity.com/id/eggu/"
           PSN_FULL_SYNC: ${{ inputs.full }}
         run: |
           if [ "${{ inputs.localization_probe }}" = "true" ]; then

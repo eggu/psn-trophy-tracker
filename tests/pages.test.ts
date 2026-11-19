@@ -71,3 +71,12 @@ it('loads current and only one prior snapshot from DATA_BASE_URL for a standalon
     expect((await worker.fetch(new Request('https://api.example.workers.dev/data/current.json'), {})).status).toBe(404);
   } finally { vi.unstubAllGlobals(); }
 });
+
+
+it('preserves canonical data while keeping built snapshots within the Pages asset limit', async () => {
+  const built = await fs.readFile('dashboard/dist/data/current.json', 'utf8');
+  expect(JSON.parse(built)).toEqual(JSON.parse(await fs.readFile('data/current.json', 'utf8')));
+  expect(Buffer.byteLength(built)).toBeLessThanOrEqual(25 * 1024 * 1024);
+  const entries = JSON.parse(await fs.readFile('dashboard/dist/data/history/index.json', 'utf8'));
+  for (const entry of entries) expect((await fs.stat(`dashboard/dist${entry.path}`)).size).toBeLessThanOrEqual(25 * 1024 * 1024);
+});

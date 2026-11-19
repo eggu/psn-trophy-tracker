@@ -60,7 +60,8 @@ export async function handleApiRequest(options: ApiHandlerOptions): Promise<ApiR
     const lastSync = snapshot?.metadata.lastSuccessfulSync || null;
     const ageSeconds = lastSync ? Math.floor((now - new Date(lastSync).getTime()) / 1000) : -1;
     // Considered stale if older than 12 hours (43200s) or no data
-    const isStale = ageSeconds === -1 || ageSeconds > 43200;
+    const sources = { psn: snapshot?.profile.lastSuccessfulSync ?? null, ...(snapshot?.steam ? { steam: snapshot.steam.lastSuccessfulSync } : {}) };
+    const isStale = ageSeconds === -1 || Object.values(sources).some(time => !time || now - Date.parse(time) > 43200_000);
 
     return jsonResponse({
       status: "ok",
@@ -68,6 +69,7 @@ export async function handleApiRequest(options: ApiHandlerOptions): Promise<ApiR
       lastSuccessfulSync: lastSync,
       lastSyncAttempt: snapshot?.metadata.generatedAt || null,
       ageSeconds: Math.max(0, ageSeconds),
+      sources,
       schemaVersion: snapshot?.metadata.schemaVersion ?? 1
     }, 200, corsOrigin);
   }
@@ -86,7 +88,7 @@ export async function handleApiRequest(options: ApiHandlerOptions): Promise<ApiR
 
   // 2. GET /api/v1/profile
   if (pathname === "/api/v1/profile") {
-    return jsonResponse(snapshot.profile, 200, corsOrigin);
+    return jsonResponse({ ...snapshot.profile, ...(snapshot.steam ? { steam: snapshot.steam } : {}) }, 200, corsOrigin);
   }
 
   // 3. GET /api/v1/games

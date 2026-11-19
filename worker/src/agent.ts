@@ -8,7 +8,7 @@ export async function handleAgent(request: Request, env: Env): Promise<Response>
   if (request.method === 'OPTIONS') return respond('', 204);
   if (!['GET', 'HEAD'].includes(request.method)) return respond('# Method not allowed\n\nRead-only Agent View.\n', 405);
   const path = new URL(request.url).pathname.replace(/\/+$/, '');
-  if (!/^\/agent(?:\/(?:status|profile|changes|recent|games|game\/NPWR\d+_\d+))?$/.test(path)) return respond('# Not found\n\nRead [Agent View](/agent) for available documents.\n', 404);
+  if (!/^\/agent(?:\/(?:status|profile|changes|recent|games|game\/(?:NPWR\d+_\d+|steam-\d+)))?$/.test(path)) return respond('# Not found\n\nRead [Agent View](/agent) for available documents.\n', 404);
   const dynamic = path === '/agent' || path === '/agent/status';
   const asset = dynamic ? '/agent/metadata.json' : `${path}.md`;
   try {

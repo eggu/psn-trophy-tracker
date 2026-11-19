@@ -48,6 +48,7 @@ export async function validateAndSaveSnapshot(
     console.warn("Warning: games list is empty despite profile trophy count > 0");
   }
 
+  if (new Set(validation.data.games.map(game => game.id)).size !== validation.data.games.length) throw new Error('Duplicate game IDs');
   validateTrophyDetails(validation.data);
   const validSnapshot = validation.data;
   const isoTime = validSnapshot.metadata.lastSuccessfulSync;
@@ -86,6 +87,12 @@ export function validateTrophyDetails(snapshot: CanonicalSnapshot): void {
     }
     const ids = new Set(game.trophies.map(t => String(t.id)));
     if (ids.size !== game.trophies.length) throw new Error(`Duplicate trophy IDs: ${game.id}`);
+    if (game.platform.includes('Steam')) {
+      if (!/^steam-\d+$/.test(game.id) || game.trophies.some(t => t.grade !== 'achievement') ||
+          game.trophies.length !== game.progress.total || game.trophies.filter(t => t.earned).length !== game.progress.earned) {
+        throw new Error(`Invalid Steam achievement details: ${game.id}`);
+      }
+    }
     // PSN title summaries can lag behind definition/DLC revisions; retain complete API responses and report discrepancies.
     for (const grade of ["platinum", "gold", "silver", "bronze"] as const) {
       const trophies = game.trophies.filter(t => t.grade === grade);

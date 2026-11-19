@@ -20,6 +20,7 @@ it('renders compact Korean views with remaining first, precise KST dates and mea
   expect(detail.indexOf('Remaining Trophies')).toBeLessThan(detail.indexOf('Earned Trophies'));
   expect(detail.match(/- \[ \]/g)).toHaveLength(remaining.length);
   expect(detail.match(/- \[x\]/g)).toHaveLength(earned.length);
+  expect(detail).toContain(`Updated: ${kst(current.profile.lastSuccessfulSync)}`);
   expect(detail).toContain(`Progress: ${code.progress.earned}/${code.progress.total} (${code.progress.percentage}%)`);
   expect(detail).toContain(`Last trophy: ${kst(lastEarned)}`);
   const ko = current.games.find(g => g.localized?.['ko-KR'])!;

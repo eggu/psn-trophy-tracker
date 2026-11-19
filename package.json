@@ -4,13 +4,14 @@
   "private": true,
   "description": "PlayStation Network Trophy Tracker and AI Agent REST API",
   "scripts": {
-    "collect": "tsx collector/src/index.ts",
+    "collect": "node --env-file-if-exists=.env.local --import tsx collector/src/index.ts",
     "test": "vitest run",
     "build:dashboard": "tsx scripts/build-pages.mjs",
     "dev:dashboard": "vite dashboard",
     "pages:dev": "wrangler pages dev dashboard/dist",
     "pretest": "npm run build:dashboard",
-    "build:agent": "npm run build:dashboard && tsx scripts/build-agent.mjs"
+    "build:agent": "npm run build:dashboard && tsx scripts/build-agent.mjs",
+    "collect:steam": "node --env-file-if-exists=.env.local --import tsx collector/scripts/steam.ts"
   },
   "devDependencies": {
     "@types/node": "^22.20.4",

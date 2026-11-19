@@ -1,6 +1,6 @@
-# PSN Trophy Tracker
+# Trophy & Achievement Tracker
 
-PSN 사용자 `eggu_`의 게임·트로피를 공식 PSN API에서 수집해 Human Dashboard, 작은 Agent Markdown, 기존 JSON REST API로 제공합니다.
+PlayStation 트로피와 Steam 도전과제를 수집해 통합 Dashboard, Agent Markdown, JSON REST API로 제공합니다. 기존 PSN 데이터와 API 경로도 그대로 사용할 수 있습니다.
 
 - Dashboard: https://psn-trophy-tracker.pages.dev/
 - Canonical JSON: https://psn-trophy-tracker.pages.dev/data/current.json
@@ -156,3 +156,46 @@ node scripts/verify-external-access.mjs https://psn-trophy-tracker-api.eggu3213.
 ```
 
 2026-09-30 실제 배포/GET acceptance 통과. OPTIONS 204, AIAgentBot 200 JSON. 기본 Python-urllib UA는 Worker에서도 403/1010으로 관찰되어 동일하게 명시적 클라이언트 식별자가 필요합니다. Dashboard/Pages API도 유지합니다. 데이터는 자동 sync→Pages 배포로 최신화되며 Worker 코드 변경은 위 명령으로 재배포합니다.
+
+## Steam 도전과제 수집
+
+Node.js 22 이상이 필요합니다. [Steam Web API 키 발급 페이지](https://steamcommunity.com/dev/apikey)에서 키를 발급하고, Steam 프로필의 **내 공개 설정 → 게임 세부 정보**를 공개로 설정합니다.
+
+프로젝트 루트의 `.env.local`에 다음 환경변수를 설정합니다. 이 파일은 Git에 포함되지 않습니다. 키를 소스나 JSON에 넣지 마세요.
+
+```dotenv
+STEAM_API_KEY=발급받은_키
+STEAM_PROFILE=https://steamcommunity.com/id/eggu/
+```
+
+기존 PSN 스냅샷에 Steam만 수집하려면:
+
+```sh
+npm ci
+npm run collect:steam
+npm run build:agent
+```
+
+두 플랫폼을 함께 수집하려면 `PSN_NPSSO`를 환경변수로 제공하고 실행합니다.
+
+```sh
+node --env-file-if-exists=.env.local --import tsx collector/src/index.ts
+```
+
+GitHub Actions 자동 수집은 저장소의 **Settings → Secrets and variables → Actions**에 `STEAM_API_KEY` Secret을 추가하면 활성화됩니다. PSN 인증은 기존 `PSN_NPSSO`를 사용합니다. Steam 키가 없으면 PSN만 갱신하고 기존 Steam 데이터는 마지막 수집 시각과 함께 유지합니다. API 오류나 비공개·불완전한 응답이 발생하면 기존 스냅샷을 보존합니다.
+
+Dashboard는 통합 획득 수·게임 수·100% 완료 수를 먼저 표시하고, PlayStation과 Steam의 계정·수량·수집 시각을 각각 보여줍니다. 게임 목록에서 PlayStation/Steam과 100% 완료/미완료를 선택해 필터링할 수 있습니다. 최근 획득 목록은 두 플랫폼을 함께 표시합니다. 같은 게임을 두 플랫폼에서 플레이한 경우 각각 별도 항목으로 표시합니다. Steam은 등급이 없으므로 `achievement`로 저장하며 PSN의 Platinum/Gold/Silver/Bronze 수량에는 포함하지 않습니다.
+
+- Steam 게임 ID는 `steam-{appid}`입니다. 예: `/api/v1/games/steam-21690/trophies`, `/agent/game/steam-21690`.
+- `/api/v1/games?platform=Steam`으로 Steam 게임을 조회합니다. 기존 `/trophies/recent`와 `/changes`에도 도전과제가 포함됩니다.
+- `/api/v1/profile`의 기존 필드는 PSN 값이며, `steam` 필드에 Steam 도전과제·게임 수와 마지막 수집 시각을 제공합니다. `/status`의 `sources`에서 플랫폼별 수집 시각을 확인합니다.
+- Steam은 보유 게임 API가 반환하는 게임 중 도전과제가 있는 게임을 수집합니다. API가 반환하지 않는 가족 공유·제거된 게임은 포함되지 않을 수 있습니다. Steam 프로필 쇼케이스의 총계와 집계 범위가 다를 수 있습니다.
+- 도전과제 이름·설명은 공식 한국어 응답이 있으면 사용하며, 없으면 영어로 표시합니다. 획득 시각이 제공되지 않은 도전과제는 시각을 추정하지 않습니다. 첫 수집은 전체 라이브러리를 조회하므로 시간이 걸릴 수 있습니다.
+
+### 게임 정렬과 플레이 시각
+
+게임 목록의 **정렬** 메뉴에서 최근 획득순, 마지막 플레이순, 이름순·역순, 진행률 높은순, 완료에 가까운순, 획득 수 많은순을 선택합니다. 완료에 가까운순은 수집을 시작한 미완료 게임 중 남은 항목 수가 적은 게임을 먼저 보여줍니다. 정렬·필터는 상세 페이지의 **게임 목록**으로 돌아와도 유지됩니다.
+
+마지막 플레이는 Steam의 공식 플레이 시각과 PSN의 공식 플레이 이력을 사용하며, PSN은 게임 ID와 트로피 세트 ID의 공식 연결이 확인된 경우에만 표시합니다. 기존 데이터는 해당 수집이 완료되기 전까지 **정보 없음**으로 표시할 수 있습니다. 정보가 없는 게임은 마지막 플레이순에서 아래에 표시하며, 최근 트로피 획득 시각으로 대체하지 않습니다. 최근 획득순은 개별 트로피·도전과제의 실제 획득 시각을 사용합니다.
+
+화면의 **100% 완료**는 모든 트로피·도전과제를 획득한 상태입니다. 플래티넘을 획득했더라도 추가 트로피가 남아 있으면 미완료로 표시합니다. PlayStation의 진행률은 등급별 가중치를 반영할 수 있으므로 Steam의 개수 기준 진행률과 계산 방식이 다릅니다.

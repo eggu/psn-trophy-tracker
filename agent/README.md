@@ -1,8 +1,8 @@
-# PSN Trophy Tracker — Agent View
+# Trophy & Achievement Tracker — Agent View
 
 Account: eggu\_
-Updated: 2026-11-03 11:35:10 KST
-Data status: Fresh
+Updated: 2026-11-17 20:14:23 KST
+Data status: Stale
 
 ## Available documents
 
@@ -18,5 +18,5 @@ Data status: Fresh
 General trophy status: read [Changes](CHANGES.md) first.
 Overall totals: read [Profile](PROFILE.md).
 Specific game: find its ID in [Games](GAMES.md), then read games/{id}.md.
-Times use KST. Names and descriptions use official PSN ko-KR metadata, otherwise original metadata; no machine translation.
+Times use KST. Names and descriptions use official Korean metadata, otherwise original metadata; no machine translation.
 Read [Status](STATUS.md) for freshness before relying on data. Do not fetch full canonical JSON unless raw data is explicitly required.

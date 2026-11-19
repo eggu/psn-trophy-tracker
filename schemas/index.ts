@@ -10,7 +10,7 @@ export const TrophySchema = z.object({
   name: z.string(),
   localized: z.object({ "ko-KR": z.object({ name: z.string(), description: z.string() }).optional(), "en-US": z.object({ name: z.string(), description: z.string() }).optional() }).optional(),
   description: z.string().optional().default(""),
-  grade: TrophyGradeSchema,
+  grade: TrophyGradeSchema.or(z.literal("achievement")),
   hidden: z.boolean().default(false),
   earned: z.boolean().default(false),
   earnedAt: z.string().nullable().optional(), // ISO 8601
@@ -51,6 +51,7 @@ export const GameTitleSchema = z.object({
   progress: GameProgressSchema,
   platinumEarned: z.boolean().default(false),
   lastTrophyAt: z.string().nullable().optional(), // ISO 8601
+  lastPlayedAt: z.string().datetime().nullable().optional(),
   trophySummary: z.object({
     platinum: z.object({ earned: z.number().default(0), total: z.number().default(0) }),
     gold: z.object({ earned: z.number().default(0), total: z.number().default(0) }),
@@ -81,13 +82,24 @@ export const SnapshotMetadataSchema = z.object({
   schemaVersion: z.number().default(1),
   generatedAt: z.string(), // ISO 8601
   lastSuccessfulSync: z.string(), // ISO 8601
-  source: z.literal("playstation-network").default("playstation-network")
+  source: z.enum(["playstation-network", "playstation-network+steam"]).default("playstation-network")
 });
 export type SnapshotMetadata = z.infer<typeof SnapshotMetadataSchema>;
+
+export const SteamProfileSchema = z.object({
+  steamId: z.string().regex(/^\d{17}$/),
+  displayName: z.string(),
+  profileUrl: z.string().url(),
+  achievements: z.object({ earned: z.number().int().nonnegative(), total: z.number().int().nonnegative() }),
+  games: z.object({ total: z.number().int().nonnegative(), completed: z.number().int().nonnegative() }),
+  lastSuccessfulSync: z.string().datetime()
+});
+export type SteamProfile = z.infer<typeof SteamProfileSchema>;
 
 export const CanonicalSnapshotSchema = z.object({
   metadata: SnapshotMetadataSchema,
   profile: ProfileSchema,
+  steam: SteamProfileSchema.optional(),
   games: z.array(GameTitleSchema)
 });
 export type CanonicalSnapshot = z.infer<typeof CanonicalSnapshotSchema>;
@@ -111,7 +123,8 @@ export const ChangesResponseSchema = z.object({
     platinum: z.number(),
     gold: z.number(),
     silver: z.number(),
-    bronze: z.number()
+    bronze: z.number(),
+    achievements: z.number().optional()
   }),
   newTrophies: z.array(
     z.object({
