@@ -1,6 +1,6 @@
 # Games
 
-Updated: 2026-11-21 23:27:22 KST
+Updated: 2026-11-22 07:58:00 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
@@ -209,7 +209,7 @@ Dates: KST. Detail: games/{id}.md
 | Warhammer 40,000: Dawn of War II - Chaos Rising | steam-20570 | Steam | 0/73 (0%) | N/A | Unknown |
 | Shatter | steam-20820 | Steam | 0/30 (0%) | N/A | Unknown |
 | The Witcher 2: Assassins of Kings Enhanced Edition | steam-20920 | Steam | 0/52 (0%) | N/A | Unknown |
-| Resident Evil 5 | steam-21690 | Steam | 44/70 (63%) | N/A | 2026-11-18 |
+| Resident Evil 5 | steam-21690 | Steam | 45/70 (64%) | N/A | 2026-11-22 |
 | BRINK | steam-22350 | Steam | 9/43 (21%) | N/A | 2013-10-13 |
 | Fallout: New Vegas | steam-22380 | Steam | 22/75 (29%) | N/A | 2012-11-03 |
 | King's Bounty: The Legend | steam-25900 | Steam | 0/64 (0%) | N/A | Unknown |

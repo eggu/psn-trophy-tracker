@@ -1,9 +1,10 @@
 # Recent Trophies
 
-Updated: 2026-11-21 23:27:22 KST
+Updated: 2026-11-22 07:58:00 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-11-22 02:12:03 KST | Resident Evil 5 | Bad Blood | Achievement |
 | 2026-11-18 21:51:16 KST | Resident Evil 5 | Cattle Prod | Achievement |
 | 2026-11-18 20:11:05 KST | Resident Evil 5 | Go into the Light | Achievement |
 | 2026-11-18 18:50:34 KST | Resident Evil 5 | Egg on Your Face | Achievement |
@@ -53,4 +54,3 @@ Updated: 2026-11-21 23:27:22 KST
 | 2026-11-11 23:39:52 KST | Resident Evil | Ink is for Squids | Achievement |
 | 2026-11-11 22:57:00 KST | Resident Evil 0 | Welcome to Team Wesker | Achievement |
 | 2026-11-11 22:53:03 KST | Resident Evil 0 | Misdirected Hostility | Achievement |
-| 2026-11-11 22:51:59 KST | Resident Evil 0 | Calm the Zombie Nerves | Achievement |

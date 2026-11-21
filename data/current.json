@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 2,
-    "generatedAt": "2026-11-21T14:27:22.859Z",
-    "lastSuccessfulSync": "2026-11-21T14:27:22.859Z",
+    "generatedAt": "2026-11-21T22:58:00.325Z",
+    "lastSuccessfulSync": "2026-11-21T22:58:00.325Z",
     "source": "playstation-network+steam"
   },
   "profile": {
@@ -22,21 +22,21 @@
       "total": 173,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-21T14:19:21.185Z"
+    "lastSuccessfulSync": "2026-11-21T22:50:36.213Z"
   },
   "steam": {
     "steamId": "76561197989470864",
     "displayName": "Eggu",
     "profileUrl": "https://steamcommunity.com/profiles/76561197989470864/",
     "achievements": {
-      "earned": 3784,
+      "earned": 3785,
       "total": 38488
     },
     "games": {
       "total": 664,
       "completed": 19
     },
-    "lastSuccessfulSync": "2026-11-21T14:27:22.859Z"
+    "lastSuccessfulSync": "2026-11-21T22:58:00.325Z"
   },
   "games": [
     {
@@ -233820,13 +233820,13 @@
       ],
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/21690/header.jpg",
       "progress": {
-        "earned": 44,
+        "earned": 45,
         "total": 70,
-        "percentage": 63
+        "percentage": 64
       },
       "platinumEarned": false,
-      "lastTrophyAt": "2026-11-18T12:51:16.000Z",
-      "lastPlayedAt": "2026-11-21T13:51:19.000Z",
+      "lastTrophyAt": "2026-11-21T17:12:03.000Z",
+      "lastPlayedAt": "2026-11-21T21:25:40.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -234623,9 +234623,9 @@
           "description": "During the first fight with Wesker, damage him a set number of times.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/ec9c40c941ac407bf892528879935b875ec234a3.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-21T17:12:03.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/03f4d2ad93782a7eeee5b68d946e614c1c1e21ea.jpg",
           "groupId": "default"
         },
         {
@@ -591772,7 +591772,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-11T14:39:52.000Z",
-      "lastPlayedAt": "2026-11-15T15:41:18.000Z",
+      "lastPlayedAt": "2026-11-21T21:24:50.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,

@@ -2,7 +2,7 @@
 
 ID: steam-3170
 Platform: Steam
-Updated: 2026-11-21 23:27:22 KST
+Updated: 2026-11-22 07:58:00 KST
 
 Progress: 0/74 (0%)
 Platinum: N/A
