@@ -1,7 +1,7 @@
 # Trophy Changes
 
-Current sync: 2026-11-22 23:17:55 KST
-Previous sync: 2026-11-22 14:35:51 KST
+Current sync: 2026-11-23 08:27:12 KST
+Previous sync: 2026-11-22 23:17:55 KST
 
 ## Summary
 
@@ -16,11 +16,11 @@ Achievements +2
 
 | Time | Game | Trophy | Grade |
 | --- | --- | --- | --- |
-| 2026-11-22 16:27:57 KST | [Resident Evil 5](games/steam-21690.md) | Crowd Control | Achievement |
-| 2026-11-22 15:43:16 KST | [Resident Evil 5](games/steam-21690.md) | War Hero | Achievement |
+| 2026-11-23 06:08:29 KST | [Resident Evil 6](games/steam-221040.md) | Rising Up | Achievement |
+| 2026-11-23 04:04:30 KST | [Resident Evil 6](games/steam-221040.md) | Get on the Plane | Achievement |
 
 ## Changed Games
 
 | Game | ID | Previous | Current |
 | --- | --- | --- | --- |
-| Resident Evil 5 | [steam-21690](games/steam-21690.md) | 45/70 | 47/70 |
+| Resident Evil 6 | [steam-221040](games/steam-221040.md) | 12/70 | 14/70 |

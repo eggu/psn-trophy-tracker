@@ -1,7 +1,7 @@
 # Trophy & Achievement Tracker — Agent View
 
 Account: eggu\_
-Updated: 2026-11-22 23:17:55 KST
+Updated: 2026-11-23 08:27:12 KST
 Data status: Fresh
 
 ## Available documents

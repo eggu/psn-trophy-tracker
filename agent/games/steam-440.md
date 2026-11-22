@@ -2,7 +2,7 @@
 
 ID: steam-440
 Platform: Steam
-Updated: 2026-11-22 23:17:55 KST
+Updated: 2026-11-23 08:27:12 KST
 
 Progress: 83/520 (16%)
 Platinum: N/A

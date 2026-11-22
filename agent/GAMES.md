@@ -1,6 +1,6 @@
 # Games
 
-Updated: 2026-11-22 23:17:55 KST
+Updated: 2026-11-23 08:27:12 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
@@ -350,7 +350,7 @@ Dates: KST. Detail: games/{id}.md
 | Hotline Miami | steam-219150 | Steam | 2/35 (6%) | N/A | 2013-07-12 |
 | Far Cry® 3 | steam-220240 | Steam | 0/44 (0%) | N/A | Unknown |
 | DmC Devil May Cry | steam-220440 | Steam | 24/58 (41%) | N/A | 2015-03-22 |
-| Resident Evil 6 | steam-221040 | Steam | 12/70 (17%) | N/A | 2026-11-14 |
+| Resident Evil 6 | steam-221040 | Steam | 14/70 (20%) | N/A | 2026-11-23 |
 | Rocksmith® 2014 Edition - Remastered | steam-221680 | Steam | 18/47 (38%) | N/A | 2015-04-26 |
 | The Book of Unwritten Tales: The Critter Chronicles | steam-221830 | Steam | 0/34 (0%) | N/A | Unknown |
 | The Stanley Parable | steam-221910 | Steam | 10/10 (100%) | N/A | 2015-03-01 |
@@ -709,7 +709,7 @@ Dates: KST. Detail: games/{id}.md
 | Opus Magnum | steam-558990 | Steam | 0/7 (0%) | N/A | Unknown |
 | Phantom Doctrine | steam-559100 | Steam | 0/47 (0%) | N/A | Unknown |
 | Warstone TD | steam-562500 | Steam | 0/123 (0%) | N/A | Unknown |
-| Serious Sam Fusion 2017 \(beta\) | steam-564310 | Steam | 0/76 (0%) | N/A | Unknown |
+| Serious Sam Fusion | steam-564310 | Steam | 0/76 (0%) | N/A | Unknown |
 | Dead In Vinland | steam-573120 | Steam | 0/50 (0%) | N/A | Unknown |
 | AI War 2 | steam-573410 | Steam | 0/255 (0%) | N/A | Unknown |
 | MOTHERGUNSHIP | steam-574090 | Steam | 0/20 (0%) | N/A | Unknown |

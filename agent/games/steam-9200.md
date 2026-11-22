@@ -2,7 +2,7 @@
 
 ID: steam-9200
 Platform: Steam
-Updated: 2026-11-22 23:17:55 KST
+Updated: 2026-11-23 08:27:12 KST
 
 Progress: 16/60 (27%)
 Platinum: N/A

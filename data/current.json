@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 2,
-    "generatedAt": "2026-11-22T14:17:55.361Z",
-    "lastSuccessfulSync": "2026-11-22T14:17:55.361Z",
+    "generatedAt": "2026-11-22T23:27:12.440Z",
+    "lastSuccessfulSync": "2026-11-22T23:27:12.440Z",
     "source": "playstation-network+steam"
   },
   "profile": {
@@ -22,21 +22,21 @@
       "total": 173,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-22T14:10:36.554Z"
+    "lastSuccessfulSync": "2026-11-22T23:18:40.336Z"
   },
   "steam": {
     "steamId": "76561197989470864",
     "displayName": "Eggu",
     "profileUrl": "https://steamcommunity.com/profiles/76561197989470864/",
     "achievements": {
-      "earned": 3787,
+      "earned": 3789,
       "total": 38488
     },
     "games": {
       "total": 664,
       "completed": 19
     },
-    "lastSuccessfulSync": "2026-11-22T14:17:55.360Z"
+    "lastSuccessfulSync": "2026-11-22T23:27:12.440Z"
   },
   "games": [
     {
@@ -233826,7 +233826,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-22T07:27:57.000Z",
-      "lastPlayedAt": "2026-11-22T13:49:43.000Z",
+      "lastPlayedAt": "2026-11-22T20:58:08.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -367959,13 +367959,13 @@
       ],
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/221040/header.jpg",
       "progress": {
-        "earned": 12,
+        "earned": 14,
         "total": 70,
-        "percentage": 17
+        "percentage": 20
       },
       "platinumEarned": false,
-      "lastTrophyAt": "2026-11-13T19:58:35.000Z",
-      "lastPlayedAt": "2026-11-13T20:25:48.000Z",
+      "lastTrophyAt": "2026-11-22T21:08:29.000Z",
+      "lastPlayedAt": "2026-11-22T21:14:49.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -368048,9 +368048,9 @@
           "description": "Complete Chapter 3 in Leon's campaign.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/221040/d0b28de60fad2cc3e78d329753d52107f0db574d.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-22T19:04:30.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/221040/317a0751fa3da0459a3e8d769b30418108c91de8.jpg",
           "groupId": "default"
         },
         {
@@ -368609,9 +368609,9 @@
           "description": "Earn a level-four title.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/221040/baa8d4e2a33af9a0fd8faab74d1d2ba1c70c5a1e.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-22T21:08:29.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/221040/5c04568c6f2af9168bc9d41fdd167ca606d4f392.jpg",
           "groupId": "default"
         },
         {
@@ -775687,7 +775687,7 @@
     },
     {
       "id": "steam-564310",
-      "name": "Serious Sam Fusion 2017 (beta)",
+      "name": "Serious Sam Fusion",
       "platform": [
         "Steam"
       ],
