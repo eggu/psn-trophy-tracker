@@ -2,7 +2,7 @@
 
 ID: steam-3590
 Platform: Steam
-Updated: 2026-11-22 07:58:00 KST
+Updated: 2026-11-22 14:35:51 KST
 
 Progress: 11/21 (52%)
 Platinum: N/A

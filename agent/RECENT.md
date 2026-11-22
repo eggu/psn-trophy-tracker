@@ -1,6 +1,6 @@
 # Recent Trophies
 
-Updated: 2026-11-22 07:58:00 KST
+Updated: 2026-11-22 14:35:51 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
