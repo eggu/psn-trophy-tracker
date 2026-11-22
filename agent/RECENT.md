@@ -1,9 +1,11 @@
 # Recent Trophies
 
-Updated: 2026-11-22 14:35:51 KST
+Updated: 2026-11-22 23:17:55 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-11-22 16:27:57 KST | Resident Evil 5 | Crowd Control | Achievement |
+| 2026-11-22 15:43:16 KST | Resident Evil 5 | War Hero | Achievement |
 | 2026-11-22 02:12:03 KST | Resident Evil 5 | Bad Blood | Achievement |
 | 2026-11-18 21:51:16 KST | Resident Evil 5 | Cattle Prod | Achievement |
 | 2026-11-18 20:11:05 KST | Resident Evil 5 | Go into the Light | Achievement |
@@ -52,5 +54,3 @@ Updated: 2026-11-22 14:35:51 KST
 | 2026-11-12 01:06:36 KST | 기원: 변이 | 나 듣고 있어... | Bronze |
 | 2026-11-12 01:05:10 KST | 기원: 변이 | 나 밟았어\! | Silver |
 | 2026-11-11 23:39:52 KST | Resident Evil | Ink is for Squids | Achievement |
-| 2026-11-11 22:57:00 KST | Resident Evil 0 | Welcome to Team Wesker | Achievement |
-| 2026-11-11 22:53:03 KST | Resident Evil 0 | Misdirected Hostility | Achievement |

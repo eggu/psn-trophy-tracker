@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 2,
-    "generatedAt": "2026-11-22T05:35:51.274Z",
-    "lastSuccessfulSync": "2026-11-22T05:35:51.274Z",
+    "generatedAt": "2026-11-22T14:17:55.361Z",
+    "lastSuccessfulSync": "2026-11-22T14:17:55.361Z",
     "source": "playstation-network+steam"
   },
   "profile": {
@@ -22,21 +22,21 @@
       "total": 173,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-22T05:26:55.492Z"
+    "lastSuccessfulSync": "2026-11-22T14:10:36.554Z"
   },
   "steam": {
     "steamId": "76561197989470864",
     "displayName": "Eggu",
     "profileUrl": "https://steamcommunity.com/profiles/76561197989470864/",
     "achievements": {
-      "earned": 3785,
+      "earned": 3787,
       "total": 38488
     },
     "games": {
       "total": 664,
       "completed": 19
     },
-    "lastSuccessfulSync": "2026-11-22T05:35:51.273Z"
+    "lastSuccessfulSync": "2026-11-22T14:17:55.360Z"
   },
   "games": [
     {
@@ -233820,13 +233820,13 @@
       ],
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/21690/header.jpg",
       "progress": {
-        "earned": 45,
+        "earned": 47,
         "total": 70,
-        "percentage": 64
+        "percentage": 67
       },
       "platinumEarned": false,
-      "lastTrophyAt": "2026-11-21T17:12:03.000Z",
-      "lastPlayedAt": "2026-11-22T05:14:49.000Z",
+      "lastTrophyAt": "2026-11-22T07:27:57.000Z",
+      "lastPlayedAt": "2026-11-22T13:49:43.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -234181,9 +234181,9 @@
           "description": "Complete all chapters on Professional.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/e681c7f82424a5e2812bdf370b3b174a89a75744.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-22T06:43:16.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/69fed5093ddc6606d31eefe3e85520eac3b956a9.jpg",
           "groupId": "default"
         },
         {
@@ -234402,9 +234402,9 @@
           "description": "Defeat 30 enemies with the Gatling gun.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/2b7741471e030ea5274a2d214c4e22ba5ea2ae39.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-22T07:27:57.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/85188ec809632612207757a67e0554f4b2018f03.jpg",
           "groupId": "default"
         },
         {
@@ -591772,7 +591772,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-11T14:39:52.000Z",
-      "lastPlayedAt": "2026-11-21T21:24:50.000Z",
+      "lastPlayedAt": "2026-11-22T12:49:41.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,

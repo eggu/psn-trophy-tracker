@@ -2,7 +2,7 @@
 
 ID: steam-550
 Platform: Steam
-Updated: 2026-11-22 14:35:51 KST
+Updated: 2026-11-22 23:17:55 KST
 
 Progress: 1/101 (1%)
 Platinum: N/A
