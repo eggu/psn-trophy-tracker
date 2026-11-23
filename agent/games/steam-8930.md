@@ -2,7 +2,7 @@
 
 ID: steam-8930
 Platform: Steam
-Updated: 2026-11-23 08:27:12 KST
+Updated: 2026-11-23 15:10:35 KST
 
 Progress: 85/286 (30%)
 Platinum: N/A

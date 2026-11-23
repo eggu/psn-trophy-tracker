@@ -2,7 +2,7 @@
 
 ID: steam-6120
 Platform: Steam
-Updated: 2026-11-23 08:27:12 KST
+Updated: 2026-11-23 15:10:35 KST
 
 Progress: 3/12 (25%)
 Platinum: N/A
