@@ -1,8 +1,8 @@
 # Sync Status
 
 Status: Fresh
-Last successful sync: 2026-11-23 15:10:35 KST
-Last attempted sync: 2026-11-23 15:03:09 KST
-Generated: 2026-11-23 15:10:57 KST
-Sources: psn: 2026-11-23 15:03:22 KST; steam: 2026-11-23 15:10:35 KST
+Last successful sync: 2026-11-24 08:36:49 KST
+Last attempted sync: 2026-11-24 08:28:35 KST
+Generated: 2026-11-24 08:37:11 KST
+Sources: psn: 2026-11-24 08:28:48 KST; steam: 2026-11-24 08:36:49 KST
 Schema: 2

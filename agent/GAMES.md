@@ -1,6 +1,6 @@
 # Games
 
-Updated: 2026-11-23 15:10:35 KST
+Updated: 2026-11-24 08:36:49 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
@@ -711,7 +711,7 @@ Dates: KST. Detail: games/{id}.md
 | Warstone TD | steam-562500 | Steam | 0/123 (0%) | N/A | Unknown |
 | Serious Sam Fusion | steam-564310 | Steam | 0/76 (0%) | N/A | Unknown |
 | Dead In Vinland | steam-573120 | Steam | 0/50 (0%) | N/A | Unknown |
-| AI War 2 | steam-573410 | Steam | 0/255 (0%) | N/A | Unknown |
+| AI War 2 | steam-573410 | Steam | 0/451 (0%) | N/A | Unknown |
 | MOTHERGUNSHIP | steam-574090 | Steam | 0/20 (0%) | N/A | Unknown |
 | Evergarden | steam-576500 | Steam | 0/21 (0%) | N/A | Unknown |
 | Old Man's Journey | steam-581270 | Steam | 0/13 (0%) | N/A | Unknown |

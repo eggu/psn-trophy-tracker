@@ -1,6 +1,6 @@
 # PSN Profile — eggu\_
 
-Updated: 2026-11-23 15:03:22 KST
+Updated: 2026-11-24 08:28:48 KST
 
 Level: 287
 Level progress: 3%
@@ -18,8 +18,8 @@ Completed games: 7
 
 ## Steam — Eggu
 
-Updated: 2026-11-23 15:10:35 KST
-Achievements: 3789/38488
+Updated: 2026-11-24 08:36:49 KST
+Achievements: 3789/38684
 Games with achievements: 664
 Completed games: 19
 

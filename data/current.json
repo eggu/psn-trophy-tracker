@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 2,
-    "generatedAt": "2026-11-23T06:10:35.718Z",
-    "lastSuccessfulSync": "2026-11-23T06:10:35.718Z",
+    "generatedAt": "2026-11-23T23:36:49.337Z",
+    "lastSuccessfulSync": "2026-11-23T23:36:49.337Z",
     "source": "playstation-network+steam"
   },
   "profile": {
@@ -22,7 +22,7 @@
       "total": 173,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-23T06:03:22.605Z"
+    "lastSuccessfulSync": "2026-11-23T23:28:48.800Z"
   },
   "steam": {
     "steamId": "76561197989470864",
@@ -30,13 +30,13 @@
     "profileUrl": "https://steamcommunity.com/profiles/76561197989470864/",
     "achievements": {
       "earned": 3789,
-      "total": 38488
+      "total": 38684
     },
     "games": {
       "total": 664,
       "completed": 19
     },
-    "lastSuccessfulSync": "2026-11-23T06:10:35.718Z"
+    "lastSuccessfulSync": "2026-11-23T23:36:49.337Z"
   },
   "games": [
     {
@@ -233826,7 +233826,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-22T07:27:57.000Z",
-      "lastPlayedAt": "2026-11-23T06:00:15.000Z",
+      "lastPlayedAt": "2026-11-23T20:46:47.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -777908,7 +777908,7 @@
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/573410/header.jpg",
       "progress": {
         "earned": 0,
-        "total": 255,
+        "total": 451,
         "percentage": 0
       },
       "platinumEarned": false,
@@ -782266,6 +782266,3338 @@
           "earned": false,
           "earnedAt": null,
           "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/e35ff46b62d33f26f429d36dee29fa3df35f587f.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_APK_EMP_WIN",
+          "name": "Wise Guys",
+          "localized": {
+            "en-US": {
+              "name": "Wise Guys",
+              "description": "Win playing as the Apkallu Empire."
+            }
+          },
+          "description": "Win playing as the Apkallu Empire.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_APK_EMP_7",
+          "name": "Plenty Of Fish In The Sea",
+          "localized": {
+            "en-US": {
+              "name": "Plenty Of Fish In The Sea",
+              "description": "Win playing as the Apkallu Empire against an AI of difficulty >= 7."
+            }
+          },
+          "description": "Win playing as the Apkallu Empire against an AI of difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_APK_EMP_9",
+          "name": "Sleeping With The Fishes",
+          "localized": {
+            "en-US": {
+              "name": "Sleeping With The Fishes",
+              "description": "Win playing as the Apkallu Empire against an AI of difficulty >= 9."
+            }
+          },
+          "description": "Win playing as the Apkallu Empire against an AI of difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_APK_INF_WIN",
+          "name": "Something Fishy",
+          "localized": {
+            "en-US": {
+              "name": "Something Fishy",
+              "description": "Win playing as the Apkallu-Infused Empire."
+            }
+          },
+          "description": "Win playing as the Apkallu-Infused Empire.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_APK_INF_7",
+          "name": "Hook, Line And Sinker",
+          "localized": {
+            "en-US": {
+              "name": "Hook, Line And Sinker",
+              "description": "Win playing as the Apkallu-Infused Empire against an AI of difficulty >= 7."
+            }
+          },
+          "description": "Win playing as the Apkallu-Infused Empire against an AI of difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_APK_INF_9",
+          "name": "Bigger Fish To Fry",
+          "localized": {
+            "en-US": {
+              "name": "Bigger Fish To Fry",
+              "description": "Win playing as the Apkallu-Infused Empire against an AI of difficulty >= 9."
+            }
+          },
+          "description": "Win playing as the Apkallu-Infused Empire against an AI of difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_APK_SK_WIN",
+          "name": "Sage Advice",
+          "localized": {
+            "en-US": {
+              "name": "Sage Advice",
+              "description": "Win playing as the Apkallu Sidekick."
+            }
+          },
+          "description": "Win playing as the Apkallu Sidekick.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_APK_SK_7",
+          "name": "Backseat Driver",
+          "localized": {
+            "en-US": {
+              "name": "Backseat Driver",
+              "description": "Win playing as the Apkallu Sidekick against an AI of difficulty >= 7."
+            }
+          },
+          "description": "Win playing as the Apkallu Sidekick against an AI of difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_APK_SK_9",
+          "name": "The Power Behind The Throne",
+          "localized": {
+            "en-US": {
+              "name": "The Power Behind The Throne",
+              "description": "Win playing as the Apkallu Sidekick against an AI of difficulty >= 9."
+            }
+          },
+          "description": "Win playing as the Apkallu Sidekick against an AI of difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DYS_EMP_WIN",
+          "name": "Sphere Of Influence",
+          "localized": {
+            "en-US": {
+              "name": "Sphere Of Influence",
+              "description": "Win playing as the Dyson Empire."
+            }
+          },
+          "description": "Win playing as the Dyson Empire.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DYS_EMP_7",
+          "name": "Measure Twice, Build Once",
+          "localized": {
+            "en-US": {
+              "name": "Measure Twice, Build Once",
+              "description": "Win playing as the Dyson Empire against an AI of difficulty >= 7."
+            }
+          },
+          "description": "Win playing as the Dyson Empire against an AI of difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DYS_EMP_9",
+          "name": "Who Needs A Sun Anyway?",
+          "localized": {
+            "en-US": {
+              "name": "Who Needs A Sun Anyway?",
+              "description": "Win playing as the Dyson Empire against an AI of difficulty >= 9."
+            }
+          },
+          "description": "Win playing as the Dyson Empire against an AI of difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DYS_SK_WIN",
+          "name": "Lend A Hand",
+          "localized": {
+            "en-US": {
+              "name": "Lend A Hand",
+              "description": "Win playing as the Dyson Sidekick."
+            }
+          },
+          "description": "Win playing as the Dyson Sidekick.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DYS_SK_7",
+          "name": "Moonlighting",
+          "localized": {
+            "en-US": {
+              "name": "Moonlighting",
+              "description": "Win playing as the Dyson Sidekick against an AI of difficulty >= 7."
+            }
+          },
+          "description": "Win playing as the Dyson Sidekick against an AI of difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DYS_SK_9",
+          "name": "Carried The Team!",
+          "localized": {
+            "en-US": {
+              "name": "Carried The Team!",
+              "description": "Win playing as the Dyson Sidekick against an AI of difficulty >= 9."
+            }
+          },
+          "description": "Win playing as the Dyson Sidekick against an AI of difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_ARK_SK_WIN",
+          "name": "Two By Two",
+          "localized": {
+            "en-US": {
+              "name": "Two By Two",
+              "description": "Win playing as the Human Ark Sidekick."
+            }
+          },
+          "description": "Win playing as the Human Ark Sidekick.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_ARK_SK_7",
+          "name": "Batten Down The Hatches!",
+          "localized": {
+            "en-US": {
+              "name": "Batten Down The Hatches!",
+              "description": "Win playing as the Human Ark Sidekick against an AI of difficulty >= 7."
+            }
+          },
+          "description": "Win playing as the Human Ark Sidekick against an AI of difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_ARK_SK_9",
+          "name": "Forty Days And Forty Nights",
+          "localized": {
+            "en-US": {
+              "name": "Forty Days And Forty Nights",
+              "description": "Win playing as the Human Ark Sidekick against an AI of difficulty >= 9."
+            }
+          },
+          "description": "Win playing as the Human Ark Sidekick against an AI of difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SPR_SK_WIN",
+          "name": "The Little Spire That Could",
+          "localized": {
+            "en-US": {
+              "name": "The Little Spire That Could",
+              "description": "Win playing as the Spire Sidekick."
+            }
+          },
+          "description": "Win playing as the Spire Sidekick.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SPR_SK_7",
+          "name": "Spire In Training",
+          "localized": {
+            "en-US": {
+              "name": "Spire In Training",
+              "description": "Win playing as the Spire Sidekick against an AI of difficulty >= 7."
+            }
+          },
+          "description": "Win playing as the Spire Sidekick against an AI of difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SPR_SK_9",
+          "name": "The Spire Rises Again",
+          "localized": {
+            "en-US": {
+              "name": "The Spire Rises Again",
+              "description": "Win playing as the Spire Sidekick against an AI of difficulty >= 9."
+            }
+          },
+          "description": "Win playing as the Spire Sidekick against an AI of difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SCG_INF_WIN",
+          "name": "Hive Mind Your Manners",
+          "localized": {
+            "en-US": {
+              "name": "Hive Mind Your Manners",
+              "description": "Win playing as the Scourge-Infused Empire."
+            }
+          },
+          "description": "Win playing as the Scourge-Infused Empire.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SCG_INF_7",
+          "name": "Who's Infesting Who?",
+          "localized": {
+            "en-US": {
+              "name": "Who's Infesting Who?",
+              "description": "Win playing as the Scourge-Infused Empire against an AI of difficulty >= 7."
+            }
+          },
+          "description": "Win playing as the Scourge-Infused Empire against an AI of difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SCG_INF_9",
+          "name": "It's A Feature, Not A Bug",
+          "localized": {
+            "en-US": {
+              "name": "It's A Feature, Not A Bug",
+              "description": "Win playing as the Scourge-Infused Empire against an AI of difficulty >= 9."
+            }
+          },
+          "description": "Win playing as the Scourge-Infused Empire against an AI of difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_ARMADA_WIN",
+          "name": "Fleet Week",
+          "localized": {
+            "en-US": {
+              "name": "Fleet Week",
+              "description": "Win playing as the Armada Empire."
+            }
+          },
+          "description": "Win playing as the Armada Empire.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_ARMADA_7",
+          "name": "Anchors Aweigh!",
+          "localized": {
+            "en-US": {
+              "name": "Anchors Aweigh!",
+              "description": "Win playing as the Armada Empire against an AI of difficulty >= 7."
+            }
+          },
+          "description": "Win playing as the Armada Empire against an AI of difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_ARMADA_9",
+          "name": "Totally Unsinkable",
+          "localized": {
+            "en-US": {
+              "name": "Totally Unsinkable",
+              "description": "Win playing as the Armada Empire against an AI of difficulty >= 9."
+            }
+          },
+          "description": "Win playing as the Armada Empire against an AI of difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DZ_EMP_WIN",
+          "name": "Winter Is Here",
+          "localized": {
+            "en-US": {
+              "name": "Winter Is Here",
+              "description": "Win playing as the Dark Zenith Empire."
+            }
+          },
+          "description": "Win playing as the Dark Zenith Empire.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DZ_EMP_7",
+          "name": "Cue The Valkyries!",
+          "localized": {
+            "en-US": {
+              "name": "Cue The Valkyries!",
+              "description": "Win playing as the Dark Zenith Empire against an AI of difficulty >= 7."
+            }
+          },
+          "description": "Win playing as the Dark Zenith Empire against an AI of difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DZ_EMP_9",
+          "name": "Ragnarok And Roll",
+          "localized": {
+            "en-US": {
+              "name": "Ragnarok And Roll",
+              "description": "Win playing as the Dark Zenith Empire against an AI of difficulty >= 9."
+            }
+          },
+          "description": "Win playing as the Dark Zenith Empire against an AI of difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DZ_SK_WIN",
+          "name": "A Little Birdie Told Me",
+          "localized": {
+            "en-US": {
+              "name": "A Little Birdie Told Me",
+              "description": "Win playing as the Dark Zenith Sidekick."
+            }
+          },
+          "description": "Win playing as the Dark Zenith Sidekick.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DZ_SK_7",
+          "name": "Ravenous",
+          "localized": {
+            "en-US": {
+              "name": "Ravenous",
+              "description": "Win playing as the Dark Zenith Sidekick against an AI of difficulty >= 7."
+            }
+          },
+          "description": "Win playing as the Dark Zenith Sidekick against an AI of difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DZ_SK_9",
+          "name": "Odin Approves",
+          "localized": {
+            "en-US": {
+              "name": "Odin Approves",
+              "description": "Win playing as the Dark Zenith Sidekick against an AI of difficulty >= 9."
+            }
+          },
+          "description": "Win playing as the Dark Zenith Sidekick against an AI of difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_FLENSERITE_1",
+          "name": "Blunt Instrument",
+          "localized": {
+            "en-US": {
+              "name": "Blunt Instrument",
+              "description": "Beat the Flenserite AI on any difficulty."
+            }
+          },
+          "description": "Beat the Flenserite AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_FLENSERITE_7",
+          "name": "A Cut Above",
+          "localized": {
+            "en-US": {
+              "name": "A Cut Above",
+              "description": "Beat the Flenserite AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Flenserite AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_FLENSERITE_9",
+          "name": "Flense This!",
+          "localized": {
+            "en-US": {
+              "name": "Flense This!",
+              "description": "Beat the Flenserite AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Flenserite AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AMETOR_1",
+          "name": "Mother Of All Battles",
+          "localized": {
+            "en-US": {
+              "name": "Mother Of All Battles",
+              "description": "Beat the Ametor AI on any difficulty."
+            }
+          },
+          "description": "Beat the Ametor AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AMETOR_7",
+          "name": "Grounded For Life",
+          "localized": {
+            "en-US": {
+              "name": "Grounded For Life",
+              "description": "Beat the Ametor AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Ametor AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AMETOR_9",
+          "name": "Mom Said It's My Turn",
+          "localized": {
+            "en-US": {
+              "name": "Mom Said It's My Turn",
+              "description": "Beat the Ametor AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Ametor AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MISKATONIC_1",
+          "name": "Freshman Orientation",
+          "localized": {
+            "en-US": {
+              "name": "Freshman Orientation",
+              "description": "Beat the Miskatonic AI on any difficulty."
+            }
+          },
+          "description": "Beat the Miskatonic AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MISKATONIC_7",
+          "name": "Sanity Check Passed",
+          "localized": {
+            "en-US": {
+              "name": "Sanity Check Passed",
+              "description": "Beat the Miskatonic AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Miskatonic AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MISKATONIC_9",
+          "name": "Expelled!",
+          "localized": {
+            "en-US": {
+              "name": "Expelled!",
+              "description": "Beat the Miskatonic AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Miskatonic AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SHADOWEN_1",
+          "name": "Afraid Of The Dark",
+          "localized": {
+            "en-US": {
+              "name": "Afraid Of The Dark",
+              "description": "Beat the Shadowen AI on any difficulty."
+            }
+          },
+          "description": "Beat the Shadowen AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SHADOWEN_7",
+          "name": "Turn On The Lights",
+          "localized": {
+            "en-US": {
+              "name": "Turn On The Lights",
+              "description": "Beat the Shadowen AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Shadowen AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SHADOWEN_9",
+          "name": "Shadow Puppet",
+          "localized": {
+            "en-US": {
+              "name": "Shadow Puppet",
+              "description": "Beat the Shadowen AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Shadowen AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_LERNEAN_1",
+          "name": "Two More Grew Back?",
+          "localized": {
+            "en-US": {
+              "name": "Two More Grew Back?",
+              "description": "Beat the Lernaean AI on any difficulty."
+            }
+          },
+          "description": "Beat the Lernaean AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_LERNEAN_7",
+          "name": "Cauterize The Stumps",
+          "localized": {
+            "en-US": {
+              "name": "Cauterize The Stumps",
+              "description": "Beat the Lernaean AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Lernaean AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_LERNEAN_9",
+          "name": "Hercules Who?",
+          "localized": {
+            "en-US": {
+              "name": "Hercules Who?",
+              "description": "Beat the Lernaean AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Lernaean AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_BANDERSNATCH_1",
+          "name": "Shun The Frumious Bandersnatch",
+          "localized": {
+            "en-US": {
+              "name": "Shun The Frumious Bandersnatch",
+              "description": "Beat the Bandersnatch AI on any difficulty."
+            }
+          },
+          "description": "Beat the Bandersnatch AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_BANDERSNATCH_7",
+          "name": "Through The Looking Glass",
+          "localized": {
+            "en-US": {
+              "name": "Through The Looking Glass",
+              "description": "Beat the Bandersnatch AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Bandersnatch AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_BANDERSNATCH_9",
+          "name": "Off With Its Head!",
+          "localized": {
+            "en-US": {
+              "name": "Off With Its Head!",
+              "description": "Beat the Bandersnatch AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Bandersnatch AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CHIVALRIC_1",
+          "name": "Chivalry Isn't Dead",
+          "localized": {
+            "en-US": {
+              "name": "Chivalry Isn't Dead",
+              "description": "Beat the Chivalric AI on any difficulty."
+            }
+          },
+          "description": "Beat the Chivalric AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CHIVALRIC_7",
+          "name": "Nice Guys Finish Last",
+          "localized": {
+            "en-US": {
+              "name": "Nice Guys Finish Last",
+              "description": "Beat the Chivalric AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Chivalric AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CHIVALRIC_9",
+          "name": "Knocked Off His High Horse!",
+          "localized": {
+            "en-US": {
+              "name": "Knocked Off His High Horse!",
+              "description": "Beat the Chivalric AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Chivalric AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DEEPSTRIKER_1",
+          "name": "Strike Out",
+          "localized": {
+            "en-US": {
+              "name": "Strike Out",
+              "description": "Beat the Deepstriker AI on any difficulty."
+            }
+          },
+          "description": "Beat the Deepstriker AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DEEPSTRIKER_7",
+          "name": "In Too Deep",
+          "localized": {
+            "en-US": {
+              "name": "In Too Deep",
+              "description": "Beat the Deepstriker AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Deepstriker AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DEEPSTRIKER_9",
+          "name": "Plumbing The Depths",
+          "localized": {
+            "en-US": {
+              "name": "Plumbing The Depths",
+              "description": "Beat the Deepstriker AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Deepstriker AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_JUBJUB_1",
+          "name": "Beware The Jub Jub Bird",
+          "localized": {
+            "en-US": {
+              "name": "Beware The Jub Jub Bird",
+              "description": "Beat the Jub Jub Bird AI on any difficulty."
+            }
+          },
+          "description": "Beat the Jub Jub Bird AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_JUBJUB_7",
+          "name": "Plucked And Roasted",
+          "localized": {
+            "en-US": {
+              "name": "Plucked And Roasted",
+              "description": "Beat the Jub Jub Bird AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Jub Jub Bird AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_JUBJUB_9",
+          "name": "Hardest AI In The Game? Pfft.",
+          "localized": {
+            "en-US": {
+              "name": "Hardest AI In The Game? Pfft.",
+              "description": "Beat the Jub Jub Bird AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Jub Jub Bird AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_WRAITH_1",
+          "name": "Ghost Story",
+          "localized": {
+            "en-US": {
+              "name": "Ghost Story",
+              "description": "Beat the Wraith AI on any difficulty."
+            }
+          },
+          "description": "Beat the Wraith AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_WRAITH_7",
+          "name": "Rest In Pieces",
+          "localized": {
+            "en-US": {
+              "name": "Rest In Pieces",
+              "description": "Beat the Wraith AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Wraith AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_WRAITH_9",
+          "name": "Boo Yourself!",
+          "localized": {
+            "en-US": {
+              "name": "Boo Yourself!",
+              "description": "Beat the Wraith AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Wraith AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_WANDERER_1",
+          "name": "Lost And Found",
+          "localized": {
+            "en-US": {
+              "name": "Lost And Found",
+              "description": "Beat the Wanderer AI on any difficulty."
+            }
+          },
+          "description": "Beat the Wanderer AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_WANDERER_7",
+          "name": "Road Trip",
+          "localized": {
+            "en-US": {
+              "name": "Road Trip",
+              "description": "Beat the Wanderer AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Wanderer AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_WANDERER_9",
+          "name": "Are We There Yet?",
+          "localized": {
+            "en-US": {
+              "name": "Are We There Yet?",
+              "description": "Beat the Wanderer AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Wanderer AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_KZINTI_1",
+          "name": "Scream And Leap",
+          "localized": {
+            "en-US": {
+              "name": "Scream And Leap",
+              "description": "Beat the Kzinti AI on any difficulty."
+            }
+          },
+          "description": "Beat the Kzinti AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_KZINTI_7",
+          "name": "Cat Got Your Fleet",
+          "localized": {
+            "en-US": {
+              "name": "Cat Got Your Fleet",
+              "description": "Beat the Kzinti AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Kzinti AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_KZINTI_9",
+          "name": "Nine Lives Spent",
+          "localized": {
+            "en-US": {
+              "name": "Nine Lives Spent",
+              "description": "Beat the Kzinti AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Kzinti AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TIDAL_1",
+          "name": "Swimming Upstream",
+          "localized": {
+            "en-US": {
+              "name": "Swimming Upstream",
+              "description": "Beat the Tidal AI on any difficulty."
+            }
+          },
+          "description": "Beat the Tidal AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TIDAL_7",
+          "name": "Surf's Up!",
+          "localized": {
+            "en-US": {
+              "name": "Surf's Up!",
+              "description": "Beat the Tidal AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Tidal AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TIDAL_9",
+          "name": "Riptide",
+          "localized": {
+            "en-US": {
+              "name": "Riptide",
+              "description": "Beat the Tidal AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Tidal AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TURRETMASTER_1",
+          "name": "Too Many Turrets",
+          "localized": {
+            "en-US": {
+              "name": "Too Many Turrets",
+              "description": "Beat the Turret Master AI on any difficulty."
+            }
+          },
+          "description": "Beat the Turret Master AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TURRETMASTER_7",
+          "name": "Tower Defense",
+          "localized": {
+            "en-US": {
+              "name": "Tower Defense",
+              "description": "Beat the Turret Master AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Turret Master AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TURRETMASTER_9",
+          "name": "Isn't That What You Signed Up For?",
+          "localized": {
+            "en-US": {
+              "name": "Isn't That What You Signed Up For?",
+              "description": "Beat the Turret Master AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Turret Master AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_HATEFUL_1",
+          "name": "Haters Gonna Hate",
+          "localized": {
+            "en-US": {
+              "name": "Haters Gonna Hate",
+              "description": "Beat the Hateful AI on any difficulty."
+            }
+          },
+          "description": "Beat the Hateful AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_HATEFUL_7",
+          "name": "Money Back Guaranteed",
+          "localized": {
+            "en-US": {
+              "name": "Money Back Guaranteed",
+              "description": "Beat the Hateful AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Hateful AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_HATEFUL_9",
+          "name": "Hate Is A Strong Word",
+          "localized": {
+            "en-US": {
+              "name": "Hate Is A Strong Word",
+              "description": "Beat the Hateful AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Hateful AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_HUNTRIX_1",
+          "name": "Hunting Season's Over",
+          "localized": {
+            "en-US": {
+              "name": "Hunting Season's Over",
+              "description": "Beat the Huntrix AI on any difficulty."
+            }
+          },
+          "description": "Beat the Huntrix AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_HUNTRIX_7",
+          "name": "The Hunter Becomes The Hunted",
+          "localized": {
+            "en-US": {
+              "name": "The Hunter Becomes The Hunted",
+              "description": "Beat the Huntrix AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Huntrix AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_HUNTRIX_9",
+          "name": "Apex Predator",
+          "localized": {
+            "en-US": {
+              "name": "Apex Predator",
+              "description": "Beat the Huntrix AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Huntrix AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CTHONIC_1",
+          "name": "Antivirus Software",
+          "localized": {
+            "en-US": {
+              "name": "Antivirus Software",
+              "description": "Beat the Cthonic AI on any difficulty."
+            }
+          },
+          "description": "Beat the Cthonic AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CTHONIC_7",
+          "name": "Clean Install",
+          "localized": {
+            "en-US": {
+              "name": "Clean Install",
+              "description": "Beat the Cthonic AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Cthonic AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CTHONIC_9",
+          "name": "Format The Drive",
+          "localized": {
+            "en-US": {
+              "name": "Format The Drive",
+              "description": "Beat the Cthonic AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Cthonic AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TIAMAT_1",
+          "name": "Chaos Theory",
+          "localized": {
+            "en-US": {
+              "name": "Chaos Theory",
+              "description": "Beat the Tiamat AI on any difficulty."
+            }
+          },
+          "description": "Beat the Tiamat AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TIAMAT_7",
+          "name": "Dragon Slayer!",
+          "localized": {
+            "en-US": {
+              "name": "Dragon Slayer!",
+              "description": "Beat the Tiamat AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Tiamat AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TIAMAT_9",
+          "name": "Here Be Dragons",
+          "localized": {
+            "en-US": {
+              "name": "Here Be Dragons",
+              "description": "Beat the Tiamat AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Tiamat AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CRUEL_1",
+          "name": "Cruel To Be Kind",
+          "localized": {
+            "en-US": {
+              "name": "Cruel To Be Kind",
+              "description": "Beat the Cruel AI on any difficulty."
+            }
+          },
+          "description": "Beat the Cruel AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CRUEL_7",
+          "name": "Not My Flagship!",
+          "localized": {
+            "en-US": {
+              "name": "Not My Flagship!",
+              "description": "Beat the Cruel AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Cruel AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CRUEL_9",
+          "name": "Cruel Intentions",
+          "localized": {
+            "en-US": {
+              "name": "Cruel Intentions",
+              "description": "Beat the Cruel AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Cruel AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CASTELLAN_1",
+          "name": "Siege Mentality",
+          "localized": {
+            "en-US": {
+              "name": "Siege Mentality",
+              "description": "Beat the Castellan AI on any difficulty."
+            }
+          },
+          "description": "Beat the Castellan AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CASTELLAN_7",
+          "name": "Knock Knock!",
+          "localized": {
+            "en-US": {
+              "name": "Knock Knock!",
+              "description": "Beat the Castellan AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat the Castellan AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CASTELLAN_9",
+          "name": "I'm The King Of The Castle!",
+          "localized": {
+            "en-US": {
+              "name": "I'm The King Of The Castle!",
+              "description": "Beat the Castellan AI on difficulty >= 9."
+            }
+          },
+          "description": "Beat the Castellan AI on difficulty >= 9.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_TURTLE_1",
+          "name": "Turtles All The Way Down",
+          "localized": {
+            "en-US": {
+              "name": "Turtles All The Way Down",
+              "description": "Beat an Adaptive Turtle AI on any difficulty."
+            }
+          },
+          "description": "Beat an Adaptive Turtle AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_TURTLE_7",
+          "name": "Slow And Steady Lost The Race",
+          "localized": {
+            "en-US": {
+              "name": "Slow And Steady Lost The Race",
+              "description": "Beat an Adaptive Turtle AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat an Adaptive Turtle AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_AGGRO_1",
+          "name": "Pick A Fight",
+          "localized": {
+            "en-US": {
+              "name": "Pick A Fight",
+              "description": "Beat an Adaptive Aggressor AI on any difficulty."
+            }
+          },
+          "description": "Beat an Adaptive Aggressor AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_AGGRO_7",
+          "name": "Fight Fire With Fire",
+          "localized": {
+            "en-US": {
+              "name": "Fight Fire With Fire",
+              "description": "Beat an Adaptive Aggressor AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat an Adaptive Aggressor AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_LONGRANGE_1",
+          "name": "Close The Distance",
+          "localized": {
+            "en-US": {
+              "name": "Close The Distance",
+              "description": "Beat an Adaptive Long-Range AI on any difficulty."
+            }
+          },
+          "description": "Beat an Adaptive Long-Range AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_LONGRANGE_7",
+          "name": "Point Blank",
+          "localized": {
+            "en-US": {
+              "name": "Point Blank",
+              "description": "Beat an Adaptive Long-Range AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat an Adaptive Long-Range AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_INFILTRATOR_1",
+          "name": "Mole Hunt",
+          "localized": {
+            "en-US": {
+              "name": "Mole Hunt",
+              "description": "Beat an Adaptive Infiltrator AI on any difficulty."
+            }
+          },
+          "description": "Beat an Adaptive Infiltrator AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_INFILTRATOR_7",
+          "name": "Counter-Intelligence",
+          "localized": {
+            "en-US": {
+              "name": "Counter-Intelligence",
+              "description": "Beat an Adaptive Infiltrator AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat an Adaptive Infiltrator AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_DENIAL_1",
+          "name": "Not Just A River",
+          "localized": {
+            "en-US": {
+              "name": "Not Just A River",
+              "description": "Beat an Adaptive Denial AI on any difficulty."
+            }
+          },
+          "description": "Beat an Adaptive Denial AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_DENIAL_7",
+          "name": "Five Stages Of Grief",
+          "localized": {
+            "en-US": {
+              "name": "Five Stages Of Grief",
+              "description": "Beat an Adaptive Denial AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat an Adaptive Denial AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_POSSESSED_1",
+          "name": "Get Out Of My Galaxy!",
+          "localized": {
+            "en-US": {
+              "name": "Get Out Of My Galaxy!",
+              "description": "Beat an Adaptive Possessed AI on any difficulty."
+            }
+          },
+          "description": "Beat an Adaptive Possessed AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_POSSESSED_7",
+          "name": "The Power Compels You!",
+          "localized": {
+            "en-US": {
+              "name": "The Power Compels You!",
+              "description": "Beat an Adaptive Possessed AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat an Adaptive Possessed AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_CHIMERA_1",
+          "name": "Jack Of All Trades",
+          "localized": {
+            "en-US": {
+              "name": "Jack Of All Trades",
+              "description": "Beat an Adaptive Chimera AI on any difficulty."
+            }
+          },
+          "description": "Beat an Adaptive Chimera AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_CHIMERA_7",
+          "name": "Many-Headed Beast",
+          "localized": {
+            "en-US": {
+              "name": "Many-Headed Beast",
+              "description": "Beat an Adaptive Chimera AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat an Adaptive Chimera AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_VIRULENT_1",
+          "name": "Inoculated",
+          "localized": {
+            "en-US": {
+              "name": "Inoculated",
+              "description": "Beat an Adaptive Virulent AI on any difficulty."
+            }
+          },
+          "description": "Beat an Adaptive Virulent AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_VIRULENT_7",
+          "name": "Herd Immunity",
+          "localized": {
+            "en-US": {
+              "name": "Herd Immunity",
+              "description": "Beat an Adaptive Virulent AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat an Adaptive Virulent AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_ONSLAUGHT_1",
+          "name": "Is That All You Got?",
+          "localized": {
+            "en-US": {
+              "name": "Is That All You Got?",
+              "description": "Beat an Adaptive Onslaught AI on any difficulty."
+            }
+          },
+          "description": "Beat an Adaptive Onslaught AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_ONSLAUGHT_7",
+          "name": "Still Standing!",
+          "localized": {
+            "en-US": {
+              "name": "Still Standing!",
+              "description": "Beat an Adaptive Onslaught AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat an Adaptive Onslaught AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_ABYSS_1",
+          "name": "The Abyss Blinked First",
+          "localized": {
+            "en-US": {
+              "name": "The Abyss Blinked First",
+              "description": "Beat an Adaptive Abyss AI on any difficulty."
+            }
+          },
+          "description": "Beat an Adaptive Abyss AI on any difficulty.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_AD_ABYSS_7",
+          "name": "Climbed Right Out!",
+          "localized": {
+            "en-US": {
+              "name": "Climbed Right Out!",
+              "description": "Beat an Adaptive Abyss AI on difficulty >= 7."
+            }
+          },
+          "description": "Beat an Adaptive Abyss AI on difficulty >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MALWARE_1",
+          "name": "Have You Tried Turning It Off And On Again?",
+          "localized": {
+            "en-US": {
+              "name": "Have You Tried Turning It Off And On Again?",
+              "description": "Beat the game with the Malware enabled and allied to the AI."
+            }
+          },
+          "description": "Beat the game with the Malware enabled and allied to the AI.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MALWARE_7",
+          "name": "Quarantined",
+          "localized": {
+            "en-US": {
+              "name": "Quarantined",
+              "description": "Beat the game with the Malware allied to the AI at intensity >= 7."
+            }
+          },
+          "description": "Beat the game with the Malware allied to the AI at intensity >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MALWARE_10",
+          "name": "Zero Days Left",
+          "localized": {
+            "en-US": {
+              "name": "Zero Days Left",
+              "description": "Beat the game with the Malware allied to the AI at intensity = 10."
+            }
+          },
+          "description": "Beat the game with the Malware allied to the AI at intensity = 10.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MALWARE_FRIEND",
+          "name": "White Hat",
+          "localized": {
+            "en-US": {
+              "name": "White Hat",
+              "description": "Beat the game with the Malware friendly to players."
+            }
+          },
+          "description": "Beat the game with the Malware friendly to players.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TYDERIAN_1",
+          "name": "Weed Killer",
+          "localized": {
+            "en-US": {
+              "name": "Weed Killer",
+              "description": "Beat the game with the Tyderian Infestation enabled."
+            }
+          },
+          "description": "Beat the game with the Tyderian Infestation enabled.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TYDERIAN_7",
+          "name": "Mineral Rights",
+          "localized": {
+            "en-US": {
+              "name": "Mineral Rights",
+              "description": "Beat the game with the Tyderian Infestation at intensity >= 7."
+            }
+          },
+          "description": "Beat the game with the Tyderian Infestation at intensity >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TYDERIAN_10",
+          "name": "Purge The Veins",
+          "localized": {
+            "en-US": {
+              "name": "Purge The Veins",
+              "description": "Beat the game with the Tyderian Infestation at intensity = 10."
+            }
+          },
+          "description": "Beat the game with the Tyderian Infestation at intensity = 10.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_RENEGADE_1",
+          "name": "Rebel Without A Cause",
+          "localized": {
+            "en-US": {
+              "name": "Rebel Without A Cause",
+              "description": "Beat the game with the Renegade Spire allied to the AI."
+            }
+          },
+          "description": "Beat the game with the Renegade Spire allied to the AI.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_RENEGADE_7",
+          "name": "Rebel Yell",
+          "localized": {
+            "en-US": {
+              "name": "Rebel Yell",
+              "description": "Beat the game with the Renegade Spire allied to the AI at intensity >= 7."
+            }
+          },
+          "description": "Beat the game with the Renegade Spire allied to the AI at intensity >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_RENEGADE_10",
+          "name": "Rebel Scum",
+          "localized": {
+            "en-US": {
+              "name": "Rebel Scum",
+              "description": "Beat the game with the Renegade Spire allied to the AI at intensity = 10."
+            }
+          },
+          "description": "Beat the game with the Renegade Spire allied to the AI at intensity = 10.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_RENEGADE_FRIEND",
+          "name": "The Enemy Of My Enemy",
+          "localized": {
+            "en-US": {
+              "name": "The Enemy Of My Enemy",
+              "description": "Beat the game with the Renegade Spire friendly to players."
+            }
+          },
+          "description": "Beat the game with the Renegade Spire friendly to players.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_REAPERS_1",
+          "name": "Don't Fear The Reaper",
+          "localized": {
+            "en-US": {
+              "name": "Don't Fear The Reaper",
+              "description": "Beat the game with the Reapers enabled."
+            }
+          },
+          "description": "Beat the game with the Reapers enabled.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_REAPERS_7",
+          "name": "Grim Outlook",
+          "localized": {
+            "en-US": {
+              "name": "Grim Outlook",
+              "description": "Beat the game with the Reapers at intensity >= 7."
+            }
+          },
+          "description": "Beat the game with the Reapers at intensity >= 7.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_REAPERS_10",
+          "name": "Reap What You Sow",
+          "localized": {
+            "en-US": {
+              "name": "Reap What You Sow",
+              "description": "Beat the game with the Reapers at intensity = 10."
+            }
+          },
+          "description": "Beat the game with the Reapers at intensity = 10.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SVIKARI_FRIEND",
+          "name": "A Deal With The Devil",
+          "localized": {
+            "en-US": {
+              "name": "A Deal With The Devil",
+              "description": "Beat the game with the Dark Spire Svikari allied to players."
+            }
+          },
+          "description": "Beat the game with the Dark Spire Svikari allied to players.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SVIKARI_AI",
+          "name": "Sold Out",
+          "localized": {
+            "en-US": {
+              "name": "Sold Out",
+              "description": "Beat the game with the Dark Spire Svikari allied to the AI."
+            }
+          },
+          "description": "Beat the game with the Dark Spire Svikari allied to the AI.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TEMEN",
+          "name": "Groundbreaking",
+          "localized": {
+            "en-US": {
+              "name": "Groundbreaking",
+              "description": "Take control of a Temen."
+            }
+          },
+          "description": "Take control of a Temen.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SEAL_FISSURE",
+          "name": "Mind The Gap",
+          "localized": {
+            "en-US": {
+              "name": "Mind The Gap",
+              "description": "Seal an Apsu Fissure."
+            }
+          },
+          "description": "Seal an Apsu Fissure.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_BREACH_NEXUS",
+          "name": "Breach Of Contract",
+          "localized": {
+            "en-US": {
+              "name": "Breach Of Contract",
+              "description": "Breach a Malware Nexus."
+            }
+          },
+          "description": "Breach a Malware Nexus.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TRANSFORM_FLAGSHIP",
+          "name": "Wardrobe Change",
+          "localized": {
+            "en-US": {
+              "name": "Wardrobe Change",
+              "description": "Transform an Apkallu flagship into a form unlocked by a breach."
+            }
+          },
+          "description": "Transform an Apkallu flagship into a form unlocked by a breach.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_PURIFY_ZIGGURAT",
+          "name": "Spring Cleaning",
+          "localized": {
+            "en-US": {
+              "name": "Spring Cleaning",
+              "description": "Start the purification of a Corrupted Ziggurat."
+            }
+          },
+          "description": "Start the purification of a Corrupted Ziggurat.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_ANCIENT_ZIGGURAT",
+          "name": "Ancient History",
+          "localized": {
+            "en-US": {
+              "name": "Ancient History",
+              "description": "Destroy an Ancient Corrupted Ziggurat."
+            }
+          },
+          "description": "Destroy an Ancient Corrupted Ziggurat.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_FORK_BOMB",
+          "name": "Fork Off",
+          "localized": {
+            "en-US": {
+              "name": "Fork Off",
+              "description": "Destroy a Fork Bomb."
+            }
+          },
+          "description": "Destroy a Fork Bomb.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_KERNEL_PANIC",
+          "name": "Don't Panic",
+          "localized": {
+            "en-US": {
+              "name": "Don't Panic",
+              "description": "Destroy a Kernel Panic."
+            }
+          },
+          "description": "Destroy a Kernel Panic.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_ARCH_DAEMON",
+          "name": "Arch Nemesis",
+          "localized": {
+            "en-US": {
+              "name": "Arch Nemesis",
+              "description": "Destroy an Arch Daemon."
+            }
+          },
+          "description": "Destroy an Arch Daemon.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MALWARE_AGENT",
+          "name": "Terminate Process",
+          "localized": {
+            "en-US": {
+              "name": "Terminate Process",
+              "description": "Destroy a Malware Agent."
+            }
+          },
+          "description": "Destroy a Malware Agent.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MALWARE_GUARD",
+          "name": "Took The Bullet",
+          "localized": {
+            "en-US": {
+              "name": "Took The Bullet",
+              "description": "Destroy one of the Apostate's bodyguards, a Harbinger or an Aegis."
+            }
+          },
+          "description": "Destroy one of the Apostate's bodyguards, a Harbinger or an Aegis.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MALWARE_AVENGER",
+          "name": "Patch Tuesday",
+          "localized": {
+            "en-US": {
+              "name": "Patch Tuesday",
+              "description": "Destroy a Malware Avenger."
+            }
+          },
+          "description": "Destroy a Malware Avenger.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CONDUIT",
+          "name": "Who's There?",
+          "localized": {
+            "en-US": {
+              "name": "Who's There?",
+              "description": "Reach through a Multi-Phasic Conduit."
+            }
+          },
+          "description": "Reach through a Multi-Phasic Conduit.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_APOSTATE",
+          "name": "Blue Screen Of Death",
+          "localized": {
+            "en-US": {
+              "name": "Blue Screen Of Death",
+              "description": "Destroy the Apostate."
+            }
+          },
+          "description": "Destroy the Apostate.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_EMPOWER_VEIN",
+          "name": "Somebody Call A Doctor",
+          "localized": {
+            "en-US": {
+              "name": "Somebody Call A Doctor",
+              "description": "Empower a Tyderian Vein."
+            }
+          },
+          "description": "Empower a Tyderian Vein.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MULTIPHASE",
+          "name": "Now You See Me",
+          "localized": {
+            "en-US": {
+              "name": "Now You See Me",
+              "description": "Send a flagship into Multi-Phase."
+            }
+          },
+          "description": "Send a flagship into Multi-Phase.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SUMMON_ABOM",
+          "name": "Don't Poke It!",
+          "localized": {
+            "en-US": {
+              "name": "Don't Poke It!",
+              "description": "Call forth a Tyderian Abomination."
+            }
+          },
+          "description": "Call forth a Tyderian Abomination.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_KILL_ABOM",
+          "name": "Abominable!",
+          "localized": {
+            "en-US": {
+              "name": "Abominable!",
+              "description": "Destroy a Tyderian Abomination."
+            }
+          },
+          "description": "Destroy a Tyderian Abomination.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SUMMON_ESCHATON",
+          "name": "You Just Had To Poke It",
+          "localized": {
+            "en-US": {
+              "name": "You Just Had To Poke It",
+              "description": "Call forth a Tyderian Eschaton."
+            }
+          },
+          "description": "Call forth a Tyderian Eschaton.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_KILL_ESCHATON",
+          "name": "Not The End After All",
+          "localized": {
+            "en-US": {
+              "name": "Not The End After All",
+              "description": "Destroy a Tyderian Eschaton."
+            }
+          },
+          "description": "Destroy a Tyderian Eschaton.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CHRYSALIS",
+          "name": "Nipped In The Bud",
+          "localized": {
+            "en-US": {
+              "name": "Nipped In The Bud",
+              "description": "Destroy a Reaper Chrysalis."
+            }
+          },
+          "description": "Destroy a Reaper Chrysalis.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_REAPER_GATE",
+          "name": "Gate Crasher",
+          "localized": {
+            "en-US": {
+              "name": "Gate Crasher",
+              "description": "Destroy a Reaper Gateway."
+            }
+          },
+          "description": "Destroy a Reaper Gateway.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_REAPER_MOON",
+          "name": "Moonfall",
+          "localized": {
+            "en-US": {
+              "name": "Moonfall",
+              "description": "Destroy a Reaper Moon."
+            }
+          },
+          "description": "Destroy a Reaper Moon.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_REAPER_SOVEREIGN",
+          "name": "Sovereign Default",
+          "localized": {
+            "en-US": {
+              "name": "Sovereign Default",
+              "description": "Destroy the Reaper Sovereign."
+            }
+          },
+          "description": "Destroy the Reaper Sovereign.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_GRANT_MODULES",
+          "name": "Some Assembly Required",
+          "localized": {
+            "en-US": {
+              "name": "Some Assembly Required",
+              "description": "Grant a module point to a flagship."
+            }
+          },
+          "description": "Grant a module point to a flagship.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DISMANTLE_HOLD",
+          "name": "Urban Renewal",
+          "localized": {
+            "en-US": {
+              "name": "Urban Renewal",
+              "description": "Dismantle a stronghold."
+            }
+          },
+          "description": "Dismantle a stronghold.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MINOR_FORGE",
+          "name": "Forge Ahead",
+          "localized": {
+            "en-US": {
+              "name": "Forge Ahead",
+              "description": "Take control of a Minor Forge."
+            }
+          },
+          "description": "Take control of a Minor Forge.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_PRODUCER",
+          "name": "Means Of Production",
+          "localized": {
+            "en-US": {
+              "name": "Means Of Production",
+              "description": "Take control of a Producer."
+            }
+          },
+          "description": "Take control of a Producer.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CLAIM_MOON",
+          "name": "My Moon Now!",
+          "localized": {
+            "en-US": {
+              "name": "My Moon Now!",
+              "description": "Take control of a crashed Reaper Moon."
+            }
+          },
+          "description": "Take control of a crashed Reaper Moon.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MAJOR_FORGE",
+          "name": "Forge Of Titans",
+          "localized": {
+            "en-US": {
+              "name": "Forge Of Titans",
+              "description": "Take control of a Major Forge."
+            }
+          },
+          "description": "Take control of a Major Forge.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SABOTAGE",
+          "name": "Sabotage!",
+          "localized": {
+            "en-US": {
+              "name": "Sabotage!",
+              "description": "Sabotage an enemy structure."
+            }
+          },
+          "description": "Sabotage an enemy structure.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_STARBASE",
+          "name": "Hostile Takeover",
+          "localized": {
+            "en-US": {
+              "name": "Hostile Takeover",
+              "description": "Take control of a Starbase."
+            }
+          },
+          "description": "Take control of a Starbase.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_REPROGRAM",
+          "name": "You Work For Me Now",
+          "localized": {
+            "en-US": {
+              "name": "You Work For Me Now",
+              "description": "Reprogram an enemy structure to become yours."
+            }
+          },
+          "description": "Reprogram an enemy structure to become yours.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SUBVERT_ST",
+          "name": "Hold The Line!",
+          "localized": {
+            "en-US": {
+              "name": "Hold The Line!",
+              "description": "Subvert a Superterminal."
+            }
+          },
+          "description": "Subvert a Superterminal.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DZ_FLAGSHIP",
+          "name": "Dragon Tamer",
+          "localized": {
+            "en-US": {
+              "name": "Dragon Tamer",
+              "description": "Take control of a Dark Zenith flagship."
+            }
+          },
+          "description": "Take control of a Dark Zenith flagship.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DZ_ENCAMPMENT",
+          "name": "Happy Campers",
+          "localized": {
+            "en-US": {
+              "name": "Happy Campers",
+              "description": "Take control of a Dark Zenith Encampment."
+            }
+          },
+          "description": "Take control of a Dark Zenith Encampment.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DZ_RESOURCES",
+          "name": "Strip Mining",
+          "localized": {
+            "en-US": {
+              "name": "Strip Mining",
+              "description": "Consume a structure for Octiron, Thaumite, Chelonium, Alkahest, Izumite or Skrith."
+            }
+          },
+          "description": "Consume a structure for Octiron, Thaumite, Chelonium, Alkahest, Izumite or Skrith.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DZ_FORTRESS",
+          "name": "Fortress Of Solitude",
+          "localized": {
+            "en-US": {
+              "name": "Fortress Of Solitude",
+              "description": "Take control of a Dark Zenith Fortress."
+            }
+          },
+          "description": "Take control of a Dark Zenith Fortress.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_FIMBULWINTER",
+          "name": "The Long Winter",
+          "localized": {
+            "en-US": {
+              "name": "The Long Winter",
+              "description": "Bring the Fimbulwinter down upon a planet."
+            }
+          },
+          "description": "Bring the Fimbulwinter down upon a planet.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_ARCHITRAVE",
+          "name": "Get Off My Planet!",
+          "localized": {
+            "en-US": {
+              "name": "Get Off My Planet!",
+              "description": "Push the Zenith Architrave back from a planet."
+            }
+          },
+          "description": "Push the Zenith Architrave back from a planet.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_ARMORY",
+          "name": "Change Of Heart",
+          "localized": {
+            "en-US": {
+              "name": "Change Of Heart",
+              "description": "Change a Scourge Vassal Armory to another race."
+            }
+          },
+          "description": "Change a Scourge Vassal Armory to another race.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MARKUP",
+          "name": "Level Up!",
+          "localized": {
+            "en-US": {
+              "name": "Level Up!",
+              "description": "Mark up a Scourge Vassal spawner, armory, bestiary or fortress."
+            }
+          },
+          "description": "Mark up a Scourge Vassal spawner, armory, bestiary or fortress.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SCOURGE_FLAGSHIP",
+          "name": "Salvage Rights",
+          "localized": {
+            "en-US": {
+              "name": "Salvage Rights",
+              "description": "Take control of a downed Scourge flagship."
+            }
+          },
+          "description": "Take control of a downed Scourge flagship.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SPIRE_DEBRIS",
+          "name": "Picking Up The Pieces",
+          "localized": {
+            "en-US": {
+              "name": "Picking Up The Pieces",
+              "description": "Analyze Spire debris as the Spire Sidekick."
+            }
+          },
+          "description": "Analyze Spire debris as the Spire Sidekick.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SPIRE_FLAGSHIP",
+          "name": "I'm The Captain Now",
+          "localized": {
+            "en-US": {
+              "name": "I'm The Captain Now",
+              "description": "Take control of a Spire flagship."
+            }
+          },
+          "description": "Take control of a Spire flagship.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SPIRE_RELIC",
+          "name": "Relic Hunter",
+          "localized": {
+            "en-US": {
+              "name": "Relic Hunter",
+              "description": "Capture a Relic as the Spire Sidekick."
+            }
+          },
+          "description": "Capture a Relic as the Spire Sidekick.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_RELIQUARY",
+          "name": "Finders Keepers",
+          "localized": {
+            "en-US": {
+              "name": "Finders Keepers",
+              "description": "Take a line of Renegade Spire ships from a Shard Reliquary."
+            }
+          },
+          "description": "Take a line of Renegade Spire ships from a Shard Reliquary.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_RENEGADE_FORT",
+          "name": "Renegade Down",
+          "localized": {
+            "en-US": {
+              "name": "Renegade Down",
+              "description": "Destroy a Renegade Spire Fortress."
+            }
+          },
+          "description": "Destroy a Renegade Spire Fortress.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_RENEGADE_RELIC",
+          "name": "Relic Of The Past",
+          "localized": {
+            "en-US": {
+              "name": "Relic Of The Past",
+              "description": "Destroy a Renegade Relic."
+            }
+          },
+          "description": "Destroy a Renegade Relic.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SVIKARI_VG",
+          "name": "Vengeance Is Mine",
+          "localized": {
+            "en-US": {
+              "name": "Vengeance Is Mine",
+              "description": "Destroy a Svikari Vengeance Generator."
+            }
+          },
+          "description": "Destroy a Svikari Vengeance Generator.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_WANDERER_LEAD",
+          "name": "Lost Coordinates",
+          "localized": {
+            "en-US": {
+              "name": "Lost Coordinates",
+              "description": "Destroy a Wanderer Coordinator."
+            }
+          },
+          "description": "Destroy a Wanderer Coordinator.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_KZINTI_LEAD",
+          "name": "Bad Kitty!",
+          "localized": {
+            "en-US": {
+              "name": "Bad Kitty!",
+              "description": "Destroy a Kzinti Battlemaster."
+            }
+          },
+          "description": "Destroy a Kzinti Battlemaster.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CTHONIC_LEAD",
+          "name": "Front Line? What Front Line?",
+          "localized": {
+            "en-US": {
+              "name": "Front Line? What Front Line?",
+              "description": "Destroy a Cthonic Vanguard."
+            }
+          },
+          "description": "Destroy a Cthonic Vanguard.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_HYDRA_BEACH",
+          "name": "Not On My Beach!",
+          "localized": {
+            "en-US": {
+              "name": "Not On My Beach!",
+              "description": "Destroy a Hydra Beachhead Platform."
+            }
+          },
+          "description": "Destroy a Hydra Beachhead Platform.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_HUMBABA",
+          "name": "Who Names These Things?",
+          "localized": {
+            "en-US": {
+              "name": "Who Names These Things?",
+              "description": "Destroy a Tiamat Humbaba."
+            }
+          },
+          "description": "Destroy a Tiamat Humbaba.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/54ac88f594403c4d9593af07af84883feb885bc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_FLENSERITE_FORT",
+          "name": "Filleted",
+          "localized": {
+            "en-US": {
+              "name": "Filleted",
+              "description": "Destroy a Flenserite or Aprahanti Fortress."
+            }
+          },
+          "description": "Destroy a Flenserite or Aprahanti Fortress.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_KZINTI_FORT",
+          "name": "Declawed",
+          "localized": {
+            "en-US": {
+              "name": "Declawed",
+              "description": "Destroy a Kzinti or Renegade Fortress."
+            }
+          },
+          "description": "Destroy a Kzinti or Renegade Fortress.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_WRAITH_FORT",
+          "name": "Haunted House",
+          "localized": {
+            "en-US": {
+              "name": "Haunted House",
+              "description": "Destroy a Wraith Fortress."
+            }
+          },
+          "description": "Destroy a Wraith Fortress.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_SHADOW_FORT",
+          "name": "A Shadow Of Its Former Self",
+          "localized": {
+            "en-US": {
+              "name": "A Shadow Of Its Former Self",
+              "description": "Destroy a Shadow or Umbral Fortress."
+            }
+          },
+          "description": "Destroy a Shadow or Umbral Fortress.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_BANDER_FORT",
+          "name": "Frumious No More",
+          "localized": {
+            "en-US": {
+              "name": "Frumious No More",
+              "description": "Destroy a Bandersnatch Fortress."
+            }
+          },
+          "description": "Destroy a Bandersnatch Fortress.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_WANDERER_FORT",
+          "name": "Settled Down",
+          "localized": {
+            "en-US": {
+              "name": "Settled Down",
+              "description": "Destroy a Wanderer Fortress."
+            }
+          },
+          "description": "Destroy a Wanderer Fortress.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_MISKA_FORT",
+          "name": "Campus Closed",
+          "localized": {
+            "en-US": {
+              "name": "Campus Closed",
+              "description": "Destroy an Arkhamite or Leng Fortress."
+            }
+          },
+          "description": "Destroy an Arkhamite or Leng Fortress.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TIAMAT_COLOSSUS",
+          "name": "Colossal Mistake",
+          "localized": {
+            "en-US": {
+              "name": "Colossal Mistake",
+              "description": "Destroy one of Tiamat's Colossi."
+            }
+          },
+          "description": "Destroy one of Tiamat's Colossi.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/d7760ffe46135b05daf71d6c3ba989430c3c0512.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_DIRE_HYDRA",
+          "name": "The Thirteenth Head",
+          "localized": {
+            "en-US": {
+              "name": "The Thirteenth Head",
+              "description": "Destroy a Dire Hydra."
+            }
+          },
+          "description": "Destroy a Dire Hydra.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/2c22a2bc32d247c4b26fa3b254435a3f233905a2.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_TYDERIAN_BOSS",
+          "name": "The Final Harvest",
+          "localized": {
+            "en-US": {
+              "name": "The Final Harvest",
+              "description": "Destroy the Tyderian horror guarding a Tidal AI's homeworld."
+            }
+          },
+          "description": "Destroy the Tyderian horror guarding a Tidal AI's homeworld.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_KHORNE",
+          "name": "Skulls For No One",
+          "localized": {
+            "en-US": {
+              "name": "Skulls For No One",
+              "description": "Destroy the Hateful AI's final horror."
+            }
+          },
+          "description": "Destroy the Hateful AI's final horror.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "FOT_CTHULHU",
+          "name": "Back To Sleep, Big Guy",
+          "localized": {
+            "en-US": {
+              "name": "Back To Sleep, Big Guy",
+              "description": "Destroy the Miskatonic AI's final horror."
+            }
+          },
+          "description": "Destroy the Miskatonic AI's final horror.",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/573410/773a21d7b72988a041a2ec8304f63eab4c2f609b.jpg",
           "groupId": "default"
         }
       ]
