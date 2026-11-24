@@ -1,9 +1,11 @@
 # Recent Trophies
 
-Updated: 2026-11-24 17:50:01 KST
+Updated: 2026-11-25 07:05:50 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-11-24 19:44:31 KST | Resident Evil 5 | They're ACTION Figures\! | Achievement |
+| 2026-11-24 19:18:34 KST | Resident Evil 5 | Egg Hunt | Achievement |
 | 2026-11-24 16:36:14 KST | Resident Evil 5 | Bull's-eye | Achievement |
 | 2026-11-24 15:22:46 KST | Resident Evil 5 | They Belong in a Museum | Achievement |
 | 2026-11-23 06:08:29 KST | Resident Evil 6 | Rising Up | Achievement |
@@ -52,5 +54,3 @@ Updated: 2026-11-24 17:50:01 KST
 | 2026-11-13 20:22:46 KST | Resident Evil 5 | Completed Chapter 2 - 1 | Achievement |
 | 2026-11-13 19:20:36 KST | Resident Evil 5 | Baptism by Fire | Achievement |
 | 2026-11-13 18:56:04 KST | Resident Evil 5 | Meat Shower | Achievement |
-| 2026-11-13 18:05:28 KST | Resident Evil 5 | Completed Chapter 1 - 2 | Achievement |
-| 2026-11-13 17:07:59 KST | Resident Evil 5 | Get Physical | Achievement |

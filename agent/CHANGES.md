@@ -1,7 +1,7 @@
 # Trophy Changes
 
-Current sync: 2026-11-24 17:50:01 KST
-Previous sync: 2026-11-24 08:36:49 KST
+Current sync: 2026-11-25 07:05:50 KST
+Previous sync: 2026-11-24 17:50:01 KST
 
 ## Summary
 
@@ -16,11 +16,11 @@ Achievements +2
 
 | Time | Game | Trophy | Grade |
 | --- | --- | --- | --- |
-| 2026-11-24 16:36:14 KST | [Resident Evil 5](games/steam-21690.md) | Bull's-eye | Achievement |
-| 2026-11-24 15:22:46 KST | [Resident Evil 5](games/steam-21690.md) | They Belong in a Museum | Achievement |
+| 2026-11-24 19:44:31 KST | [Resident Evil 5](games/steam-21690.md) | They're ACTION Figures\! | Achievement |
+| 2026-11-24 19:18:34 KST | [Resident Evil 5](games/steam-21690.md) | Egg Hunt | Achievement |
 
 ## Changed Games
 
 | Game | ID | Previous | Current |
 | --- | --- | --- | --- |
-| Resident Evil 5 | [steam-21690](games/steam-21690.md) | 47/70 | 49/70 |
+| Resident Evil 5 | [steam-21690](games/steam-21690.md) | 49/70 | 51/70 |

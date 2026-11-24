@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 2,
-    "generatedAt": "2026-11-24T08:50:01.670Z",
-    "lastSuccessfulSync": "2026-11-24T08:50:01.670Z",
+    "generatedAt": "2026-11-24T22:05:50.642Z",
+    "lastSuccessfulSync": "2026-11-24T22:05:50.642Z",
     "source": "playstation-network+steam"
   },
   "profile": {
@@ -22,21 +22,21 @@
       "total": 173,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-24T08:43:37.470Z"
+    "lastSuccessfulSync": "2026-11-24T21:58:57.085Z"
   },
   "steam": {
     "steamId": "76561197989470864",
     "displayName": "Eggu",
     "profileUrl": "https://steamcommunity.com/profiles/76561197989470864/",
     "achievements": {
-      "earned": 3791,
+      "earned": 3793,
       "total": 38684
     },
     "games": {
       "total": 664,
       "completed": 19
     },
-    "lastSuccessfulSync": "2026-11-24T08:50:01.669Z"
+    "lastSuccessfulSync": "2026-11-24T22:05:50.642Z"
   },
   "games": [
     {
@@ -233820,13 +233820,13 @@
       ],
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/21690/header.jpg",
       "progress": {
-        "earned": 49,
+        "earned": 51,
         "total": 70,
-        "percentage": 70
+        "percentage": 73
       },
       "platinumEarned": false,
-      "lastTrophyAt": "2026-11-24T07:36:14.000Z",
-      "lastPlayedAt": "2026-11-24T08:17:50.000Z",
+      "lastTrophyAt": "2026-11-24T10:44:31.000Z",
+      "lastPlayedAt": "2026-11-24T17:18:51.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -234198,9 +234198,9 @@
           "description": "Find all 4 types of eggs.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/6117c6e7841490f64f0515547ac1f1fef6a428b1.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-24T10:18:34.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/91cc51fbc75ab322c0b3747fff538444f9d7db9a.jpg",
           "groupId": "default"
         },
         {
@@ -234300,9 +234300,9 @@
           "description": "Collect all the figurines.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/c18be8c42aaa7f01ec77e5b25762ea6546ea907f.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-24T10:44:31.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/f91d128f3a525b72c8cc08cf36cc760476ea5e39.jpg",
           "groupId": "default"
         },
         {
