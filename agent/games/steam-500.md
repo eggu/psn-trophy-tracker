@@ -2,7 +2,7 @@
 
 ID: steam-500
 Platform: Steam
-Updated: 2026-11-24 08:36:49 KST
+Updated: 2026-11-24 17:50:01 KST
 
 Progress: 12/73 (16%)
 Platinum: N/A

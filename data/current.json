@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 2,
-    "generatedAt": "2026-11-23T23:36:49.337Z",
-    "lastSuccessfulSync": "2026-11-23T23:36:49.337Z",
+    "generatedAt": "2026-11-24T08:50:01.670Z",
+    "lastSuccessfulSync": "2026-11-24T08:50:01.670Z",
     "source": "playstation-network+steam"
   },
   "profile": {
@@ -22,21 +22,21 @@
       "total": 173,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-23T23:28:48.800Z"
+    "lastSuccessfulSync": "2026-11-24T08:43:37.470Z"
   },
   "steam": {
     "steamId": "76561197989470864",
     "displayName": "Eggu",
     "profileUrl": "https://steamcommunity.com/profiles/76561197989470864/",
     "achievements": {
-      "earned": 3789,
+      "earned": 3791,
       "total": 38684
     },
     "games": {
       "total": 664,
       "completed": 19
     },
-    "lastSuccessfulSync": "2026-11-23T23:36:49.337Z"
+    "lastSuccessfulSync": "2026-11-24T08:50:01.669Z"
   },
   "games": [
     {
@@ -233820,13 +233820,13 @@
       ],
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/21690/header.jpg",
       "progress": {
-        "earned": 47,
+        "earned": 49,
         "total": 70,
-        "percentage": 67
+        "percentage": 70
       },
       "platinumEarned": false,
-      "lastTrophyAt": "2026-11-22T07:27:57.000Z",
-      "lastPlayedAt": "2026-11-23T20:46:47.000Z",
+      "lastTrophyAt": "2026-11-24T07:36:14.000Z",
+      "lastPlayedAt": "2026-11-24T08:17:50.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -234266,9 +234266,9 @@
           "description": "Obtain all treasures in the game.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/3721b85770eee329e1bb1170238bd88b8103d859.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-24T06:22:46.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/36ed9d0c5069068c21a6c725c179ac32a9fd8b26.jpg",
           "groupId": "default"
         },
         {
@@ -234419,9 +234419,9 @@
           "description": "Defeat 30 enemies with the Longbow.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/5f57360f21c0bd72ba3c30207eb86e6269f57046.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-24T07:36:14.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/21690/e80595db5d890d2ac95bd008e171186a2ea89bb7.jpg",
           "groupId": "default"
         },
         {
@@ -367965,7 +367965,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-22T21:08:29.000Z",
-      "lastPlayedAt": "2026-11-22T21:14:49.000Z",
+      "lastPlayedAt": "2026-11-24T07:10:23.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,

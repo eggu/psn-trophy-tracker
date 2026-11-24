@@ -1,9 +1,11 @@
 # Recent Trophies
 
-Updated: 2026-11-24 08:36:49 KST
+Updated: 2026-11-24 17:50:01 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-11-24 16:36:14 KST | Resident Evil 5 | Bull's-eye | Achievement |
+| 2026-11-24 15:22:46 KST | Resident Evil 5 | They Belong in a Museum | Achievement |
 | 2026-11-23 06:08:29 KST | Resident Evil 6 | Rising Up | Achievement |
 | 2026-11-23 04:04:30 KST | Resident Evil 6 | Get on the Plane | Achievement |
 | 2026-11-22 16:27:57 KST | Resident Evil 5 | Crowd Control | Achievement |
@@ -52,5 +54,3 @@ Updated: 2026-11-24 08:36:49 KST
 | 2026-11-13 18:56:04 KST | Resident Evil 5 | Meat Shower | Achievement |
 | 2026-11-13 18:05:28 KST | Resident Evil 5 | Completed Chapter 1 - 2 | Achievement |
 | 2026-11-13 17:07:59 KST | Resident Evil 5 | Get Physical | Achievement |
-| 2026-11-13 04:16:07 KST | Resident Evil 5 | A Cut Above | Achievement |
-| 2026-11-12 01:06:36 KST | 기원: 변이 | 나 듣고 있어... | Bronze |
