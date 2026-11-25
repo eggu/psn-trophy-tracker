@@ -2,7 +2,7 @@
 
 ID: steam-620
 Platform: Steam
-Updated: 2026-11-25 07:05:50 KST
+Updated: 2026-11-25 16:25:18 KST
 
 Progress: 0/51 (0%)
 Platinum: N/A
