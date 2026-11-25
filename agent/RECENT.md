@@ -1,9 +1,11 @@
 # Recent Trophies
 
-Updated: 2026-11-25 16:25:18 KST
+Updated: 2026-11-26 06:17:51 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-11-25 23:49:29 KST | Resident Evil 6 | The Trouble with Women | Achievement |
+| 2026-11-25 18:27:08 KST | Resident Evil 6 | Big Trouble in China | Achievement |
 | 2026-11-24 19:44:31 KST | Resident Evil 5 | They're ACTION Figures\! | Achievement |
 | 2026-11-24 19:18:34 KST | Resident Evil 5 | Egg Hunt | Achievement |
 | 2026-11-24 16:36:14 KST | Resident Evil 5 | Bull's-eye | Achievement |
@@ -52,5 +54,3 @@ Updated: 2026-11-25 16:25:18 KST
 | 2026-11-13 21:19:32 KST | Resident Evil 5 | Exploding Heads | Achievement |
 | 2026-11-13 20:57:59 KST | Resident Evil 5 | Fireworks | Achievement |
 | 2026-11-13 20:22:46 KST | Resident Evil 5 | Completed Chapter 2 - 1 | Achievement |
-| 2026-11-13 19:20:36 KST | Resident Evil 5 | Baptism by Fire | Achievement |
-| 2026-11-13 18:56:04 KST | Resident Evil 5 | Meat Shower | Achievement |

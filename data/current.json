@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 2,
-    "generatedAt": "2026-11-25T07:25:18.672Z",
-    "lastSuccessfulSync": "2026-11-25T07:25:18.672Z",
+    "generatedAt": "2026-11-25T21:17:51.880Z",
+    "lastSuccessfulSync": "2026-11-25T21:17:51.880Z",
     "source": "playstation-network+steam"
   },
   "profile": {
@@ -22,21 +22,21 @@
       "total": 173,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-25T07:17:23.923Z"
+    "lastSuccessfulSync": "2026-11-25T21:10:27.405Z"
   },
   "steam": {
     "steamId": "76561197989470864",
     "displayName": "Eggu",
     "profileUrl": "https://steamcommunity.com/profiles/76561197989470864/",
     "achievements": {
-      "earned": 3793,
-      "total": 38684
+      "earned": 3795,
+      "total": 38710
     },
     "games": {
       "total": 664,
       "completed": 19
     },
-    "lastSuccessfulSync": "2026-11-25T07:25:18.672Z"
+    "lastSuccessfulSync": "2026-11-25T21:17:51.880Z"
   },
   "games": [
     {
@@ -233826,7 +233826,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-24T10:44:31.000Z",
-      "lastPlayedAt": "2026-11-25T07:17:13.000Z",
+      "lastPlayedAt": "2026-11-25T18:00:27.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -367959,13 +367959,13 @@
       ],
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/221040/header.jpg",
       "progress": {
-        "earned": 14,
+        "earned": 16,
         "total": 70,
-        "percentage": 20
+        "percentage": 23
       },
       "platinumEarned": false,
-      "lastTrophyAt": "2026-11-22T21:08:29.000Z",
-      "lastPlayedAt": "2026-11-24T07:10:23.000Z",
+      "lastTrophyAt": "2026-11-25T14:49:29.000Z",
+      "lastPlayedAt": "2026-11-25T15:53:32.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -368065,9 +368065,9 @@
           "description": "Complete Chapter 4 in Leon's campaign.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/221040/f0eabac726329c99fe43a507705886de919e0190.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-25T09:27:08.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/221040/a80a49e37b16e62ac10d02834fdbee932c14ae03.jpg",
           "groupId": "default"
         },
         {
@@ -368082,9 +368082,9 @@
           "description": "Complete Chapter 5 in Leon's campaign.",
           "grade": "achievement",
           "hidden": false,
-          "earned": false,
-          "earnedAt": null,
-          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/221040/ca34b68120d4dca7fc3bc2baf47e89237289b229.jpg",
+          "earned": true,
+          "earnedAt": "2026-11-25T14:49:29.000Z",
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/221040/97e9ef7c61feacb27867672aa9ec45864613740c.jpg",
           "groupId": "default"
         },
         {
@@ -867585,7 +867585,7 @@
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/1058200/header.jpg",
       "progress": {
         "earned": 0,
-        "total": 1010,
+        "total": 1036,
         "percentage": 0
       },
       "platinumEarned": false,
@@ -884778,6 +884778,448 @@
           "earned": false,
           "earnedAt": null,
           "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/8655948a4889ffe2d83e855e0dfa9c144abed160.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_1",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 1"
+            }
+          },
+          "description": "Complete Puzzle 1",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/6be8e462f6f0d9377f12f54c861019436ca0c6b4.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_2",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 2"
+            }
+          },
+          "description": "Complete Puzzle 2",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/bfd040eb05fa824084b41adf3b1cc15a683860f1.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_3",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 3"
+            }
+          },
+          "description": "Complete Puzzle 3",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/1b253c46985ac7e344080349ca41604c2d1028c6.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_4",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 4"
+            }
+          },
+          "description": "Complete Puzzle 4",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/74c50a1e51cf2b3c8d99ffe1d9ee1bc09cba09f4.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_5",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 5"
+            }
+          },
+          "description": "Complete Puzzle 5",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/1f66789f6a2cb133c1fd18abc4def3b650c0cfb9.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_6",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 6"
+            }
+          },
+          "description": "Complete Puzzle 6",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/840f994e51d5e93ecf591ee4c1acbaf7160407dc.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_7",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 7"
+            }
+          },
+          "description": "Complete Puzzle 7",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/13538e2187ba608f0ce9a75f62baaf9084125d20.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_8",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 8"
+            }
+          },
+          "description": "Complete Puzzle 8",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/c6ebeea97978ff15ecf47afaacfb7522a19f7d94.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_9",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 9"
+            }
+          },
+          "description": "Complete Puzzle 9",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/804cd59464e6dd162cbf961810658b5db8eca795.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_10",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 10"
+            }
+          },
+          "description": "Complete Puzzle 10",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/ae4ec2c9aa5fe47a6caa4c2f6deb5da76877cfa7.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_11",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 11"
+            }
+          },
+          "description": "Complete Puzzle 11",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/01489e20d6074d27754e4b163a66baf69a1bb969.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_12",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 12"
+            }
+          },
+          "description": "Complete Puzzle 12",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/b22cecbab4bedacbd74fa6d3523adeb35f01b7e8.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_13",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 13"
+            }
+          },
+          "description": "Complete Puzzle 13",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/f5fdf1592526913237dffcdbbcc29ac90f943cdb.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_14",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 14"
+            }
+          },
+          "description": "Complete Puzzle 14",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/af0e8725c313d2d8e4185c467b282a7ef688049d.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_15",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 15"
+            }
+          },
+          "description": "Complete Puzzle 15",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/7a1b20592d84b36d9be7b9d3bc808e6e4d1315cf.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_16",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 16"
+            }
+          },
+          "description": "Complete Puzzle 16",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/3a8cda1228ff1652cba7ab3dc042a8cf3ed2008f.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_17",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 17"
+            }
+          },
+          "description": "Complete Puzzle 17",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/e623d99ee7eb7709aa56ff6df86911868cd8415e.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_18",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 18"
+            }
+          },
+          "description": "Complete Puzzle 18",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/1b139097f961a68d50225790cb3ebebfcc61dbe7.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_19",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 19"
+            }
+          },
+          "description": "Complete Puzzle 19",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/28a3b0e66920a6dd99a4d183914f8e6598bcecc0.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_20",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 20"
+            }
+          },
+          "description": "Complete Puzzle 20",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/0c31db8038194448c11923f5bfcd56892c244471.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_21",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 21"
+            }
+          },
+          "description": "Complete Puzzle 21",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/74290dd602f5f7228c6274dc563dedeeacacce28.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_22",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 22"
+            }
+          },
+          "description": "Complete Puzzle 22",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/41e4c4c854fce74e3954315fae882ae2e48bcbb9.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_23",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 23"
+            }
+          },
+          "description": "Complete Puzzle 23",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/ead22574858b56bf64a6fa1ef21ca6ddaee384b3.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_24",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 24"
+            }
+          },
+          "description": "Complete Puzzle 24",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/b0dc6f68fa15063af19235f62cf2aef471d1482c.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57_puzzle_25",
+          "name": "Puzzle Complete!",
+          "localized": {
+            "en-US": {
+              "name": "Puzzle Complete!",
+              "description": "Complete Puzzle 25"
+            }
+          },
+          "description": "Complete Puzzle 25",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/d0bdeae30684b17613758be3f8f4ad3fc8177527.jpg",
+          "groupId": "default"
+        },
+        {
+          "id": "complete_pack_57",
+          "name": "All Butterflies 2 Complete!",
+          "localized": {
+            "en-US": {
+              "name": "All Butterflies 2 Complete!",
+              "description": "Complete Pack: Butterflies 2"
+            }
+          },
+          "description": "Complete Pack: Butterflies 2",
+          "grade": "achievement",
+          "hidden": false,
+          "earned": false,
+          "earnedAt": null,
+          "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1058200/b8d4e85adc55f70ede6d6ce4a861de0b65b518df.jpg",
           "groupId": "default"
         }
       ]

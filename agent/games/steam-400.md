@@ -2,7 +2,7 @@
 
 ID: steam-400
 Platform: Steam
-Updated: 2026-11-25 16:25:18 KST
+Updated: 2026-11-26 06:17:51 KST
 
 Progress: 9/15 (60%)
 Platinum: N/A
