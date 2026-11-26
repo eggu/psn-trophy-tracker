@@ -1,6 +1,6 @@
 # Games
 
-Updated: 2026-11-26 06:17:51 KST
+Updated: 2026-11-26 16:14:33 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |

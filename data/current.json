@@ -1,8 +1,8 @@
 {
   "metadata": {
     "schemaVersion": 2,
-    "generatedAt": "2026-11-25T21:17:51.880Z",
-    "lastSuccessfulSync": "2026-11-25T21:17:51.880Z",
+    "generatedAt": "2026-11-26T07:14:33.562Z",
+    "lastSuccessfulSync": "2026-11-26T07:14:33.562Z",
     "source": "playstation-network+steam"
   },
   "profile": {
@@ -22,7 +22,7 @@
       "total": 173,
       "completed": 7
     },
-    "lastSuccessfulSync": "2026-11-25T21:10:27.405Z"
+    "lastSuccessfulSync": "2026-11-26T07:06:54.290Z"
   },
   "steam": {
     "steamId": "76561197989470864",
@@ -36,7 +36,7 @@
       "total": 664,
       "completed": 19
     },
-    "lastSuccessfulSync": "2026-11-25T21:17:51.880Z"
+    "lastSuccessfulSync": "2026-11-26T07:14:33.561Z"
   },
   "games": [
     {
@@ -233826,7 +233826,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-24T10:44:31.000Z",
-      "lastPlayedAt": "2026-11-25T18:00:27.000Z",
+      "lastPlayedAt": "2026-11-26T07:06:21.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -367965,7 +367965,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-25T14:49:29.000Z",
-      "lastPlayedAt": "2026-11-25T15:53:32.000Z",
+      "lastPlayedAt": "2026-11-26T07:06:07.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
@@ -617113,7 +617113,7 @@
       },
       "platinumEarned": false,
       "lastTrophyAt": "2026-11-11T13:57:00.000Z",
-      "lastPlayedAt": "2026-11-13T04:57:55.000Z",
+      "lastPlayedAt": "2026-11-26T04:51:21.000Z",
       "trophySummary": {
         "platinum": {
           "earned": 0,
