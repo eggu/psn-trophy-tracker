@@ -1,6 +1,6 @@
 # Games
 
-Updated: 2026-11-26 16:14:33 KST
+Updated: 2026-11-27 06:06:33 KST
 Dates: KST. Detail: games/{id}.md
 
 | Game | ID | Platform | Progress | Platinum | Last Trophy |
@@ -350,7 +350,7 @@ Dates: KST. Detail: games/{id}.md
 | Hotline Miami | steam-219150 | Steam | 2/35 (6%) | N/A | 2013-07-12 |
 | Far Cry® 3 | steam-220240 | Steam | 0/44 (0%) | N/A | Unknown |
 | DmC Devil May Cry | steam-220440 | Steam | 24/58 (41%) | N/A | 2015-03-22 |
-| Resident Evil 6 | steam-221040 | Steam | 16/70 (23%) | N/A | 2026-11-25 |
+| Resident Evil 6 | steam-221040 | Steam | 18/70 (26%) | N/A | 2026-11-26 |
 | Rocksmith® 2014 Edition - Remastered | steam-221680 | Steam | 18/47 (38%) | N/A | 2015-04-26 |
 | The Book of Unwritten Tales: The Critter Chronicles | steam-221830 | Steam | 0/34 (0%) | N/A | Unknown |
 | The Stanley Parable | steam-221910 | Steam | 10/10 (100%) | N/A | 2015-03-01 |

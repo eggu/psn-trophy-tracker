@@ -1,9 +1,11 @@
 # Recent Trophies
 
-Updated: 2026-11-26 16:14:33 KST
+Updated: 2026-11-27 06:06:33 KST
 
 | Earned | Game | Trophy | Grade |
 | --- | --- | --- | --- |
+| 2026-11-26 23:03:36 KST | Resident Evil 6 | Finish What You Start | Achievement |
+| 2026-11-26 22:50:38 KST | Resident Evil 6 | They're ACTION Figures\! | Achievement |
 | 2026-11-25 23:49:29 KST | Resident Evil 6 | The Trouble with Women | Achievement |
 | 2026-11-25 18:27:08 KST | Resident Evil 6 | Big Trouble in China | Achievement |
 | 2026-11-24 19:44:31 KST | Resident Evil 5 | They're ACTION Figures\! | Achievement |
@@ -52,5 +54,3 @@ Updated: 2026-11-26 16:14:33 KST
 | 2026-11-13 21:54:50 KST | Resident Evil 5 | Completed Chapter 2 - 3 | Achievement |
 | 2026-11-13 21:28:48 KST | Resident Evil 5 | Completed Chapter 2 - 2 | Achievement |
 | 2026-11-13 21:19:32 KST | Resident Evil 5 | Exploding Heads | Achievement |
-| 2026-11-13 20:57:59 KST | Resident Evil 5 | Fireworks | Achievement |
-| 2026-11-13 20:22:46 KST | Resident Evil 5 | Completed Chapter 2 - 1 | Achievement |
