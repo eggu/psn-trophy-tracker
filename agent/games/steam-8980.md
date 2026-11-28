@@ -2,7 +2,7 @@
 
 ID: steam-8980
 Platform: Steam
-Updated: 2026-11-28 05:55:13 KST
+Updated: 2026-11-28 15:44:36 KST
 
 Progress: 55/80 (69%)
 Platinum: N/A

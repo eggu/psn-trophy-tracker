@@ -2,7 +2,7 @@
 
 ID: steam-300
 Platform: Steam
-Updated: 2026-11-28 05:55:13 KST
+Updated: 2026-11-28 15:44:36 KST
 
 Progress: 3/54 (6%)
 Platinum: N/A
